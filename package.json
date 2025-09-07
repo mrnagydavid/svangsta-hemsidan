@@ -1,0 +1,12 @@
+{
+  "name": "svangsta-hemsida",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && cp -r src dist",
+    "deploy": "pnpm build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
