@@ -47,6 +47,11 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
