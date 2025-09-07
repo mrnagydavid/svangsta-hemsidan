@@ -16,6 +16,9 @@
         /* justify-content: center; */
         position: relative;
         overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       h1 {
@@ -23,6 +26,7 @@
       }
 
       #main-content {
+        flex: 1;
         padding: 2rem 1rem;
       }
 
@@ -51,7 +55,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="subpage-layout">
     <a
       href="index.html"
       class="back-button"
