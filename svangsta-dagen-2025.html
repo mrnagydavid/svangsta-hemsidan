@@ -10,27 +10,20 @@
         background-image: url('images/svangsta-kyrka-01.jpg');
         background-size: cover;
         background-position: center;
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 2rem 1rem;
+        /* justify-content: center; */
         position: relative;
-      }
-
-      body::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--overlay-color);
-        z-index: 0;
+        overflow: scroll;
       }
 
       h1 {
         font-weight: 700;
+      }
+
+      #main-content {
+        padding: 2rem 1rem;
       }
 
       .event-content {
@@ -47,11 +40,14 @@
         z-index: 1;
       }
 
-      footer {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        width: 100%;
+      .event-content h1 {
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .event-content h1 {
+          font-size: 1.3rem;
+        }
       }
     </style>
   </head>
@@ -66,9 +62,7 @@
     </a>
     <main tabindex="-1" id="main-content">
       <div class="event-content">
-        <h1 style="text-align: center; font-size: 2rem">
-          🎉 Svängstadagen 2025 🎈
-        </h1>
+        <h1>🎉 Svängstadagen 2025 🎈</h1>
         <p style="text-align: center; font-weight: bold; margin-bottom: 2rem">
           14 September, 11:00&mdash;15:00
         </p>
