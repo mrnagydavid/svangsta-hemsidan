@@ -1,0 +1,91 @@
+:root {
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+  --text-color: #222;
+  --overlay-color: rgba(0, 0, 0, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --placeholder-color: #bbb;
+  --accent-color: #00695c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  scrollbar-width: thin;
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.9rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+.go-back-indicator {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+  animation: slide 2s infinite;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes slide {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0) translateY(-50%);
+  }
+  40% {
+    transform: translateX(-10px) translateY(-50%);
+  }
+  60% {
+    transform: translateX(-5px) translateY(-50%);
+  }
+}

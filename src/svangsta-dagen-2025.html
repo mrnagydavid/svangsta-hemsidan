@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svängstadagen 2025</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      body {
+        background-image: url('images/svangsta-kyrka-01.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1rem;
+        position: relative;
+      }
+
+      body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--overlay-color);
+        z-index: 0;
+      }
+
+      h1 {
+        font-weight: 700;
+      }
+
+      .event-content {
+        position: relative;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: var(--glass-bg);
+        border-radius: 12px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        overflow-y: auto;
+        color: var(--text-color);
+        z-index: 1;
+      }
+
+      footer {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+    <main tabindex="-1" id="main-content">
+      <div class="event-content">
+        <h1 style="text-align: center; font-size: 2rem">
+          🎉 Svängstadagen 2025 🎈
+        </h1>
+        <p style="text-align: center; font-weight: bold; margin-bottom: 2rem">
+          14 September, 11:00&mdash;15:00
+        </p>
+
+        <p>
+          Årets tema är <strong>SMAK</strong> &mdash; varje bokstav står för
+          något: <strong>S</strong> för smak, <strong>M</strong> för miljö,
+          <strong>A</strong> för aktivitet och <strong>K</strong> för
+          kreativitet.
+        </p>
+
+        <p>
+          På det välfyllda <strong>Smaktorget</strong> hittar du produkter från
+          lokala producenter. VMAB berättar hur vi bäst tar hand om
+          <strong>miljön</strong>, och trädgårdsmästarna är där som levande
+          exempel.
+        </p>
+
+        <p>
+          Det blir massor av <strong>aktiviteter</strong>! Skateboardhallen är
+          öppen, kyrkan har roliga barnaktiviteter. Om djuren är
+          samarbetsvilliga på morgonen kan du rida på kamel eller häst, åka vagn
+          efter lama och klappa söta alpackor.
+        </p>
+
+        <p>
+          ABU- och Skolmuseet har öppet med fri entré på andra sidan ån.
+          Biblioteket och fritidsgården bjuder på aktiviteter, och BM Design på
+          Nissavägen håller öppet.
+        </p>
+
+        <p>
+          <strong>Kreativiteten</strong> flödar hos Uppfinnarverkstaden, där du
+          kan prova 3D-printing, tälja i trä eller testa roliga experiment för
+          både barn och vuxna. Förhoppningsvis är deras drönare och robot redo
+          att visas också!
+        </p>
+
+        <p>
+          Du hittar konstnärer och hantverkare runtom på området och trubaduren
+          Jonathan står för musik och stämning.
+        </p>
+
+        <p>
+          Och självklart handlar det också om... <strong>smak!</strong> Du kan
+          stilla hungern hos Kvarnen eller Pizzerian, ta en kaffe i
+          Smörjgropscaféet vid ån, njuta av Gulfs grillade korv eller smaka
+          MINOS mjukglass på Smaktorget.
+        </p>
+      </div>
+    </main>
+
+    <footer
+      role="contentinfo"
+      style="text-align: center; padding: 2rem; color: white"
+    >
+      © 2025 Svängsta Samhällsförening
+    </footer>
+  </body>
+</html>
