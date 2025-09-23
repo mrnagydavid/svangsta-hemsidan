@@ -49,21 +49,8 @@
         background-position: center center;
       }
 
-      .hero::before,
-      .section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--overlay-color);
-        z-index: 1;
-      }
-
       .hero h1 {
         position: relative;
-        z-index: 2;
         font-size: 5rem;
         color: white;
         text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -76,7 +63,6 @@
         transform: translateX(-50%);
         font-size: 2rem;
         color: white;
-        z-index: 2;
         animation: bounce 2s infinite;
       }
 
@@ -134,7 +120,6 @@
         transform: translateX(-50%);
         font-size: 2rem;
         color: white;
-        z-index: 2;
         animation: bounce 2s infinite;
       }
 
@@ -150,7 +135,6 @@
 
       .section .text {
         position: relative;
-        z-index: 2;
         max-width: 800px;
         background: var(--glass-bg);
         padding: 2rem;
@@ -234,6 +218,87 @@
           background-position: 20% center;
         }
       }
+
+      #testimonials {
+        border-width: 6px 0;
+        border-style: solid;
+        border-color: white;
+        background-color: var(--testimonial-background-color1);
+        background-image: repeating-linear-gradient(
+          -45deg,
+          var(--testimonial-background-color1),
+          var(--testimonial-background-color1) 8px,
+          var(--testimonial-background-color2) 8px,
+          var(--testimonial-background-color2) 10px
+        );
+        min-height: auto;
+        padding: 2rem;
+      }
+
+      .testimonial-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 32px;
+        gap: 2rem;
+      }
+
+      .testimonial {
+        background: white;
+        border-radius: 12px;
+        padding: 4rem 1rem 1rem;
+        width: 300px;
+        height: 30vh;
+        position: relative;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .testimonial .quotation-mark {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        color: var(--testimonial-background-color2);
+        top: 8px;
+        left: 16px;
+      }
+
+      .testimonial .profile-pic {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid white;
+        display: grid;
+        place-items: center;
+      }
+
+      .testimonial .profile-pic img {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+      }
+
+      .testimonial .name {
+        font-weight: 200;
+        color: var(--accent-color);
+      }
+
+      .testimonial .quote {
+        font-style: italic;
+        font-size: 0.95rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
@@ -254,6 +319,67 @@
             nyrenoverade seniorlägenheter mitt i centrum &mdash; perfekt för
             alla livsskeden.
           </p>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section testimonials-section">
+        <h2>Vad tycker vi som flyttade här?</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="quotation-mark"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <div class="profile-pic">
+              <img src="images/testimonial-eniko-lorant.jpg" />
+            </div>
+            <div class="name">Enikő Lóránt</div>
+            <p class="quote">
+              "Jag älskar gemenskapen här - alla känner alla och hjälper
+              varandra."
+            </p>
+          </div>
+          <div class="testimonial">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="quotation-mark"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <div class="profile-pic">
+              <img src="images/testimonial-ida-ohlsson-nielsen.jpg" />
+            </div>
+            <div class="name">Ida Ohlsson Nielsen</div>
+            <p class="quote">
+              Vi köpte hus här på Moränvägen för några år sedan och ångrar oss
+              inte en sekund. Vi trivs så himla bra, så lungt och skönt!!
+              Perfekt för barnen, nära till skolan och förskolan, Abborregöl,
+              Hundsjön, fina promenadstigar i skogarna runtom. Kan inte bli
+              bättre!
+            </p>
+          </div>
         </div>
       </section>
 

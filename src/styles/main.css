@@ -1,11 +1,13 @@
 :root {
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, sans-serif;
-  --text-color: #222;
+  --text-color: #002918;
   --overlay-color: rgba(0, 0, 0, 0.4);
   --glass-bg: rgba(255, 255, 255, 0.45);
   --placeholder-color: #bbb;
   --accent-color: #00695c;
+  --testimonial-background-color1: #f3f8f7;
+  --testimonial-background-color2: #e6f1ef;
 }
 
 * {
