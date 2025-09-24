@@ -45,7 +45,7 @@
         justify-content: center;
         text-align: center;
         padding: 2rem;
-        background-image: url('images/svangsta-kyrka-01.jpg');
+        background-image: url('images/svangsta-fran-an.jpg');
         background-position: center center;
       }
 
@@ -133,6 +133,7 @@
         text-align: center;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
         color: white;
+        border-top: 4px solid white;
       }
 
       .section .text {
@@ -150,36 +151,47 @@
         margin-bottom: 1rem;
       }
 
-      #boende {
-        background-image: url('images/svart-hus-sommar.jpg');
+      .section .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
       }
 
-      #natur {
-        background-image: url('images/bendeguz-vid-sjon.jpg');
+      #boende .bg {
+        background-image: url('images/svart-hus-sommar-02.jpg');
       }
 
-      #forening {
-        background-image: url('images/traktor-och-motor.jpg');
+      #natur .bg {
+        background-image: url('images/hundsjon-01.jpg');
       }
 
-      #service {
-        background-image: url('images/klippa-hacken.jpg');
+      #forening .bg {
+        background-image: url('images/hammarlundsvagen-01.jpg');
       }
 
-      #historia {
+      #service .bg {
+        background-image: url('images/coop-01.jpg');
+      }
+
+      #historia .bg {
         background-image: url('images/abu-museet-guidebooksweden-cc.jpg');
+      }
+
+      #map-section {
+        padding: 0;
+        background: none;
+        color: black;
+        text-shadow: none;
+        min-height: 0;
       }
 
       .map {
         width: 100%;
         height: 500px;
-      }
-
-      .map-section {
-        padding: 0;
-        background: none;
-        color: black;
-        text-shadow: none;
       }
 
       @media (max-width: 768px) {
@@ -204,28 +216,49 @@
         }
 
         .section {
-          padding: 3rem 1rem;
-          justify-content: flex-start;
+          padding: 1rem;
+          background-color: var(--testimonial-background-color1);
+          background-image: repeating-linear-gradient(
+            -45deg,
+            var(--testimonial-background-color1),
+            var(--testimonial-background-color1) 8px,
+            var(--testimonial-background-color2) 8px,
+            var(--testimonial-background-color2) 10px
+          );
+          min-height: auto;
+          color: var(--text-color);
+          text-shadow: none;
         }
 
         .section h2 {
           font-size: 1.6rem;
         }
 
-        #natur {
-          background-image: url('images/bendeguz-vid-havet.jpg');
-          background-position: 30% center;
+        .section .bg {
+          display: block;
+          position: relative;
+          height: 300px;
+          border-radius: 12px 12px 0 0;
         }
 
-        #historia {
+        .section .text {
+          background: white;
+          padding: 2rem;
+          border-radius: 12px;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+
+        #historia .bg {
           background-position: 20% center;
+        }
+
+        #map-section {
+          padding: 0;
         }
       }
 
       #testimonials {
-        border-width: 6px 0;
-        border-style: solid;
-        border-color: white;
         background-color: var(--testimonial-background-color1);
         background-image: repeating-linear-gradient(
           -45deg,
@@ -316,6 +349,7 @@
 
     <main id="main-content" tabindex="-1">
       <section id="boende" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Bo i Svängsta</h2>
           <p>
@@ -389,6 +423,7 @@
       </section>
 
       <section id="natur" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Natur & Fritid</h2>
           <p>
@@ -403,6 +438,7 @@
       </section>
 
       <section id="forening" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Föreningsliv & Gemenskap</h2>
           <p>
@@ -415,6 +451,7 @@
       </section>
 
       <section id="service" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Service & Utbildning</h2>
           <p>
@@ -428,15 +465,17 @@
       </section>
 
       <section id="historia" class="section">
-        <div class="photo-credit">
-          <a
-            href="https://www.guidebook-sweden.com/en/guidebook/destination/abu-museet-industrial-museum-in-svaengsta"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Photo credit: GuidebookSweden"
-          >
-            Photo: GuidebookSweden
-          </a>
+        <div class="bg">
+          <div class="photo-credit">
+            <a
+              href="https://www.guidebook-sweden.com/en/guidebook/destination/abu-museet-industrial-museum-in-svaengsta"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Photo credit: GuidebookSweden"
+            >
+              Photo: GuidebookSweden
+            </a>
+          </div>
         </div>
         <div class="text">
           <h2>Historia & Kultur</h2>
@@ -448,7 +487,7 @@
         </div>
       </section>
 
-      <section class="map-section">
+      <section id="map-section" class="section">
         <div id="map" class="map"></div>
       </section>
     </main>
