@@ -45,25 +45,12 @@
         justify-content: center;
         text-align: center;
         padding: 2rem;
-        background-image: url('images/svangsta-kyrka-01.jpg');
+        background-image: url('images/svangsta-fran-an.jpg');
         background-position: center center;
-      }
-
-      .hero::before,
-      .section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--overlay-color);
-        z-index: 1;
       }
 
       .hero h1 {
         position: relative;
-        z-index: 2;
         font-size: 5rem;
         color: white;
         text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -76,7 +63,6 @@
         transform: translateX(-50%);
         font-size: 2rem;
         color: white;
-        z-index: 2;
         animation: bounce 2s infinite;
       }
 
@@ -134,7 +120,6 @@
         transform: translateX(-50%);
         font-size: 2rem;
         color: white;
-        z-index: 2;
         animation: bounce 2s infinite;
       }
 
@@ -146,11 +131,13 @@
         min-height: 65vh;
         padding: 4rem 1rem;
         text-align: center;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+        color: white;
+        border-top: 4px solid white;
       }
 
       .section .text {
         position: relative;
-        z-index: 2;
         max-width: 800px;
         background: var(--glass-bg);
         padding: 2rem;
@@ -162,37 +149,49 @@
       .section h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--accent-color);
       }
 
-      #boende {
-        background-image: url('images/svart-hus-sommar.jpg');
+      .section .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
       }
 
-      #natur {
-        background-image: url('images/bendeguz-vid-sjon.jpg');
+      #boende .bg {
+        background-image: url('images/svart-hus-sommar-02.jpg');
       }
 
-      #forening {
-        background-image: url('images/traktor-och-motor.jpg');
+      #natur .bg {
+        background-image: url('images/hundsjon-01.jpg');
       }
 
-      #service {
-        background-image: url('images/klippa-hacken.jpg');
+      #forening .bg {
+        background-image: url('images/hammarlundsvagen-01.jpg');
       }
 
-      #historia {
+      #service .bg {
+        background-image: url('images/coop-01.jpg');
+      }
+
+      #historia .bg {
         background-image: url('images/abu-museet-guidebooksweden-cc.jpg');
+      }
+
+      #map-section {
+        padding: 0;
+        background: none;
+        color: black;
+        text-shadow: none;
+        min-height: 0;
       }
 
       .map {
         width: 100%;
         height: 500px;
-      }
-
-      .map-section {
-        padding: 0;
-        background: none;
       }
 
       @media (max-width: 768px) {
@@ -217,22 +216,126 @@
         }
 
         .section {
-          padding: 3rem 1rem;
-          justify-content: flex-start;
+          padding: 1rem;
+          background-color: var(--testimonial-background-color1);
+          background-image: repeating-linear-gradient(
+            -45deg,
+            var(--testimonial-background-color1),
+            var(--testimonial-background-color1) 8px,
+            var(--testimonial-background-color2) 8px,
+            var(--testimonial-background-color2) 10px
+          );
+          min-height: auto;
+          color: var(--text-color);
+          text-shadow: none;
         }
 
         .section h2 {
           font-size: 1.6rem;
         }
 
-        #natur {
-          background-image: url('images/bendeguz-vid-havet.jpg');
-          background-position: 30% center;
+        .section .bg {
+          display: block;
+          position: relative;
+          height: 300px;
+          border-radius: 12px 12px 0 0;
         }
 
-        #historia {
+        .section .text {
+          background: white;
+          padding: 2rem;
+          border-radius: 12px;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+
+        #historia .bg {
           background-position: 20% center;
         }
+
+        #map-section {
+          padding: 0;
+        }
+      }
+
+      #testimonials {
+        background-color: var(--testimonial-background-color1);
+        background-image: repeating-linear-gradient(
+          -45deg,
+          var(--testimonial-background-color1),
+          var(--testimonial-background-color1) 8px,
+          var(--testimonial-background-color2) 8px,
+          var(--testimonial-background-color2) 10px
+        );
+        min-height: auto;
+        padding: 2rem;
+        color: var(--text-color);
+        text-shadow: none;
+      }
+
+      .testimonial-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 32px;
+        gap: 2rem;
+      }
+
+      .testimonial {
+        background: white;
+        border-radius: 12px;
+        padding: 4rem 1rem 1rem;
+        width: 330px;
+        position: relative;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .testimonial .quotation-mark {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        color: var(--testimonial-background-color2);
+        top: 8px;
+        left: 16px;
+      }
+
+      .testimonial .profile-pic {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid white;
+        display: grid;
+        place-items: center;
+      }
+
+      .testimonial .profile-pic img {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+      }
+
+      .testimonial .name {
+        font-weight: 200;
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+      }
+
+      .testimonial .quote {
+        font-style: italic;
+        font-size: 0.95rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -246,6 +349,7 @@
 
     <main id="main-content" tabindex="-1">
       <section id="boende" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Bo i Svängsta</h2>
           <p>
@@ -257,7 +361,73 @@
         </div>
       </section>
 
+      <section id="testimonials" class="section testimonials-section">
+        <h2>Vad tycker vi som flyttade här?</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="quotation-mark"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <div class="profile-pic">
+              <img src="images/testimonial-ida-ohlsson-nielsen.jpg" />
+            </div>
+            <div class="name">Ida Ohlsson Nielsen</div>
+            <p class="quote">
+              Vi köpte hus här på Moränvägen för några år sedan och ångrar oss
+              inte en sekund. Vi trivs så himla bra, så lungt och skönt!!
+              Perfekt för barnen, nära till skolan och förskolan, Abborregöl,
+              Hundsjön, fina promenadstigar i skogarna runtom. Kan inte bli
+              bättre!
+            </p>
+          </div>
+          <div class="testimonial">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="quotation-mark"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <div class="profile-pic">
+              <img src="images/testimonial-david-nagy.jpg" />
+            </div>
+            <div class="name">David Nagy</div>
+            <p class="quote">
+              Vi föll direkt för lugnet, naturen och att folk faktiskt vinkar
+              och ler. Svängsta har allt vi behöver i vardagen - och skulle
+              något ändå saknas, finns Karlshamn runt hörnet. Och på knappt en
+              timme når man större städer som Karlskrona, Kristianstad, Växjö. I
+              huvudstaden kan samma timme lätt gå åt bara till att sitta fast i
+              en rondell.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="natur" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Natur & Fritid</h2>
           <p>
@@ -272,6 +442,7 @@
       </section>
 
       <section id="forening" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Föreningsliv & Gemenskap</h2>
           <p>
@@ -284,6 +455,7 @@
       </section>
 
       <section id="service" class="section">
+        <div class="bg"></div>
         <div class="text">
           <h2>Service & Utbildning</h2>
           <p>
@@ -297,15 +469,17 @@
       </section>
 
       <section id="historia" class="section">
-        <div class="photo-credit">
-          <a
-            href="https://www.guidebook-sweden.com/en/guidebook/destination/abu-museet-industrial-museum-in-svaengsta"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Photo credit: GuidebookSweden"
-          >
-            Photo: GuidebookSweden
-          </a>
+        <div class="bg">
+          <div class="photo-credit">
+            <a
+              href="https://www.guidebook-sweden.com/en/guidebook/destination/abu-museet-industrial-museum-in-svaengsta"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Photo credit: GuidebookSweden"
+            >
+              Photo: GuidebookSweden
+            </a>
+          </div>
         </div>
         <div class="text">
           <h2>Historia & Kultur</h2>
@@ -317,7 +491,7 @@
         </div>
       </section>
 
-      <section class="map-section">
+      <section id="map-section" class="section">
         <div id="map" class="map"></div>
       </section>
     </main>
