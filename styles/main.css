@@ -47,8 +47,15 @@ body {
 body {
   font-family: var(--font-family);
   color: var(--text-color);
-  background-color: #fff;
   line-height: 1.6;
+  background-color: var(--testimonial-background-color1);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--testimonial-background-color1),
+    var(--testimonial-background-color1) 8px,
+    var(--testimonial-background-color2) 8px,
+    var(--testimonial-background-color2) 10px
+  );
 }
 
 a {
@@ -96,5 +103,19 @@ p + p {
   }
   60% {
     transform: translateX(-5px) translateY(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 18px;
   }
 }

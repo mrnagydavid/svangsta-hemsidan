@@ -128,7 +128,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: end;
-        min-height: 65vh;
+        min-height: 768px;
         padding: 4rem 1rem;
         text-align: center;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
@@ -175,6 +175,7 @@
 
       #service .bg {
         background-image: url('images/coop-01.jpg');
+        background-position: 35% center;
       }
 
       #historia .bg {
@@ -217,14 +218,6 @@
 
         .section {
           padding: 1rem;
-          background-color: var(--testimonial-background-color1);
-          background-image: repeating-linear-gradient(
-            -45deg,
-            var(--testimonial-background-color1),
-            var(--testimonial-background-color1) 8px,
-            var(--testimonial-background-color2) 8px,
-            var(--testimonial-background-color2) 10px
-          );
           min-height: auto;
           color: var(--text-color);
           text-shadow: none;
@@ -249,6 +242,15 @@
           -webkit-backdrop-filter: none;
         }
 
+        #boende .bg {
+          background-image: url('images/svart-hus-sommar.jpg');
+          background-position: 30% center;
+        }
+
+        #service .bg {
+          background-position: 35% center;
+        }
+
         #historia .bg {
           background-position: 20% center;
         }
@@ -259,14 +261,6 @@
       }
 
       #testimonials {
-        background-color: var(--testimonial-background-color1);
-        background-image: repeating-linear-gradient(
-          -45deg,
-          var(--testimonial-background-color1),
-          var(--testimonial-background-color1) 8px,
-          var(--testimonial-background-color2) 8px,
-          var(--testimonial-background-color2) 10px
-        );
         min-height: auto;
         padding: 2rem;
         color: var(--text-color);
