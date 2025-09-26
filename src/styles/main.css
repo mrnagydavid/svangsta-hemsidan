@@ -105,3 +105,17 @@ p + p {
     transform: translateX(-5px) translateY(-50%);
   }
 }
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
