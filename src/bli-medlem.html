@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bli medlem i Svängsta Samhällsföreningen</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-container {
+        min-height: calc(100vh - 62px - 4rem);
+        margin: 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        background-color: white;
+        width: 80%;
+        max-width: 1024px;
+      }
+
+      .image {
+        height: 300px;
+        background-image: url('images/samhallsforening-mote-01.webp');
+        background-position: center center;
+        background-size: cover;
+        border-radius: 12px 12px 0 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      .image h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+      }
+
+      .swish-qr {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .swish-qr img {
+        width: 200px;
+        height: 220px;
+      }
+
+      footer {
+        width: 100%;
+        height: 62px;
+      }
+
+      @media (max-width: 768px) {
+        .image h1 {
+          font-size: 2rem;
+        }
+
+        footer {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image">
+        <h1>Vara med oss!</h1>
+      </div>
+      <div
+        class="content"
+        style="padding: 2rem; font-size: 1.1rem; line-height: 1.7; color: #333"
+      >
+        <p>
+          Tillsammans formar vi framtidens Svängsta. Föreningen arbetar för att
+          bevara det fina som redan finns här, samtidigt som vi driver nya idéer
+          och projekt som gör vår by ännu mer levande och attraktiv.
+        </p>
+        <p>
+          Medlemskapet kostar <strong>50 kr</strong> per år, men om du vill ge
+          lite extra stöd är det självklart välkommet. Det är inte summan som
+          betyder mest - det är att du är med. Ditt medlemskap är på många sätt
+          den bensin som driver Svängsta framåt.
+        </p>
+        <p>
+          💚 Swish: <strong>123 214 28 34</strong><br />
+          💚 Bankgiro: <strong>690-7042</strong>
+        </p>
+        <p>
+          Glöm inte att skriva din e-postadress i meddelandefältet så att vi kan
+          bekräfta ditt medlemskap och hålla dig uppdaterad om vad som händer i
+          Svängsta.
+        </p>
+        <div class="swish-qr">
+          <img src="images/swish-qr-1000x.webp" />
+        </div>
+      </div>
+    </div>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
