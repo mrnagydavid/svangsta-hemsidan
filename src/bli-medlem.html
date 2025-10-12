@@ -41,14 +41,21 @@
         text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
       }
 
-      .swish-qr {
-        text-align: center;
+      .qr-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin-top: 1rem;
       }
 
-      .swish-qr img {
+      .qr-logo .swish-qr {
         width: 200px;
         height: 220px;
+      }
+
+      .qr-logo .logo {
+        width: 200px;
+        height: 200px;
       }
 
       footer {
@@ -61,6 +68,11 @@
           font-size: 2rem;
         }
 
+        .qr-logo {
+          flex-direction: column;
+          align-items: center;
+        }
+
         footer {
           height: auto;
         }
@@ -70,7 +82,7 @@
   <body>
     <div class="main-container">
       <div class="image">
-        <h1>Vara med oss!</h1>
+        <h1>Svängsta Samhällsföreningen</h1>
       </div>
       <div
         class="content"
@@ -96,8 +108,12 @@
           bekräfta ditt medlemskap och hålla dig uppdaterad om vad som händer i
           Svängsta.
         </p>
-        <div class="swish-qr">
-          <img src="images/swish-qr-1000x.webp" />
+        <div class="qr-logo">
+          <img class="swish-qr" src="images/swish-qr-1000x.webp" />
+          <img
+            class="logo"
+            src="images/svangsta-samhallsforening-logo-transparent.webp"
+          />
         </div>
       </div>
     </div>
