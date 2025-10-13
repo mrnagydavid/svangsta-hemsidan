@@ -1,31 +1,37 @@
-const map = L.map('map', {
-  dragging: false,
-  tap: false,
-  scrollWheelZoom: false,
-  doubleClickZoom: false,
-  boxZoom: false,
-  keyboard: false,
-  zoomControl: false,
-  attributionControl: true,
-}).setView([56.2508, 14.7847], 10)
+setupMap()
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors',
-}).addTo(map)
+function setupMap() {
+  if (!document.getElementById('map')) return
 
-L.marker([56.2508, 14.7847]).addTo(map).bindPopup('Svängsta').openPopup()
+  const map = L.map('map', {
+    dragging: false,
+    tap: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    boxZoom: false,
+    keyboard: false,
+    zoomControl: false,
+    attributionControl: true,
+  }).setView([56.2508, 14.7847], 10)
 
-let interactionEnabled = false
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+  }).addTo(map)
 
-map.on('click', () => {
-  if (!interactionEnabled) {
-    map.dragging.enable()
-    map.tap?.enable()
-    map.scrollWheelZoom.enable()
-    map.doubleClickZoom.enable()
-    map.boxZoom.enable()
-    map.keyboard.enable()
-    map.zoomControl.enable()
-    interactionEnabled = true
-  }
-})
+  L.marker([56.2508, 14.7847]).addTo(map).bindPopup('Svängsta').openPopup()
+
+  let interactionEnabled = false
+
+  map.on('click', () => {
+    if (!interactionEnabled) {
+      map.dragging.enable()
+      map.tap?.enable()
+      map.scrollWheelZoom.enable()
+      map.doubleClickZoom.enable()
+      map.boxZoom.enable()
+      map.keyboard.enable()
+      map.zoomControl.enable()
+      interactionEnabled = true
+    }
+  })
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bli medlem i Svängsta Samhällsföreningen</title>
+    <title>Svängsta Samhällsförening - bli medlem</title>
     <link rel="stylesheet" href="styles/main.css" />
     <style>
       body {
@@ -18,7 +18,7 @@
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         background-color: white;
-        width: 80%;
+        width: 90%;
         max-width: 1024px;
       }
 
@@ -32,6 +32,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+        position: relative;
       }
 
       .image h1 {
@@ -39,6 +40,14 @@
         font-size: 3rem;
         color: white;
         text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+        max-width: 100%;
+        word-break: break-word;
+      }
+
+      .content {
+        padding: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
       }
 
       .qr-logo {
@@ -64,6 +73,10 @@
       }
 
       @media (max-width: 768px) {
+        .main-container {
+          margin: 1rem;
+        }
+
         .image h1 {
           font-size: 2rem;
         }
@@ -79,15 +92,21 @@
       }
     </style>
   </head>
+
   <body>
     <div class="main-container">
       <div class="image">
-        <h1>Svängsta Samhällsföreningen</h1>
+        <h1>Svängsta Samhällsförening</h1>
+        <a
+          href="index.html"
+          class="back-button"
+          role="link"
+          aria-label="Tillbaka till startsidan"
+        >
+          <div class="go-back-indicator" aria-hidden="true">←</div>
+        </a>
       </div>
-      <div
-        class="content"
-        style="padding: 2rem; font-size: 1.1rem; line-height: 1.7; color: #333"
-      >
+      <div class="content">
         <p>
           Tillsammans formar vi framtidens Svängsta. Föreningen arbetar för att
           bevara det fina som redan finns här, samtidigt som vi driver nya idéer
@@ -110,10 +129,7 @@
         </p>
         <div class="qr-logo">
           <img class="swish-qr" src="images/swish-qr-1000x.webp" />
-          <img
-            class="logo"
-            src="images/svangsta-samhallsforening-logo-transparent.webp"
-          />
+          <img class="logo" src="images/svangsta-logo-transparent.webp" />
         </div>
       </div>
     </div>
