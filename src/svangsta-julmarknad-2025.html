@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Svängsta Julmarknad 2025 - Svängsta Kultur- och Hembygdsförening
+    </title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-container {
+        min-height: calc(100vh - 62px - 4rem);
+        margin: 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        background-color: white;
+        width: 90%;
+        max-width: 1024px;
+      }
+
+      .image {
+        height: 300px;
+        background-image: url('images/svangsta-julmarknad-2024-01.webp');
+        background-position: center center;
+        background-size: cover;
+        border-radius: 12px 12px 0 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+      }
+
+      .image h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+        max-width: 100%;
+        word-break: break-word;
+      }
+
+      .content {
+        padding: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .content p + p {
+        margin-top: 4rem;
+      }
+
+      .qr-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .qr-logo .swish-qr {
+        width: 200px;
+        height: 220px;
+      }
+
+      .qr-logo .logo {
+        width: 200px;
+        height: 200px;
+      }
+
+      footer {
+        width: 100%;
+        height: 62px;
+      }
+
+      @media (max-width: 768px) {
+        .main-container {
+          margin: 1rem;
+        }
+
+        .image h1 {
+          font-size: 2rem;
+        }
+
+        .qr-logo {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        footer {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="image">
+        <h1>Svängsta Julmarknad 2025</h1>
+        <a
+          href="index.html"
+          class="back-button"
+          role="link"
+          aria-label="Tillbaka till startsidan"
+        >
+          <div class="go-back-indicator" aria-hidden="true">←</div>
+        </a>
+      </div>
+      <div class="content">
+        <p>
+          Julmarknad i Svängsta medborgarhus Söndagen den 23/11 mellan kl. 10:00
+          - 16:00.
+        </p>
+        <p>Jultallriken serveras mellan kl. 11:00 - 15:00</p>
+        <p>
+          Mer information kommer på
+          <a href="https://www.facebook.com/groups/542032873677317">
+            Hembygdsföreningens facebooksida
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
