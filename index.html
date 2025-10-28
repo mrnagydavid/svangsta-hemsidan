@@ -79,6 +79,7 @@
         position: absolute;
         bottom: 20px;
         left: 20px;
+        transform: rotateZ(10deg);
       }
 
       .hero .scribble .arrow {
@@ -120,17 +121,18 @@
       .announcement-banner {
         position: absolute;
         top: 90px;
-        left: -100px;
-        width: 840px;
+        left: -770px;
+        width: 2000px;
         transform-origin: center;
-        transform: rotate(-30deg);
+        transform: rotate(-37deg);
         z-index: 3;
         pointer-events: auto;
         transition: all 0.3s ease;
+        text-shadow: none;
       }
 
       .announcement-banner:hover {
-        transform: rotate(-30deg) scale(1.05);
+        transform: rotate(-37deg) scale(1.05);
       }
 
       .announcement-banner:hover .announcement {
@@ -141,11 +143,12 @@
       .announcement {
         background: linear-gradient(180deg, #ffd001 0%, #ffc107 100%);
         color: #222;
-        font-weight: bold;
-        font-size: 1.4rem;
         padding: 1rem 0;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .announcement h1 {
+        font-size: 1.8rem;
       }
 
       .announcement-indicator {
@@ -261,14 +264,13 @@
         }
 
         .announcement-banner {
-          left: -110px;
-          width: 630px;
+          left: -250px;
+          width: 800px;
           top: 60px;
         }
 
-        .announcement {
-          font-size: 1rem;
-          padding: 0.7rem 0;
+        .announcement h1 {
+          font-size: 1.4rem;
         }
 
         .scroll-indicator,
@@ -434,6 +436,24 @@
         </svg>
         <div class="label scribble-font">Mörrumsån</div>
       </div>
+      <a
+        href="./svangsta-julmarknad-2025.html"
+        style="text-decoration: none; color: inherit"
+        class="annoucement-link"
+        aria-label="Gå till information om Svängsta Julmarknaden 2025"
+      >
+        <div class="announcement-banner">
+          <div
+            class="announcement"
+            role="link"
+            aria-label="Mer information om Svängsta Julmarknaden"
+          >
+            <h1>🎄 Svängsta Julmarknad ☃️</h1>
+            <p>📆 23 November kl 10-16 📌 Medborgarhuset</p>
+          </div>
+          <div class="announcement-indicator" aria-hidden="true">↑</div>
+        </div>
+      </a>
       <div class="scroll-indicator" aria-hidden="true" role="presentation">
         ↓
       </div>
