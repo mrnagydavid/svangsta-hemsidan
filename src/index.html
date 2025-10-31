@@ -121,10 +121,10 @@
       .announcement-banner {
         position: absolute;
         top: 90px;
-        left: -770px;
+        right: -770px;
         width: 2000px;
         transform-origin: center;
-        transform: rotate(-37deg);
+        transform: rotate(37deg);
         z-index: 3;
         pointer-events: auto;
         transition: all 0.3s ease;
@@ -132,7 +132,7 @@
       }
 
       .announcement-banner:hover {
-        transform: rotate(-37deg) scale(1.05);
+        transform: rotate(37deg) scale(1.05);
       }
 
       .announcement-banner:hover .announcement {
@@ -264,9 +264,10 @@
         }
 
         .announcement-banner {
-          left: -250px;
+          right: -270px;
           width: 800px;
           top: 60px;
+          transform: rotate(45deg);
         }
 
         .announcement h1 {
@@ -620,6 +621,39 @@
         >. Alla rättigheter förbehållna.
       </p>
     </footer>
+
+    <div id="menu" aria-hidden="false">
+      <button
+        class="hamburger-btn"
+        aria-label="Meny"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        &#x11054;
+      </button>
+    </div>
+
+    <nav id="menu-drawer" class="menu-nav">
+      <div id="menu-close" aria-hidden="false">
+        <button
+          class="close-btn"
+          aria-label="Stäng meny"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          &#x2715;
+        </button>
+      </div>
+
+      <ul>
+        <li>
+          <a href="svangsta-julmarknad-2025.html">🎄 Julmarknad 2025 ☃️</a>
+        </li>
+        <hr />
+        <li><a href="index.html">Startsidan</a></li>
+        <li><a href="bli-medlem.html">Bli medlem</a></li>
+      </ul>
+    </nav>
 
     <script src="scripts/main.js"></script>
   </body>

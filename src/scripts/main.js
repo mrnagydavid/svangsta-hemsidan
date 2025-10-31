@@ -1,6 +1,11 @@
+let isMapSetUp = false
 setupMap()
 
+let isHamburgerMenuSetUp = false
+setupHamburgerMenu()
+
 function setupMap() {
+  if (isMapSetUp) return
   if (!document.getElementById('map')) return
 
   const map = L.map('map', {
@@ -34,4 +39,58 @@ function setupMap() {
       interactionEnabled = true
     }
   })
+
+  isMapSetUp = true
+}
+
+function setupHamburgerMenu() {
+  if (isHamburgerMenuSetUp) return
+
+  const menuDiv = document.getElementById('menu')
+  if (!menuDiv) return
+
+  let isOpen = false
+  const menuDrawerDiv = document.getElementById('menu-drawer')
+  const menuBtn = menuDiv.getElementsByClassName('hamburger-btn')[0]
+  const closeMenuBtn = menuDrawerDiv.getElementsByClassName('close-btn')[0]
+
+  menuBtn.addEventListener('click', (event) => {
+    if (isOpen) return
+
+    event.stopPropagation()
+    openMenu()
+  })
+
+  closeMenuBtn.addEventListener('click', (event) => {
+    if (!isOpen) return
+
+    event.stopPropagation()
+    closeMenu()
+  })
+
+  document.addEventListener('click', (event) => {
+    if (!isOpen) return
+
+    const { target } = event
+
+    if (menuDiv.contains(target) || menuDrawerDiv.contains(target)) {
+      return
+    }
+
+    closeMenu()
+  })
+
+  isHamburgerMenuSetUp = true
+
+  function openMenu() {
+    menuDrawerDiv.classList.add('open')
+    menuDiv.classList.add('hide')
+    isOpen = true
+  }
+
+  function closeMenu() {
+    menuDrawerDiv.classList.remove('open')
+    menuDiv.classList.remove('hide')
+    isOpen = false
+  }
 }
