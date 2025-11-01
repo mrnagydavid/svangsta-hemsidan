@@ -15,13 +15,15 @@
       }
 
       .main-container {
-        min-height: calc(100vh - 62px - 4rem);
+        max-height: calc(100vh - 62px - 4rem);
         margin: 2rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         background-color: white;
         width: 90%;
         max-width: 1024px;
+        color: var(--text-color-greenish);
+        flex: 1;
       }
 
       .image {
@@ -54,8 +56,8 @@
         justify-content: space-evenly;
       }
 
-      .content p + p {
-        margin-top: 4rem;
+      .content p + h3 {
+        margin-top: 2rem;
       }
 
       .qr-logo {
@@ -75,14 +77,10 @@
         height: 200px;
       }
 
-      footer {
-        width: 100%;
-        height: 62px;
-      }
-
       @media (max-width: 768px) {
         .main-container {
           margin: 1rem;
+          max-height: none;
         }
 
         .image h1 {
@@ -92,10 +90,6 @@
         .qr-logo {
           flex-direction: column;
           align-items: center;
-        }
-
-        footer {
-          height: auto;
         }
       }
     </style>
@@ -115,13 +109,29 @@
         </a>
       </div>
       <div class="content">
+        <h3>📆 När? ⏰</h3>
         <p>
-          Julmarknad i Svängsta medborgarhus Söndagen den 23/11 mellan kl. 10:00
-          - 16:00.
+          Söndagen den 23/11 mellan kl. 10-16<br />
+          <a
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251123T090000Z%2F20251123T150000Z&details=Mer%20information%20kommer%20p%C3%A5%20Sv%C3%A4ngsta%20Hembygdsf%C3%B6reningens%20facebooksida%20&location=Sv%C3%A4ngsta%2C%20Medborgarhuset&text=Sv%C3%A4ngsta%20Julmarknad"
+            target="_blank"
+            >Lägga till evenemanget i din kalender</a
+          >
         </p>
-        <p>Jultallriken serveras mellan kl. 11:00 - 15:00</p>
+
+        <h3>🗺️ Var? 📌</h3>
         <p>
-          Mer information kommer på
+          Medborgarhuset<br />
+          <a href="https://maps.app.goo.gl/cqtV5jcQp9joN7Fu9"
+            >Öppna platsen i Google Maps</a
+          >
+        </p>
+        <h3>🍗 Vad? 🌭</h3>
+        <p>Jultallriken serveras mellan kl. 11-15</p>
+
+        <h3>🧐 Vad mer? 🥳</h3>
+        <p>
+          Mer information kommer på<br />
           <a href="https://www.facebook.com/groups/542032873677317">
             Hembygdsföreningens facebooksida
           </a>
@@ -129,7 +139,7 @@
       </div>
     </div>
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="push-down">
       <p>
         © 2025
         <a href="https://www.facebook.com/profile.php?id=100089800479956"

@@ -42,6 +42,7 @@ html,
 body {
   overflow-x: hidden;
   font-size: 18px;
+  min-height: 100vh;
 }
 
 body {
@@ -66,9 +67,11 @@ a {
 footer {
   text-align: center;
   padding: 1rem 1rem;
-  background-color: var(--accent-color);
-  color: white;
-  font-size: 0.9rem;
+  color: var(--accent-color);
+  background-color: white;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 62px;
 }
 
 p + p {
@@ -221,5 +224,9 @@ p + p {
   html,
   body {
     font-size: 18px;
+  }
+
+  footer {
+    height: auto;
   }
 }
