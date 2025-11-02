@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svängsta - 404</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image {
+        background-image: url('images/ang-02.jpg');
+      }
+
+      .content p + h3 {
+        margin-top: 2rem;
+      }
+
+      .main-container {
+        flex: 0;
+      }
+
+      .content {
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      @media (max-width: 768px) {
+        .main-container {
+          margin: 1rem;
+          max-height: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="image">
+        <h1>🔍 Svängsta 404 🔎</h1>
+        <a
+          href="index.html"
+          class="back-button"
+          role="link"
+          aria-label="Tillbaka till startsidan"
+        >
+          <div class="go-back-indicator" aria-hidden="true">←</div>
+        </a>
+      </div>
+      <div class="content">
+        <p>
+          I Svängsta hittar du nästan allt &mdash; men inte den här sidan,
+          tyvärr. 🕵
+        </p>
+        <p>
+          <strong
+            ><a href="./index.html">Gå tillbaka till startsidan</a></strong
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer role="contentinfo" class="push-down">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
