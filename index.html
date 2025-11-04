@@ -124,22 +124,6 @@
         animation: bounce 2s infinite;
       }
 
-      @keyframes bounce {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-          transform: translateX(-50%) translateY(0);
-        }
-        40% {
-          transform: translateX(-50%) translateY(-10px);
-        }
-        60% {
-          transform: translateX(-50%) translateY(-5px);
-        }
-      }
-
       .announcement-banner {
         position: absolute;
         top: 90px;
@@ -259,6 +243,142 @@
         height: 500px;
       }
 
+      #testimonials {
+        min-height: auto;
+        padding: 2rem;
+        color: var(--text-color-greenish);
+        text-shadow: none;
+      }
+
+      .testimonial-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 32px;
+        gap: 2rem;
+      }
+
+      .testimonial {
+        background: white;
+        border-radius: 12px;
+        padding: 4rem 1rem 1rem;
+        width: 330px;
+        position: relative;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .testimonial .quotation-mark {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        color: var(--testimonial-background-color2);
+        top: 8px;
+        left: 16px;
+      }
+
+      .testimonial .profile-pic {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid white;
+        display: grid;
+        place-items: center;
+      }
+
+      .testimonial .profile-pic img {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+      }
+
+      .testimonial .name {
+        font-weight: 200;
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+      }
+
+      .testimonial .quote {
+        font-style: italic;
+        font-size: 0.95rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #miriam.testimonial {
+        width: 450px;
+      }
+
+      .testimonial-tip {
+        margin-top: 1rem;
+        border-top: 1px solid var(--placeholder-color);
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+
+      .testimonial-tip img {
+        height: 40px;
+        width: 40px;
+        animation: rotate-shake 1s ease-in-out;
+        transform-origin: bottom;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        40% {
+          transform: translateX(-50%) translateY(-10px);
+        }
+        60% {
+          transform: translateX(-50%) translateY(-5px);
+        }
+      }
+
+      @keyframes rotate-shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        15% {
+          transform: rotate(-3deg);
+        }
+        30% {
+          transform: rotate(3deg);
+        }
+        45% {
+          transform: rotate(-2deg);
+        }
+        60% {
+          transform: rotate(2deg);
+        }
+        75% {
+          transform: rotate(0);
+        }
+        90% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
       @media (max-width: 1024px) {
         html,
         body {
@@ -347,78 +467,18 @@
         #map-section {
           padding: 0;
         }
-      }
 
-      #testimonials {
-        min-height: auto;
-        padding: 2rem;
-        color: var(--text-color-greenish);
-        text-shadow: none;
-      }
+        .testimonial + .testimonial {
+          margin-top: 1rem;
+        }
 
-      .testimonial-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 32px;
-        gap: 2rem;
-      }
+        #miriam.testimonial {
+          width: 330px;
+        }
 
-      .testimonial {
-        background: white;
-        border-radius: 12px;
-        padding: 4rem 1rem 1rem;
-        width: 330px;
-        position: relative;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-      }
-
-      .testimonial .quotation-mark {
-        position: absolute;
-        width: 64px;
-        height: 64px;
-        color: var(--testimonial-background-color2);
-        top: 8px;
-        left: 16px;
-      }
-
-      .testimonial .profile-pic {
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 6px solid white;
-        display: grid;
-        place-items: center;
-      }
-
-      .testimonial .profile-pic img {
-        width: 84px;
-        height: 84px;
-        border-radius: 50%;
-      }
-
-      .testimonial .name {
-        font-weight: 200;
-        color: var(--accent-color);
-        margin-bottom: 1rem;
-      }
-
-      .testimonial .quote {
-        font-style: italic;
-        font-size: 0.95rem;
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .testimonial-tip {
+          font-size: inherit;
+        }
       }
     </style>
   </head>
@@ -507,6 +567,53 @@
       <section id="testimonials" class="section testimonials-section">
         <h2>Vad tycker vi som flyttade här?</h2>
         <div class="testimonial-container">
+          <div id="miriam" class="testimonial">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="quotation-mark"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <div class="profile-pic">
+              <img src="images/testimonial-miriam-samuelsson.jpg" />
+            </div>
+            <div class="name">Miriam Samuelsson</div>
+            <p class="quote">
+              Vår familj trivs så bra i Svängsta och kan helhjärtat rekommendera
+              att bo här. Flyttade in som nygifta sommaren 2015 i ett hus på
+              Öjavad. 2022 föddes vår dotter. Här fick vi vackra
+              naturomgivningar, mycket hus för pengarna och en trygg
+              grannsamverkan. Det finns alla bekvämligheter vi behöver nära till
+              hands.
+            </p>
+
+            <div class="testimonial-tip">
+              <img src="images/bulb.svg" alt="Light bulb icon" />
+              <p>
+                Miriam driver ett Insta konto med nyheter och intressanta små
+                fakta om Svängsta.
+                <strong
+                  ><a
+                    href="https://www.instagram.com/svangstamirre/"
+                    target="_blank"
+                    >Följ det</a
+                  ></strong
+                >
+                för att alltid ha koll på vad som händer i trakten!
+              </p>
+            </div>
+          </div>
+
           <div class="testimonial">
             <svg
               viewBox="0 0 24 24"
