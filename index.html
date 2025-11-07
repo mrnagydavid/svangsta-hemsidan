@@ -415,6 +415,10 @@
           transform: rotate(45deg);
         }
 
+        .announcement-banner:hover {
+          transform: rotate(45deg) scale(1.05);
+        }
+
         .announcement h1 {
           font-size: 1.4rem;
         }
@@ -548,9 +552,11 @@
           <div class="announcement-indicator" aria-hidden="true">↑</div>
         </div>
       </a>
-      <div class="scroll-indicator" aria-hidden="true" role="presentation">
-        ↓
-      </div>
+      <a href="#main-content"
+        ><div class="scroll-indicator" aria-hidden="true" role="presentation">
+          ↓
+        </div></a
+      >
     </header>
 
     <main id="main-content" tabindex="-1">
@@ -566,8 +572,10 @@
           </p>
           <p>
             Bor du redan här?
-            <a href="forening-svangstasamhalls.html">Vara med oss</a> i Svängsta
-            samhällsföreningen!
+            <strong
+              ><a href="forening-svangstasamhalls.html">Vara med oss</a></strong
+            >
+            i Svängsta samhällsföreningen!
           </p>
         </div>
       </section>
@@ -707,7 +715,9 @@
             Bygg starka band i ett levande samhälle. I Svängsta finns ett rikt
             föreningsliv med idrottsföreningar, kulturverksamhet, skatehall,
             LAN-evenemang och mycket mer. Här finns något för alla åldrar och
-            intressen. <a href="./foreningar.html">👉 Läs mer! 👈</a>
+            intressen. 👉<strong
+              ><a href="./foreningar.html">Läs mer!</a></strong
+            >👈
           </p>
         </div>
       </section>
@@ -791,7 +801,7 @@
           <a href="svangsta-julmarknad-2025.html">🎄 Julmarknad 2025 ☃️</a>
         </li>
         <hr />
-        <li><a href="foreningar.html">Vår föreningar</a></li>
+        <li><a href="foreningar.html">Föreningsliv & Gemenskap</a></li>
         <ul>
           <li><a href="forening-svangstasamhalls.html">Samhällsförening</a></li>
           <li><a href="forening-svangstatragard.html">Trägårdsförening</a></li>

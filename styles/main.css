@@ -41,6 +41,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-size: 18px;
   min-height: 100vh;
 }
@@ -185,22 +186,28 @@ p + p {
   gap: 1rem;
 }
 
+#menu-drawer > ul {
+  padding-top: 2rem;
+}
+
 #menu-drawer li {
   color: var(--text-color);
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
-  padding: 0.5rem 1.25rem;
+  padding: 0 1.25rem;
   display: inline-block;
   width: 100%;
 }
 
 #menu-drawer ul > ul > li {
-  padding-left: 2rem;
+  padding: 0 1.25rem 0 2rem;
+  font-size: 1.3rem;
 }
 
 #menu-drawer a {
   text-decoration: none;
+  display: inline-block;
   width: 100%;
 }
 
