@@ -41,6 +41,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-size: 18px;
   min-height: 100vh;
 }
