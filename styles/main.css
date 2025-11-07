@@ -59,9 +59,17 @@ body {
   );
 }
 
+h2 {
+  margin-bottom: 2rem;
+}
+
 a {
   color: inherit;
   text-decoration: underline;
+}
+
+ul {
+  padding-left: 2rem;
 }
 
 footer {
@@ -74,7 +82,7 @@ footer {
 }
 
 p + p {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .go-back-indicator {
@@ -177,7 +185,7 @@ p + p {
   gap: 1rem;
 }
 
-#menu-drawer a {
+#menu-drawer li {
   color: var(--text-color);
   font-size: 1.5rem;
   text-decoration: none;
@@ -187,8 +195,21 @@ p + p {
   width: 100%;
 }
 
+#menu-drawer ul > ul > li {
+  padding-left: 2rem;
+}
+
+#menu-drawer a {
+  text-decoration: none;
+  width: 100%;
+}
+
 #menu-drawer li:hover {
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+#menu-drawer li.group:hover {
+  background-color: inherit;
 }
 
 #menu-drawer a:focus {
