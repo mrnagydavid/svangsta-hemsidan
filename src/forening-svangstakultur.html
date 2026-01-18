@@ -43,7 +43,9 @@
   <body class="subpage">
     <div class="main-container">
       <div class="image">
-        <video muted loop playsinline></video>
+        <video muted loop playsinline autoplay preload="auto">
+          <source src="images/kulturforening-anim-02.mp4" type="video/mp4">
+        </video>
         <a
           href="index.html"
           class="back-button"
@@ -122,16 +124,30 @@
     <script>
       ;(function () {
         const video = document.querySelector('.image video')
-        video.src = 'images/kulturforening-anim-02.mp4'
 
-        video.addEventListener(
-          'canplaythrough',
-          function () {
-            video.play()
-            video.classList.add('loaded')
-          },
-          { once: true },
-        )
+        function showVideo() {
+          video.classList.add('loaded')
+        }
+
+        // Try to play and show video when ready
+        function tryPlay() {
+          const playPromise = video.play()
+          if (playPromise !== undefined) {
+            playPromise.then(showVideo).catch(function () {
+              // Autoplay was prevented, show video anyway (it will be paused)
+              showVideo()
+            })
+          } else {
+            showVideo()
+          }
+        }
+
+        // If video is already ready, play immediately
+        if (video.readyState >= 3) {
+          tryPlay()
+        } else {
+          video.addEventListener('canplay', tryPlay, { once: true })
+        }
       })()
     </script>
   </body>
