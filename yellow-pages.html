@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Företag & Service i Svängsta" />
+    <meta
+      property="og:description"
+      content="Upptäck alla företag, tjänster och verksamheter i och kring Svängsta. Ett levande samhälle med allt du behöver."
+    />
+    <meta property="og:url" content="https://svangsta.se/yellow-pages.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <title>Företag & Service | Svängsta</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      :root {
+        --yp-accent: #145240;
+        --yp-accent-light: #e9f5ec;
+        --yp-text: #1f2937;
+        --yp-text-muted: #6b7280;
+        --yp-bg: #f8fafc;
+        --yp-card-bg: #ffffff;
+        --yp-border: rgba(0, 0, 0, 0.08);
+      }
+
+      body {
+        background: var(--yp-bg);
+        background-image: none;
+        min-height: 100vh;
+      }
+
+      /* Hero Section */
+      .yp-hero {
+        background: linear-gradient(135deg, var(--yp-accent) 0%, #1a6b54 100%);
+        color: white;
+        padding: 4rem 2rem 3rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .yp-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.5;
+      }
+
+      .yp-hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .yp-hero h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .yp-hero p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
+      }
+
+      .yp-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .yp-stat {
+        text-align: center;
+      }
+
+      .yp-stat-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .yp-stat-label {
+        font-size: 0.9rem;
+        opacity: 0.85;
+        margin-top: 0.25rem;
+      }
+
+      /* Filter Section */
+      .yp-search-section {
+        background: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .yp-search-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .yp-filter-buttons {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .yp-filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        border: 2px solid var(--yp-border);
+        border-radius: 20px;
+        background: white;
+        color: var(--yp-text);
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+
+      .yp-filter-btn:hover {
+        border-color: var(--yp-accent);
+        color: var(--yp-accent);
+      }
+
+      .yp-filter-btn.active {
+        background: var(--yp-accent);
+        border-color: var(--yp-accent);
+        color: white;
+      }
+
+      /* Main Content */
+      .yp-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      /* Category Section */
+      .yp-category {
+        margin-bottom: 3rem;
+      }
+
+      .yp-category-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid var(--yp-accent-light);
+      }
+
+      .yp-category-icon {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--yp-accent-light);
+        border-radius: 10px;
+      }
+
+      .yp-category-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--yp-accent);
+        margin: 0;
+      }
+
+      .yp-category-count {
+        font-size: 0.85rem;
+        color: var(--yp-text-muted);
+        margin-left: auto;
+      }
+
+      /* Cards Grid */
+      .yp-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.25rem;
+      }
+
+      .yp-card {
+        background: var(--yp-card-bg);
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--yp-border);
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .yp-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .yp-card-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .yp-card-emoji {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .yp-card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--yp-text);
+        margin: 0;
+        line-height: 1.3;
+      }
+
+      .yp-card-category {
+        font-size: 0.8rem;
+        color: var(--yp-text-muted);
+        margin-top: 0.15rem;
+      }
+
+      .yp-card-description {
+        font-size: 0.95rem;
+        color: var(--yp-text);
+        margin-bottom: 1rem;
+        flex-grow: 1;
+        line-height: 1.5;
+      }
+
+      .yp-card-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--yp-border);
+      }
+
+      .yp-card-contact {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--yp-text);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .yp-card-contact:hover {
+        color: var(--yp-accent);
+      }
+
+      .yp-card-contact-icon {
+        flex-shrink: 0;
+        width: 18px;
+        text-align: center;
+      }
+
+      .yp-card-contact-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      /* No results */
+      .yp-no-results {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: var(--yp-text-muted);
+      }
+
+      .yp-no-results-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        opacity: 0.5;
+      }
+
+      .yp-no-results h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: var(--yp-text);
+      }
+
+      /* Footer CTA */
+      .yp-cta {
+        background: var(--yp-accent-light);
+        padding: 3rem 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .yp-cta h2 {
+        font-size: 1.6rem;
+        color: var(--yp-accent);
+        margin-bottom: 0.75rem;
+      }
+
+      .yp-cta p {
+        color: var(--yp-text);
+        max-width: 500px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .yp-cta-btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--yp-accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: background 0.2s;
+      }
+
+      .yp-cta-btn:hover {
+        background: #1a6b54;
+        color: white;
+      }
+
+      /* Hidden */
+      .yp-hidden {
+        display: none !important;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .yp-hero {
+          padding: 4rem 1.5rem 2rem;
+        }
+
+        .yp-hero-content {
+          padding-top: 1rem;
+        }
+
+        .yp-hero h1 {
+          font-size: 2rem;
+        }
+
+        .yp-hero p {
+          font-size: 1rem;
+        }
+
+        .yp-stats {
+          gap: 1.5rem;
+        }
+
+        .yp-stat-number {
+          font-size: 2rem;
+        }
+
+        .yp-search-section {
+          padding: 0.75rem 1rem;
+        }
+
+        .yp-main {
+          padding: 1.5rem 1rem;
+        }
+
+        .yp-cards {
+          grid-template-columns: 1fr;
+        }
+
+        .yp-category-header {
+          flex-wrap: wrap;
+        }
+
+        .yp-category-count {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+      }
+
+      /* Map Section */
+      .yp-map-section {
+        width: 100%;
+        height: 600px;
+        position: relative;
+      }
+
+      #yp-map {
+        width: 100%;
+        height: 100%;
+      }
+
+      .yp-marker {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: white;
+        border: 2px solid var(--yp-accent);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .yp-marker:hover {
+        transform: scale(1.15);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .yp-marker--area {
+        border-style: dashed;
+        opacity: 0.85;
+      }
+
+      .leaflet-popup-content {
+        margin: 12px 16px;
+        line-height: 1.5;
+      }
+
+      .leaflet-popup-content strong {
+        font-size: 1.05rem;
+        color: var(--yp-accent);
+      }
+
+      .leaflet-popup-content em {
+        display: block;
+        font-size: 0.85rem;
+        color: var(--yp-text-muted);
+        margin-bottom: 0.5rem;
+      }
+
+      .leaflet-popup-content a {
+        color: var(--yp-accent);
+      }
+
+      .yp-popup-contacts {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .yp-popup-contacts > div {
+        margin-top: 0.25rem;
+      }
+
+      @media (max-width: 768px) {
+        .yp-map-section {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="yp-hero">
+      <a
+        href="index.html"
+        class="back-button"
+        role="link"
+        aria-label="Tillbaka till startsidan"
+      >
+        <div class="go-back-indicator" aria-hidden="true">←</div>
+      </a>
+      <div class="yp-hero-content">
+        <h1>Ett levande samhälle</h1>
+        <p>
+          I Svängsta och omnejd finns ett brett utbud av lokala företag,
+          hantverkare och tjänster. Här hittar du allt från restauranger och
+          butiker till elektriker och byggfirmor.
+        </p>
+        <div class="yp-stats">
+          <div class="yp-stat">
+            <span class="yp-stat-number" id="stat-businesses">0</span>
+            <span class="yp-stat-label">Företag & verksamheter</span>
+          </div>
+          <div class="yp-stat">
+            <span class="yp-stat-number" id="stat-categories">0</span>
+            <span class="yp-stat-label">Branscher</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="yp-map-section">
+      <div id="yp-map"></div>
+    </section>
+
+    <section class="yp-search-section">
+      <div class="yp-search-container">
+        <div class="yp-filter-buttons" id="filter-buttons">
+          <button class="yp-filter-btn active" data-filter="all">Alla</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="yp-main" id="listings-container">
+      <!-- Listings will be injected here -->
+    </main>
+
+    <section class="yp-cta">
+      <h2>Vill du synas här?</h2>
+      <p>
+        Har du ett företag eller verksamhet i Svängsta? Kontakta oss så lägger
+        vi till dig i katalogen.
+      </p>
+      <a href="forening-svangstasamhalls.html" class="yp-cta-btn"
+        >Kontakta samhällsföreningen</a
+      >
+    </section>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script>
+      // Category configuration with icons and display names
+      const CATEGORY_CONFIG = {
+        'mat-boende': {
+          icon: '🍽️',
+          label: 'Mat & Boende',
+          keywords: [
+            'restaurang',
+            'pizzeria',
+            'lunch',
+            'mat',
+            'boende',
+            'bed',
+            'b&b',
+            'gårdskrog',
+            'uthyrning',
+          ],
+        },
+        handel: {
+          icon: '🛒',
+          label: 'Handel & Service',
+          keywords: [
+            'handel',
+            'dagligvar',
+            'butik',
+            'second hand',
+            'loppis',
+            'jakt',
+            'fritid',
+            'bensinstation',
+          ],
+        },
+        bygg: {
+          icon: '🔨',
+          label: 'Bygg & Hantverk',
+          keywords: [
+            'bygg',
+            'snickeri',
+            'måleri',
+            'skog',
+            'mobilsåg',
+            'betong',
+          ],
+        },
+        installation: {
+          icon: '⚡',
+          label: 'El, VVS & Installation',
+          keywords: ['el', 'vvs', 'installation', 'rör'],
+        },
+        industri: {
+          icon: '🏭',
+          label: 'Industri & Tillverkning',
+          keywords: ['industri', 'verkstad', 'tillverk', 'komponent'],
+        },
+        kreativ: {
+          icon: '🎨',
+          label: 'Kreativa tjänster',
+          keywords: [
+            'design',
+            'fotograf',
+            'film',
+            'media',
+            'kreativ',
+            'evenemang',
+          ],
+        },
+        halsa: {
+          icon: '🧘',
+          label: 'Hälsa & Välmående',
+          keywords: ['spa', 'hälsa', 'floating', 'wellness', 'yoga'],
+        },
+        fastighet: {
+          icon: '🏠',
+          label: 'Fastighet & Skog',
+          keywords: [
+            'hyresvärd',
+            'bostäder',
+            'fastighet',
+            'skogsförvaltning',
+            'privat boende',
+          ],
+        },
+      }
+
+      // Determine category for an item
+      function getCategoryKey(item) {
+        const c = (item.category || '').toLowerCase()
+        for (const [key, config] of Object.entries(CATEGORY_CONFIG)) {
+          if (config.keywords.some((kw) => c.includes(kw))) {
+            return key
+          }
+        }
+        return 'other'
+      }
+
+      // Get emoji for card based on category
+      function getItemEmoji(item) {
+        const c = (item.category || '').toLowerCase()
+        if (c.includes('pizzeria')) return '🍕'
+        if (c.includes('restaurang') || c.includes('lunch')) return '🍽️'
+        if (c.includes('gårdskrog')) return '🍷'
+        if (c.includes('bed') || c.includes('b&b')) return '🛏️'
+        if (c.includes('uthyrning') || c.includes('privat boende')) return '🏡'
+        if (c.includes('hyresvärd') || c.includes('bostäder')) return '🏢'
+        if (c.includes('coop') || c.includes('dagligvar')) return '🛒'
+        if (c.includes('bensin')) return '⛽'
+        if (c.includes('jakt')) return '🎯'
+        if (c.includes('loppis') || c.includes('second')) return '🛍️'
+        if (c.includes('el')) return '⚡'
+        if (c.includes('vvs')) return '🚰'
+        if (c.includes('måleri')) return '🖌️'
+        if (c.includes('snickeri')) return '🪚'
+        if (c.includes('bygg')) return '🔨'
+        if (c.includes('skog') || c.includes('mobilsåg')) return '🌲'
+        if (c.includes('industri') || c.includes('verkstad')) return '🏭'
+        if (c.includes('design')) return '✨'
+        if (c.includes('fotograf')) return '📷'
+        if (c.includes('film') || c.includes('media')) return '🎬'
+        if (c.includes('spa') || c.includes('floating') || c.includes('hälsa'))
+          return '🧘'
+        return '📍'
+      }
+
+      // Format phone for tel: link
+      function phoneHref(phone) {
+        return 'tel:' + String(phone).replace(/[^\d+]/g, '')
+      }
+
+      // Render a single card
+      function renderCard(item) {
+        const emoji = getItemEmoji(item)
+        const contacts = []
+
+        if (item.phone) {
+          contacts.push(`
+            <a href="${phoneHref(item.phone)}" class="yp-card-contact">
+              <span class="yp-card-contact-icon">📞</span>
+              <span class="yp-card-contact-text">${item.phone}</span>
+            </a>
+          `)
+        }
+
+        if (item.email) {
+          contacts.push(`
+            <a href="mailto:${item.email}" class="yp-card-contact">
+              <span class="yp-card-contact-icon">✉️</span>
+              <span class="yp-card-contact-text">${item.email}</span>
+            </a>
+          `)
+        }
+
+        if (item.website) {
+          const url = new URL(item.website)
+          contacts.push(`
+            <a href="${item.website}" target="_blank" rel="noopener" class="yp-card-contact">
+              <span class="yp-card-contact-icon">🌐</span>
+              <span class="yp-card-contact-text">${url.hostname.replace('www.', '')}</span>
+            </a>
+          `)
+        }
+
+        if (item.address) {
+          contacts.push(`
+            <span class="yp-card-contact">
+              <span class="yp-card-contact-icon">📍</span>
+              <span class="yp-card-contact-text">${item.address}</span>
+            </span>
+          `)
+        } else if (item.locality) {
+          contacts.push(`
+            <span class="yp-card-contact">
+              <span class="yp-card-contact-icon">📍</span>
+              <span class="yp-card-contact-text">${item.locality}</span>
+            </span>
+          `)
+        }
+
+        return `
+          <article class="yp-card" data-name="${item.name.toLowerCase()}" data-category="${(item.category || '').toLowerCase()}" data-description="${(item.description || '').toLowerCase()}">
+            <div class="yp-card-header">
+              <span class="yp-card-emoji">${emoji}</span>
+              <div>
+                <h3 class="yp-card-title">${item.name}</h3>
+                <div class="yp-card-category">${item.category || ''}</div>
+              </div>
+            </div>
+            <p class="yp-card-description">${item.description || ''}</p>
+            ${contacts.length ? `<div class="yp-card-contacts">${contacts.join('')}</div>` : ''}
+          </article>
+        `
+      }
+
+      // Render category section
+      function renderCategorySection(categoryKey, items) {
+        const config = CATEGORY_CONFIG[categoryKey] || {
+          icon: '📋',
+          label: 'Övrigt',
+        }
+        const cards = items.map(renderCard).join('')
+
+        return `
+          <section class="yp-category" data-category-key="${categoryKey}">
+            <div class="yp-category-header">
+              <span class="yp-category-icon">${config.icon}</span>
+              <h2 class="yp-category-title">${config.label}</h2>
+              <span class="yp-category-count">${items.length} ${items.length === 1 ? 'företag' : 'företag'}</span>
+            </div>
+            <div class="yp-cards">
+              ${cards}
+            </div>
+          </section>
+        `
+      }
+
+      // Main init
+      async function initYellowPages() {
+        try {
+          const response = await fetch('./info.json')
+          if (!response.ok) throw new Error('Failed to load data')
+          const items = await response.json()
+
+          // Update stats
+          document.getElementById('stat-businesses').textContent = items.length
+
+          // Group by category
+          const grouped = {}
+          const categoryOrder = Object.keys(CATEGORY_CONFIG)
+
+          items.forEach((item) => {
+            const key = getCategoryKey(item)
+            if (!grouped[key]) grouped[key] = []
+            grouped[key].push(item)
+          })
+
+          // Count unique categories
+          document.getElementById('stat-categories').textContent =
+            Object.keys(grouped).length
+
+          // Generate filter buttons
+          const filterContainer = document.getElementById('filter-buttons')
+          categoryOrder.forEach((key) => {
+            if (grouped[key] && grouped[key].length > 0) {
+              const config = CATEGORY_CONFIG[key]
+              const btn = document.createElement('button')
+              btn.className = 'yp-filter-btn'
+              btn.dataset.filter = key
+              btn.textContent = `${config.icon} ${config.label}`
+              filterContainer.appendChild(btn)
+            }
+          })
+          // Add "other" if exists
+          if (grouped['other'] && grouped['other'].length > 0) {
+            const btn = document.createElement('button')
+            btn.className = 'yp-filter-btn'
+            btn.dataset.filter = 'other'
+            btn.textContent = '📋 Övrigt'
+            filterContainer.appendChild(btn)
+          }
+
+          // Render all sections
+          const container = document.getElementById('listings-container')
+          let html = ''
+
+          categoryOrder.forEach((key) => {
+            if (grouped[key] && grouped[key].length > 0) {
+              html += renderCategorySection(key, grouped[key])
+            }
+          })
+          // Render "other" last
+          if (grouped['other'] && grouped['other'].length > 0) {
+            html += renderCategorySection('other', grouped['other'])
+          }
+
+          container.innerHTML = html
+
+          // Setup filter
+          setupFilter()
+
+          // Initialize map
+          initMap(items)
+        } catch (err) {
+          console.error('Error loading yellow pages:', err)
+          document.getElementById('listings-container').innerHTML = `
+            <div class="yp-no-results">
+              <div class="yp-no-results-icon">😕</div>
+              <h3>Kunde inte ladda företag</h3>
+              <p>Försök ladda om sidan.</p>
+            </div>
+          `
+        }
+      }
+
+      function setupFilter() {
+        const filterButtons = document.querySelectorAll('.yp-filter-btn')
+        let activeFilter = 'all'
+
+        function applyFilter() {
+          const cards = document.querySelectorAll('.yp-card')
+          const sections = document.querySelectorAll('.yp-category')
+
+          let visibleCount = 0
+
+          cards.forEach((card) => {
+            const categoryKey = getCategoryKeyFromCard(card)
+            const matchesFilter =
+              activeFilter === 'all' || categoryKey === activeFilter
+
+            if (matchesFilter) {
+              card.classList.remove('yp-hidden')
+              visibleCount++
+            } else {
+              card.classList.add('yp-hidden')
+            }
+          })
+
+          // Hide empty sections
+          sections.forEach((section) => {
+            const visibleCards = section.querySelectorAll(
+              '.yp-card:not(.yp-hidden)',
+            )
+            const countEl = section.querySelector('.yp-category-count')
+            if (visibleCards.length === 0) {
+              section.classList.add('yp-hidden')
+            } else {
+              section.classList.remove('yp-hidden')
+              if (countEl) {
+                countEl.textContent = `${visibleCards.length} företag`
+              }
+            }
+          })
+
+          // Filter map markers
+          filterMapMarkers(activeFilter)
+        }
+
+        function getCategoryKeyFromCard(card) {
+          const section = card.closest('.yp-category')
+          return section ? section.dataset.categoryKey : 'other'
+        }
+
+        filterButtons.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            filterButtons.forEach((b) => b.classList.remove('active'))
+            btn.classList.add('active')
+            activeFilter = btn.dataset.filter
+            applyFilter()
+          })
+        })
+      }
+
+      // Area centroids for items without exact coordinates
+      const AREA_CENTROIDS = {
+        Svängsta: { lat: 56.26, lng: 14.72 },
+        Halda: { lat: 56.27, lng: 14.73 },
+        Karlshamn: { lat: 56.17, lng: 14.86 },
+        Mörrum: { lat: 56.19, lng: 14.75 },
+        Hemsjö: { lat: 56.30, lng: 14.75 },
+        Hallandsboda: { lat: 56.24, lng: 14.70 },
+        Bökemåla: { lat: 56.28, lng: 14.68 },
+        'Övre Ämneboda': { lat: 56.29, lng: 14.71 },
+        Lönnemåla: { lat: 56.25, lng: 14.69 },
+      }
+
+      function getCentroid(item) {
+        // Check explicit locality
+        if (item.locality && AREA_CENTROIDS[item.locality]) {
+          return AREA_CENTROIDS[item.locality]
+        }
+        // Check address for location hints
+        const addr = (item.address || '').toLowerCase()
+        if (addr.includes('svängsta')) return AREA_CENTROIDS['Svängsta']
+        if (addr.includes('karlshamn')) return AREA_CENTROIDS['Karlshamn']
+        if (addr.includes('mörrum')) return AREA_CENTROIDS['Mörrum']
+        if (addr.includes('hemsjö')) return AREA_CENTROIDS['Hemsjö']
+        if (addr.includes('halda')) return AREA_CENTROIDS['Halda']
+        if (addr.includes('lönnemåla')) return AREA_CENTROIDS['Lönnemåla']
+        // Default to Svängsta
+        return AREA_CENTROIDS['Svängsta']
+      }
+
+      function createMarkerIcon(emoji, isArea = false) {
+        return L.divIcon({
+          className: '',
+          html: `<div class="yp-marker ${isArea ? 'yp-marker--area' : ''}">${emoji}</div>`,
+          iconSize: [36, 36],
+          iconAnchor: [18, 36],
+          popupAnchor: [0, -32],
+        })
+      }
+
+      function createPopupContent(item, isArea) {
+        const lines = []
+        lines.push(`<strong>${item.name}</strong>`)
+        if (item.category) lines.push(`<em>${item.category}</em>`)
+        if (item.description) lines.push(`<div>${item.description}</div>`)
+
+        const contacts = []
+        if (item.phone) {
+          contacts.push(`<div>📞 <a href="${phoneHref(item.phone)}">${item.phone}</a></div>`)
+        }
+        if (item.email) {
+          contacts.push(`<div>✉️ <a href="mailto:${item.email}">${item.email}</a></div>`)
+        }
+        if (item.website) {
+          contacts.push(`<div>🌐 <a href="${item.website}" target="_blank" rel="noopener">Webbplats</a></div>`)
+        }
+        if (item.address) {
+          contacts.push(`<div>📍 ${item.address}</div>`)
+        } else if (item.locality) {
+          contacts.push(`<div>📍 ${item.locality}${isArea ? ' (ungefärligt)' : ''}</div>`)
+        }
+
+        if (contacts.length) {
+          lines.push(`<div class="yp-popup-contacts">${contacts.join('')}</div>`)
+        }
+
+        return lines.join('')
+      }
+
+      let mapInstance = null
+      let allMarkers = []
+
+      function initMap(items) {
+        const map = L.map('yp-map', {
+          dragging: false,
+          tap: false,
+          scrollWheelZoom: false,
+          doubleClickZoom: false,
+          boxZoom: false,
+          keyboard: false,
+          zoomControl: false,
+          attributionControl: true,
+        }).setView([56.262, 14.772], 13)
+
+        mapInstance = map
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors',
+        }).addTo(map)
+
+        // Enable interactions on first click
+        let interactionEnabled = false
+        map.on('click', () => {
+          if (!interactionEnabled) {
+            map.dragging.enable()
+            map.tap?.enable()
+            map.scrollWheelZoom.enable()
+            map.doubleClickZoom.enable()
+            map.boxZoom.enable()
+            map.keyboard.enable()
+            map.addControl(L.control.zoom({ position: 'topright' }))
+            interactionEnabled = true
+          }
+        })
+
+        // Add markers
+        items.forEach((item) => {
+          const lat = item.lat
+          const lng = item.lng
+
+          if (lat == null || lng == null) return
+
+          const emoji = getItemEmoji(item)
+          const categoryKey = getCategoryKey(item)
+          const icon = createMarkerIcon(emoji, false)
+
+          const marker = L.marker([lat, lng], {
+            icon: icon,
+            title: item.name,
+          }).addTo(map)
+
+          marker.bindPopup(createPopupContent(item, false), {
+            maxWidth: 280,
+          })
+
+          // Store reference for filtering
+          allMarkers.push({ marker, categoryKey, item })
+        })
+      }
+
+      function filterMapMarkers(categoryKey) {
+        if (!mapInstance) return
+
+        allMarkers.forEach(({ marker, categoryKey: markerCategory }) => {
+          if (categoryKey === 'all' || markerCategory === categoryKey) {
+            if (!mapInstance.hasLayer(marker)) {
+              marker.addTo(mapInstance)
+            }
+          } else {
+            if (mapInstance.hasLayer(marker)) {
+              mapInstance.removeLayer(marker)
+            }
+          }
+        })
+      }
+
+      // Initialize
+      initYellowPages()
+    </script>
+  </body>
+</html>

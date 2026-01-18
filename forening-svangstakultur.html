@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svängsta Kultur och Hembygdsförening</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      .image {
+        background-image: url('images/kulturforening-02.png');
+        position: relative;
+      }
+
+      .image video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .image video.loaded {
+        opacity: 1;
+      }
+
+      .content h3 {
+        margin-top: 2rem;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Svängsta",
+        "url": "https://www.svangsta.se"
+      }
+    </script>
+  </head>
+
+  <body class="subpage">
+    <div class="main-container">
+      <div class="image">
+        <video muted loop playsinline></video>
+        <a
+          href="index.html"
+          class="back-button"
+          role="link"
+          aria-label="Tillbaka till startsidan"
+        >
+          <div class="go-back-indicator" aria-hidden="true">←</div>
+        </a>
+      </div>
+      <div class="content">
+        <h1>Svängsta Kultur och Hembygds<wbr />förening</h1>
+        <p>...en levande mötesplats för bygdens historia och gemenskap</p>
+        <p>
+          Svängsta Kultur och Hembygdsförening arbetar för att värna och
+          synliggöra bygdens rika kulturarv. Med ett varmt engagemang samlar
+          föreningen människor i alla åldrar som vill bevara traditioner, väcka
+          minnen till liv och skapa nya möten. Genom att vårda lokala miljöer,
+          samla berättelser och arrangera uppskattade aktiviteter bidrar
+          föreningen till att hålla Svängstas historia levande samtidigt som man
+          bygger gemenskap här och nu.
+        </p>
+
+        <h3>Återkommande evenemang</h3>
+        <p>
+          Föreningen anordnar flera populära evenemang under året, bland annat:
+        </p>
+        <ul>
+          <li>
+            <strong>Kultur och hembygdsdagar</strong> - där besökare får uppleva
+            hantverk, utställningar, guidningar, motionsbingo och musik i en
+            välkomnande atmosfär.
+          </li>
+          <li>
+            <strong>Traditionella firanden</strong> - som uppträdanden och
+            korvgrillning i Svängsta parken, julmarknad med lotterier, hembakat
+            och aktiviteter för både barn och vuxna.
+          </li>
+          <li>
+            <strong>Föreläsningar och temakvällar</strong> - där lokalhistoria,
+            filmer, foton och berättelser lyfts fram för att skapa kunskap och
+            inspiration.
+          </li>
+        </ul>
+
+        <h3>Kontakt</h3>
+        <p>
+          Svängsta Kultur och Hembygdsförening - en levande mötesplats för
+          bygdens kulturhistoria och gemenskap.
+        </p>
+        <ul>
+          <li>Telefon: <a href="tel:+46703381666">070-338 166 6</a> / <a href="tel:+46708323275">070-832 327 5</a></li>
+          <li>
+            <a href="https://www.facebook.com/groups/542032873677317"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/svangstakulturforening"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+      ;(function () {
+        const video = document.querySelector('.image video')
+        video.src = 'images/kulturforening-anim-02.mp4'
+
+        video.addEventListener(
+          'canplaythrough',
+          function () {
+            video.play()
+            video.classList.add('loaded')
+          },
+          { once: true },
+        )
+      })()
+    </script>
+  </body>
+</html>

@@ -1,15 +1,15 @@
 :root {
-  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, sans-serif;
+  --font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-  --text-color-greenish: #244720;
-  --text-color-dark: #333;
+  --text-color-greenish: #1f2937;
+  --text-color-dark: #1f2937;
   --overlay-color: rgba(0, 0, 0, 0.4);
   --glass-bg: rgb(100 100 100 / 15%);
-  --placeholder-color: #bbb;
-  --accent-color: #00695c;
-  --testimonial-background-color1: #f3f8f7;
-  --testimonial-background-color2: #e6f1ef;
+  --placeholder-color: #9ca3af;
+  --accent-color: #145240;
+  --testimonial-background-color1: #f8fafc;
+  --testimonial-background-color2: #e9f5ec;
 }
 
 * {
@@ -124,6 +124,18 @@ p + p {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
   border: 0;
   cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+#menu .hamburger-btn:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+}
+
+#menu .hamburger-btn:active {
+  transform: scale(0.95);
 }
 
 #menu .hamburger-bt .line {
@@ -187,7 +199,34 @@ p + p {
 }
 
 #menu-drawer > ul {
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+.menu-header {
+  padding: 0 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.menu-header .menu-logo {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.menu-header .menu-logo:hover {
+  opacity: 0.8;
+}
+
+.menu-header .menu-tagline {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-color-dark);
+  opacity: 0.6;
+  margin-top: 0.25rem;
 }
 
 #menu-drawer li {
@@ -230,13 +269,22 @@ body.subpage {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image:
+    linear-gradient(135deg, rgba(6, 95, 70, 0.03) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(6, 95, 70, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
 }
 
 .main-container {
   margin: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: white;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   width: 90%;
   max-width: 1024px;
   color: var(--text-color-greenish);
@@ -247,7 +295,8 @@ body.subpage {
   height: 300px;
   background-position: center center;
   background-size: cover;
-  border-radius: 12px 12px 0 0;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   display: flex;
   flex-direction: column;
@@ -255,24 +304,57 @@ body.subpage {
   position: relative;
 }
 
-.image h1 {
+.image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  border-radius: 0 0 0 0;
+  pointer-events: none;
+}
+
+.content h1 {
   text-align: center;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+  font-size: 2.2rem;
+  color: var(--accent-color);
   max-width: 100%;
   word-break: break-word;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.content h2 {
+  line-height: 1.3;
 }
 
 .content {
-  padding: 2rem;
+  padding: 2.5rem;
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.8;
 
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.content h3 {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.content a {
+  color: var(--accent-color);
+  text-decoration-color: rgba(6, 95, 70, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.content a:hover {
+  text-decoration-color: var(--accent-color);
 }
 
 @keyframes slide {
@@ -315,7 +397,11 @@ body.subpage {
     max-height: none;
   }
 
-  .image h1 {
-    font-size: 2rem;
+  .content {
+    padding: 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.9rem;
   }
 }
