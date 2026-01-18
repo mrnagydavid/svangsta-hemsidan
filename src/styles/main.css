@@ -124,6 +124,16 @@ p + p {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
   border: 0;
   cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#menu .hamburger-btn:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+}
+
+#menu .hamburger-btn:active {
+  transform: scale(0.95);
 }
 
 #menu .hamburger-bt .line {
@@ -187,7 +197,34 @@ p + p {
 }
 
 #menu-drawer > ul {
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+.menu-header {
+  padding: 0 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.menu-header .menu-logo {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.menu-header .menu-logo:hover {
+  opacity: 0.8;
+}
+
+.menu-header .menu-tagline {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-color-dark);
+  opacity: 0.6;
+  margin-top: 0.25rem;
 }
 
 #menu-drawer li {
