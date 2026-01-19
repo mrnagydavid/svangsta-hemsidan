@@ -1,16 +1,16 @@
 [
   {
     "id": "bm-design",
-    "name": "BM Design",
+    "name": "BM Design Center",
     "category": "Design / Försäljning / Evenemang",
     "description": "Design- och evenemangsverksamhet.",
     "phone": "0705-451110",
-    "email": "info@bmdesign.se",
-    "website": null,
-    "address": null,
+    "email": "info@bmdesigncenter.se",
+    "website": "https://bmdesigncenter.se",
+    "address": "Nissavägen 7, 376 36 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.2619808,
-    "lng": 14.7747988
+    "lat": 56.253619,
+    "lng": 14.779221
   },
   {
     "id": "hitex",
@@ -71,7 +71,7 @@
     "description": "Bensinstation med butik och service.",
     "phone": "0454-322183",
     "email": null,
-    "website": "https://www.gulfsverige.com",
+    "website": "https://www.facebook.com/p/GULF-Sv%C3%A4ngsta-100063678515200/",
     "address": "Holländarevägen 12, 376 37 Svängsta",
     "locality": "Svängsta",
     "lat": 56.252437,
@@ -120,14 +120,14 @@
     "id": "perssons-elektriska",
     "name": "Perssons Elektriska",
     "category": "Elinstallationer",
-    "description": "Lokal elektrikerfirma.",
+    "description": "Lokal elektrikerfirma",
     "phone": "0454-322811",
-    "email": null,
-    "website": null,
+    "email": "persson.elhab@telia.com",
+    "website": "https://www.facebook.com/p/PERSSONS-EL-HB-100067212285780/",
     "address": "Öjavadsvägen 2, 376 36 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.2622467,
-    "lng": 14.7684038
+    "lat": 56.2622489,
+    "lng": 14.7684121
   },
   {
     "id": "vvsarn-i-blekinge",
@@ -139,8 +139,8 @@
     "website": "http://vvsarniblekinge.se",
     "address": "Norra Holländarevägen 775, 376 92 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.282,
-    "lng": 14.765
+    "lat": 56.3493649,
+    "lng": 14.7830287
   },
   {
     "id": "eaab-vvs",
@@ -150,10 +150,10 @@
     "phone": "070-9747647",
     "email": "eaabvvs@hotmail.com",
     "website": null,
-    "address": "Gyngamålavägen",
+    "address": "Gyngamålavägen 221-6, 376 92 Svängsta",
     "locality": null,
-    "lat": 56.3459564,
-    "lng": 14.8194312
+    "lat": 56.3456069,
+    "lng": 14.8217332
   },
   {
     "id": "vvs-i-svangsta",
@@ -163,10 +163,10 @@
     "phone": "0454-323090",
     "email": null,
     "website": null,
-    "address": "Mörrum",
+    "address": "Passvägen 19, 375 33 Mörrum",
     "locality": "Mörrum",
-    "lat": 56.1928572,
-    "lng": 14.7532545
+    "lat": 56.1985368,
+    "lng": 14.769171
   },
   {
     "id": "maleriet-ab",
@@ -176,10 +176,10 @@
     "phone": "0735-137125",
     "email": "maleriett@hotmail.com",
     "website": null,
-    "address": null,
+    "address": "Stigbergsvägen 3, 376 37 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.259,
-    "lng": 14.775
+    "lat": 56.2567678,
+    "lng": 14.7815367
   },
   {
     "id": "mattias-mobilsag",
@@ -202,10 +202,10 @@
     "phone": "070-9275996",
     "email": null,
     "website": null,
-    "address": "Lönnemåla",
+    "address": "Lönnemålavägen 165-9, 376 93 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.275,
-    "lng": 14.755
+    "lat": 56.2437153,
+    "lng": 14.7163761
   },
   {
     "id": "omnia-bygg",
@@ -214,11 +214,11 @@
     "description": "Bygg- och renoveringstjänster.",
     "phone": "070-3815129",
     "email": null,
-    "website": null,
-    "address": null,
+    "website": "http://www.omniabygg.com",
+    "address": "Holländarevägen 32, 376 37 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.258,
-    "lng": 14.778
+    "lat": 56.2570313,
+    "lng": 14.7760287
   },
   {
     "id": "hemsjo-bygg",
@@ -240,7 +240,7 @@
     "description": "Fotografverksamhet baserad i Halda.",
     "phone": null,
     "email": "info.jagenmark@gmail.com",
-    "website": null,
+    "website": "https://www.ceciliajagenmark.com",
     "address": "Halda",
     "locality": "Svängsta",
     "lat": 56.2613995,
@@ -253,7 +253,7 @@
     "description": "Film- och kreativa produktioner.",
     "phone": null,
     "email": null,
-    "website": "http://www.frejcreative.com",
+    "website": "https://www.frejcreative.com",
     "address": "Halda",
     "locality": "Svängsta",
     "lat": 56.2613995,
@@ -305,7 +305,7 @@
     "description": "Pizzeria och grill i centrala Svängsta.",
     "phone": "04554-323116",
     "email": null,
-    "website": null,
+    "website": "https://www.facebook.com/pages/Millis%20Pizzeria%20Och%20Grill/180793655792777",
     "address": "Holländarevägen 31, 376 37 Svängsta",
     "locality": "Svängsta",
     "lat": 56.260448,
@@ -362,5 +362,18 @@
     "locality": "Karlshamn",
     "lat": 56.1641949,
     "lng": 14.8660028
+  },
+  {
+    "id": "reinerts-kran-transport",
+    "name": "Reinerts Kran o Transport AB",
+    "category": "Transport",
+    "description": "Kran- och transporttjänster.",
+    "phone": "0738-470101",
+    "email": "info@reinerts.se",
+    "website": "https://www.facebook.com/Reinertskranotransport",
+    "address": "Kråkekullsvägen 171, 376 93 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.2789719,
+    "lng": 14.7407912
   }
 ]
