@@ -209,6 +209,7 @@
         transition: all 0.2s;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
       }
 
       .yp-card:hover {
@@ -536,19 +537,15 @@
     <script>
       // Category configuration with icons and display names
       const CATEGORY_CONFIG = {
-        'mat-boende': {
+        mat: {
           icon: '🍽️',
-          label: 'Mat & Boende',
+          label: 'Mat',
           keywords: [
             'restaurang',
             'pizzeria',
             'lunch',
             'mat',
-            'boende',
-            'bed',
-            'b&b',
             'gårdskrog',
-            'uthyrning',
           ],
         },
         handel: {
@@ -606,13 +603,17 @@
         },
         fastighet: {
           icon: '🏠',
-          label: 'Fastighet & Skog',
+          label: 'Fastighet & Boende',
           keywords: [
             'hyresvärd',
             'bostäder',
             'fastighet',
             'skogsförvaltning',
             'privat boende',
+            'boende',
+            'bed',
+            'b&b',
+            'uthyrning',
           ],
         },
       }
@@ -813,6 +814,9 @@
 
           // Initialize map
           initMap(items)
+
+          // Setup card click handlers
+          setupCardClickHandlers()
         } catch (err) {
           console.error('Error loading yellow pages:', err)
           document.getElementById('listings-container').innerHTML = `
@@ -1016,16 +1020,66 @@
       function filterMapMarkers(categoryKey) {
         if (!mapInstance) return
 
+        const visibleMarkers = []
+
         allMarkers.forEach(({ marker, categoryKey: markerCategory }) => {
           if (categoryKey === 'all' || markerCategory === categoryKey) {
             if (!mapInstance.hasLayer(marker)) {
               marker.addTo(mapInstance)
             }
+            visibleMarkers.push(marker)
           } else {
             if (mapInstance.hasLayer(marker)) {
               mapInstance.removeLayer(marker)
             }
           }
+        })
+
+        // Fit bounds to visible markers (except for "all" which keeps default Svängsta view)
+        if (categoryKey !== 'all' && visibleMarkers.length > 0) {
+          const group = L.featureGroup(visibleMarkers)
+          mapInstance.fitBounds(group.getBounds().pad(0.1))
+        } else if (categoryKey === 'all') {
+          // Reset to default Svängsta view
+          mapInstance.setView([56.262, 14.772], 13)
+        }
+      }
+
+      function focusOnMarker(itemName) {
+        if (!mapInstance) return
+
+        const normalizedName = itemName.toLowerCase()
+        const found = allMarkers.find(
+          ({ item }) => item.name.toLowerCase() === normalizedName,
+        )
+
+        if (found) {
+          const { marker, item } = found
+          // Ensure marker is visible on map
+          if (!mapInstance.hasLayer(marker)) {
+            marker.addTo(mapInstance)
+          }
+          // Pan to marker and zoom in
+          mapInstance.setView(marker.getLatLng(), 15)
+          // Open popup
+          marker.openPopup()
+          // Scroll map into view
+          document.getElementById('yp-map').scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }
+
+      function setupCardClickHandlers() {
+        const cards = document.querySelectorAll('.yp-card')
+        cards.forEach((card) => {
+          card.addEventListener('click', (e) => {
+            // Don't trigger if clicking on a link inside the card
+            if (e.target.closest('a')) return
+
+            const itemName = card.dataset.name
+            if (itemName) {
+              focusOnMarker(itemName)
+            }
+          })
         })
       }
 
