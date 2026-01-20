@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="PRO Svängsta-Asarum" />
+    <meta
+      property="og:description"
+      content="En mötesplats för alla pensionärer där du kan träffa nya vänner, delta i roliga aktiviteter och engagera dig i viktiga frågor."
+    />
+    <meta
+      property="og:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <meta property="og:url" content="https://svangsta.se/forening-pro.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PRO Svängsta-Asarum" />
+    <meta
+      name="twitter:description"
+      content="En mötesplats för alla pensionärer där du kan träffa nya vänner, delta i roliga aktiviteter och engagera dig i viktiga frågor."
+    />
+    <meta
+      name="twitter:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <title>PRO Svängsta-Asarum</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      .image {
+        background-image: url('images/forening-pro-01.jpg');
+        position: relative;
+      }
+
+      .image video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .image video.loaded {
+        opacity: 1;
+      }
+
+      .content h3 {
+        margin-top: 2rem;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Svängsta",
+        "url": "https://www.svangsta.se"
+      }
+    </script>
+  </head>
+
+  <body class="subpage">
+    <div class="main-container">
+      <div class="image">
+        <video muted loop playsinline autoplay preload="auto">
+          <source src="images/forening-pro-01-anim.mp4" type="video/mp4">
+        </video>
+        <a
+          href="index.html"
+          class="back-button"
+          role="link"
+          aria-label="Tillbaka till startsidan"
+        >
+          <div class="go-back-indicator" aria-hidden="true">←</div>
+        </a>
+      </div>
+      <div class="content">
+        <h1>PRO Svängsta-Asarum</h1>
+        <p>...en mötesplats för gemenskap, glädje och hälsa</p>
+        <p>
+          PRO Svängsta-Asarum är en förening med cirka 320 medlemmar som skapar
+          en mötesplats för gemenskap, personlig utveckling, glädje och hälsa.
+          Föreningen strävar efter att vara ett naturligt val för en stimulerande
+          vardag efter pensionen. Här kan du träffa nya vänner, delta i roliga
+          aktiviteter och engagera dig i viktiga frågor.
+        </p>
+
+        <h3>Aktiviteter</h3>
+        <p>
+          Föreningen träffas regelbundet i Svängsta Medborgarhus där man
+          anordnar olika aktiviteter, bland annat:
+        </p>
+        <ul>
+          <li>
+            <strong>Mattcurling</strong> - en populär och social aktivitet där
+            alla kan delta oavsett tidigare erfarenhet.
+          </li>
+          <li>
+            <strong>Utflykter och resor</strong> - gemensamma utflykter och
+            resor för medlemmarna.
+          </li>
+          <li>
+            <strong>Sociala träffar</strong> - möjlighet att umgås och knyta
+            nya vänskapsband.
+          </li>
+        </ul>
+
+        <h3>Kontakt</h3>
+        <p>
+          PRO Svängsta-Asarum - en mötesplats för alla pensionärer.
+        </p>
+        <ul>
+          <li>Telefon: <a href="tel:+46708323139">070-832 31 39</a></li>
+          <li>E-post: <a href="mailto:svangsta@pro.se">svangsta@pro.se</a></li>
+          <li>Adress: Skyttevägen 5, 376 37 Svängsta</li>
+          <li>
+            <a href="https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum">PRO:s webbplats</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+      ;(function () {
+        const video = document.querySelector('.image video')
+
+        function showVideo() {
+          video.classList.add('loaded')
+        }
+
+        // Try to play and show video when ready
+        function tryPlay() {
+          const playPromise = video.play()
+          if (playPromise !== undefined) {
+            playPromise.then(showVideo).catch(function () {
+              // Autoplay was prevented, show video anyway (it will be paused)
+              showVideo()
+            })
+          } else {
+            showVideo()
+          }
+        }
+
+        // If video is already ready, play immediately
+        if (video.readyState >= 3) {
+          tryPlay()
+        } else {
+          video.addEventListener('canplay', tryPlay, { once: true })
+        }
+      })()
+    </script>
+  </body>
+</html>
