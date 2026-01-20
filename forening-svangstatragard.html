@@ -31,24 +31,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/forening-svangstatragard-hero.jpg');
-        position: relative;
-      }
-
-      .image video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        border-radius: 12px 12px 0 0;
-      }
-
-      .image video.loaded {
-        opacity: 1;
       }
     </style>
     <script type="application/ld+json">
@@ -61,24 +45,28 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <video muted loop playsinline autoplay preload="auto">
-          <source src="images/forening-svangstatragard-hero-anim.mp4" type="video/mp4">
-        </video>
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <video muted loop playsinline autoplay preload="auto">
+        <source src="images/forening-svangstatragard-hero-anim.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>Svängsta Trädgårds&shy;förening</h1>
+        <p class="subtitle">...för dig med trädgårdsintresse</p>
       </div>
-      <div class="content">
-        <h1>Svängsta Trädgårdsförening</h1>
-        <p>...för dig med trädgårdsintresse</p>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
         <p>
           Vi är en ideell förening vars syfte är att under trivsamma former öka
           vårt kunnande om trädgård. I denna anda ska trädgårdsintresset
@@ -86,32 +74,32 @@
           utflykter. Alla trädgårdsintresserade är välkomna som medlemmar i
           föreningen.
         </p>
-        <p>Kontaktuppgifter</p>
 
-        <ul>
-          <li>
-            Hemsida:
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+          <div class="contact-person">
+            <span class="name">Marita Everling</span>
+            <span class="position">Ordförande</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+46703175900">070-317 59 00</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:info@svangstatradgard.se">info@svangstatradgard.se</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
             <a href="https://svangstatradgard.se">svangstatradgard.se</a>
-          </li>
-          <li>Kontaktperson: Ordförande Marita Everling</li>
-          <li>Telefon: <a href="tel:+46703175900">070-317 59 00</a></li>
-          <li>
-            Mejladress:
-            <a href="mailto:info@svangstatradgard.se"
-              >info@svangstatradgard.se</a
-            >
-          </li>
-          <li>
-            <a href="https://www.facebook.com/svangstatradgardsforening"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/svangstatradgard">Instagram</a>
-          </li>
-        </ul>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.facebook.com/svangstatradgardsforening">📘 Facebook</a>
+            <a href="https://www.instagram.com/svangstatradgard">📸 Instagram</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer role="contentinfo">
       <p>
@@ -125,7 +113,7 @@
     <script src="scripts/main.js"></script>
     <script>
       ;(function () {
-        const video = document.querySelector('.image video')
+        const video = document.querySelector('.subpage-hero video')
 
         function showVideo() {
           video.classList.add('loaded')

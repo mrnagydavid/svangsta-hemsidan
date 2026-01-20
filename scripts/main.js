@@ -1,3 +1,40 @@
+let isBackButtonSetUp = false
+setupBackButton()
+
+function setupBackButton() {
+  if (isBackButtonSetUp) return
+
+  const backButton = document.querySelector('.back-button')
+  if (!backButton) return
+
+  backButton.addEventListener('click', (event) => {
+    event.preventDefault()
+
+    const referrer = document.referrer
+    const currentHost = window.location.host
+    console.log('referrer:', referrer, 'host:', currentHost)
+
+    // Check if referrer is from the same site
+    if (referrer) {
+      try {
+        const referrerUrl = new URL(referrer)
+
+        if (referrerUrl.host === currentHost) {
+          history.back()
+          return
+        }
+      } catch (e) {
+        // Invalid URL, fall through to default
+      }
+    }
+
+    // Default: go to index.html
+    window.location.href = './index.html'
+  })
+
+  isBackButtonSetUp = true
+}
+
 let isMapSetUp = false
 setupMap()
 

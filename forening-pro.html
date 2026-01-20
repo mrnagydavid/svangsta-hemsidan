@@ -31,28 +31,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/forening-pro-01.jpg');
-        position: relative;
-      }
-
-      .image video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        border-radius: 12px 12px 0 0;
-      }
-
-      .image video.loaded {
-        opacity: 1;
-      }
-
-      .content h3 {
-        margin-top: 2rem;
       }
     </style>
     <script type="application/ld+json">
@@ -65,24 +45,28 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <video muted loop playsinline autoplay preload="auto">
-          <source src="images/forening-pro-01-anim.mp4" type="video/mp4">
-        </video>
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
-      </div>
-      <div class="content">
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <video muted loop playsinline autoplay preload="auto">
+        <source src="images/forening-pro-01-anim.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
         <h1>PRO Svängsta-Asarum</h1>
-        <p>...en mötesplats för gemenskap, glädje och hälsa</p>
+        <p class="subtitle">...en mötesplats för gemenskap, glädje och hälsa</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
         <p>
           PRO Svängsta-Asarum är en förening med cirka 320 medlemmar som skapar
           en mötesplats för gemenskap, personlig utveckling, glädje och hälsa.
@@ -91,7 +75,7 @@
           aktiviteter och engagera dig i viktiga frågor.
         </p>
 
-        <h3>Aktiviteter</h3>
+        <h2>Aktiviteter</h2>
         <p>
           Föreningen träffas regelbundet i Svängsta Medborgarhus där man
           anordnar olika aktiviteter, bland annat:
@@ -111,20 +95,27 @@
           </li>
         </ul>
 
-        <h3>Kontakt</h3>
-        <p>
-          PRO Svängsta-Asarum - en mötesplats för alla pensionärer.
-        </p>
-        <ul>
-          <li>Telefon: <a href="tel:+46708323139">070-832 31 39</a></li>
-          <li>E-post: <a href="mailto:svangsta@pro.se">svangsta@pro.se</a></li>
-          <li>Adress: Skyttevägen 5, 376 37 Svängsta</li>
-          <li>
-            <a href="https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum">PRO:s webbplats</a>
-          </li>
-        </ul>
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+46708323139">070-832 31 39</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:svangsta@pro.se">svangsta@pro.se</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Skyttevägen 5, 376 37 Svängsta</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <a href="https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum">pro.se</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer role="contentinfo">
       <p>
@@ -138,7 +129,7 @@
     <script src="scripts/main.js"></script>
     <script>
       ;(function () {
-        const video = document.querySelector('.image video')
+        const video = document.querySelector('.subpage-hero video')
 
         function showVideo() {
           video.classList.add('loaded')

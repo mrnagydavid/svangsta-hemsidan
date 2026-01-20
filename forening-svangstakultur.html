@@ -31,28 +31,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/kulturforening-02.png');
-        position: relative;
-      }
-
-      .image video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        border-radius: 12px 12px 0 0;
-      }
-
-      .image video.loaded {
-        opacity: 1;
-      }
-
-      .content h3 {
-        margin-top: 2rem;
       }
     </style>
     <script type="application/ld+json">
@@ -65,24 +45,28 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <video muted loop playsinline autoplay preload="auto">
-          <source src="images/kulturforening-anim-02.mp4" type="video/mp4">
-        </video>
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <video muted loop playsinline autoplay preload="auto">
+        <source src="images/kulturforening-anim-02.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>Svängsta Kultur och Hembygds&shy;förening</h1>
+        <p class="subtitle">...en levande mötesplats för bygdens historia och gemenskap</p>
       </div>
-      <div class="content">
-        <h1>Svängsta Kultur och Hembygds<wbr />förening</h1>
-        <p>...en levande mötesplats för bygdens historia och gemenskap</p>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
         <p>
           Svängsta Kultur och Hembygdsförening arbetar för att värna och
           synliggöra bygdens rika kulturarv. Med ett varmt engagemang samlar
@@ -93,7 +77,7 @@
           bygger gemenskap här och nu.
         </p>
 
-        <h3>Återkommande evenemang</h3>
+        <h2>Återkommande evenemang</h2>
         <p>
           Föreningen anordnar flera populära evenemang under året, bland annat:
         </p>
@@ -115,26 +99,23 @@
           </li>
         </ul>
 
-        <h3>Kontakt</h3>
-        <p>
-          Svängsta Kultur och Hembygdsförening - en levande mötesplats för
-          bygdens kulturhistoria och gemenskap.
-        </p>
-        <ul>
-          <li>Telefon: <a href="tel:+46703381666">070-338 166 6</a> / <a href="tel:+46708323275">070-832 327 5</a></li>
-          <li>
-            <a href="https://www.facebook.com/groups/542032873677317"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/svangstakulturforening"
-              >Instagram</a
-            >
-          </li>
-        </ul>
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+46703381666">070-338 16 66</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+46708323275">070-832 32 75</a>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.facebook.com/groups/542032873677317">📘 Facebook</a>
+            <a href="https://www.instagram.com/svangstakulturforening">📸 Instagram</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer role="contentinfo">
       <p>
@@ -148,7 +129,7 @@
     <script src="scripts/main.js"></script>
     <script>
       ;(function () {
-        const video = document.querySelector('.image video')
+        const video = document.querySelector('.subpage-hero video')
 
         function showVideo() {
           video.classList.add('loaded')

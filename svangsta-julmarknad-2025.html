@@ -33,12 +33,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/svangsta-julmarknad-2024-01.webp');
-      }
-
-      .content p + h3 {
-        margin-top: 2rem;
       }
     </style>
     <script type="application/ld+json">
@@ -51,51 +47,64 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
-      </div>
-      <div class="content">
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <div class="hero-content">
         <h1>Svängsta Julmarknad 2025</h1>
-        <h3>📆 När? ⏰</h3>
+        <p class="subtitle">Svängsta Kultur- och Hembygdsförening</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
+        <div class="event-info">
+          <div class="event-info-box">
+            <h3>När?</h3>
+            <p>Söndagen den 23/11<br />kl. 10-16</p>
+          </div>
+          <div class="event-info-box">
+            <h3>Var?</h3>
+            <p>Medborgarhuset<br />Svängsta</p>
+          </div>
+          <div class="event-info-box">
+            <h3>Mat</h3>
+            <p>Jultallriken serveras<br />kl. 11-15</p>
+          </div>
+        </div>
+
         <p>
-          Söndagen den 23/11 mellan kl. 10-16<br />
           <a
             href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251123T090000Z%2F20251123T150000Z&details=Mer%20information%20kommer%20p%C3%A5%20Sv%C3%A4ngsta%20Hembygdsf%C3%B6reningens%20facebooksida%20&location=Sv%C3%A4ngsta%2C%20Medborgarhuset&text=Sv%C3%A4ngsta%20Julmarknad"
             target="_blank"
             >Lägga till evenemanget i din kalender</a
           >
         </p>
-
-        <h3>🗺️ Var? 📌</h3>
         <p>
-          Medborgarhuset<br />
           <a href="https://maps.app.goo.gl/cqtV5jcQp9joN7Fu9"
             >Öppna platsen i Google Maps</a
           >
         </p>
-        <h3>🍗 Vad? 🌭</h3>
-        <p>Jultallriken serveras mellan kl. 11-15</p>
 
-        <h3>🧐 Vad mer? 🥳</h3>
+        <h2>Mer information</h2>
         <p>
-          Mer information kommer på<br />
+          Mer information kommer på
           <a href="https://www.facebook.com/groups/542032873677317">
             Hembygdsföreningens facebooksida
           </a>
         </p>
       </div>
-    </div>
+    </main>
 
-    <footer role="contentinfo" class="push-down">
+    <footer role="contentinfo">
       <p>
         © 2025
         <a href="https://www.facebook.com/profile.php?id=100089800479956"

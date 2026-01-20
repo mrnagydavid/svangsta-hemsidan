@@ -31,39 +31,35 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .image {
+      .subpage-hero {
         background-image: url('images/ang-02.jpg');
+        min-height: 60vh;
       }
 
-      .content p + h3 {
-        margin-top: 2rem;
+      .subpage-main {
+        text-align: center;
       }
 
-      .main-container {
-        flex: 0;
+      .subpage-main .content-wrapper {
+        max-width: 600px;
       }
 
-      .content {
-        justify-content: center;
-        align-items: center;
+      .subpage-main .back-home {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        background: var(--accent-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
 
-      footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-
-      @media (max-width: 768px) {
-        .main-container {
-          margin: 1rem;
-        }
+      .back-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(20, 82, 64, 0.3);
+        color: white;
       }
     </style>
     <script type="application/ld+json">
@@ -76,33 +72,33 @@
     </script>
   </head>
 
-  <body>
-    <div class="main-container">
-      <div class="image">
-        <h1>🔍 Svängsta 404 🔎</h1>
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
-      </div>
-      <div class="content">
-        <p>
-          I Svängsta hittar du nästan allt &mdash; men inte den här sidan,
-          tyvärr. 🕵
-        </p>
-        <p>
-          <strong
-            ><a href="./index.html">Gå tillbaka till startsidan</a></strong
-          >
-        </p>
-      </div>
-    </div>
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
 
-    <footer role="contentinfo" class="push-down">
+    <header class="subpage-hero hero-style-split">
+      <div class="hero-content">
+        <h1>Svängsta 404</h1>
+        <p class="subtitle">Sidan hittades inte</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
+        <p>
+          I Svängsta hittar du nästan allt — men inte den här sidan, tyvärr.
+        </p>
+        <a href="./index.html" class="back-home">Gå tillbaka till startsidan</a>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
       <p>
         © 2025
         <a href="https://www.facebook.com/profile.php?id=100089800479956"
