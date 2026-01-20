@@ -45,20 +45,8 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/hammarlundsvagen-01.jpg');
-      }
-
-      .content {
-        text-align: left;
-      }
-
-      ul + h3 {
-        margin-top: 2rem;
-      }
-
-      li + li {
-        margin-top: 1rem;
       }
     </style>
     <script type="application/ld+json">
@@ -71,57 +59,58 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <div class="hero-content">
+        <h1>Förenings&shy;liv & Gemenskap</h1>
+        <p class="subtitle">Tillsammans formar vi framtidens Svängsta</p>
       </div>
-      <div class="content">
-        <h1>Föreningsliv & Gemenskap</h1>
-        <h3>Tillsammans formar vi framtidens Svängsta</h3>
+    </header>
 
-        <ul>
-          <li>
-            <a href="./forening-svangstakultur.html"
-              >Svängsta Kultur och Hembygdsförening</a
-            >
-            <br />
-            En levande mötesplats för bygdens historia och gemenskap som arbetar
-            för att värna och synliggöra bygdens rika kulturarv.
-          </li>
-          <li>
-            <a href="./forening-pro.html">PRO Svängsta-Asarum</a>
-            <br />
-            En mötesplats för alla pensionärer där du kan träffa nya vänner,
-            delta i roliga aktiviteter och engagera dig i viktiga frågor.
-          </li>
-          <li>
-            <a href="./forening-svangstasamhalls.html"
-              >Svängsta Samhällsförening</a
-            >
-            <br />
-            Föreningen arbetar för att bevara det fina som redan finns här,
-            samtidigt som vi driver nya idéer och projekt som gör vår by ännu
-            mer levande och attraktiv.
-          </li>
-          <li>
-            <a href="./forening-svangstatragard.html"
-              >Svängsta Trädgårdsförening</a
-            >
-            <br />
-            En ideell förening vars syfte är att under trivsamma former öka vårt
-            kunnande om trädgård.
-          </li>
-        </ul>
+    <main class="subpage-main">
+      <div class="content-wrapper">
+        <div class="association-grid">
+          <a href="./forening-svangstakultur.html" class="association-card" style="background-image: url('images/kulturforening-02.png')">
+            <h3>Svängsta Kultur och Hembygdsförening</h3>
+            <p>
+              En levande mötesplats för bygdens historia och gemenskap som arbetar
+              för att värna och synliggöra bygdens rika kulturarv.
+            </p>
+          </a>
+          <a href="./forening-pro.html" class="association-card" style="background-image: url('images/forening-pro-01.jpg')">
+            <h3>PRO Svängsta-Asarum</h3>
+            <p>
+              En mötesplats för alla pensionärer där du kan träffa nya vänner,
+              delta i roliga aktiviteter och engagera dig i viktiga frågor.
+            </p>
+          </a>
+          <a href="./forening-svangstasamhalls.html" class="association-card" style="background-image: url('images/samhallsforening-mote-01.webp')">
+            <h3>Svängsta Samhällsförening</h3>
+            <p>
+              Föreningen arbetar för att bevara det fina som redan finns här,
+              samtidigt som vi driver nya idéer och projekt som gör vår by ännu
+              mer levande och attraktiv.
+            </p>
+          </a>
+          <a href="./forening-svangstatragard.html" class="association-card" style="background-image: url('images/forening-svangstatragard-hero.jpg')">
+            <h3>Svängsta Trädgårdsförening</h3>
+            <p>
+              En ideell förening vars syfte är att under trivsamma former öka vårt
+              kunnande om trädgård.
+            </p>
+          </a>
+        </div>
 
-        <h3>Vill du synas här?</h3>
+        <h2>Vill du synas här?</h2>
         <p>
           Skicka kontaktuppgifter till Ulla Olofsson<br />
           <a href="mailto:ulla.olofsson@karlshamn.se"
@@ -130,7 +119,7 @@
           tillsammans med en kort presentation och loggan.
         </p>
       </div>
-    </div>
+    </main>
 
     <footer role="contentinfo">
       <p>

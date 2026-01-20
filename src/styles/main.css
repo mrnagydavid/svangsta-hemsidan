@@ -8,6 +8,7 @@
   --glass-bg: rgb(100 100 100 / 15%);
   --placeholder-color: #9ca3af;
   --accent-color: #145240;
+  --accent-color-rgb: 20, 82, 64;
   --testimonial-background-color1: #f8fafc;
   --testimonial-background-color2: #e9f5ec;
 }
@@ -403,5 +404,490 @@ body.subpage {
 
   .content h1 {
     font-size: 1.9rem;
+  }
+}
+
+/* Full-width subpage layout */
+
+body.subpage-fullwidth {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--testimonial-background-color1);
+}
+
+.subpage-hero {
+  position: relative;
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem 2rem;
+}
+
+.subpage-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.subpage-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.subpage-hero video.loaded {
+  opacity: 1;
+}
+
+.subpage-hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subpage-hero h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.subpage-hero .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem;
+  text-shadow: var(--text-shadow);
+  font-style: italic;
+}
+
+/* Hero Style Variants */
+
+/* 1. Frosted Glass Card */
+.hero-style-glass .hero-content {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 600px;
+}
+
+.hero-style-glass h1,
+.hero-style-glass .subtitle {
+  text-shadow: none;
+}
+
+/* 2. Bottom Gradient Bar */
+.hero-style-gradient::before {
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    rgba(0, 0, 0, 0.2) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.hero-style-gradient .hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 2rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.hero-style-gradient h1,
+.hero-style-gradient .subtitle {
+  text-shadow: none;
+}
+
+/* 3. Floating Dark Pill */
+.hero-style-pill {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-style-pill::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-style-pill .hero-content {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  display: inline-block;
+  max-width: none;
+  width: auto;
+}
+
+.hero-style-pill h1 {
+  font-size: 2.5rem;
+  text-shadow: none;
+  margin-bottom: 0.25rem;
+}
+
+.hero-style-pill .subtitle {
+  text-shadow: none;
+  font-size: 1.1rem;
+}
+
+/* 4. Split Layout */
+.hero-style-split {
+  flex-direction: row;
+  padding: 0;
+  min-height: 50vh;
+}
+
+.hero-style-split::before {
+  display: none;
+}
+
+.hero-style-split .hero-content {
+  background: rgba(var(--accent-color-rgb), 0.42);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  max-width: none;
+  margin: 0;
+  z-index: 2;
+}
+
+.hero-style-split h1 {
+  text-shadow: none;
+  font-size: 2.5rem;
+}
+
+.hero-style-split .subtitle {
+  text-shadow: none;
+}
+
+.subpage-main {
+  flex: 1;
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.subpage-main .content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.subpage-main h2 {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subpage-main h2:first-child {
+  margin-top: 0;
+}
+
+.subpage-main h3 {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.subpage-main p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color-dark);
+}
+
+.subpage-main ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color-dark);
+}
+
+.subpage-main li + li {
+  margin-top: 0.75rem;
+}
+
+.subpage-main a {
+  color: var(--accent-color);
+  text-decoration-color: rgba(20, 82, 64, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.subpage-main a:hover {
+  text-decoration-color: var(--accent-color);
+}
+
+/* Card grid for foreningar overview */
+.association-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.association-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.association-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.association-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.association-card:hover::before {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.association-card h3 {
+  position: relative;
+  color: white;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.association-card p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Contact info section */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-icon {
+  font-size: 1.1rem;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.contact-person .name {
+  font-weight: 600;
+  color: var(--text-color-dark);
+}
+
+.contact-person .position {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.contact-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* QR code section styling */
+.qr-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--testimonial-background-color2),
+    var(--testimonial-background-color1)
+  );
+  border-radius: 12px;
+}
+
+.qr-section img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Event info boxes */
+.event-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.event-info-box {
+  background: linear-gradient(
+    135deg,
+    var(--testimonial-background-color2),
+    var(--testimonial-background-color1)
+  );
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.event-info-box h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.event-info-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .subpage-hero {
+    min-height: 40vh;
+    padding: 2rem 1rem;
+  }
+
+  .subpage-hero h1 {
+    font-size: 2rem;
+  }
+
+  .subpage-hero .subtitle {
+    font-size: 1.1rem;
+  }
+
+  /* Hero variants - mobile */
+  .hero-style-glass .hero-content {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin: 0 0.5rem;
+  }
+
+  .hero-style-pill .hero-content {
+    padding: 1.25rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .hero-style-pill h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-style-pill .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-style-split {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-style-split .hero-content {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    order: 2;
+  }
+
+  .hero-style-split::after {
+    content: '';
+    display: block;
+    height: 30vh;
+    order: 1;
+  }
+
+  .subpage-main {
+    padding: 2rem 1rem;
+  }
+
+  .association-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .subpage-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .subpage-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-style-split .hero-content {
+    padding: 1.5rem 1rem;
   }
 }

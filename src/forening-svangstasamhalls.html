@@ -31,32 +31,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .image {
+      .subpage-hero {
         background-image: url('images/samhallsforening-mote-01.webp');
-      }
-
-      .qr-logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 1rem;
-      }
-
-      .qr-logo .swish-qr {
-        width: 200px;
-        height: 220px;
-      }
-
-      .qr-logo .logo {
-        width: 200px;
-        height: 200px;
-      }
-
-      @media (max-width: 768px) {
-        .qr-logo {
-          flex-direction: column;
-          align-items: center;
-        }
       }
     </style>
     <script type="application/ld+json">
@@ -69,20 +45,25 @@
     </script>
   </head>
 
-  <body class="subpage">
-    <div class="main-container">
-      <div class="image">
-        <a
-          href="index.html"
-          class="back-button"
-          role="link"
-          aria-label="Tillbaka till startsidan"
-        >
-          <div class="go-back-indicator" aria-hidden="true">←</div>
-        </a>
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <div class="hero-content">
+        <h1>Svängsta Samhälls&shy;förening</h1>
+        <p class="subtitle">Tillsammans formar vi framtidens Svängsta</p>
       </div>
-      <div class="content">
-        <h1>Svängsta Samhällsförening</h1>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
         <p>
           Tillsammans formar vi framtidens Svängsta. Föreningen arbetar för att
           bevara det fina som redan finns här, samtidigt som vi driver nya idéer
@@ -94,26 +75,40 @@
           betyder mest - det är att du är med. Ditt medlemskap är på många sätt
           den bensin som driver Svängsta framåt.
         </p>
+
+        <h2>Betalning</h2>
         <p>
-          💚 Swish: <strong>123 214 28 34</strong><br />
-          💚 Bankgiro: <strong>690-7042</strong>
+          Swish: <strong>123 214 28 34</strong><br />
+          Bankgiro: <strong>690-7042</strong>
         </p>
         <p>
           Glöm inte att skriva din e-postadress i meddelandefältet så att vi kan
           bekräfta ditt medlemskap och hålla dig uppdaterad om vad som händer i
           Svängsta.
         </p>
+
+        <div class="qr-section">
+          <img src="images/swish-qr-1000x.webp" alt="Swish QR-kod för medlemsavgift" />
+          <img src="images/svangsta-logo-transparent.webp" alt="Svängsta logotyp" />
+        </div>
+
         <h2>Kontakt</h2>
-        <p>
-          ✉️ E-post: <a href="mailto:svangsta.samhallsforening@gmail.com">svangsta.samhallsforening@gmail.com</a><br />
-          👤 Ordförande: Ulla Olofsson, <a href="mailto:ulla.olofsson@karlshamn.se">ulla.olofsson@karlshamn.se</a>
-        </p>
-        <div class="qr-logo">
-          <img class="swish-qr" src="images/swish-qr-1000x.webp" />
-          <img class="logo" src="images/svangsta-logo-transparent.webp" />
+        <div class="contact-info">
+          <div class="contact-person">
+            <span class="name">Ulla Olofsson</span>
+            <span class="position">Ordförande</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:svangsta.samhallsforening@gmail.com">svangsta.samhallsforening@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:ulla.olofsson@karlshamn.se">ulla.olofsson@karlshamn.se</a>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer role="contentinfo">
       <p>
