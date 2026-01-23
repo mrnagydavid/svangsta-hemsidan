@@ -609,8 +609,8 @@ body.subpage-fullwidth {
 .subpage-main h3 {
   color: var(--accent-color);
   font-size: 1.3rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .subpage-main p {
