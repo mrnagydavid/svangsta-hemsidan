@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Evenemang i Svängsta" />
+    <meta
+      property="og:description"
+      content="Upptäck vad som händer i Svängsta. Ett levande samhälle med aktiviteter för alla."
+    />
+    <meta
+      property="og:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <meta property="og:url" content="https://svangsta.se/evenemang.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Evenemang i Svängsta" />
+    <meta
+      name="twitter:description"
+      content="Upptäck vad som händer i Svängsta. Ett levande samhälle med aktiviteter för alla."
+    />
+    <meta
+      name="twitter:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <title>Evenemang i Svängsta</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      .events-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem 2rem 1rem;
+      }
+
+      .filter-bar {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .filter-group {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+      }
+
+      .filter-group label {
+        font-weight: 600;
+        color: var(--text-color-greenish);
+        font-size: 0.9rem;
+      }
+
+      .filter-btn {
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--placeholder-color);
+        background: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 0.9rem;
+        color: var(--text-color-greenish);
+      }
+
+      .filter-btn:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+      }
+
+      .filter-btn.active {
+        background: var(--accent-color);
+        border-color: var(--accent-color);
+        color: white;
+      }
+
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .event-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        border-top: 4px solid var(--accent-color);
+      }
+
+      .event-card:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .event-card-header {
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid var(--placeholder-color);
+      }
+
+      .event-date-badge {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--accent-color-light);
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        min-width: 60px;
+        flex-shrink: 0;
+      }
+
+      .event-date-day {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        line-height: 1;
+      }
+
+      .event-date-month {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: var(--text-color-light);
+        font-weight: 600;
+        margin-top: 0.25rem;
+      }
+
+      .event-card-body {
+        padding: 0.75rem 1rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .event-title {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--text-color-greenish);
+        line-height: 1.3;
+        flex-grow: 1;
+      }
+
+      .event-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .event-title a:hover {
+        color: var(--accent-color);
+      }
+
+      .event-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-color-light);
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--placeholder-color);
+      }
+
+      .event-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .event-meta-icon {
+        width: 18px;
+        text-align: center;
+      }
+
+      .event-description {
+        color: var(--text-color-greenish);
+        line-height: 1.6;
+        flex-grow: 1;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--placeholder-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .event-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .event-organizer {
+        font-size: 0.85rem;
+        color: var(--text-color-light);
+      }
+
+      .event-organizer a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .event-organizer a:hover {
+        text-decoration: underline;
+      }
+
+      .event-badges {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .event-badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: var(--accent-color);
+        color: white;
+      }
+
+      .section-header {
+        margin-bottom: 1.5rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.8rem;
+        color: var(--accent-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .section-header p {
+        color: var(--text-color-light);
+        font-size: 0.95rem;
+      }
+
+      .no-events {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 3rem;
+        color: var(--text-color-light);
+        font-style: italic;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .events-cta {
+        background: var(--accent-color-light);
+        padding: 1rem 1.5rem;
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .events-cta p {
+        margin: 0;
+        color: var(--text-color-greenish);
+        font-size: 0.9rem;
+      }
+
+      .events-cta a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .events-cta a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .section-header h2 {
+          font-size: 1.6rem;
+        }
+
+        .events-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .filter-bar {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 1rem;
+          margin-top: -1rem;
+        }
+
+        .filter-group {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0.5rem;
+        }
+
+        .filter-group label {
+          text-align: left;
+        }
+
+        .filter-group:first-child {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .filter-group:first-child button {
+          flex: 1;
+        }
+
+        .event-card-header {
+          padding: 0.25rem;
+        }
+
+        .event-card-body {
+          padding: 1rem;
+        }
+
+        .event-title {
+          font-size: 1.1rem;
+        }
+
+        .event-meta {
+          display: block;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Svängsta",
+        "url": "https://www.svangsta.se"
+      }
+    </script>
+  </head>
+
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <video
+        muted
+        loop
+        playsinline
+        autoplay
+        preload="auto"
+        poster="images/pro-hero.jpg"
+      >
+        <source src="images/forening-pro-01-anim.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1>Evenemang i Svängsta</h1>
+        <p class="subtitle">Ett levande samhälle där saker händer</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="events-container">
+        <div class="events-cta">
+          <p>
+            Vill du att dina evenemang ska synas här? Kontakta
+            <a href="forening-svangstasamhalls.html"
+              >Svängsta Samhällsförening</a
+            >
+          </p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label>Visa:</label>
+            <button class="filter-btn active" data-filter="upcoming">
+              Kommande
+            </button>
+            <button class="filter-btn" data-filter="past">Tidigare</button>
+          </div>
+          <div class="filter-group">
+            <label>Arrangör:</label>
+            <select
+              id="organizer-filter"
+              class="filter-btn"
+              style="padding: 0.5rem; cursor: pointer"
+            >
+              <option value="all">Alla</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h2 id="section-title">Kommande evenemang</h2>
+          <p id="section-subtitle">Upptäck vad som händer i Svängsta</p>
+        </div>
+
+        <div id="events-grid" class="events-grid"></div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+      // Handle video loading
+      const video = document.querySelector('.subpage-hero video')
+      if (video) {
+        video.addEventListener('loadeddata', function () {
+          this.classList.add('loaded')
+        })
+        // Fallback if video is already loaded
+        if (video.readyState >= 3) {
+          video.classList.add('loaded')
+        }
+      }
+    </script>
+    <script>
+      let allEvents = []
+      let currentFilter = 'upcoming'
+      let currentOrganizer = 'all'
+
+      // Load and display events
+      async function loadEvents() {
+        try {
+          const response = await fetch('events.json')
+          allEvents = await response.json()
+
+          // Sort events by start date
+          allEvents.sort(
+            (a, b) => new Date(a.startDate) - new Date(b.startDate),
+          )
+
+          // Populate organizer filter
+          const organizers = [
+            ...new Set(allEvents.map((e) => e.organizer)),
+          ].sort()
+          const organizerSelect = document.getElementById('organizer-filter')
+          organizers.forEach((org) => {
+            const option = document.createElement('option')
+            option.value = org
+            option.textContent = org
+            organizerSelect.appendChild(option)
+          })
+
+          // Set up filter listeners
+          document.querySelectorAll('[data-filter]').forEach((btn) => {
+            btn.addEventListener('click', function () {
+              document
+                .querySelectorAll('[data-filter]')
+                .forEach((b) => b.classList.remove('active'))
+              this.classList.add('active')
+              currentFilter = this.dataset.filter
+              displayFilteredEvents()
+            })
+          })
+
+          organizerSelect.addEventListener('change', function () {
+            currentOrganizer = this.value
+            displayFilteredEvents()
+          })
+
+          displayFilteredEvents()
+        } catch (error) {
+          console.error('Error loading events:', error)
+          document.getElementById('events-grid').innerHTML =
+            '<div class="no-events">Det gick inte att ladda evenemang.</div>'
+        }
+      }
+
+      function displayFilteredEvents() {
+        const now = new Date()
+        let events = [...allEvents]
+
+        // Filter by time
+        if (currentFilter === 'upcoming') {
+          events = events.filter((e) => new Date(e.startDate) >= now)
+        } else if (currentFilter === 'past') {
+          events = events
+            .filter((e) => new Date(e.startDate) < now)
+            .reverse()
+            .slice(0, 20)
+        }
+
+        // Filter by organizer
+        if (currentOrganizer !== 'all') {
+          events = events.filter((e) => e.organizer === currentOrganizer)
+        }
+
+        // Update section header
+        const titles = {
+          upcoming: 'Kommande evenemang',
+          past: 'Tidigare evenemang',
+        }
+        document.getElementById('section-title').textContent =
+          titles[currentFilter]
+
+        const subtitles = {
+          upcoming: 'Upptäck vad som händer i Svängsta',
+          past: 'Se vad som har hänt',
+        }
+        document.getElementById('section-subtitle').textContent =
+          subtitles[currentFilter]
+
+        displayEvents(events)
+      }
+
+      function displayEvents(events) {
+        const container = document.getElementById('events-grid')
+
+        if (events.length === 0) {
+          container.innerHTML =
+            '<div class="no-events">Inga evenemang att visa med dessa filter.</div>'
+          return
+        }
+
+        container.innerHTML = events
+          .map((event) => createEventCard(event))
+          .join('')
+      }
+
+      function createEventCard(event) {
+        const startDate = new Date(event.startDate)
+        const endDate = event.endDate ? new Date(event.endDate) : null
+
+        const day = startDate.getDate()
+        const month = startDate.toLocaleDateString('sv-SE', { month: 'short' })
+        const weekday = startDate.toLocaleDateString('sv-SE', {
+          weekday: 'long',
+        })
+        const timeStr = formatTime(startDate, endDate)
+
+        const organizerLink = event.organizerLink
+          ? `<a href="${event.organizerLink}">${event.organizer}</a>`
+          : event.organizer
+
+        const memberBadge = event.forMembersOnly
+          ? '<span class="event-badge">Endast medlemmar</span>'
+          : ''
+
+        return `
+          <div class="event-card">
+            <div class="event-card-header">
+              <div class="event-date-badge">
+                <div class="event-date-day">${day}</div>
+                <div class="event-date-month">${month}</div>
+              </div>
+              <h3 class="event-title">
+                <a href="${event.link}" target="_blank" rel="noopener noreferrer">
+                  ${event.title}
+                </a>
+              </h3>
+            </div>
+            <div class="event-card-body">
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <span class="event-meta-icon">📅</span>
+                  <span>${weekday}</span>
+                </div>
+                <div class="event-meta-item">
+                  <span class="event-meta-icon">🕐</span>
+                  <span>${timeStr}</span>
+                </div>
+                <div class="event-meta-item">
+                  <span class="event-meta-icon">📍</span>
+                  <span>${event.location}</span>
+                </div>
+              </div>
+              <div class="event-description">${event.description}</div>
+              <div class="event-card-footer">
+                <div class="event-organizer">
+                  ${organizerLink}
+                </div>
+                <div class="event-badges">
+                  ${memberBadge}
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+      }
+
+      function formatTime(startDate, endDate) {
+        const startTime = startDate.toLocaleTimeString('sv-SE', {
+          hour: '2-digit',
+          minute: '2-digit',
+        })
+
+        if (!endDate) return startTime
+
+        const endTime = endDate.toLocaleTimeString('sv-SE', {
+          hour: '2-digit',
+          minute: '2-digit',
+        })
+
+        return `${startTime} - ${endTime}`
+      }
+
+      // Load events when page loads
+      loadEvents()
+    </script>
+  </body>
+</html>
