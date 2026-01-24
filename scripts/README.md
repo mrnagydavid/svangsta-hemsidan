@@ -41,8 +41,8 @@ The script updates `src/events.json` (a simple array) with events from all sourc
   {
     "id": "unique-id",
     "title": "Event title",
-    "startDate": "ISO date string",
-    "endDate": "ISO date string",
+    "startDate": "2025-06-12 or 2025-06-12T18:00",
+    "endDate": "2025-06-12 or 2025-06-12T18:00",
     "location": "Location name",
     "description": "Event description",
     "organizer": "Organizer name",
@@ -52,6 +52,13 @@ The script updates `src/events.json` (a simple array) with events from all sourc
   }
 ]
 ```
+
+**Date Format:**
+- Dates are stored as **naive datetime strings** (no timezone information)
+- Date-only events: `"2025-06-12"` (no time component)
+- Timed events: `"2025-06-12T18:00"` (date + time, no timezone suffix)
+- All times are assumed to be Swedish local time
+- This avoids timezone conversion issues and DST problems
 
 **Event ID prefixes:**
 - `church-*` - Swedish Church events (fully automated)
@@ -71,12 +78,14 @@ The script runs automatically via GitHub Actions:
 ### Church Events
 - Fetches from Swedish Church API using subscription key
 - Includes full event details (title, description, dates, location)
+- Converts ISO timestamps to naive datetime strings (Swedish local time)
 - Automatically filters to show only future events
 
 ### Garden Society Events
 - Scrapes the website using cheerio
 - Parses HTML to extract event information
-- Attempts to parse Swedish date formats into ISO format
+- Parses Swedish date formats (e.g., "juni 19, 2025") into naive datetime strings
+- Detects time information from event descriptions (e.g., "kl 18.00")
 
 ### PRO Events (Manual)
 PRO events are **not automated** by this script. They are manually curated using an LLM-based workflow that:
