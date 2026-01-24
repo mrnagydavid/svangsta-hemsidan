@@ -13,14 +13,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js for scripts
-        uses: actions/setup-node@v4
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
         with:
-          node-version: '20'
+          version: 8
 
       - name: Install script dependencies
         working-directory: ./scripts
-        run: npm install
+        run: pnpm install
 
       - name: Fetch and process events
         working-directory: ./scripts
@@ -41,11 +41,6 @@ jobs:
             echo "No changes to events data"
             echo "EVENTS_UPDATED=false" >> $GITHUB_ENV
           fi
-
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
 
       - name: Install site dependencies
         run: pnpm install
