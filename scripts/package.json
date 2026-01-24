@@ -1,0 +1,12 @@
+{
+  "name": "svangsta-scripts",
+  "version": "1.0.0",
+  "description": "Build-time scripts for Svängsta website",
+  "type": "module",
+  "scripts": {
+    "fetch-events": "node fetch-events.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
