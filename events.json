@@ -1,5 +1,77 @@
 [
   {
+    "id": "church-758955c74d1a4a828e554f3586b905b0",
+    "title": "Ekumenisk nattvardsgudstjänst i Kristofferkyrkan - Karlshamn",
+    "startDate": "2026-01-25T11:00",
+    "endDate": "2026-01-25T12:00",
+    "location": "Svängsta kyrka",
+    "description": "Alla gudstjänster/mässor är sammanlysta till Ekumenisk nattvardsgudstjänst i Kristofferkyrkan - Karlshamn\nPredikan: Jennie Chapman\nLovsång: Benjamin Liljenberg\nOrganist: Mari Sundås\nCelebrant: Patrik Bratt",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=758955c74d1a4a828e554f3586b905b0",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-9aba7d9382a5430788bcc7c5f889fe31",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-01-26T09:00",
+    "endDate": "2026-01-26T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9aba7d9382a5430788bcc7c5f889fe31",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-2cb2e7349f6044ec8a35be25bcb2172f",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-01-26T09:00",
+    "endDate": "2026-01-26T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2cb2e7349f6044ec8a35be25bcb2172f",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-c8d69128020046ffad3aab13bfefc6f3",
+    "title": "CAFÈKVÄLL med Årsmöte i PINGSTKYRKAN ASARUM",
+    "startDate": "2026-01-26T17:00",
+    "endDate": "2026-01-26T19:30",
+    "location": "Pingstkyrkan i Asarum",
+    "description": "Årsmötet börjar kl 17.00\n\nSamvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c8d69128020046ffad3aab13bfefc6f3",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-70bd3176fd34441db1d66c76a41183f4",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-01-27T13:00",
+    "endDate": "2026-01-27T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=70bd3176fd34441db1d66c76a41183f4",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3d51075ef49b40578953a63d4e80a86d",
+    "title": "Tisdagsmys Svängsta",
+    "startDate": "2026-01-27T17:30",
+    "endDate": "2026-01-27T19:30",
+    "location": "Svängsta kyrka",
+    "description": "TISDAGSMYS 27 januari kl.17.30-19.30 i Svängsta kyrka.\nVälkomna att inleda helgen med ett par timmar av öppen och\navslappnad gemenskap där barnen är i centrum, men alla är välkomna!\nVi pysslar, umgås, firar mysig andakt och äter hamburgare till självkostnadspris.\nHoppas vi ses!\n”Barnen i centrum men alla är välkomna”",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3d51075ef49b40578953a63d4e80a86d",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week1",
     "title": "Linedance Nybörjare (Vecka 1/10)",
     "startDate": "2026-01-28T14:00:00",
@@ -9,6 +81,54 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-32eff04326b242378a1e4c1891aa012b",
+    "title": "Mat & prat 17.30-19.30",
+    "startDate": "2026-01-28T17:30",
+    "endDate": "2026-01-28T19:30",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Mat & prat\nHjärtat i Asarum (rakt över Coop) kl 17:30-19:30\n(öppet från 17:00)\nI sin enklaste form träffas vi i\nsoffhörnan på Hjärtat och pratar om det som berör\noss i våra liv. Pizzabuffé till självkostnadspris finns!\nVälkommen som du är!\n\nFöljande datum\n• 28 jan • 25 feb • 25 mars • 22 april\n\nIngen anmälan!\n\nFör frågor kontakta gärna\nMia Dahl, församlingspedagog\nmia.dahl@svenskakyrkan.se\n0454 – 32 86 32",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=32eff04326b242378a1e4c1891aa012b",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-037fbd70fec848839f41f53815af50f2",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-01-29T13:00",
+    "endDate": "2026-01-29T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=037fbd70fec848839f41f53815af50f2",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-62f686d2cc9e4ad6897d9228acf06428",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-01-29T18:00",
+    "endDate": "2026-01-29T19:00",
+    "location": "Asarums kyrka",
+    "description": "Sång & Musik med Ellen & Signe Stigsson, samt Anna-Maria Berg & Jennie Bentzer-Sigurdsson.\nMitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=62f686d2cc9e4ad6897d9228acf06428",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-dc12c93ac18243efab78e407906e8c24",
+    "title": "MÄSSA",
+    "startDate": "2026-02-01T11:00",
+    "endDate": "2026-02-01T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=dc12c93ac18243efab78e407906e8c24",
     "forMembersOnly": false
   },
   {
@@ -72,18 +192,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "pro-199369",
-    "title": "Företagsbesök Äppelboden i Mörrum",
-    "startDate": "2026-02-25T15:00:00",
-    "endDate": "2026-02-25T17:00:00",
-    "location": "Äppelboden, Mörrum",
-    "description": "Besök hos Maria och Jonas på prisbelönt cideritillverkare som startade som hobby 2017. Rundtur, provsmakning och gårdsbutik. Avslutas med kaffe och kaka. Max 60 personer. Kostnad: 75 kr betalas på plats. Anmälan: 0701423139 eller monica.nobach@gmail.com",
-    "organizer": "PRO Svängsta-Asarum",
-    "organizerLink": "forening-pro.html",
-    "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199369",
-    "forMembersOnly": true
-  },
-  {
     "id": "pro-199372-week5",
     "title": "Linedance Nybörjare (Vecka 5/10)",
     "startDate": "2026-02-25T14:00:00",
@@ -94,6 +202,18 @@
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
     "forMembersOnly": false
+  },
+  {
+    "id": "pro-199369",
+    "title": "Företagsbesök Äppelboden i Mörrum",
+    "startDate": "2026-02-25T15:00:00",
+    "endDate": "2026-02-25T17:00:00",
+    "location": "Äppelboden, Mörrum",
+    "description": "Besök hos Maria och Jonas på prisbelönt cideritillverkare som startade som hobby 2017. Rundtur, provsmakning och gårdsbutik. Avslutas med kaffe och kaka. Max 60 personer. Kostnad: 75 kr betalas på plats. Anmälan: 0701423139 eller monica.nobach@gmail.com",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199369",
+    "forMembersOnly": true
   },
   {
     "id": "pro-199372-week6",
@@ -144,18 +264,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "pro-175590",
-    "title": "Våffeldagen",
-    "startDate": "2026-03-25T17:00:00",
-    "endDate": "2026-03-25T20:00:00",
-    "location": "Svängsta",
-    "description": "Fira våffeldagen tillsammans! Spel och pussel i trevligt sällskap. Max 30 deltagare. Anmälan senast 17/3 till Karin Nordstedt: 0708498609",
-    "organizer": "PRO Svängsta-Asarum",
-    "organizerLink": "forening-pro.html",
-    "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=175590",
-    "forMembersOnly": true
-  },
-  {
     "id": "pro-199372-week9",
     "title": "Linedance Nybörjare (Vecka 9/10)",
     "startDate": "2026-03-25T14:00:00",
@@ -166,6 +274,18 @@
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
     "forMembersOnly": false
+  },
+  {
+    "id": "pro-175590",
+    "title": "Våffeldagen",
+    "startDate": "2026-03-25T17:00:00",
+    "endDate": "2026-03-25T20:00:00",
+    "location": "Svängsta",
+    "description": "Fira våffeldagen tillsammans! Spel och pussel i trevligt sällskap. Max 30 deltagare. Anmälan senast 17/3 till Karin Nordstedt: 0708498609",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=175590",
+    "forMembersOnly": true
   },
   {
     "id": "pro-199370",
