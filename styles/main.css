@@ -11,6 +11,16 @@
   --accent-color-rgb: 20, 82, 64;
   --testimonial-background-color1: #f8fafc;
   --testimonial-background-color2: #e9f5ec;
+
+  /* Font Scale System */
+  --font-xs: 0.75rem;    /* 12px - badges, tiny labels */
+  --font-sm: 0.875rem;   /* 14px - small text, metadata */
+  --font-base: 1rem;     /* 16px - body text */
+  --font-md: 1.25rem;    /* 20px - large body, small headings */
+  --font-lg: 1.5rem;     /* 24px - h3, card titles */
+  --font-xl: 2rem;       /* 32px - h2, section headers */
+  --font-2xl: 2.5rem;    /* 40px - h1, page titles */
+  --font-3xl: 3.5rem;    /* 56px - hero elements */
 }
 
 * {
@@ -79,7 +89,7 @@ footer {
   padding: 1rem 1rem;
   color: var(--accent-color);
   background-color: white;
-  font-size: 0.8rem;
+  font-size: var(--font-sm);
   width: 100%;
 }
 
@@ -91,7 +101,7 @@ p + p {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 2rem;
+  font-size: var(--font-xl);
   color: white;
   z-index: 2;
   animation: slide 4s infinite;
@@ -211,7 +221,7 @@ p + p {
 
 .menu-header .menu-logo {
   display: block;
-  font-size: 2rem;
+  font-size: var(--font-xl);
   font-weight: 700;
   color: var(--accent-color);
   text-decoration: none;
@@ -224,7 +234,7 @@ p + p {
 
 .menu-header .menu-tagline {
   display: block;
-  font-size: 0.9rem;
+  font-size: var(--font-sm);
   color: var(--text-color-dark);
   opacity: 0.6;
   margin-top: 0.25rem;
@@ -232,7 +242,7 @@ p + p {
 
 #menu-drawer li {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-lg);
   text-decoration: none;
   font-weight: 600;
   padding: 0 1.25rem;
@@ -242,7 +252,7 @@ p + p {
 
 #menu-drawer ul > ul > li {
   padding: 0 1.25rem 0 2rem;
-  font-size: 1.3rem;
+  font-size: var(--font-md);
 }
 
 #menu-drawer a {
@@ -319,7 +329,7 @@ body.subpage {
 
 .content h1 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: var(--font-xl);
   color: var(--accent-color);
   max-width: 100%;
   word-break: break-word;
@@ -333,7 +343,7 @@ body.subpage {
 
 .content {
   padding: 2.5rem;
-  font-size: 1.1rem;
+  font-size: var(--font-md);
   line-height: 1.8;
 
   display: flex;
@@ -343,7 +353,7 @@ body.subpage {
 
 .content h3 {
   color: var(--accent-color);
-  font-size: 1.3rem;
+  font-size: var(--font-md);
   margin-bottom: 1rem;
 }
 
@@ -403,7 +413,7 @@ body.subpage {
   }
 
   .content h1 {
-    font-size: 1.9rem;
+    font-size: var(--font-xl);
   }
 }
 
@@ -465,7 +475,7 @@ body.subpage-fullwidth {
 
 .subpage-hero h1 {
   color: white;
-  font-size: 3rem;
+  font-size: var(--font-3xl);
   text-shadow: var(--text-shadow);
   margin-bottom: 0.5rem;
   line-height: 1.1;
@@ -473,7 +483,7 @@ body.subpage-fullwidth {
 
 .subpage-hero .subtitle {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.3rem;
+  font-size: var(--font-md);
   text-shadow: var(--text-shadow);
   font-style: italic;
 }
@@ -540,14 +550,14 @@ body.subpage-fullwidth {
 }
 
 .hero-style-pill h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-2xl);
   text-shadow: none;
   margin-bottom: 0.25rem;
 }
 
 .hero-style-pill .subtitle {
   text-shadow: none;
-  font-size: 1.1rem;
+  font-size: var(--font-base);
 }
 
 /* 4. Split Layout */
@@ -577,7 +587,7 @@ body.subpage-fullwidth {
 
 .hero-style-split h1 {
   text-shadow: none;
-  font-size: 2.5rem;
+  font-size: var(--font-2xl);
 }
 
 .hero-style-split .subtitle {
@@ -597,7 +607,7 @@ body.subpage-fullwidth {
 
 .subpage-main h2 {
   color: var(--accent-color);
-  font-size: 1.8rem;
+  font-size: var(--font-xl);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -608,19 +618,19 @@ body.subpage-fullwidth {
 
 .subpage-main h3 {
   color: var(--accent-color);
-  font-size: 1.3rem;
+  font-size: var(--font-md);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .subpage-main p {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
   line-height: 1.8;
   color: var(--text-color-dark);
 }
 
 .subpage-main ul {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
   line-height: 1.8;
   color: var(--text-color-dark);
 }
@@ -697,13 +707,13 @@ body.subpage-fullwidth {
   position: relative;
   color: white;
   margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: var(--font-md);
 }
 
 .association-card p {
   position: relative;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
+  font-size: var(--font-base);
   margin: 0;
   line-height: 1.6;
 }
@@ -732,7 +742,7 @@ body.subpage-fullwidth {
 }
 
 .contact-icon {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
 }
 
 .contact-person {
@@ -747,7 +757,7 @@ body.subpage-fullwidth {
 }
 
 .contact-person .position {
-  font-size: 0.85rem;
+  font-size: var(--font-sm);
   color: #666;
 }
 
@@ -804,12 +814,12 @@ body.subpage-fullwidth {
 
 .event-info-box h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: var(--font-md);
 }
 
 .event-info-box p {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-base);
 }
 
 @media (max-width: 768px) {
@@ -819,11 +829,11 @@ body.subpage-fullwidth {
   }
 
   .subpage-hero h1 {
-    font-size: 2rem;
+    font-size: var(--font-xl);
   }
 
   .subpage-hero .subtitle {
-    font-size: 1.1rem;
+    font-size: var(--font-md);
   }
 
   /* Hero variants - mobile */
@@ -839,11 +849,11 @@ body.subpage-fullwidth {
   }
 
   .hero-style-pill h1 {
-    font-size: 1.75rem;
+    font-size: var(--font-lg);
   }
 
   .hero-style-pill .subtitle {
-    font-size: 1rem;
+    font-size: var(--font-base);
   }
 
   .hero-style-split {
@@ -880,11 +890,11 @@ body.subpage-fullwidth {
 
 @media (max-width: 400px) {
   .subpage-hero h1 {
-    font-size: 1.6rem;
+    font-size: var(--font-lg);
   }
 
   .subpage-hero .subtitle {
-    font-size: 1rem;
+    font-size: var(--font-base);
   }
 
   .hero-style-split .hero-content {
