@@ -74,7 +74,7 @@
       .filter-group label {
         font-weight: 600;
         color: var(--text-color-greenish);
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
       }
 
       .filter-btn {
@@ -84,7 +84,7 @@
         border-radius: 8px;
         cursor: pointer;
         transition: all 0.2s ease;
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
         color: var(--text-color-greenish);
       }
 
@@ -142,14 +142,14 @@
       }
 
       .event-date-day {
-        font-size: 1.75rem;
+        font-size: var(--font-lg);
         font-weight: 700;
         color: var(--accent-color);
         line-height: 1;
       }
 
       .event-date-month {
-        font-size: 0.75rem;
+        font-size: var(--font-xs);
         text-transform: uppercase;
         color: var(--text-color-light);
         font-weight: 600;
@@ -164,7 +164,7 @@
       }
 
       .event-title {
-        font-size: 1.2rem;
+        font-size: var(--font-md);
         margin: 0;
         color: var(--text-color-greenish);
         line-height: 1.3;
@@ -185,7 +185,7 @@
         flex-wrap: wrap;
         gap: 1.5rem;
         margin-bottom: 0.5rem;
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
         color: var(--text-color-light);
         padding-bottom: 0.5rem;
         border-bottom: 1px solid var(--placeholder-color);
@@ -220,7 +220,7 @@
       }
 
       .event-organizer {
-        font-size: 0.85rem;
+        font-size: var(--font-sm);
         color: var(--text-color-light);
       }
 
@@ -244,7 +244,7 @@
         display: inline-block;
         padding: 0.25rem 0.75rem;
         border-radius: 6px;
-        font-size: 0.75rem;
+        font-size: var(--font-xs);
         font-weight: 600;
         background: var(--accent-color);
         color: white;
@@ -255,14 +255,14 @@
       }
 
       .section-header h2 {
-        font-size: 1.8rem;
+        font-size: var(--font-xl);
         color: var(--accent-color);
         margin-bottom: 0.5rem;
       }
 
       .section-header p {
         color: var(--text-color-light);
-        font-size: 0.95rem;
+        font-size: var(--font-base);
       }
 
       .no-events {
@@ -289,7 +289,7 @@
       .events-cta p {
         margin: 0;
         color: var(--text-color-greenish);
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
       }
 
       .events-cta a {
@@ -304,7 +304,7 @@
 
       @media (max-width: 768px) {
         .section-header h2 {
-          font-size: 1.6rem;
+          font-size: var(--font-lg);
         }
 
         .events-cta {
@@ -349,10 +349,6 @@
 
         .event-card-body {
           padding: 1rem;
-        }
-
-        .event-title {
-          font-size: 1.1rem;
         }
 
         .event-meta {
