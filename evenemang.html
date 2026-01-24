@@ -461,15 +461,34 @@
       let currentFilter = 'upcoming'
       let currentOrganizer = 'all'
 
+      /**
+       * Parse naive datetime string (no timezone) as local time
+       * Handles both date-only ("2025-06-12") and datetime ("2025-06-12T18:00") formats
+       */
+      function parseNaiveDate(dateStr) {
+        // Check if it has a time component
+        if (dateStr.includes('T')) {
+          // Parse datetime: "2025-06-12T18:00"
+          const [datePart, timePart] = dateStr.split('T')
+          const [year, month, day] = datePart.split('-').map(Number)
+          const [hours, minutes] = timePart.split(':').map(Number)
+          return new Date(year, month - 1, day, hours, minutes)
+        } else {
+          // Parse date-only: "2025-06-12" (treat as start of day)
+          const [year, month, day] = dateStr.split('-').map(Number)
+          return new Date(year, month - 1, day, 0, 0, 0)
+        }
+      }
+
       // Load and display events
       async function loadEvents() {
         try {
           const response = await fetch('events.json')
           allEvents = await response.json()
 
-          // Sort events by start date
+          // Sort events by start date (using naive date parser)
           allEvents.sort(
-            (a, b) => new Date(a.startDate) - new Date(b.startDate),
+            (a, b) => parseNaiveDate(a.startDate) - parseNaiveDate(b.startDate),
           )
 
           // Populate organizer filter
@@ -515,10 +534,46 @@
 
         // Filter by time
         if (currentFilter === 'upcoming') {
-          events = events.filter((e) => new Date(e.startDate) >= now)
+          events = events.filter((e) => {
+            const eventDate = parseNaiveDate(e.startDate)
+            // For date-only events, consider them upcoming if it's the same day or later
+            if (!e.startDate.includes('T')) {
+              // Compare dates only (ignore time) - set both to midnight for comparison
+              const eventDateMidnight = new Date(
+                eventDate.getFullYear(),
+                eventDate.getMonth(),
+                eventDate.getDate(),
+              )
+              const nowMidnight = new Date(
+                now.getFullYear(),
+                now.getMonth(),
+                now.getDate(),
+              )
+              return eventDateMidnight >= nowMidnight
+            }
+            return eventDate >= now
+          })
         } else if (currentFilter === 'past') {
           events = events
-            .filter((e) => new Date(e.startDate) < now)
+            .filter((e) => {
+              const eventDate = parseNaiveDate(e.startDate)
+              // For date-only events, consider them past if it's a previous day
+              if (!e.startDate.includes('T')) {
+                // Compare dates only (ignore time) - set both to midnight for comparison
+                const eventDateMidnight = new Date(
+                  eventDate.getFullYear(),
+                  eventDate.getMonth(),
+                  eventDate.getDate(),
+                )
+                const nowMidnight = new Date(
+                  now.getFullYear(),
+                  now.getMonth(),
+                  now.getDate(),
+                )
+                return eventDateMidnight < nowMidnight
+              }
+              return eventDate < now
+            })
             .reverse()
             .slice(0, 20)
         }
@@ -561,15 +616,18 @@
       }
 
       function createEventCard(event) {
-        const startDate = new Date(event.startDate)
-        const endDate = event.endDate ? new Date(event.endDate) : null
+        const startDate = parseNaiveDate(event.startDate)
+        const endDate = event.endDate ? parseNaiveDate(event.endDate) : null
 
         const day = startDate.getDate()
         const month = startDate.toLocaleDateString('sv-SE', { month: 'short' })
         const weekday = startDate.toLocaleDateString('sv-SE', {
           weekday: 'long',
         })
-        const timeStr = formatTime(startDate, endDate)
+
+        // Check if the event has a time component (contains 'T')
+        const hasTime = event.startDate.includes('T')
+        const timeStr = hasTime ? formatTime(event.startDate, event.endDate) : null
 
         const organizerLink = event.organizerLink
           ? `<a href="${event.organizerLink}">${event.organizer}</a>`
@@ -577,6 +635,14 @@
 
         const memberBadge = event.forMembersOnly
           ? '<span class="event-badge">Endast medlemmar</span>'
+          : ''
+
+        // Only show time meta item if event has a time
+        const timeMeta = hasTime
+          ? `<div class="event-meta-item">
+              <span class="event-meta-icon">🕐</span>
+              <span>${timeStr}</span>
+            </div>`
           : ''
 
         return `
@@ -598,10 +664,7 @@
                   <span class="event-meta-icon">📅</span>
                   <span>${weekday}</span>
                 </div>
-                <div class="event-meta-item">
-                  <span class="event-meta-icon">🕐</span>
-                  <span>${timeStr}</span>
-                </div>
+                ${timeMeta}
                 <div class="event-meta-item">
                   <span class="event-meta-icon">📍</span>
                   <span>${event.location}</span>
@@ -621,18 +684,19 @@
         `
       }
 
-      function formatTime(startDate, endDate) {
-        const startTime = startDate.toLocaleTimeString('sv-SE', {
-          hour: '2-digit',
-          minute: '2-digit',
-        })
+      function formatTime(startDateStr, endDateStr) {
+        // Extract time from naive datetime string (e.g., "2025-06-12T18:00" -> "18:00")
+        const startMatch = startDateStr.match(/T(\d{2}:\d{2})/)
+        if (!startMatch) return ''
 
-        if (!endDate) return startTime
+        const startTime = startMatch[1]
 
-        const endTime = endDate.toLocaleTimeString('sv-SE', {
-          hour: '2-digit',
-          minute: '2-digit',
-        })
+        if (!endDateStr) return startTime
+
+        const endMatch = endDateStr.match(/T(\d{2}:\d{2})/)
+        if (!endMatch) return startTime
+
+        const endTime = endMatch[1]
 
         return `${startTime} - ${endTime}`
       }
