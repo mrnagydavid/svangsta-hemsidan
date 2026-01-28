@@ -312,6 +312,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-bfcc4336582f4dd1a636a9e0ff633105",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-02-05T13:00",
+    "endDate": "2026-02-05T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=bfcc4336582f4dd1a636a9e0ff633105",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-d445e34904e84f73abda643a01af064f",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-02-05T18:00",
+    "endDate": "2026-02-05T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d445e34904e84f73abda643a01af064f",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week3",
     "title": "Linedance Nybörjare (Vecka 3/10)",
     "startDate": "2026-02-11T14:00:00",
