@@ -336,6 +336,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-11907dab49ed4d24a0f2e8987f9df8d1",
+    "title": "MÄSSA",
+    "startDate": "2026-02-08T11:00",
+    "endDate": "2026-02-08T12:00",
+    "location": "Asarums kyrka",
+    "description": "Sång av församlingens körer under ledning av Jennie Bentzer Sigurdsson & Anna-Maria Berg",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=11907dab49ed4d24a0f2e8987f9df8d1",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week3",
     "title": "Linedance Nybörjare (Vecka 3/10)",
     "startDate": "2026-02-11T14:00:00",
