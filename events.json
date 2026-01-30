@@ -516,6 +516,18 @@
     "forMembersOnly": true
   },
   {
+    "id": "akeholm-20260329",
+    "title": "Vårmarknad i Åkeholm",
+    "startDate": "2026-03-29T13:00:00",
+    "endDate": "2026-03-29T16:00:00",
+    "location": "Åkeholm",
+    "description": "Vårmarknad med hantverkare och kaffeservering. Address: Åkeholm, Stationsväg 20.",
+    "organizer": "Åkeholms Byalag",
+    "organizerLink": "https://www.facebook.com/profile.php?id=61557022652460",
+    "link": "https://www.facebook.com/events/s/varmarknad-i-akeholm/1177185337733117",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199370",
     "title": "Teater: Rent Hus (Picknickföreställning)",
     "startDate": "2026-03-29T18:00:00",
