@@ -348,6 +348,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-944a27758b3e447ca5ea017e07dd39ed",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-02-09T09:00",
+    "endDate": "2026-02-09T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=944a27758b3e447ca5ea017e07dd39ed",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-edc05a66493844a18648292ef2660b95",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-02-09T09:00",
+    "endDate": "2026-02-09T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=edc05a66493844a18648292ef2660b95",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week3",
     "title": "Linedance Nybörjare (Vecka 3/10)",
     "startDate": "2026-02-11T14:00:00",
