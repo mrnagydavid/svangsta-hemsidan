@@ -14,6 +14,8 @@ const CHURCH_OWNER_ID = '22059'
 const CHURCH_PLACE_API_URL = 'https://api.svenskakyrkan.se/platser/v4/place'
 const CHURCH_PLACE_API_KEY = '09ec36d9-df57-49f6-b9b1-51be61370e62'
 const GARDEN_URL = 'https://svangstatradgard.se/index.php/category/evenemang/'
+const ESPORT_BASE_URL = 'https://www.svangstaesport.se/kalender'
+const ESPORT_MONTHS_AHEAD = 4
 const OUTPUT_FILE = path.join(__dirname, '../src/data/events.json')
 
 // Cache for place details to avoid duplicate API calls
@@ -45,13 +47,14 @@ async function main() {
     })
 
     // Keep existing events from other sources (e.g., manually curated PRO events)
-    // These are events that aren't from church or garden
+    // These are events that aren't from church, garden, or esport
     const otherSourceEvents = existingEvents.filter((event) => {
       const eventDate = new Date(event.startDate)
       return (
         eventDate >= today &&
         !event.id.startsWith('church-') &&
-        !event.id.startsWith('garden-')
+        !event.id.startsWith('garden-') &&
+        !event.id.startsWith('esport-')
       )
     })
 
@@ -60,8 +63,8 @@ async function main() {
       `Preserving ${otherSourceEvents.length} events from other sources (e.g., PRO)\n`,
     )
 
-    // Fetch from church and garden sources (only future events)
-    const [churchEvents, gardenEvents] = await Promise.all([
+    // Fetch from church, garden, and esport sources (only future events)
+    const [churchEvents, gardenEvents, esportEvents] = await Promise.all([
       fetchChurchEvents().catch((err) => {
         console.error('Failed to fetch church events:', err.message)
         return []
@@ -70,11 +73,16 @@ async function main() {
         console.error('Failed to fetch garden events:', err.message)
         return []
       }),
+      fetchEsportEvents().catch((err) => {
+        console.error('Failed to fetch esport events:', err.message)
+        return []
+      }),
     ])
 
     // Transform to match existing format (only future events)
     const transformedChurch = await transformChurchEvents(churchEvents)
     const transformedGarden = transformGardenEvents(gardenEvents)
+    const transformedEsport = transformEsportEvents(esportEvents)
 
     // Combine all events and sort by date
     const allEvents = [
@@ -82,6 +90,7 @@ async function main() {
       ...otherSourceEvents,
       ...transformedChurch,
       ...transformedGarden,
+      ...transformedEsport,
     ].sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
 
     // Ensure output directory exists
@@ -98,6 +107,7 @@ async function main() {
     )
     console.log(`  - Church events: ${transformedChurch.length}`)
     console.log(`  - Garden events: ${transformedGarden.length}`)
+    console.log(`  - Esport events: ${transformedEsport.length}`)
     console.log(`  - Other sources (preserved): ${otherSourceEvents.length}`)
   } catch (error) {
     console.error('Error fetching events:', error)
@@ -387,6 +397,221 @@ function transformGardenEvents(events) {
     .filter((event) => {
       // Only include events with a valid date that are in the future
       if (event.startDate === null) return false
+      const eventDate = new Date(event.startDate)
+      return eventDate >= today
+    })
+    .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+}
+
+/** ============================================================================
+ * ESPORT FUNCTIONS (Svängsta Esportförening)
+ * ============================================================================ */
+
+/**
+ * Get Swedish month name from month index (0-11)
+ */
+function getSwedishMonth(monthIndex) {
+  const months = [
+    'januari',
+    'februari',
+    'mars',
+    'april',
+    'maj',
+    'juni',
+    'juli',
+    'augusti',
+    'september',
+    'oktober',
+    'november',
+    'december',
+  ]
+  return months[monthIndex]
+}
+
+/**
+ * Fetch esport events from calendar pages for the next N months
+ */
+async function fetchEsportEvents() {
+  console.log(
+    `Fetching esport events for the next ${ESPORT_MONTHS_AHEAD} months...`,
+  )
+
+  const today = new Date()
+  const events = []
+
+  // Fetch each month's calendar page
+  for (let i = 0; i < ESPORT_MONTHS_AHEAD; i++) {
+    const targetDate = new Date(today.getFullYear(), today.getMonth() + i, 1)
+    const year = targetDate.getFullYear()
+    const month = getSwedishMonth(targetDate.getMonth())
+    const url = `${ESPORT_BASE_URL}/${year}/${month}`
+
+    try {
+      console.log(`  Fetching ${month} ${year}...`)
+      const response = await fetch(url)
+
+      if (!response.ok) {
+        console.error(`  Failed to fetch ${url}: ${response.statusText}`)
+        continue
+      }
+
+      const html = await response.text()
+      const monthEvents = parseEsportCalendarPage(
+        html,
+        year,
+        targetDate.getMonth(),
+      )
+      events.push(...monthEvents)
+
+      // Small delay between requests
+      await delay(200)
+    } catch (error) {
+      console.error(`  Error fetching ${url}:`, error.message)
+    }
+  }
+
+  console.log(`✓ Fetched ${events.length} esport events`)
+  return events
+}
+
+/**
+ * Parse esport calendar page HTML to extract events
+ * The calendar uses a table-based layout with rows containing event data:
+ * - tr.clickable-row contains events
+ * - First td has the day number in span.date > b
+ * - Second td has start/end times
+ * - Third td has activity name, team label, and location
+ */
+function parseEsportCalendarPage(html, year, monthIndex) {
+  const $ = cheerio.load(html)
+  const events = []
+
+  // Find all clickable rows that contain events
+  $('tr.clickable-row').each((_, row) => {
+    const $row = $(row)
+
+    // Get the link to the event
+    const $link = $row.find('a[href*="/aktivitet/"]').first()
+    const href = $link.attr('href')
+    if (!href) return
+
+    // Extract event ID from URL (format: /team/aktivitet/ID/slug)
+    const idMatch = href.match(/\/aktivitet\/(\d+)/)
+    const eventId = idMatch ? idMatch[1] : null
+    if (!eventId) return
+
+    // Get the day number from span.date > b
+    const dayText = $row.find('span.date b').first().text().trim()
+    const day = parseInt(dayText)
+    if (isNaN(day)) return
+
+    // Get start and end times from the second td
+    const $timeTd = $row.find('td').eq(1)
+    const timeText = $timeTd.text().trim()
+    // Time format is "HH:MM" on first line and "HH:MM" in span.text-muted
+    const startTimeMatch = timeText.match(/^(\d{1,2}):(\d{2})/)
+    const endTimeText = $timeTd.find('span.text-muted').text().trim()
+    const endTimeMatch = endTimeText.match(/(\d{1,2}):(\d{2})/)
+
+    let startTime = null
+    let endTime = null
+    if (startTimeMatch) {
+      startTime = `${String(startTimeMatch[1]).padStart(2, '0')}:${startTimeMatch[2]}`
+    }
+    if (endTimeMatch) {
+      endTime = `${String(endTimeMatch[1]).padStart(2, '0')}:${endTimeMatch[2]}`
+    }
+
+    // Get the event title from span.activity-name
+    const title = $row.find('span.activity-name').first().text().trim()
+    if (!title) return
+
+    // Get team from span.label
+    const team = $row.find('span.label').first().text().trim()
+
+    // Get location from the small muted text (after the br)
+    const $contentTd = $row.find('td').eq(2)
+    const location = $contentTd
+      .find('span.text-muted.small')
+      .first()
+      .text()
+      .trim()
+
+    events.push({
+      id: eventId,
+      title,
+      team,
+      location,
+      day,
+      month: monthIndex,
+      year,
+      startTime,
+      endTime,
+      link: href.startsWith('http')
+        ? href
+        : `https://www.svangstaesport.se${href}`,
+    })
+  })
+
+  return events
+}
+
+/**
+ * Transform esport events to match existing format
+ */
+function transformEsportEvents(events) {
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+
+  // Deduplicate events by ID
+  const uniqueEvents = new Map()
+  events.forEach((event) => {
+    if (!uniqueEvents.has(event.id)) {
+      uniqueEvents.set(event.id, event)
+    }
+  })
+
+  return Array.from(uniqueEvents.values())
+    .map((event) => {
+      // Build date strings
+      const dateStr = `${event.year}-${String(event.month + 1).padStart(2, '0')}-${String(event.day).padStart(2, '0')}`
+
+      let startDate = dateStr
+      let endDate = dateStr
+
+      if (event.startTime) {
+        startDate = `${dateStr}T${event.startTime}`
+      }
+      if (event.endTime) {
+        endDate = `${dateStr}T${event.endTime}`
+      }
+
+      // Build description from team and location
+      let description = ''
+      if (event.team) {
+        description = event.team
+      }
+      if (event.location) {
+        description = description
+          ? `${description}\n\nPlats: ${event.location}`
+          : `Plats: ${event.location}`
+      }
+
+      return {
+        id: `esport-${event.id}`,
+        title: event.title,
+        startDate,
+        endDate,
+        location: event.location || 'Svängsta Esportförening',
+        description,
+        organizer: 'Svängsta Esportförening',
+        organizerLink: 'forening-esport.html',
+        link: event.link,
+        forMembersOnly: false,
+      }
+    })
+    .filter((event) => {
+      // Only include events that are in the future
       const eventDate = new Date(event.startDate)
       return eventDate >= today
     })
