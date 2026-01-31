@@ -375,5 +375,31 @@
     "locality": "Svängsta",
     "lat": 56.2789719,
     "lng": 14.7407912
+  },
+  {
+    "id": "xile-gym-wear",
+    "name": "Xile Gym Wear",
+    "category": "Handel / Kläder",
+    "description": "Klädmärke för träningskläder till dam och herr till vettiga priser.",
+    "phone": null,
+    "email": "info@xilegymwear.se",
+    "website": "https://www.xilegymwear.se",
+    "address": "Ebbarpsvägen, 37637 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.263,
+    "lng": 14.77
+  },
+  {
+    "id": "svangsta-tryckeriet",
+    "name": "Svängsta Tryckeriet",
+    "category": "Tryckeri",
+    "description": "Screentryck, vinyltryck (HTV), dekaler, klistermärken m.m.",
+    "phone": null,
+    "email": "info@svangstatryckeriet.se",
+    "website": null,
+    "address": "Ebbarpsvägen, 37637 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.262,
+    "lng": 14.77
   }
 ]
