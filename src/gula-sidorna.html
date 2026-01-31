@@ -12,9 +12,23 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="sv_SE" />
     <title>Företag & Service | Svängsta</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
@@ -421,7 +435,9 @@
         justify-content: center;
         font-size: 18px;
         cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
       }
 
       .yp-marker:hover {
@@ -579,13 +595,7 @@
         mat: {
           icon: '🍽️',
           label: 'Mat',
-          keywords: [
-            'restaurang',
-            'pizzeria',
-            'lunch',
-            'mat',
-            'gårdskrog',
-          ],
+          keywords: ['restaurang', 'pizzeria', 'lunch', 'mat', 'gårdskrog'],
         },
         handel: {
           icon: '🛒',
@@ -603,7 +613,7 @@
         },
         bygg: {
           icon: '🔨',
-          label: 'Bygg & Hantverk',
+          label: 'Bygg & Snickeri',
           keywords: [
             'bygg',
             'snickeri',
@@ -612,6 +622,11 @@
             'mobilsåg',
             'betong',
           ],
+        },
+        hantverk: {
+          icon: '🎨',
+          label: 'Hantverk & Konst',
+          keywords: ['hantverk', 'keramik', 'konst', 'drejning'],
         },
         installation: {
           icon: '⚡',
@@ -624,7 +639,7 @@
           keywords: ['industri', 'verkstad', 'tillverk', 'komponent'],
         },
         kreativ: {
-          icon: '🎨',
+          icon: '📷',
           label: 'Kreativa tjänster',
           keywords: [
             'design',
@@ -686,10 +701,12 @@
         if (c.includes('bensin')) return '⛽'
         if (c.includes('jakt')) return '🎯'
         if (c.includes('loppis') || c.includes('second')) return '🛍️'
+        if (c.includes('tryckeri') || c.includes('skyltar')) return '🖨️'
         if (c.includes('el')) return '⚡'
         if (c.includes('vvs')) return '🚰'
         if (c.includes('måleri')) return '🖌️'
         if (c.includes('snickeri')) return '🪚'
+        if (c.includes('keramik')) return '🏺'
         if (c.includes('bygg')) return '🔨'
         if (c.includes('skog') || c.includes('mobilsåg')) return '🌲'
         if (c.includes('industri') || c.includes('verkstad')) return '🏭'
@@ -937,8 +954,8 @@
         Halda: { lat: 56.27, lng: 14.73 },
         Karlshamn: { lat: 56.17, lng: 14.86 },
         Mörrum: { lat: 56.19, lng: 14.75 },
-        Hemsjö: { lat: 56.30, lng: 14.75 },
-        Hallandsboda: { lat: 56.24, lng: 14.70 },
+        Hemsjö: { lat: 56.3, lng: 14.75 },
+        Hallandsboda: { lat: 56.24, lng: 14.7 },
         Bökemåla: { lat: 56.28, lng: 14.68 },
         'Övre Ämneboda': { lat: 56.29, lng: 14.71 },
         Lönnemåla: { lat: 56.25, lng: 14.69 },
@@ -979,22 +996,32 @@
 
         const contacts = []
         if (item.phone) {
-          contacts.push(`<div>📞 <a href="${phoneHref(item.phone)}">${item.phone}</a></div>`)
+          contacts.push(
+            `<div>📞 <a href="${phoneHref(item.phone)}">${item.phone}</a></div>`,
+          )
         }
         if (item.email) {
-          contacts.push(`<div>✉️ <a href="mailto:${item.email}">${item.email}</a></div>`)
+          contacts.push(
+            `<div>✉️ <a href="mailto:${item.email}">${item.email}</a></div>`,
+          )
         }
         if (item.website) {
-          contacts.push(`<div>🌐 <a href="${item.website}" target="_blank" rel="noopener">Webbplats</a></div>`)
+          contacts.push(
+            `<div>🌐 <a href="${item.website}" target="_blank" rel="noopener">Webbplats</a></div>`,
+          )
         }
         if (item.address) {
           contacts.push(`<div>📍 ${item.address}</div>`)
         } else if (item.locality) {
-          contacts.push(`<div>📍 ${item.locality}${isArea ? ' (ungefärligt)' : ''}</div>`)
+          contacts.push(
+            `<div>📍 ${item.locality}${isArea ? ' (ungefärligt)' : ''}</div>`,
+          )
         }
 
         if (contacts.length) {
-          lines.push(`<div class="yp-popup-contacts">${contacts.join('')}</div>`)
+          lines.push(
+            `<div class="yp-popup-contacts">${contacts.join('')}</div>`,
+          )
         }
 
         return lines.join('')
@@ -1043,17 +1070,25 @@
 
         // Show overlay on touch when interactions are disabled
         const mapEl = document.getElementById('yp-map')
-        mapEl.addEventListener('touchstart', () => {
-          if (!interactionEnabled) {
-            mapOverlay.classList.add('visible')
-          }
-        }, { passive: true })
+        mapEl.addEventListener(
+          'touchstart',
+          () => {
+            if (!interactionEnabled) {
+              mapOverlay.classList.add('visible')
+            }
+          },
+          { passive: true },
+        )
 
-        mapEl.addEventListener('touchend', () => {
-          if (!interactionEnabled) {
-            mapOverlay.classList.remove('visible')
-          }
-        }, { passive: true })
+        mapEl.addEventListener(
+          'touchend',
+          () => {
+            if (!interactionEnabled) {
+              mapOverlay.classList.remove('visible')
+            }
+          },
+          { passive: true },
+        )
 
         // Add markers
         items.forEach((item) => {
@@ -1123,7 +1158,9 @@
             marker.addTo(mapInstance)
           }
           // Scroll map into view first
-          document.getElementById('yp-map').scrollIntoView({ behavior: 'smooth', block: 'center' })
+          document
+            .getElementById('yp-map')
+            .scrollIntoView({ behavior: 'smooth', block: 'center' })
           // Wait for scroll and layout to stabilize, then position
           setTimeout(() => {
             // Ensure Leaflet has correct container dimensions
