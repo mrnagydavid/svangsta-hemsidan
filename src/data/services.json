@@ -221,6 +221,19 @@
     "lng": 14.7163761
   },
   {
+    "id": "tittis-keramik",
+    "name": "Titti's Keramik",
+    "category": "Keramik / Hantverk",
+    "description": "Keramikverkstad vid Lönnemåla Gård. Erbjuder privatkurser i drejning.",
+    "phone": "073-3130404",
+    "email": "titti@tittiskeramik.se",
+    "website": "https://www.tittiskeramik.se",
+    "address": "Lönnemålavägen 165-9, 376 93 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.2437153,
+    "lng": 14.7163761
+  },
+  {
     "id": "omnia-bygg",
     "name": "Omnia Bygg AB",
     "category": "Bygg",
