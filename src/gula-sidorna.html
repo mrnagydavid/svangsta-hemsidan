@@ -759,7 +759,7 @@
       // Main init
       async function initYellowPages() {
         try {
-          const response = await fetch('./info.json')
+          const response = await fetch('./data/services.json')
           if (!response.ok) throw new Error('Failed to load data')
           const items = await response.json()
 

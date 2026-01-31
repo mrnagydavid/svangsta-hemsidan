@@ -483,7 +483,7 @@
       // Load and display events
       async function loadEvents() {
         try {
-          const response = await fetch('events.json')
+          const response = await fetch('data/events.json')
           allEvents = await response.json()
 
           // Sort events by start date (using naive date parser)

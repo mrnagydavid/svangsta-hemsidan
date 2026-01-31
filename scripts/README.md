@@ -9,7 +9,7 @@ These scripts run during the GitHub Actions workflow to fetch and process extern
 ## Structure
 
 - `package.json` - Dependencies for build scripts only (separate from main site)
-- `fetch-events.js` - Fetches events from multiple sources and updates `src/events.json`
+- `fetch-events.js` - Fetches events from multiple sources and updates `src/data/events.json`
 
 ## Local Development
 
@@ -21,7 +21,7 @@ npm install
 node fetch-events.js
 ```
 
-This will update `src/events.json` with the latest events from all three sources.
+This will update `src/data/events.json` with the latest events from all three sources.
 
 ## Event Sources
 
@@ -34,7 +34,7 @@ This will update `src/events.json` with the latest events from all three sources
 
 ## Output Format
 
-The script updates `src/events.json` (a simple array) with events from all sources:
+The script updates `src/data/events.json` (a simple array) with events from all sources:
 
 ```json
 [

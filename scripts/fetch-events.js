@@ -14,7 +14,7 @@ const CHURCH_OWNER_ID = '22059'
 const CHURCH_PLACE_API_URL = 'https://api.svenskakyrkan.se/platser/v4/place'
 const CHURCH_PLACE_API_KEY = '09ec36d9-df57-49f6-b9b1-51be61370e62'
 const GARDEN_URL = 'https://svangstatradgard.se/index.php/category/evenemang/'
-const OUTPUT_FILE = path.join(__dirname, '../src/events.json')
+const OUTPUT_FILE = path.join(__dirname, '../src/data/events.json')
 
 // Cache for place details to avoid duplicate API calls
 const placeCache = new Map()
