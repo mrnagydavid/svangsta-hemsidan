@@ -1,5 +1,18 @@
 [
   {
+    "id": "b-kjellgren-mek",
+    "name": "Björn Kjellgren Mek.",
+    "category": "Industri / Verkstad",
+    "description": "Båtreparationer och service samt diverse reparationer av traktorer, maskiner och enklare svetsprojekt.",
+    "phone": "076-6325187",
+    "email": "bkmek@outlook.com",
+    "website": "https://www.facebook.com/p/BKjellgren-Mek-61552685034965",
+    "address": "Nippelvägen 4, 376 37 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.2681995,
+    "lng": 14.7565427
+  },
+  {
     "id": "bm-design",
     "name": "BM Design Center",
     "category": "Design / Försäljning / Evenemang",
