@@ -226,7 +226,9 @@
         transition: all 0.2s;
         display: flex;
         flex-direction: column;
-        cursor: pointer;
+        cursor: default;
+        user-select: text;
+        -webkit-user-select: text;
       }
 
       .yp-card:hover {
@@ -239,6 +241,11 @@
         align-items: flex-start;
         gap: 0.75rem;
         margin-bottom: 0.75rem;
+        cursor: pointer;
+      }
+
+      .yp-card-header:hover .yp-card-title {
+        color: var(--yp-accent);
       }
 
       .yp-card-emoji {
@@ -1184,13 +1191,11 @@
       }
 
       function setupCardClickHandlers() {
-        const cards = document.querySelectorAll('.yp-card')
-        cards.forEach((card) => {
-          card.addEventListener('click', (e) => {
-            // Don't trigger if clicking on a link inside the card
-            if (e.target.closest('a')) return
-
-            const itemName = card.dataset.name
+        const headers = document.querySelectorAll('.yp-card-header')
+        headers.forEach((header) => {
+          header.addEventListener('click', (e) => {
+            const card = header.closest('.yp-card')
+            const itemName = card?.dataset.name
             if (itemName) {
               focusOnMarker(itemName)
             }
