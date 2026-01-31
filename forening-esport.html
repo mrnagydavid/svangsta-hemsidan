@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Svängsta Esportförening" />
+    <meta
+      property="og:description"
+      content="En förening som skapar en trygg och rolig miljö för alla deltagare och utvecklar e-sporten i Sverige."
+    />
+    <meta
+      property="og:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://svangsta.se/forening-esport.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Svängsta Esportförening" />
+    <meta
+      name="twitter:description"
+      content="En förening som skapar en trygg och rolig miljö för alla deltagare och utvecklar e-sporten i Sverige."
+    />
+    <meta
+      name="twitter:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <title>Svängsta Esportförening</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      .subpage-hero {
+        background-color: #000;
+        background-image: url('images/forening-esport-hero.jpg');
+      }
+      .subpage-hero video {
+        object-fit: contain;
+        background-color: #000;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Svängsta",
+        "url": "https://www.svangsta.se"
+      }
+    </script>
+  </head>
+
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero hero-style-split">
+      <video
+        muted
+        loop
+        playsinline
+        autoplay
+        preload="auto"
+        poster="images/forening-esport-hero.jpg"
+      >
+        <source src="images/forening-esport-hero-anim.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1>Svängsta Esportförening</h1>
+        <p class="subtitle">...en trygg och rolig miljö för e-sport</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
+        <p>
+          Svängsta Esportförening är en förening ansluten till Sveriges
+          Riksidrottsförbund och verkar under Svenska E-sportförbundet.
+          Föreningen grundades 2024 och har sina rötter i "Svängstalanet" som
+          startade 2021 som en social träffpunkt för ungdomar i Svängstaområdet.
+        </p>
+        <p>
+          Föreningens syfte är att skapa en trygg och rolig miljö för alla
+          deltagare och utveckla e-sporten i Sverige. Det som började som ett
+          LAN-event för att hjälpa ungdomar hitta nya vänner har vuxit till en
+          etablerad förening med flera aktiva lag.
+        </p>
+
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <a href="https://www.svangstaesport.se">svangstaesport.se</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+      ;(function () {
+        const video = document.querySelector('.subpage-hero video')
+
+        function showVideo() {
+          video.classList.add('loaded')
+        }
+
+        // Try to play and show video when ready
+        function tryPlay() {
+          const playPromise = video.play()
+          if (playPromise !== undefined) {
+            playPromise.then(showVideo).catch(function () {
+              // Autoplay was prevented, show video anyway (it will be paused)
+              showVideo()
+            })
+          } else {
+            showVideo()
+          }
+        }
+
+        // If video is already ready, play immediately
+        if (video.readyState >= 3) {
+          tryPlay()
+        } else {
+          video.addEventListener('canplay', tryPlay, { once: true })
+        }
+      })()
+    </script>
+  </body>
+</html>

@@ -288,6 +288,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743589",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-02-03T18:55",
+    "endDate": "2026-02-03T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743589/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-38d91454a7e5489c81b39506f440a74b",
     "title": "Trivsel & promenad Asarum",
     "startDate": "2026-02-04T09:00",
@@ -372,6 +384,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743590",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-02-10T18:55",
+    "endDate": "2026-02-10T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743590/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week3",
     "title": "Linedance Nybörjare (Vecka 3/10)",
     "startDate": "2026-02-11T14:00:00",
@@ -384,6 +408,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743475",
+    "title": "Lag Möte",
+    "startDate": "2026-02-13T20:00",
+    "endDate": "2026-02-13T20:30",
+    "location": "Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743475/lag-mote",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175384",
     "title": "Årsmöte",
     "startDate": "2026-02-17T14:00:00",
@@ -393,6 +429,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=175384",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743591",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-02-17T18:55",
+    "endDate": "2026-02-17T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743591/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
@@ -420,6 +468,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743592",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-02-24T18:55",
+    "endDate": "2026-02-24T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743592/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week5",
     "title": "Linedance Nybörjare (Vecka 5/10)",
     "startDate": "2026-02-25T14:00:00",
@@ -444,6 +504,18 @@
     "forMembersOnly": true
   },
   {
+    "id": "esport-19743593",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-03-03T18:55",
+    "endDate": "2026-03-03T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743593/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week6",
     "title": "Linedance Nybörjare (Vecka 6/10)",
     "startDate": "2026-03-04T14:00:00",
@@ -453,6 +525,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19773987",
+    "title": "Årsmöte",
+    "startDate": "2026-03-10T18:00",
+    "endDate": "2026-03-10T20:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19773987/arsmote",
     "forMembersOnly": false
   },
   {
@@ -480,6 +564,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743595",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-03-17T18:55",
+    "endDate": "2026-03-17T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743595/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week8",
     "title": "Linedance Nybörjare (Vecka 8/10)",
     "startDate": "2026-03-18T14:00:00",
@@ -489,6 +585,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743596",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-03-24T18:55",
+    "endDate": "2026-03-24T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743596/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
@@ -516,6 +624,18 @@
     "forMembersOnly": true
   },
   {
+    "id": "hembygd-motionsbingo-20260329",
+    "title": "Motionsbingo",
+    "startDate": "2026-03-29T09:00:00",
+    "endDate": "2026-03-29T11:00:00",
+    "location": "Föreningslokalen i södra city-huset, Svängsta",
+    "description": "Motionsbingo med start från föreningslokalen i södra city-huset.",
+    "organizer": "Svängsta Kultur Och Hembygdsförening",
+    "organizerLink": "forening-svangstakultur.html",
+    "link": "https://www.facebook.com/groups/542032873677317/posts/1563502318197029/",
+    "forMembersOnly": false
+  },
+  {
     "id": "akeholm-20260329",
     "title": "Vårmarknad i Åkeholm",
     "startDate": "2026-03-29T13:00:00",
@@ -540,6 +660,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743597",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-03-31T18:55",
+    "endDate": "2026-03-31T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743597/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week10",
     "title": "Linedance Nybörjare (Vecka 10/10 - Sista)",
     "startDate": "2026-04-01T14:00:00",
@@ -552,6 +684,78 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743598",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-04-07T18:55",
+    "endDate": "2026-04-07T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743598/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19745921",
+    "title": "SvängstaLanet vår 2026",
+    "startDate": "2026-04-09T15:00",
+    "endDate": "2026-04-09T00:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19745921/svangstalanet-var-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19745922",
+    "title": "SvängstaLanet vår 2026",
+    "startDate": "2026-04-10T15:00",
+    "endDate": "2026-04-10T00:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19745922/svangstalanet-var-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19745923",
+    "title": "SvängstaLanet vår 2026",
+    "startDate": "2026-04-11T15:00",
+    "endDate": "2026-04-11T00:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19745923/svangstalanet-var-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19745924",
+    "title": "SvängstaLanet vår 2026",
+    "startDate": "2026-04-12T15:00",
+    "endDate": "2026-04-12T00:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19745924/svangstalanet-var-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743599",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-04-14T18:55",
+    "endDate": "2026-04-14T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743599/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175601",
     "title": "Månadsmöte - Underhållning och info från Folksam",
     "startDate": "2026-04-21T14:00:00",
@@ -561,6 +765,30 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=175601",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743600",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-04-21T18:55",
+    "endDate": "2026-04-21T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743600/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743601",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-04-28T18:55",
+    "endDate": "2026-04-28T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743601/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
