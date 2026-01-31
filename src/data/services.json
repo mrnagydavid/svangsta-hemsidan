@@ -213,8 +213,8 @@
     "category": "Snickeri",
     "description": "Snickeriarbeten och byggtjänster.",
     "phone": "070-9275996",
-    "email": null,
-    "website": null,
+    "email": "lonnemalasnickeri@gmail.com",
+    "website": "https://www.instagram.com/lonnemalasnickeri",
     "address": "Lönnemålavägen 165-9, 376 93 Svängsta",
     "locality": "Svängsta",
     "lat": 56.2437153,
@@ -230,8 +230,8 @@
     "website": "https://www.tittiskeramik.se",
     "address": "Lönnemålavägen 165-9, 376 93 Svängsta",
     "locality": "Svängsta",
-    "lat": 56.2437153,
-    "lng": 14.7163761
+    "lat": 56.243441,
+    "lng": 14.7144177
   },
   {
     "id": "omnia-bygg",
