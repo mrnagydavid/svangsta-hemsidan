@@ -624,6 +624,18 @@
     "forMembersOnly": true
   },
   {
+    "id": "hembygd-motionsbingo-20260329",
+    "title": "Motionsbingo",
+    "startDate": "2026-03-29T09:00:00",
+    "endDate": "2026-03-29T11:00:00",
+    "location": "Föreningslokalen i södra city-huset, Svängsta",
+    "description": "Motionsbingo med start från föreningslokalen i södra city-huset.",
+    "organizer": "Svängsta Kultur Och Hembygdsförening",
+    "organizerLink": "forening-svangstakultur.html",
+    "link": "https://www.facebook.com/groups/542032873677317/posts/1563502318197029/",
+    "forMembersOnly": false
+  },
+  {
     "id": "akeholm-20260329",
     "title": "Vårmarknad i Åkeholm",
     "startDate": "2026-03-29T13:00:00",
