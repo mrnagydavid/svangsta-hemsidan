@@ -414,5 +414,18 @@
     "locality": "Svängsta",
     "lat": 56.262,
     "lng": 14.77
+  },
+  {
+    "id": "skydek-trycksaker",
+    "name": "Skydek Trycksaker",
+    "category": "Tryckeri / Skyltar",
+    "description": "Skyltar och dekaler.",
+    "phone": "073-5037844",
+    "email": "info@skydek.se",
+    "website": "https://www.skydek.se",
+    "address": "Holländarevägen 14, 376 37 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.2530076,
+    "lng": 14.7814779
   }
 ]
