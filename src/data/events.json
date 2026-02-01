@@ -792,6 +792,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743602",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-05-05T18:55",
+    "endDate": "2026-05-05T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743602/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743603",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-05-12T18:55",
+    "endDate": "2026-05-12T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743603/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199371",
     "title": "Catwalk Vårtema - Mannekänguppvisning från Second Hand 34:an",
     "startDate": "2026-05-19T14:00:00",
@@ -801,6 +825,30 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199371",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743604",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-05-19T18:55",
+    "endDate": "2026-05-19T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743604/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743605",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-05-26T18:55",
+    "endDate": "2026-05-26T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743605/traning-svangsta-lan",
     "forMembersOnly": false
   }
 ]
