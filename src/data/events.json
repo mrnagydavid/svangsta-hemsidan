@@ -420,6 +420,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-395fe6a361dc4ae38c94987056c0af33",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-02-12T13:00",
+    "endDate": "2026-02-12T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=395fe6a361dc4ae38c94987056c0af33",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-ab70b761e79641988c79f16a2a2810ae",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-02-12T18:00",
+    "endDate": "2026-02-12T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ab70b761e79641988c79f16a2a2810ae",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743475",
     "title": "Lag Möte",
     "startDate": "2026-02-13T20:00",
