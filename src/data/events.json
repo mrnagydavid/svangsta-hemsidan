@@ -600,6 +600,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "bm-260315-piraten",
+    "title": "Piraten Piaf & Monica Zäta",
+    "startDate": "2026-03-15T16:00:00",
+    "endDate": "2026-03-15T19:00:00",
+    "location": "BM Designcenter, Nissavägen 7, 376 36 Svängsta",
+    "description": "Upplev en kabaretkonsert med Anna-Lena Brundin och Jan Sigurd. Under en intim och oförglömlig eftermiddag med musik och humor hyllas Fritjof Nilsson Piratens äventyr, Édith Piafs passion och Monica Zetterlunds elegans. Boka din biljett via info@bmdesigncenter.se eller tel 0705-45 11 10 Swisha 250 kr för att säkra din biljett.",
+    "organizer": "BM Designcenter",
+    "organizerLink": "https://bmdesigncenter.se",
+    "link": "https://bmdesigncenter.se/evenemang/",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175583",
     "title": "Månadsmöte - Tema: KvinnoHjärtat",
     "startDate": "2026-03-17T14:00:00",
@@ -897,6 +909,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743605/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "bm-260614-schaffer",
+    "title": "My music story band",
+    "startDate": "2026-06-14T18:00:00",
+    "endDate": "2026-06-14T21:00:00",
+    "location": "BM Designcenter, Nissavägen 7, 376 36 Svängsta",
+    "description": "Med en speciell hyllning till Ted Gärdestad 70 år. JANNE SCHAFFER och hans 11-mannaband, MusicStoryBand med bl.a. Bröderna Rongedal & Jonas Gideon. Pris exkl serviceavgift: 465 kr (ordinarie), 315 kr (seniorpris, erbjuds av Sparbanken i Karlshamn) och 365 kr (nyckelkunder hos Sparbanken i Karlshamn).",
+    "organizer": "BM Designcenter",
+    "organizerLink": "https://bmdesigncenter.se",
+    "link": "https://bmdesigncenter.se/evenemang/",
     "forMembersOnly": false
   }
 ]
