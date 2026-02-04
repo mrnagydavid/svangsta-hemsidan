@@ -456,6 +456,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-02c106518dd6457bb50220070ac926e3",
+    "title": "MÄSSA",
+    "startDate": "2026-02-15T11:00",
+    "endDate": "2026-02-15T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "Efterföljande SOPPLUNCH till alla.\nCowboysoppa!\nTill kaffet bjuder Äventyrskonfirmanderna på kaka.\nSkänk gärna till dagens kollekt ”ACT Svenska kyrkan”",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=02c106518dd6457bb50220070ac926e3",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175384",
     "title": "Årsmöte",
     "startDate": "2026-02-17T14:00:00",
