@@ -480,6 +480,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6cdefe04e0b842dfa59301e8513c6ad3",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-02-16T09:00",
+    "endDate": "2026-02-16T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6cdefe04e0b842dfa59301e8513c6ad3",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-ec73657c1abb4e5ea077317549989434",
+    "title": "Familjedag",
+    "startDate": "2026-02-16T11:00",
+    "endDate": "2026-02-16T15:00",
+    "location": "Svängsta kyrka",
+    "description": "Familjedag\n9.00 DROP-IN\n9.30 HJÄRTATS RYTM - sång och rörelsepass för barn och vuxna tillsammans.\nDärefter finns det fika, pyssel, lek både ute och inne och gemenskap för alla åldrar.\nRunt 11.30 Korv med bröd till självkostnadspris.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ec73657c1abb4e5ea077317549989434",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175384",
     "title": "Årsmöte",
     "startDate": "2026-02-17T14:00:00",
