@@ -552,6 +552,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-c668188920c14016ab4f7cf9aac20660",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-02-18T09:00",
+    "endDate": "2026-02-18T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c668188920c14016ab4f7cf9aac20660",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week4",
     "title": "Linedance Nybörjare (Vecka 4/10)",
     "startDate": "2026-02-18T14:00:00",
@@ -561,6 +573,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-740eba0efb0e41bca7cd633ecda6e4c8",
+    "title": "Askonsdagsmässa",
+    "startDate": "2026-02-18T18:00",
+    "endDate": "2026-02-18T19:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=740eba0efb0e41bca7cd633ecda6e4c8",
     "forMembersOnly": false
   },
   {
