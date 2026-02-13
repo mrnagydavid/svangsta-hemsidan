@@ -600,6 +600,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-f39c7f40fb074e799e2d265a6dc783a3",
+    "title": "Mötesplats Ringamåla",
+    "startDate": "2026-02-19T14:00",
+    "endDate": "2026-02-19T16:00",
+    "location": "Ringamåla skola",
+    "description": "Vi umgås tillsammans med bildvisning ifrån Blekinge både gammalt & nytt med Kaj Johansson\nFika med macka & kaka - Bingo - Välkomna\nArr: Röda korset i Ringamåla \nI samarbete med Studieförbundet Vuxenskolan",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f39c7f40fb074e799e2d265a6dc783a3",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-60382a19e524490cbcf0a3f55df06aab",
+    "title": "MÄSSA",
+    "startDate": "2026-02-22T11:00",
+    "endDate": "2026-02-22T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=60382a19e524490cbcf0a3f55df06aab",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175387",
     "title": "Träff för nya medlemmar",
     "startDate": "2026-02-24T15:00:00",
