@@ -13,14 +13,14 @@
   --testimonial-background-color2: #e9f5ec;
 
   /* Font Scale System */
-  --font-xs: 0.75rem;    /* 12px - badges, tiny labels */
-  --font-sm: 0.875rem;   /* 14px - small text, metadata */
-  --font-base: 1rem;     /* 16px - body text */
-  --font-md: 1.25rem;    /* 20px - large body, small headings */
-  --font-lg: 1.5rem;     /* 24px - h3, card titles */
-  --font-xl: 2rem;       /* 32px - h2, section headers */
-  --font-2xl: 2.5rem;    /* 40px - h1, page titles */
-  --font-3xl: 3.5rem;    /* 56px - hero elements */
+  --font-xs: 0.75rem;    /* 15px - badges, tiny labels */
+  --font-sm: 0.875rem;   /* 17.5px - small text, metadata */
+  --font-base: 1rem;     /* 20px - body text */
+  --font-md: 1rem;       /* 20px - large body, small headings */
+  --font-lg: 1.5rem;     /* 30px - h3, card titles */
+  --font-xl: 2rem;       /* 40px - h2, section headers */
+  --font-2xl: 2.5rem;    /* 50px - h1, page titles */
+  --font-3xl: 3.5rem;    /* 70px - hero elements */
 }
 
 * {
@@ -53,7 +53,7 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 20px;
   min-height: 100vh;
 }
 
@@ -387,14 +387,14 @@ body.subpage {
 @media (max-width: 1024px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   footer {
@@ -900,4 +900,71 @@ body.subpage-fullwidth {
   .hero-style-split .hero-content {
     padding: 1.5rem 1rem;
   }
+}
+
+/* Article / Portrait pages */
+
+.article-byline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-byline img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article-byline .byline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-byline .byline-name {
+  font-weight: 600;
+}
+
+.article-byline .byline-date {
+  font-size: var(--font-sm);
+  color: #666;
+}
+
+.article-image {
+  margin: 2rem 0;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-image figcaption {
+  font-size: var(--font-sm);
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.article-pullquote {
+  text-align: center;
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 2.5rem 0;
+  padding: 1rem;
+  border-top: 2px solid rgba(var(--accent-color-rgb), 0.2);
+  border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.2);
+}
+
+.article-photo-credit {
+  font-size: var(--font-sm) !important;
+  color: #666 !important;
+  font-style: italic;
+  margin-top: 2.5rem !important;
 }
