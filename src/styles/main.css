@@ -13,14 +13,14 @@
   --testimonial-background-color2: #e9f5ec;
 
   /* Font Scale System */
-  --font-xs: 0.75rem;    /* 12px - badges, tiny labels */
-  --font-sm: 0.875rem;   /* 14px - small text, metadata */
-  --font-base: 1rem;     /* 16px - body text */
-  --font-md: 1.25rem;    /* 20px - large body, small headings */
-  --font-lg: 1.5rem;     /* 24px - h3, card titles */
-  --font-xl: 2rem;       /* 32px - h2, section headers */
-  --font-2xl: 2.5rem;    /* 40px - h1, page titles */
-  --font-3xl: 3.5rem;    /* 56px - hero elements */
+  --font-xs: 0.75rem;    /* 15px - badges, tiny labels */
+  --font-sm: 0.875rem;   /* 17.5px - small text, metadata */
+  --font-base: 1rem;     /* 20px - body text */
+  --font-md: 1rem;       /* 20px - large body, small headings */
+  --font-lg: 1.5rem;     /* 30px - h3, card titles */
+  --font-xl: 2rem;       /* 40px - h2, section headers */
+  --font-2xl: 2.5rem;    /* 50px - h1, page titles */
+  --font-3xl: 3.5rem;    /* 70px - hero elements */
 }
 
 * {
@@ -53,7 +53,7 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 20px;
   min-height: 100vh;
 }
 
@@ -387,14 +387,14 @@ body.subpage {
 @media (max-width: 1024px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   footer {
