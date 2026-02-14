@@ -901,3 +901,70 @@ body.subpage-fullwidth {
     padding: 1.5rem 1rem;
   }
 }
+
+/* Article / Portrait pages */
+
+.article-byline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-byline img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article-byline .byline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-byline .byline-name {
+  font-weight: 600;
+}
+
+.article-byline .byline-date {
+  font-size: var(--font-sm);
+  color: #666;
+}
+
+.article-image {
+  margin: 2rem 0;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-image figcaption {
+  font-size: var(--font-sm);
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.article-pullquote {
+  text-align: center;
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 2.5rem 0;
+  padding: 1rem;
+  border-top: 2px solid rgba(var(--accent-color-rgb), 0.2);
+  border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.2);
+}
+
+.article-photo-credit {
+  font-size: var(--font-sm) !important;
+  color: #666 !important;
+  font-style: italic;
+  margin-top: 2.5rem !important;
+}
