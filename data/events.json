@@ -665,10 +665,22 @@
     "startDate": "2026-02-23T18:00",
     "endDate": "2026-02-23T20:30",
     "location": "Pingstkyrkan i Asarum",
-    "description": "Samvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "description": "Sjung och minns med musikern Conny Nilsson\nSamvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=a68a4bcf13494a51af6c651b8e39f607",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-46f5f0c16d4340ddb9867d8bbc7c287b",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-02-24T13:00",
+    "endDate": "2026-02-24T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=46f5f0c16d4340ddb9867d8bbc7c287b",
     "forMembersOnly": false
   },
   {
