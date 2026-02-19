@@ -708,6 +708,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-3f93283d279241139b6c93e18df43855",
+    "title": "Expeditionen stängd på grund av utbildning",
+    "startDate": "2026-02-25T10:00",
+    "endDate": "2026-02-25T12:00",
+    "location": "Församlingsexpeditionen",
+    "description": "Expeditionen är stängd idag pga. utbildning. \nExpeditionen är åter öppen den 27/2 mellan kl.10-12.00. \nDet går alltid bra att maila till expeditionen utanför våra expeditionstider: \nasarum-ringamala.forsamling@svenskakyrkan.se\nTfn 0454-32 86 00",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3f93283d279241139b6c93e18df43855",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week5",
     "title": "Linedance Nybörjare (Vecka 5/10)",
     "startDate": "2026-02-25T14:00:00",
@@ -730,6 +742,18 @@
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199369",
     "forMembersOnly": true
+  },
+  {
+    "id": "church-70f5db478b9d4e40bb559525ebbb8aed",
+    "title": "Mat & prat 17.30-19.30",
+    "startDate": "2026-02-25T17:30",
+    "endDate": "2026-02-25T19:30",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Mat & prat\nHjärtat i Asarum (rakt över Coop) kl 17:30-19:30\n(öppet från 17:00)\nI sin enklaste form träffas vi i\nsoffhörnan på Hjärtat och pratar om det som berör\noss i våra liv. Pizzabuffé till självkostnadspris finns!\nVälkommen som du är!\n\nFöljande datum under våren:\n• 25 feb • 25 mars • 22 april\nIngen anmälan!\n\nFör frågor kontakta gärna\nMia Dahl, församlingspedagog\nmia.dahl@svenskakyrkan.se\n0454 – 32 86 32",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=70f5db478b9d4e40bb559525ebbb8aed",
+    "forMembersOnly": false
   },
   {
     "id": "esport-19743593",
