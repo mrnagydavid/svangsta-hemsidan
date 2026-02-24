@@ -804,6 +804,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-611a8ff9ba05446787d29bc77f836f8e",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-03-02T09:00",
+    "endDate": "2026-03-02T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=611a8ff9ba05446787d29bc77f836f8e",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-9a0ec1f560eb4345a738953ea2158efb",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-03T13:00",
+    "endDate": "2026-03-03T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9a0ec1f560eb4345a738953ea2158efb",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743593",
     "title": "Träning Svängsta lan",
     "startDate": "2026-03-03T18:55",
@@ -813,6 +837,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743593/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-038fcaf2651040338282b59c543b0ec0",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-03-04T09:00",
+    "endDate": "2026-03-04T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=038fcaf2651040338282b59c543b0ec0",
     "forMembersOnly": false
   },
   {
