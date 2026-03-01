@@ -1356,6 +1356,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743606",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-06-02T18:55",
+    "endDate": "2026-06-02T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743606/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743607",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-06-09T18:55",
+    "endDate": "2026-06-09T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743607/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "bm-260614-schaffer",
     "title": "My music story band",
     "startDate": "2026-06-14T18:00:00",
@@ -1365,6 +1389,42 @@
     "organizer": "BM Designcenter",
     "organizerLink": "https://bmdesigncenter.se",
     "link": "https://bmdesigncenter.se/evenemang/",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743608",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-06-16T18:55",
+    "endDate": "2026-06-16T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743608/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743609",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-06-23T18:55",
+    "endDate": "2026-06-23T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743609/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743610",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-06-30T18:55",
+    "endDate": "2026-06-30T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743610/traning-svangsta-lan",
     "forMembersOnly": false
   }
 ]
