@@ -876,6 +876,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19917581",
+    "title": "Styrelsemöte",
+    "startDate": "2026-03-04T20:00",
+    "endDate": "2026-03-04T22:00",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19917581/styrelsemote",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-1157e631f00e489580a8a792bf806770",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-03-05T13:00",
@@ -960,6 +972,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-661c0353e4fc4c27963919b0fc6a5f96",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-10T13:00",
+    "endDate": "2026-03-10T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=661c0353e4fc4c27963919b0fc6a5f96",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19773987",
     "title": "Årsmöte",
     "startDate": "2026-03-10T18:00",
@@ -981,6 +1005,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-e37e4f5e9213478b8fcf2c0e32bc8b46",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-12T13:00",
+    "endDate": "2026-03-12T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e37e4f5e9213478b8fcf2c0e32bc8b46",
     "forMembersOnly": false
   },
   {
