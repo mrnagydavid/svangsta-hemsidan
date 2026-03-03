@@ -99,6 +99,106 @@
         color: white;
       }
 
+      .organizer-dropdown {
+        position: relative;
+      }
+
+      .organizer-toggle {
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--placeholder-color);
+        background: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: var(--font-sm);
+        color: var(--text-color-greenish);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+      }
+
+      .organizer-toggle:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+      }
+
+      .organizer-toggle.open {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+      }
+
+      .organizer-toggle-arrow {
+        font-size: 0.6em;
+        transition: transform 0.2s ease;
+      }
+
+      .organizer-toggle.open .organizer-toggle-arrow {
+        transform: rotate(180deg);
+      }
+
+      .organizer-popover {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: 0;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        min-width: 240px;
+        z-index: 10;
+        padding: 0.5rem 0;
+        border: 1px solid var(--placeholder-color);
+      }
+
+      .organizer-popover.open {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .organizer-popover-item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+        font-size: var(--font-sm);
+        color: var(--text-color-greenish);
+        transition: background 0.15s ease;
+        user-select: none;
+      }
+
+      .organizer-popover-item:hover {
+        background: var(--accent-color-light);
+      }
+
+      .organizer-popover-item input[type='checkbox'] {
+        accent-color: var(--accent-color);
+        cursor: pointer;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+      }
+
+      .organizer-popover-reset {
+        grid-column: 1 / -1;
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: none;
+        background: none;
+        font-size: var(--font-sm);
+        color: var(--accent-color);
+        font-weight: 600;
+        cursor: pointer;
+        text-align: left;
+        border-bottom: 1px solid var(--placeholder-color);
+      }
+
+      .organizer-popover-reset:hover {
+        background: var(--accent-color-light);
+      }
+
       .events-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -302,6 +402,36 @@
         text-decoration: underline;
       }
 
+      .remember-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.15rem;
+        margin-left: auto;
+      }
+
+      .remember-label {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: var(--font-sm);
+        color: var(--text-color-greenish);
+      }
+
+      .remember-label input[type='checkbox'] {
+        accent-color: var(--accent-color);
+        cursor: pointer;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+      }
+
+      .remember-hint {
+        font-size: var(--font-xs);
+        color: var(--text-color-light);
+      }
+
       @media (max-width: 768px) {
         .section-header h2 {
           font-size: var(--font-lg);
@@ -324,8 +454,9 @@
         }
 
         .filter-group {
-          flex-direction: column;
-          align-items: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           gap: 0.5rem;
         }
 
@@ -333,14 +464,33 @@
           text-align: left;
         }
 
-        .filter-group:first-child {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-        }
-
         .filter-group:first-child button {
           flex: 1;
+        }
+
+        .filter-group .organizer-dropdown {
+          flex: 1;
+        }
+
+        .filter-group .organizer-toggle {
+          width: 100%;
+        }
+
+        .remember-group {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 0;
+          gap: 0.1rem;
+        }
+
+        .organizer-popover {
+          left: 0;
+          right: 0;
+          min-width: unset;
+        }
+
+        .organizer-popover.open {
+          grid-template-columns: 1fr;
         }
 
         .event-card-header {
@@ -414,13 +564,35 @@
           </div>
           <div class="filter-group">
             <label>Arrangör:</label>
-            <select
-              id="organizer-filter"
-              class="filter-btn"
-              style="padding: 0.5rem; cursor: pointer"
+            <div id="organizer-filter" class="organizer-dropdown">
+              <button
+                type="button"
+                id="organizer-toggle"
+                class="organizer-toggle"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                <span id="organizer-toggle-text">Alla</span>
+                <span class="organizer-toggle-arrow" aria-hidden="true"
+                  >&#9660;</span
+                >
+              </button>
+              <div
+                id="organizer-popover"
+                class="organizer-popover"
+                role="group"
+                aria-label="Filtrera arrangörer"
+              ></div>
+            </div>
+          </div>
+          <div class="filter-group remember-group">
+            <label class="remember-label">
+              <input type="checkbox" id="remember-settings" />
+              <span>Kom ihåg mina val</span>
+            </label>
+            <span class="remember-hint"
+              >Sparar dina inställningar i webbläsaren</span
             >
-              <option value="all">Alla</option>
-            </select>
           </div>
         </div>
 
@@ -459,7 +631,75 @@
     <script>
       let allEvents = []
       let currentFilter = 'upcoming'
-      let currentOrganizer = 'all'
+      let selectedOrganizers = new Set()
+
+      const STORAGE_KEY = 'eventFilterSettings'
+
+      function isRememberActive() {
+        return document.getElementById('remember-settings').checked
+      }
+
+      function saveSettings() {
+        if (!isRememberActive()) return
+        // Save deselected organizers so new sources show by default
+        const allOrganizers = [...new Set(allEvents.map((e) => e.organizer))]
+        const deselected = allOrganizers.filter(
+          (o) => !selectedOrganizers.has(o),
+        )
+        localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify({
+            currentFilter,
+            deselectedOrganizers: deselected,
+          }),
+        )
+      }
+
+      function clearSettings() {
+        localStorage.removeItem(STORAGE_KEY)
+      }
+
+      function restoreSettings(organizers) {
+        const saved = localStorage.getItem(STORAGE_KEY)
+        if (!saved) return
+
+        try {
+          const settings = JSON.parse(saved)
+
+          // Restore filter
+          if (settings.currentFilter) {
+            currentFilter = settings.currentFilter
+            document
+              .querySelectorAll('[data-filter]')
+              .forEach((b) =>
+                b.classList.toggle(
+                  'active',
+                  b.dataset.filter === currentFilter,
+                ),
+              )
+          }
+
+          // Restore organizers by removing deselected ones (new sources show by default)
+          if (settings.deselectedOrganizers) {
+            const deselected = new Set(settings.deselectedOrganizers)
+            selectedOrganizers = new Set(
+              organizers.filter((o) => !deselected.has(o)),
+            )
+            const popover = document.getElementById('organizer-popover')
+            popover
+              .querySelectorAll('input[type="checkbox"]')
+              .forEach((cb) => {
+                cb.checked = selectedOrganizers.has(cb.value)
+              })
+            updateToggleText(organizers.length)
+          }
+
+          // Check the remember checkbox
+          document.getElementById('remember-settings').checked = true
+        } catch (e) {
+          localStorage.removeItem(STORAGE_KEY)
+        }
+      }
 
       /**
        * Parse naive datetime string (no timezone) as local time
@@ -491,16 +731,67 @@
             (a, b) => parseNaiveDate(a.startDate) - parseNaiveDate(b.startDate),
           )
 
-          // Populate organizer filter
+          // Populate organizer popover checkboxes
           const organizers = [
             ...new Set(allEvents.map((e) => e.organizer)),
           ].sort()
-          const organizerSelect = document.getElementById('organizer-filter')
+          selectedOrganizers = new Set(organizers)
+          const popover = document.getElementById('organizer-popover')
+
+          // "Visa alla" reset button
+          const resetBtn = document.createElement('button')
+          resetBtn.type = 'button'
+          resetBtn.className = 'organizer-popover-reset'
+          resetBtn.textContent = 'Visa alla'
+          resetBtn.addEventListener('click', function () {
+            organizers.forEach((o) => selectedOrganizers.add(o))
+            popover
+              .querySelectorAll('input[type="checkbox"]')
+              .forEach((cb) => (cb.checked = true))
+            updateToggleText(organizers.length)
+            displayFilteredEvents()
+            saveSettings()
+          })
+          popover.appendChild(resetBtn)
+
           organizers.forEach((org) => {
-            const option = document.createElement('option')
-            option.value = org
-            option.textContent = org
-            organizerSelect.appendChild(option)
+            const item = document.createElement('label')
+            item.className = 'organizer-popover-item'
+            const checkbox = document.createElement('input')
+            checkbox.type = 'checkbox'
+            checkbox.checked = true
+            checkbox.value = org
+            checkbox.addEventListener('change', function () {
+              if (this.checked) {
+                selectedOrganizers.add(org)
+              } else {
+                selectedOrganizers.delete(org)
+              }
+              updateToggleText(organizers.length)
+              displayFilteredEvents()
+              saveSettings()
+            })
+            item.appendChild(checkbox)
+            item.appendChild(document.createTextNode(org))
+            popover.appendChild(item)
+          })
+
+          // Toggle popover open/close
+          const toggle = document.getElementById('organizer-toggle')
+          toggle.addEventListener('click', function () {
+            const isOpen = popover.classList.toggle('open')
+            toggle.classList.toggle('open', isOpen)
+            toggle.setAttribute('aria-expanded', isOpen)
+          })
+
+          // Close popover when clicking outside
+          document.addEventListener('click', function (e) {
+            const dropdown = document.getElementById('organizer-filter')
+            if (!dropdown.contains(e.target)) {
+              popover.classList.remove('open')
+              toggle.classList.remove('open')
+              toggle.setAttribute('aria-expanded', 'false')
+            }
           })
 
           // Set up filter listeners
@@ -512,13 +803,23 @@
               this.classList.add('active')
               currentFilter = this.dataset.filter
               displayFilteredEvents()
+              saveSettings()
             })
           })
 
-          organizerSelect.addEventListener('change', function () {
-            currentOrganizer = this.value
-            displayFilteredEvents()
-          })
+          // Remember checkbox
+          document
+            .getElementById('remember-settings')
+            .addEventListener('change', function () {
+              if (this.checked) {
+                saveSettings()
+              } else {
+                clearSettings()
+              }
+            })
+
+          // Restore saved settings before first render
+          restoreSettings(organizers)
 
           displayFilteredEvents()
         } catch (error) {
@@ -578,10 +879,8 @@
             .slice(0, 20)
         }
 
-        // Filter by organizer
-        if (currentOrganizer !== 'all') {
-          events = events.filter((e) => e.organizer === currentOrganizer)
-        }
+        // Filter by selected organizers
+        events = events.filter((e) => selectedOrganizers.has(e.organizer))
 
         // Update section header
         const titles = {
@@ -599,6 +898,18 @@
           subtitles[currentFilter]
 
         displayEvents(events)
+      }
+
+      function updateToggleText(totalCount) {
+        const text = document.getElementById('organizer-toggle-text')
+        if (selectedOrganizers.size === totalCount) {
+          text.textContent = 'Alla'
+        } else if (selectedOrganizers.size === 0) {
+          text.textContent = 'Inga valda'
+        } else {
+          text.textContent =
+            selectedOrganizers.size + ' av ' + totalCount
+        }
       }
 
       function displayEvents(events) {
