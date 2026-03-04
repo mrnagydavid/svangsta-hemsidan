@@ -1032,6 +1032,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-8f2135756543459782ae939e4038d8ac",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-03-12T18:00",
+    "endDate": "2026-03-12T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=8f2135756543459782ae939e4038d8ac",
+    "forMembersOnly": false
+  },
+  {
     "id": "bm-260315-piraten",
     "title": "Piraten Piaf & Monica Zäta",
     "startDate": "2026-03-15T16:00:00",
