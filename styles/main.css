@@ -716,8 +716,8 @@ body.subpage-fullwidth {
 /* Contact info section */
 .contact-info {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -754,17 +754,6 @@ body.subpage-fullwidth {
 .contact-person .position {
   font-size: var(--font-sm);
   color: #666;
-}
-
-.contact-social {
-  display: flex;
-  gap: 1rem;
-}
-
-.contact-social a {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
 /* QR code section styling */
