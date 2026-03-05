@@ -1044,6 +1044,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-3c2054db6c77469991c747be7cc02e4b",
+    "title": "MÄSSA",
+    "startDate": "2026-03-15T11:00",
+    "endDate": "2026-03-15T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3c2054db6c77469991c747be7cc02e4b",
+    "forMembersOnly": false
+  },
+  {
     "id": "bm-260315-piraten",
     "title": "Piraten Piaf & Monica Zäta",
     "startDate": "2026-03-15T16:00:00",
