@@ -21,6 +21,9 @@
   --font-xl: 2rem; /* 40px - h2, section headers */
   --font-2xl: 2.5rem; /* 50px - h1, page titles */
   --font-3xl: 3.5rem; /* 70px - hero elements */
+  --font-lg-px: 24px; /* px equivalent, immune to user font settings */
+  --font-xl-px: 32px;
+  --font-3xl-px: 56px;
 }
 
 * {
@@ -178,6 +181,7 @@ p + p {
   left: 0;
   bottom: 0;
   width: min(400px, 85vw);
+  overflow: hidden;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.88),
