@@ -458,22 +458,25 @@
           flex-direction: row;
           align-items: center;
           gap: 0.5rem;
+          flex-wrap: wrap;
         }
 
         .filter-group label {
-          text-align: left;
+          flex-basis: 100%;
         }
 
         .filter-group:first-child button {
-          flex: 1;
+          flex: 1 1 auto;
         }
 
         .filter-group .organizer-dropdown {
-          flex: 1;
+          flex: 1 1 auto;
+          position: static;
         }
 
         .filter-group .organizer-toggle {
           width: 100%;
+          white-space: normal;
         }
 
         .remember-group {
@@ -483,7 +486,13 @@
           gap: 0.1rem;
         }
 
+        .remember-label,
+        .remember-hint {
+          max-width: 100%;
+        }
+
         .organizer-popover {
+          top: auto;
           left: 0;
           right: 0;
           min-width: unset;
