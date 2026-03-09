@@ -1092,6 +1092,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-ef527d584d4e4c89ba8932ff730adb4d",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-03-16T09:00",
+    "endDate": "2026-03-16T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ef527d584d4e4c89ba8932ff730adb4d",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175583",
     "title": "Månadsmöte - Tema: KvinnoHjärtat",
     "startDate": "2026-03-17T14:00:00",
