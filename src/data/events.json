@@ -1104,6 +1104,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-255f2b8e0df544c998c2950670a8078f",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-17T13:00",
+    "endDate": "2026-03-17T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=255f2b8e0df544c998c2950670a8078f",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175583",
     "title": "Månadsmöte - Tema: KvinnoHjärtat",
     "startDate": "2026-03-17T14:00:00",
@@ -1128,6 +1140,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-2561868566344d79a3c69e5a5aea6293",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-03-18T09:00",
+    "endDate": "2026-03-18T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2561868566344d79a3c69e5a5aea6293",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week8",
     "title": "Linedance Nybörjare (Vecka 8/10)",
     "startDate": "2026-03-18T14:00:00",
@@ -1137,6 +1161,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-cd241dbdb3754090a20f9d868111f8ea",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-19T13:00",
+    "endDate": "2026-03-19T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=cd241dbdb3754090a20f9d868111f8ea",
     "forMembersOnly": false
   },
   {
