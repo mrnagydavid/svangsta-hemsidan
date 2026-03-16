@@ -1224,6 +1224,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-53ca4e84ebba4130bcb7e93caf11ad0d",
+    "title": "Skapa livet",
+    "startDate": "2026-03-22T16:00",
+    "endDate": "2026-03-22T18:30",
+    "location": "Svängsta kyrka",
+    "description": "SKAPA LIVET\nVi skriver, målar & pratar om\nlivet tillsammans, utan prestation.\nDu behöver inte ha skrivit eller målat\ntidigare, det räcker med nyfifikenhet,\nöppenhet & lust att utforska din\nkreativitet tillsammans med andra.\nVi träffas i Svängsta kyrka\nTre söndagar kl 16-18.30\n• 22 feb • 22 mars • 19 april\nAnmälan & mer info - Begränsat antal med platser!\nMia Dahl: mia.dahl@svenskakyrkan.se eller 0454 – 32 86 32",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=53ca4e84ebba4130bcb7e93caf11ad0d",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-684a95dc476e4713ad3fc518c854a17f",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-03-23T09:00",
+    "endDate": "2026-03-23T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=684a95dc476e4713ad3fc518c854a17f",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743596",
     "title": "Träning Svängsta lan",
     "startDate": "2026-03-24T18:55",
