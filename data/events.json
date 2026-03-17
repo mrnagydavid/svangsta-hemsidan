@@ -1248,6 +1248,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-cedb1ea3d6a94e37809e693ea9bf87fb",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-03-23T09:00",
+    "endDate": "2026-03-23T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=cedb1ea3d6a94e37809e693ea9bf87fb",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-45fa1876aefa4b3e98957ba00fcb798f",
+    "title": "CAFÈKVÄLL i PINGSTKYRKAN ASARUM",
+    "startDate": "2026-03-23T18:00",
+    "endDate": "2026-03-23T20:30",
+    "location": "Pingstkyrkan i Asarum",
+    "description": "Samvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=45fa1876aefa4b3e98957ba00fcb798f",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743596",
     "title": "Träning Svängsta lan",
     "startDate": "2026-03-24T18:55",
