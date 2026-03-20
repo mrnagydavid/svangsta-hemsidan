@@ -1344,6 +1344,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-0674a22022774d3d9509c7d937b81dd2",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-03-26T13:00",
+    "endDate": "2026-03-26T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=0674a22022774d3d9509c7d937b81dd2",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-improv-20260326",
     "title": "Improvisationsteater",
     "startDate": "2026-03-26T13:30:00",
@@ -1356,6 +1368,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-27f8a7431c3a49dbac1e421126fa5d19",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-03-26T18:00",
+    "endDate": "2026-03-26T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=27f8a7431c3a49dbac1e421126fa5d19",
+    "forMembersOnly": false
+  },
+  {
     "id": "hembygd-motionsbingo-20260329",
     "title": "Motionsbingo",
     "startDate": "2026-03-29T09:00:00",
@@ -1365,6 +1389,18 @@
     "organizer": "Svängsta Kultur Och Hembygdsförening",
     "organizerLink": "forening-svangstakultur.html",
     "link": "https://www.facebook.com/groups/542032873677317/posts/1563502318197029/",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-5094309229524fe4a94bb1d99007c7ea",
+    "title": "MÄSSA",
+    "startDate": "2026-03-29T11:00",
+    "endDate": "2026-03-29T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "Hjärtats Kör & CHORUS under ledning av Anna-Maria Berg\nÄrtsoppa & pannkakor",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=5094309229524fe4a94bb1d99007c7ea",
     "forMembersOnly": false
   },
   {
