@@ -659,8 +659,8 @@
         },
         halsa: {
           icon: '🧘',
-          label: 'Hälsa & Välmående',
-          keywords: ['spa', 'hälsa', 'floating', 'wellness', 'yoga'],
+          label: 'Hälsa & Skönhet',
+          keywords: ['spa', 'hälsa', 'floating', 'wellness', 'yoga', 'frisör'],
         },
         fastighet: {
           icon: '🏠',
@@ -720,6 +720,7 @@
         if (c.includes('design')) return '✨'
         if (c.includes('fotograf')) return '📷'
         if (c.includes('film') || c.includes('media')) return '🎬'
+        if (c.includes('frisör')) return '💇'
         if (c.includes('spa') || c.includes('floating') || c.includes('hälsa'))
           return '🧘'
         return '📍'
@@ -834,6 +835,11 @@
             const key = getCategoryKey(item)
             if (!grouped[key]) grouped[key] = []
             grouped[key].push(item)
+          })
+
+          // Sort each group alphabetically by name
+          Object.values(grouped).forEach((group) => {
+            group.sort((a, b) => a.name.localeCompare(b.name, 'sv'))
           })
 
           // Count unique categories
