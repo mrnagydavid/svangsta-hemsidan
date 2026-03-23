@@ -764,6 +764,15 @@
           `)
         }
 
+        if (item.instagram) {
+          contacts.push(`
+            <a href="https://www.instagram.com/${item.instagram}" target="_blank" rel="noopener" class="yp-card-contact">
+              <span class="yp-card-contact-icon">📸</span>
+              <span class="yp-card-contact-text">@${item.instagram}</span>
+            </a>
+          `)
+        }
+
         if (item.address) {
           contacts.push(`
             <span class="yp-card-contact">
