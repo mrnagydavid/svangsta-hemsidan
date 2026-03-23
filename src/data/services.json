@@ -440,5 +440,31 @@
     "locality": "Svängsta",
     "lat": 56.2530076,
     "lng": 14.7814779
+  },
+  {
+    "id": "hos-ida",
+    "name": "Hos Ida",
+    "category": "Frisör",
+    "description": "Frisörsalong. Instagram: @salonghosida",
+    "phone": "073-0658180",
+    "email": null,
+    "website": "https://www.facebook.com/salonghosida/",
+    "address": "Norra Holländarevägen 633-7, 376 92 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.3366942,
+    "lng": 14.7804967
+  },
+  {
+    "id": "mg-eltjanst",
+    "name": "MG Eltjänst",
+    "category": "Elinstallationer",
+    "description": "Eltjänster och elinstallationer.",
+    "phone": "070-3811825",
+    "email": null,
+    "website": "https://www.facebook.com/mgeltjanst/",
+    "address": "Norra Holländarevägen 633-7, 376 92 Svängsta",
+    "locality": "Svängsta",
+    "lat": 56.3366889,
+    "lng": 14.7798068
   }
 ]
