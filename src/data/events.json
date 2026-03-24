@@ -1476,6 +1476,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-79544aa0d1d1498294a7c181a63be744",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-04-01T09:00",
+    "endDate": "2026-04-01T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=79544aa0d1d1498294a7c181a63be744",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199372-week10",
     "title": "Linedance Nybörjare (Vecka 10/10 - Sista)",
     "startDate": "2026-04-01T14:00:00",
@@ -1485,6 +1497,30 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "https://pro.se/distrikt/blekinge/kommun/karlshamn/pro-svangsta-asarum/vara-aktiviteter/aktivitet?id=199372",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-2e8cfacafcb74b11a103b9abec62b544",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-02T13:00",
+    "endDate": "2026-04-02T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2e8cfacafcb74b11a103b9abec62b544",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-8012b52384da4353a688e696c4feb11d",
+    "title": "SKÄRTORSDAGSMÄSSA",
+    "startDate": "2026-04-02T18:00",
+    "endDate": "2026-04-02T19:00",
+    "location": "Ringamåla kyrka",
+    "description": "Peter Dahlström och Anna-Maria Berg sång",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=8012b52384da4353a688e696c4feb11d",
     "forMembersOnly": false
   },
   {
