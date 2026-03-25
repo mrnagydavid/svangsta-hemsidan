@@ -227,6 +227,70 @@
         background-position: center;
       }
 
+      #aktivitetspark-banner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 420px;
+        background-image: url('images/aktivitetspark-hero.webp');
+        background-size: cover;
+        background-position: center 30%;
+        text-align: center;
+        color: white;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+        border-top: 4px solid white;
+        overflow: hidden;
+      }
+
+      #aktivitetspark-banner::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.35) 50%,
+          rgba(0, 0, 0, 0.15) 100%
+        );
+        pointer-events: none;
+      }
+
+      #aktivitetspark-banner .banner-content {
+        position: relative;
+        z-index: 1;
+        max-width: 700px;
+        padding: 3rem 2rem;
+      }
+
+      #aktivitetspark-banner h2 {
+        font-size: var(--font-xl);
+        margin-bottom: 0.5rem;
+      }
+
+      #aktivitetspark-banner p {
+        font-size: var(--font-md);
+        margin-bottom: 1.5rem;
+      }
+
+      #aktivitetspark-banner .banner-cta {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background: #fff;
+        color: var(--accent-color);
+        font-weight: 700;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.05rem;
+        text-shadow: none;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      #aktivitetspark-banner .banner-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+
       #boende .bg {
         background-image: url('images/svart-hus-sommar-02.jpg');
       }
@@ -568,6 +632,19 @@
     </header>
 
     <main id="main-content" tabindex="-1">
+      <section id="aktivitetspark-banner">
+        <div class="banner-content">
+          <h2>Aktivitetsparken Full Rulle</h2>
+          <p>
+            Blekinges största aktivitetspark tar form i Svängsta. Vi har 80% av
+            finansieringen &mdash; hjälp oss med resten!
+          </p>
+          <a href="aktivitetspark.html" class="banner-cta"
+            >Läs mer &amp; stöd projektet</a
+          >
+        </div>
+      </section>
+
       <section id="boende" class="section">
         <div class="bg"></div>
         <div class="text">
@@ -835,6 +912,7 @@
       </div>
 
       <ul>
+        <li><a href="aktivitetspark.html">Aktivitetsparken Full Rulle</a></li>
         <li><a href="evenemang.html">Evenemang</a></li>
         <li><a href="gula-sidorna.html">Företag & Service</a></li>
         <li><a href="foreningar.html">Föreningsliv & Gemenskap</a></li>
