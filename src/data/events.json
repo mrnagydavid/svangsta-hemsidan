@@ -1524,6 +1524,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-14eca7beded1450ebdbd5e8528cd7520",
+    "title": "SKÄRTORSDAGSMÄSSA",
+    "startDate": "2026-04-02T18:00",
+    "endDate": "2026-04-02T19:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=14eca7beded1450ebdbd5e8528cd7520",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743598",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-07T18:55",
