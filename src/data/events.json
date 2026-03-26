@@ -1536,6 +1536,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-d65959e84d404fedb7c158fe9432de2d",
+    "title": "LÅNGFREDAGSGUDSTJÄNST",
+    "startDate": "2026-04-03T11:00",
+    "endDate": "2026-04-03T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d65959e84d404fedb7c158fe9432de2d",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743598",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-07T18:55",
