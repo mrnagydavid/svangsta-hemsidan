@@ -1548,6 +1548,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-1a53ac1e99f24ac2b74f585f56c5f8f0",
+    "title": "MÄSSA",
+    "startDate": "2026-04-05T11:00",
+    "endDate": "2026-04-05T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1a53ac1e99f24ac2b74f585f56c5f8f0",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-12cf8043670e40a0961f7ba456503c47",
+    "title": "MÄSSA",
+    "startDate": "2026-04-05T16:00",
+    "endDate": "2026-04-05T17:00",
+    "location": "Asarums kyrka",
+    "description": "Påskdagsmässa laddad med Kammarmusikalisk glöd\nJenny Samuelsson - flöjt, Pär Lindqvist - viola och Jan Wallin - piano/orgel",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=12cf8043670e40a0961f7ba456503c47",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743598",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-07T18:55",
