@@ -1608,6 +1608,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-93edc8533cf345d5a19490b078beb50e",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-09T13:00",
+    "endDate": "2026-04-09T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=93edc8533cf345d5a19490b078beb50e",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19745921",
     "title": "SvängstaLanet vår 2026",
     "startDate": "2026-04-09T15:00",
@@ -1736,6 +1748,17 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743601/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "promanual-20260504",
+    "title": "Byt pris - inte humör",
+    "startDate": "2026-05-04T10:00:00",
+    "location": "ICA Maxi Asarum",
+    "description": "Vi har blivit inbjudna till ICA Maxi i Asarum att samverka och samarbeta. Här är vårt första kul annorlunda uppdrag. Kan vi locka minst 50 av våra medlemmar till att deltaga? Spännande att se hur många vi blir som nappar på detta. Inga tunga lyft. Vi bytar prislappar i hyllorna. Inga förkunskaper. Bara gott sällskap. Och ja - fika juds. Välkommen. Skicka ett SMS till Monica 070-142 31 39",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
     "forMembersOnly": false
   },
   {
@@ -1939,6 +1962,54 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743611",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-07-07T18:55",
+    "endDate": "2026-07-07T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743611/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743612",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-07-14T18:55",
+    "endDate": "2026-07-14T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743612/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743613",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-07-21T18:55",
+    "endDate": "2026-07-21T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743613/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743614",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-07-28T18:55",
+    "endDate": "2026-07-28T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743614/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-utflykt-till-vandalorum",
     "title": "Utflykt till Vandalorum",
     "startDate": "2026-08-09T11:30",
@@ -2035,17 +2106,6 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
-    "forMembersOnly": false
-  },
-  {
-    "id": "promanual-20260504",
-    "title": "Byt pris - inte humör",
-    "startDate": "2026-05-04T10:00:00",
-    "location": "ICA Maxi Asarum",
-    "description": "Vi har blivit inbjudna till ICA Maxi i Asarum att samverka och samarbeta. Här är vårt första kul annorlunda uppdrag. Kan vi locka minst 50 av våra medlemmar till att deltaga? Spännande att se hur många vi blir som nappar på detta. Inga tunga lyft. Vi bytar prislappar i hyllorna. Inga förkunskaper. Bara gott sällskap. Och ja - fika juds. Välkommen. Skicka ett SMS till Monica 070-142 31 39",
-    "organizer": "PRO Svängsta-Asarum",
-    "organizerLink": "forening-pro.html",
-    "link": "",
     "forMembersOnly": false
   }
 ]
