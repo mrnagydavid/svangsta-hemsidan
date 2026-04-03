@@ -1656,6 +1656,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-c1ca8764f555417cb68179b250de22c0",
+    "title": "Konfirmation med mässa",
+    "startDate": "2026-04-11T11:00",
+    "endDate": "2026-04-11T12:30",
+    "location": "Svängsta kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c1ca8764f555417cb68179b250de22c0",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19745923",
     "title": "SvängstaLanet vår 2026",
     "startDate": "2026-04-11T15:00",
@@ -1668,6 +1680,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-acf19d9fa90d454a95dc358e147a8b9d",
+    "title": "MÄSSA",
+    "startDate": "2026-04-12T11:00",
+    "endDate": "2026-04-12T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=acf19d9fa90d454a95dc358e147a8b9d",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19745924",
     "title": "SvängstaLanet vår 2026",
     "startDate": "2026-04-12T15:00",
@@ -1677,6 +1701,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/19745924/svangstalanet-var-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-e4c0858ddfce41d8a2b5d0843ef06fe2",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-04-13T09:00",
+    "endDate": "2026-04-13T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e4c0858ddfce41d8a2b5d0843ef06fe2",
     "forMembersOnly": false
   },
   {
