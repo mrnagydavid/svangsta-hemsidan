@@ -1716,6 +1716,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-9b269ff84ddf47c19a476320bbb28030",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-04-13T09:00",
+    "endDate": "2026-04-13T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9b269ff84ddf47c19a476320bbb28030",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743599",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-14T18:55",
