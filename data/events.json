@@ -1728,6 +1728,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-f4e099228baf445991dc216ee308b1f6",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-14T13:00",
+    "endDate": "2026-04-14T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f4e099228baf445991dc216ee308b1f6",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743599",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-14T18:55",
@@ -1737,6 +1749,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743599/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-a1fab1cbfd994c5f8f1d988f89f4493e",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-04-15T09:00",
+    "endDate": "2026-04-15T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=a1fab1cbfd994c5f8f1d988f89f4493e",
     "forMembersOnly": false
   },
   {
