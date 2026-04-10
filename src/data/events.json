@@ -1800,6 +1800,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6818a098bead4e50829eece84f7448e8",
+    "title": "Mötesplats Ringamåla",
+    "startDate": "2026-04-16T14:00",
+    "endDate": "2026-04-16T16:00",
+    "location": "Ringamåla skola",
+    "description": "Vi umgås tillsammans med bildvisning\nFika med macka & kaka - Bingo - Välkomna\nArr: Röda korset i Ringamåla \nI samarbete med Studieförbundet Vuxenskolan",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6818a098bead4e50829eece84f7448e8",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1c9084b0466c4e8dae00185bc74f1e59",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-04-16T18:00",
+    "endDate": "2026-04-16T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1c9084b0466c4e8dae00185bc74f1e59",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175601",
     "title": "Månadsmöte - Underhållning och info från Folksam",
     "startDate": "2026-04-21T14:00:00",
