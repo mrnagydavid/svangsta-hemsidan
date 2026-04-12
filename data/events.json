@@ -1824,6 +1824,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-beff8a6e669940cea15e55e534b8d606",
+    "title": "MÄSSA",
+    "startDate": "2026-04-19T11:00",
+    "endDate": "2026-04-19T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=beff8a6e669940cea15e55e534b8d606",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175601",
     "title": "Månadsmöte - Underhållning och info från Folksam",
     "startDate": "2026-04-21T14:00:00",
