@@ -1848,6 +1848,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-9ff0d721d5044fceb62d68e53d3c4b1a",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-04-20T09:00",
+    "endDate": "2026-04-20T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9ff0d721d5044fceb62d68e53d3c4b1a",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-54dd2b109a854e87be39997d2ae23cbb",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-04-20T09:00",
+    "endDate": "2026-04-20T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=54dd2b109a854e87be39997d2ae23cbb",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-175601",
     "title": "Månadsmöte - Underhållning och info från Folksam",
     "startDate": "2026-04-21T14:00:00",
@@ -1869,6 +1893,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743600/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-20233358",
+    "title": "Styrelsemöte",
+    "startDate": "2026-04-22T20:00",
+    "endDate": "2026-04-22T22:00",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20233358/styrelsemote",
     "forMembersOnly": false
   },
   {
