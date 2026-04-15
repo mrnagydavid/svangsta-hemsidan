@@ -1805,7 +1805,7 @@
     "startDate": "2026-04-16T14:00",
     "endDate": "2026-04-16T16:00",
     "location": "Ringamåla skola",
-    "description": "Vi umgås tillsammans med bildvisning\nFika med macka & kaka - Bingo - Välkomna\nArr: Röda korset i Ringamåla \nI samarbete med Studieförbundet Vuxenskolan",
+    "description": "Vi umgås tillsammans med bildvisning\nKaj Johansson ifrån Karlshamn fortsätter med bildvisning ifrån Blekinge - både gammalt & nytt!\nFika med macka & kaka - Bingo - Välkomna\nArr: Röda korset i Ringamåla \nI samarbete med Studieförbundet Vuxenskolan",
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=6818a098bead4e50829eece84f7448e8",
@@ -1869,6 +1869,18 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=54dd2b109a854e87be39997d2ae23cbb",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-778ddee9dbbd475cb270e5938c2e1210",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-21T13:00",
+    "endDate": "2026-04-21T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=778ddee9dbbd475cb270e5938c2e1210",
     "forMembersOnly": false
   },
   {
