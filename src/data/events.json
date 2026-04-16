@@ -1920,6 +1920,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-90da16ec426f4abc9181bfa51c0935d0",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-23T13:00",
+    "endDate": "2026-04-23T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=90da16ec426f4abc9181bfa51c0935d0",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3155f4ae4d344f4ea9ed0b35d98df00b",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-04-23T18:00",
+    "endDate": "2026-04-23T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3155f4ae4d344f4ea9ed0b35d98df00b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-inkopskvall-ljungsleds-plantskola",
     "title": "Inköpskväll: Ljungsleds Plantskola",
     "startDate": "2026-04-23T18:30",
