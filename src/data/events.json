@@ -1967,6 +1967,42 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-e132d882bfa34868bf4c6f94c6a0c851",
+    "title": "Fredagsmys i Asarum",
+    "startDate": "2026-04-24T16:00",
+    "endDate": "2026-04-24T18:00",
+    "location": "Asarums kyrkogård",
+    "description": "FREDAGSYS  24 april 16-18.00 i Asarums kyrka\nVälkommen till ett par timmar av öppen och \navslappnad gemenskap där barnen är i centrum\nmen alla är välkomna!\nVi pysslar, umgås, firar mysig andakt\noch äter kvällsmat till självkostnadspris.\nHoppas vi ses!\n”Barnen i centrum men alla är välkomna”",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e132d882bfa34868bf4c6f94c6a0c851",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-eaa06612af2246cf8970f2d063441bbe",
+    "title": "MÄSSA",
+    "startDate": "2026-04-26T11:00",
+    "endDate": "2026-04-26T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=eaa06612af2246cf8970f2d063441bbe",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-35fc7fe993e84609b0b2a5109f097e98",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-04-27T09:00",
+    "endDate": "2026-04-27T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=35fc7fe993e84609b0b2a5109f097e98",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743601",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-28T18:55",
