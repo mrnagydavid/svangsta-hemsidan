@@ -2003,6 +2003,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-63d26e8ba69d494999ca92afb124bce8",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-04-27T09:00",
+    "endDate": "2026-04-27T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=63d26e8ba69d494999ca92afb124bce8",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-df088ba6b80f421f84bf1afcb4ca6eac",
+    "title": "CAFÈKVÄLL i PINGSTKYRKAN ASARUM",
+    "startDate": "2026-04-27T18:00",
+    "endDate": "2026-04-27T20:30",
+    "location": "Pingstkyrkan i Asarum",
+    "description": "Sång & musik med Thomas Lindgren\n”En annorlunda resa”\nSamvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=df088ba6b80f421f84bf1afcb4ca6eac",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743601",
     "title": "Träning Svängsta lan",
     "startDate": "2026-04-28T18:55",
