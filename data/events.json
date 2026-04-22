@@ -2020,7 +2020,7 @@
     "startDate": "2026-04-27T18:00",
     "endDate": "2026-04-27T20:30",
     "location": "Pingstkyrkan i Asarum",
-    "description": "Sång & musik med Thomas Lindgren\n”En annorlunda resa”\nSamvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "description": "Sång & musik med Thomas Lindberg\n”En annorlunda resa”\nSamvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=df088ba6b80f421f84bf1afcb4ca6eac",
@@ -2060,6 +2060,18 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=8c980969e480451ab0403b4c9e653190",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-5a9f2f74620349308e567e58c378063c",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-04-30T13:00",
+    "endDate": "2026-04-30T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=5a9f2f74620349308e567e58c378063c",
     "forMembersOnly": false
   },
   {
