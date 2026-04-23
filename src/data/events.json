@@ -2157,6 +2157,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-20307042",
+    "title": "Planeringsmöte",
+    "startDate": "2026-05-21T20:00",
+    "endDate": "2026-05-21T21:00",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20307042/planeringsmote",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743605",
     "title": "Träning Svängsta lan",
     "startDate": "2026-05-26T18:55",
