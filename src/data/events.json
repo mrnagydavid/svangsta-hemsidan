@@ -2099,6 +2099,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-0cb90c04f7c54f7aa7816e1cf911cf18",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-05-04T09:00",
+    "endDate": "2026-05-04T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=0cb90c04f7c54f7aa7816e1cf911cf18",
+    "forMembersOnly": false
+  },
+  {
     "id": "promanual-20260504",
     "title": "Byt pris - inte humör",
     "startDate": "2026-05-04T10:00:00",
