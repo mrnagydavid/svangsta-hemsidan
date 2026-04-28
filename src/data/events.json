@@ -2063,6 +2063,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-753a2f75d7d048c9afe610e77182760d",
+    "title": "Expeditionen stängd",
+    "startDate": "2026-04-29T10:00",
+    "endDate": "2026-04-29T12:00",
+    "location": "Församlingsexpeditionen",
+    "description": "Expeditionen är stängd idag pga. av iordningställande efter kyrkovalet. \nExpeditionen är åter öppen den 23/9 mellan kl.10-12.00. \nDet går alltid bra att maila till expeditionen utanför våra expeditionstider: \nasarum-ringamala.forsamling@svenskakyrkan.se\nTfn 0454-32 86 00",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=753a2f75d7d048c9afe610e77182760d",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-5a9f2f74620349308e567e58c378063c",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-04-30T13:00",
@@ -2146,6 +2158,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-f69d28a611c247bb92098b9c0766c3e1",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-05-07T13:00",
+    "endDate": "2026-05-07T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f69d28a611c247bb92098b9c0766c3e1",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-improv-20260507",
     "title": "Improvisationsteater",
     "startDate": "2026-05-07T13:30:00",
@@ -2155,6 +2179,18 @@
     "organizer": "PRO Svängsta-Asarum",
     "organizerLink": "forening-pro.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-30df847bf3e34e70bb32318f2e3c5061",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-05-07T18:00",
+    "endDate": "2026-05-07T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=30df847bf3e34e70bb32318f2e3c5061",
     "forMembersOnly": false
   },
   {
