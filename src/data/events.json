@@ -2230,6 +2230,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-47e9c2870c7d4872a05943f6de3ea6d6",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-05-12T13:00",
+    "endDate": "2026-05-12T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=47e9c2870c7d4872a05943f6de3ea6d6",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743603",
     "title": "Träning Svängsta lan",
     "startDate": "2026-05-12T18:55",
@@ -2477,6 +2489,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743615",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-08-04T18:55",
+    "endDate": "2026-08-04T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743615/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-utflykt-till-vandalorum",
     "title": "Utflykt till Vandalorum",
     "startDate": "2026-08-09T11:30",
@@ -2488,6 +2512,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743616",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-08-11T18:55",
+    "endDate": "2026-08-11T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743616/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-fru-hjarnfro",
     "title": "Fru Hjärnfrö",
     "startDate": "2026-08-18T18:00",
@@ -2496,6 +2532,30 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743617",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-08-18T18:55",
+    "endDate": "2026-08-18T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743617/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743618",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-08-25T18:55",
+    "endDate": "2026-08-25T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743618/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
