@@ -2266,6 +2266,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-ae8818b1acc54434be590ee43ea32a03",
+    "title": "Friluftsgudstjänst vid Ire Natur & Kulturskola",
+    "startDate": "2026-05-14T08:00",
+    "endDate": "2026-05-14T09:00",
+    "location": "Ire natur- och kulturskola",
+    "description": "Tag gärna med egen fikakorg & något att sitta på.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ae8818b1acc54434be590ee43ea32a03",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-71f5d3ea9eeb4daf94e3126ca99c2451",
+    "title": "MÄSSA",
+    "startDate": "2026-05-17T11:00",
+    "endDate": "2026-05-17T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=71f5d3ea9eeb4daf94e3126ca99c2451",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199371",
     "title": "Catwalk Vårtema - Mannekänguppvisning från Second Hand 34:an",
     "startDate": "2026-05-19T14:00:00",
