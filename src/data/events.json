@@ -2302,6 +2302,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-2ede039bf9c741138349f0dc435a01ba",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-05-19T13:00",
+    "endDate": "2026-05-19T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2ede039bf9c741138349f0dc435a01ba",
+    "forMembersOnly": false
+  },
+  {
     "id": "pro-199371",
     "title": "Catwalk Vårtema - Mannekänguppvisning från Second Hand 34:an",
     "startDate": "2026-05-19T14:00:00",
@@ -2323,6 +2335,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743604/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-662343a4b7e74102875fbe22275238de",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-05-21T13:00",
+    "endDate": "2026-05-21T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=662343a4b7e74102875fbe22275238de",
     "forMembersOnly": false
   },
   {
