@@ -2373,6 +2373,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-bb96117eecfd4d3bae5f668e1aa1b795",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-05-21T18:00",
+    "endDate": "2026-05-21T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=bb96117eecfd4d3bae5f668e1aa1b795",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-20307042",
     "title": "Planeringsmöte",
     "startDate": "2026-05-21T20:00",
@@ -2382,6 +2394,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20307042/planeringsmote",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-dfd47c291c26475a9ba6ad355c438b8a",
+    "title": "Dopfestival med drop-in dop",
+    "startDate": "2026-05-23T10:00",
+    "endDate": "2026-05-23T14:00",
+    "location": "Asarums kyrka",
+    "description": "DOPFESTIVALEN utan vatten inget liv i och runt Asarums kyrka mellan kl 10-14.00\nEN ROLIG DAG FÖR ALLA ÅLDRAR\n\nGUDSTJÄNST för små & stora\nDagen börjar i Asarums kyrka kl 10.00 med gudstjänst för små & stora. Peace Out Kids sjunger & dansar.\nEfteråt utdelning av dopgåvor. Fika för alla utanför kyrkan.\n\nDROP-IN DOP från kl 11-14.00 i Asarums kyrka\n- Det är aldrig för sent att döpas !\nKom som du är och låt döpa dig själv eller ditt barn.\nVi ordnar präst, musiker, dopklänning och tårtfest. \nDet enda du behöver göra är att komma!\nFör mer info om drop-in dop kolla, klicka på länken:\nhttps://www.svenskakyrkan.se/asarum/drop-in-dop\n\nBAKLUCKELOPPIS\nVill dina kläder, skor, leksaker & andra saker byta ägare?\nPassa på att anmäla dig till årets bakluckeloppis som är i samband med dopfestivalen nära Asarums kyrka den 23 maj kl 11-14.00.  \nDet är begränsat antal med platser, först till kvarn gäller och det är kostnadsfritt.\nAnmäl dig till:\nlinda.robson@svenskakyrkan.se\nUppge namn och telefonnummer vid bokning. \nBokningsbekräftelse skickas till mobilen som visas upp som kvitto vid ankomst till bakluckeloppisen den 23 maj.\n\nVill du veta mer:\nGunilla Aquilon Elmqvist 0454-32 86 10\ngunilla.aquilonelmqvist@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=dfd47c291c26475a9ba6ad355c438b8a",
     "forMembersOnly": false
   },
   {
