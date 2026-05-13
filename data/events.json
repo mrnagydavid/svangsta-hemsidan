@@ -2409,6 +2409,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-3a23c4e9f83649d5a29d93efcf0f6ac2",
+    "title": "MÄSSA",
+    "startDate": "2026-05-24T11:00",
+    "endDate": "2026-05-24T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3a23c4e9f83649d5a29d93efcf0f6ac2",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743605",
     "title": "Träning Svängsta lan",
     "startDate": "2026-05-26T18:55",
