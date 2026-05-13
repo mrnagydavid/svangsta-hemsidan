@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Svängsta logotyp - ladda ner" />
+    <meta
+      property="og:description"
+      content="Här hittar du Svängsta Samhällsförenings officiella logotyp i olika storlekar och format - fritt att ladda ner och använda."
+    />
+    <meta
+      property="og:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <meta property="og:url" content="https://svangsta.se/logotyp.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Svängsta logotyp - ladda ner" />
+    <meta
+      name="twitter:description"
+      content="Ladda ner Svängstas logotyp i olika storlekar och format."
+    />
+    <meta
+      name="twitter:image"
+      content="https://svangsta.se/images/share-preview.jpg"
+    />
+    <title>Svängsta logotyp - ladda ner</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      :root {
+        --logo-blue: #0455a3;
+        --logo-yellow: #fcca09;
+      }
+
+      .logo-hero {
+        background:
+          radial-gradient(
+            circle at 30% 30%,
+            rgba(252, 202, 9, 0.18),
+            transparent 55%
+          ),
+          linear-gradient(135deg, #0a3f7a 0%, var(--logo-blue) 100%);
+      }
+
+      .logo-hero::before {
+        background: none;
+      }
+
+      .logo-hero .hero-content {
+        text-align: center;
+      }
+
+      .logo-hero h1 {
+        color: white;
+      }
+
+      .logo-hero .subtitle {
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      /* Primary download card */
+      .kit-cta {
+        background: linear-gradient(
+          135deg,
+          var(--testimonial-background-color2),
+          var(--testimonial-background-color1)
+        );
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        border: 2px solid rgba(var(--accent-color-rgb), 0.15);
+      }
+
+      .kit-cta h2 {
+        margin: 0 !important;
+        color: var(--accent-color);
+        font-size: var(--font-xl);
+      }
+
+      .kit-cta p {
+        margin: 0;
+        max-width: 540px;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.9rem 1.6rem;
+        background: var(--accent-color);
+        color: white !important;
+        text-decoration: none !important;
+        border-radius: 8px;
+        font-size: var(--font-md);
+        font-weight: 600;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+        white-space: nowrap;
+      }
+
+      .download-btn:hover {
+        background: #1a6b54;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .download-btn--large {
+        padding: 1.1rem 2rem;
+        font-size: var(--font-md);
+      }
+
+      .download-btn--secondary {
+        background: white;
+        color: var(--accent-color) !important;
+        border: 2px solid var(--accent-color);
+      }
+
+      .download-btn--secondary:hover {
+        background: var(--accent-color);
+        color: white !important;
+      }
+
+      .download-btn .size-hint {
+        font-weight: 400;
+        opacity: 0.85;
+        font-size: var(--font-sm);
+      }
+
+      /* Preview tiles */
+      .logo-previews {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin: 1.5rem 0 2.5rem;
+      }
+
+      .logo-preview {
+        border-radius: 12px;
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .logo-preview img {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+      }
+
+      .logo-preview--light {
+        background: #ffffff;
+      }
+
+      .logo-preview--dark {
+        background: #1f2937;
+      }
+
+      .logo-preview--photo {
+        background:
+          linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+          url('images/svangsta-fran-an.jpg') center / cover;
+      }
+
+      .logo-preview-label {
+        font-size: var(--font-sm);
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+      }
+
+      .logo-preview--light .logo-preview-label {
+        color: #4b5563;
+        text-shadow: none;
+      }
+
+      /* Download grid (size variants) */
+      .download-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+        margin: 1.5rem 0 2rem;
+      }
+
+      .download-card {
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .download-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .download-card-title {
+        font-size: var(--font-md);
+        font-weight: 600;
+        color: var(--accent-color);
+        margin: 0;
+      }
+
+      .download-card-use {
+        font-size: var(--font-sm);
+        color: #555;
+        margin: 0;
+        flex-grow: 1;
+        line-height: 1.5;
+      }
+
+      .download-card .download-btn {
+        align-self: flex-start;
+        padding: 0.6rem 1.1rem;
+        font-size: var(--font-sm);
+      }
+
+      /* Color swatches */
+      .color-swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0 2rem;
+      }
+
+      .swatch {
+        border-radius: 12px;
+        padding: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background: white;
+      }
+
+      .swatch-chip {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        flex-shrink: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .swatch-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .swatch-name {
+        font-weight: 600;
+        color: var(--text-color-dark);
+      }
+
+      .swatch-hex {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: var(--font-sm);
+        color: #555;
+      }
+
+      .usage-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+      }
+
+      .usage-list li {
+        padding: 0.5rem 0 0.5rem 1.75rem;
+        position: relative;
+      }
+
+      .usage-list li::before {
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        font-size: var(--font-md);
+      }
+
+      .usage-list .ok::before {
+        content: '✓';
+        color: #2f8a5c;
+      }
+
+      .usage-list .no::before {
+        content: '✗';
+        color: #b94a4a;
+      }
+    </style>
+  </head>
+
+  <body class="subpage-fullwidth">
+    <a
+      href="index.html"
+      class="back-button"
+      role="link"
+      aria-label="Tillbaka till startsidan"
+    >
+      <div class="go-back-indicator" aria-hidden="true">←</div>
+    </a>
+
+    <header class="subpage-hero logo-hero">
+      <div class="hero-content">
+        <img
+          src="images/logo/png/svangsta-logo-512.png"
+          alt="Svängstas logotyp"
+          width="180"
+          height="180"
+          style="margin: 0 auto 1.5rem; display: block; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.25);"
+        />
+        <h1>Svängstas logotyp</h1>
+        <p class="subtitle">Ladda ner och använd vår logotyp - i precis den storlek du behöver</p>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <div class="content-wrapper">
+        <p>
+          Här hittar du Svängsta Samhällsförenings officiella logotyp. Den är
+          fri att använda för allt som hör föreningen och Svängsta till -
+          affischer, inbjudningar, nyhetsbrev, T-shirts, you name it.
+        </p>
+
+        <div class="kit-cta">
+          <h2>Hela logotyp-kitet</h2>
+          <p>
+            Vet du inte vad du behöver? Ladda ner allt på en gång. Du får en
+            ZIP-fil med logotypen i alla storlekar och format.
+          </p>
+          <a
+            href="images/logo/svangsta-logo-kit.zip"
+            class="download-btn download-btn--large"
+            download
+          >
+            ⬇ Ladda ner hela kitet (ZIP)
+          </a>
+        </div>
+
+        <h2>Så ser logotypen ut</h2>
+        <p>
+          Logotypen är en cirkulär märkesplatta - vit inuti den gula ringen och
+          transparent utanför. Det gör att den fungerar lika bra på ljusa och
+          mörka underlag samt ovanpå foton, utan en synlig vit fyrkant runt.
+        </p>
+
+        <div class="logo-previews">
+          <div class="logo-preview logo-preview--light">
+            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på vit bakgrund" />
+            <span class="logo-preview-label">På ljus bakgrund</span>
+          </div>
+          <div class="logo-preview logo-preview--dark">
+            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på mörk bakgrund" />
+            <span class="logo-preview-label">På mörk bakgrund</span>
+          </div>
+          <div class="logo-preview logo-preview--photo">
+            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på foto" />
+            <span class="logo-preview-label">På foto</span>
+          </div>
+        </div>
+
+        <h2>Välj storlek</h2>
+        <p>
+          Osäker på vilken du ska välja? <strong>Större siffra = större och
+          skarpare bild</strong>. För webben räcker oftast 512 px, för utskrift
+          väljer du 1024 eller 2048 px.
+        </p>
+
+        <div class="download-grid">
+          <div class="download-card">
+            <h3 class="download-card-title">PNG 256 px</h3>
+            <p class="download-card-use">
+              Liten storlek - e-postsignaturer, profilbilder på sociala medier,
+              små ikoner.
+            </p>
+            <a href="images/logo/png/svangsta-logo-256.png" class="download-btn" download>
+              ⬇ Ladda ner
+            </a>
+          </div>
+
+          <div class="download-card">
+            <h3 class="download-card-title">PNG 512 px</h3>
+            <p class="download-card-use">
+              Mellanstor - för webben, nyhetsbrev, presentationer och de flesta
+              dokument.
+            </p>
+            <a href="images/logo/png/svangsta-logo-512.png" class="download-btn" download>
+              ⬇ Ladda ner
+            </a>
+          </div>
+
+          <div class="download-card">
+            <h3 class="download-card-title">PNG 1024 px</h3>
+            <p class="download-card-use">
+              Stor - för affischer i A4/A3, flyers och tryck i mindre format.
+            </p>
+            <a href="images/logo/png/svangsta-logo-1024.png" class="download-btn" download>
+              ⬇ Ladda ner
+            </a>
+          </div>
+
+          <div class="download-card">
+            <h3 class="download-card-title">PNG 2048 px</h3>
+            <p class="download-card-use">
+              Extra stor - för banderoller, vepor och tryckeri-jobb i större
+              format.
+            </p>
+            <a href="images/logo/png/svangsta-logo-2048.png" class="download-btn" download>
+              ⬇ Ladda ner
+            </a>
+          </div>
+
+          <div class="download-card">
+            <h3 class="download-card-title">SVG (vektor)</h3>
+            <p class="download-card-use">
+              För webbdesigners och tryckerier. Skalas oändligt utan att bli
+              suddig. Liten filstorlek.
+            </p>
+            <a href="images/logo/svangsta-logo.svg" class="download-btn download-btn--secondary" download>
+              ⬇ Ladda ner
+            </a>
+          </div>
+        </div>
+
+        <h2>Färger</h2>
+        <p>
+          Behöver du matcha färgerna i en affisch eller en bakgrund? Här är
+          våra två officiella färger:
+        </p>
+
+        <div class="color-swatches">
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #0455a3;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Svängsta-blå</span>
+              <span class="swatch-hex">#0455A3</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #fcca09;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Svängsta-gul</span>
+              <span class="swatch-hex">#FCCA09</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Att tänka på</h2>
+        <ul class="usage-list">
+          <li class="ok">Använd logotypen som den är - de färdiga storlekarna passar de flesta behov.</li>
+          <li class="ok">Ge logotypen luft runt sig så att den syns ordentligt.</li>
+          <li class="no">Sträck eller stuka inte logotypen - behåll proportionerna.</li>
+          <li class="no">Byt inte färgerna på blå-gul-ringen.</li>
+        </ul>
+
+        <h2>Frågor?</h2>
+        <p>
+          Hör av dig till
+          <a href="mailto:svangsta.samhallsforening@gmail.com">svangsta.samhallsforening@gmail.com</a>
+          så hjälper vi till.
+        </p>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <p>
+        © 2025
+        <a href="https://www.facebook.com/profile.php?id=100089800479956"
+          >Svängsta Samhällsförening</a
+        >. Alla rättigheter förbehållna.
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
