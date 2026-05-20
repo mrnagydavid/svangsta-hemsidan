@@ -2469,15 +2469,27 @@
     "forMembersOnly": false
   },
   {
-    "id": "church-6a4f853e4e02458497ce17a29efd8d71",
-    "title": "Trivsel & promenad Asarum",
-    "startDate": "2026-05-27T09:00",
-    "endDate": "2026-05-27T11:00",
+    "id": "church-3e914e7f9c5b4eb89e37cfc0b85148fc",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-05-28T13:00",
+    "endDate": "2026-05-28T16:00",
     "location": "Hjärtat i byn - Asarum",
-    "description": "",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=6a4f853e4e02458497ce17a29efd8d71",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3e914e7f9c5b4eb89e37cfc0b85148fc",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-14c25f0e70c4477a81ec57cab187383e",
+    "title": "STILLA MÄSSA - sista inför sommaruppehållet",
+    "startDate": "2026-05-28T18:00",
+    "endDate": "2026-05-28T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=14c25f0e70c4477a81ec57cab187383e",
     "forMembersOnly": false
   },
   {
