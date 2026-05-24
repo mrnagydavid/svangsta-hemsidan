@@ -2552,6 +2552,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-ef1e76858bfc4fe19e32c89c8190f508",
+    "title": "Kyrkofullmäktige",
+    "startDate": "2026-06-02T17:30",
+    "endDate": "2026-06-02T20:00",
+    "location": "Svängsta kyrka",
+    "description": "Kyrkofullmäktige i Asarum-Ringamåla församling kallas till sammanträde.\nÄrenden enligt utsänd kallelse. \nSe kallelsen på hemsidan under fliken: Förtroendevalda\nLängst ned på sidan hittar du Protokoll.\n\nKyrkofullmäktiges ordförande - Britt-Marie Eriksson\nKyrkofullmäktiges vice ordförande - Jan Bremberg",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ef1e76858bfc4fe19e32c89c8190f508",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743606",
     "title": "Träning Svängsta lan",
     "startDate": "2026-06-02T18:55",
