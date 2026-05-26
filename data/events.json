@@ -2599,6 +2599,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6d7e581eed094a4dbacedc991faeda22",
+    "title": "Nationaldagskonsert",
+    "startDate": "2026-06-06T18:00",
+    "endDate": "2026-06-06T19:00",
+    "location": "Asarums kyrka",
+    "description": "Karlshamns kammarkör under ledning av Karin Sax Granlöf",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6d7e581eed094a4dbacedc991faeda22",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-841a94b9a0284f4d8e25cce89af2d9ec",
+    "title": "MÄSSA",
+    "startDate": "2026-06-07T11:00",
+    "endDate": "2026-06-07T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=841a94b9a0284f4d8e25cce89af2d9ec",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-besok-i-svenmanska-parken",
     "title": "Besök i Svenmanska Parken",
     "startDate": "2026-06-09T18:00",
