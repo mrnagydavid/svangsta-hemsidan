@@ -2623,6 +2623,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-2233bb0dd50e41b485f405ff64fb7fae",
+    "title": "Trivsel & Promenad - sista för terminen",
+    "startDate": "2026-06-08T09:00",
+    "endDate": "2026-06-08T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2233bb0dd50e41b485f405ff64fb7fae",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-besok-i-svenmanska-parken",
     "title": "Besök i Svenmanska Parken",
     "startDate": "2026-06-09T18:00",
