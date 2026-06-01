@@ -2682,6 +2682,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-a724a2c77cc245a99ee1e45e396f54c0",
+    "title": "Mötesplats Ringamåla",
+    "startDate": "2026-06-11T14:00",
+    "endDate": "2026-06-11T16:00",
+    "location": "Ringamåla skola",
+    "description": "Vi umgås tillsammans med bildvisning  om vattendrag och kvarnar i bygden av Lennart Olofsson\nFika med macka & kaka - Välkomna\nArr: Röda korset i Ringamåla \nI samarbete med Studieförbundet Vuxenskolan",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=a724a2c77cc245a99ee1e45e396f54c0",
+    "forMembersOnly": false
+  },
+  {
     "id": "bm-260614-schaffer",
     "title": "My music story band",
     "startDate": "2026-06-14T18:00:00",
@@ -2859,6 +2871,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743619",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-09-01T18:55",
+    "endDate": "2026-09-01T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743619/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-workshop-hostbeskarning-av-frukttrad",
     "title": "Workshop: Höstbeskärning av fruktträd",
     "startDate": "2026-09-05T10:00",
@@ -2870,6 +2894,42 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743620",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-09-08T18:55",
+    "endDate": "2026-09-08T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743620/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-20318718",
+    "title": "Svängstadagen",
+    "startDate": "2026-09-13T10:00",
+    "endDate": "2026-09-13T16:00",
+    "location": "Haldaparken",
+    "description": "Plats: Haldaparken",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20318718/svangstadagen",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743621",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-09-15T18:55",
+    "endDate": "2026-09-15T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743621/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-tradgardsvandring-hos-roland-gustafsson",
     "title": "Trädgårdsvandring hos Roland Gustafsson",
     "startDate": "2026-09-16T18:00",
@@ -2878,6 +2938,30 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-20314040",
+    "title": "Bellevuedagen",
+    "startDate": "2026-09-19T09:00",
+    "endDate": "2026-09-19T16:00",
+    "location": "Bellevyparken",
+    "description": "Plats: Bellevyparken",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20314040/bellevuedagen",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743622",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-09-22T18:55",
+    "endDate": "2026-09-22T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743622/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
@@ -2900,6 +2984,18 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743623",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-09-29T18:55",
+    "endDate": "2026-09-29T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743623/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
