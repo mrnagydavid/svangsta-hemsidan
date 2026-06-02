@@ -2694,6 +2694,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-03e6d2fa7f654a7f9faef4524844203d",
+    "title": "MÄSSA",
+    "startDate": "2026-06-14T11:00",
+    "endDate": "2026-06-14T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=03e6d2fa7f654a7f9faef4524844203d",
+    "forMembersOnly": false
+  },
+  {
     "id": "bm-260614-schaffer",
     "title": "My music story band",
     "startDate": "2026-06-14T18:00:00",
