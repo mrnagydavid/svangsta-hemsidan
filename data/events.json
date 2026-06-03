@@ -2718,6 +2718,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-374e3d06e5b445f7884f3ddf5bdbc2c6",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-06-16T13:00",
+    "endDate": "2026-06-16T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=374e3d06e5b445f7884f3ddf5bdbc2c6",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743608",
     "title": "Träning Svängsta lan",
     "startDate": "2026-06-16T18:55",
@@ -2727,6 +2739,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743608/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-056e4399f35a4833a9c6d1b2913cdfbc",
+    "title": "MIDSOMMARGUDSTJÄNST",
+    "startDate": "2026-06-20T11:00",
+    "endDate": "2026-06-20T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=056e4399f35a4833a9c6d1b2913cdfbc",
     "forMembersOnly": false
   },
   {
