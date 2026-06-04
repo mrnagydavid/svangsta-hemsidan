@@ -116,9 +116,12 @@ p + p {
 
 #menu {
   position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: 10;
+  /* 26px + half the 48px button = center at 50px, matching the back arrow
+     (centered in its 100px-tall box) */
+  top: 26px;
+  right: 16px;
+  /* Above Leaflet's map panes and controls (which reach z-index 1000) */
+  z-index: 1100;
 }
 
 #menu.hide {
@@ -165,6 +168,9 @@ p + p {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  /* Sit on the right of the header, lining up with the top-right hamburger */
+  order: 1;
+  margin-left: auto;
   width: 48px;
   height: 48px;
   background-color: transparent;
@@ -178,7 +184,7 @@ p + p {
 #menu-drawer {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   width: min(400px, 85vw);
   overflow: hidden;
@@ -187,10 +193,11 @@ p + p {
     rgba(255, 255, 255, 0.88),
     rgba(250, 250, 250, 0.86)
   );
-  box-shadow: -16px 0 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 16px 0 40px rgba(0, 0, 0, 0.25);
   padding: 0 0 2rem 0;
-  z-index: 11;
-  transform: translateX(-100%);
+  /* Above the hamburger (1100) and Leaflet's map layers */
+  z-index: 1101;
+  transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -215,7 +222,8 @@ p + p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+  /* Tighter padding on the right (close button), roomier on the left (text) */
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -271,6 +279,71 @@ p + p {
 #menu-drawer a:focus {
   outline: 3px solid rgba(0, 0, 0, 0.08);
   border-radius: 6px;
+}
+
+/* Scroll-to-top FAB — injected by main.js, shown only on long pages once
+   scrolled past halfway. Gets users back to the menu and back button up top. */
+.scroll-top-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  /* Frosted-glass look, matching .section .text on the homepage */
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+  cursor: pointer;
+  /* Above Leaflet's map layers (z-index 1000), like the menu */
+  z-index: 1100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  /* Hidden until scrolled far enough (toggled via .visible) */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.scroll-top-fab.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top-fab svg {
+  display: block;
+  /* Same shadow .section text uses, so the white arrow stays legible on glass */
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.8));
+}
+
+.scroll-top-fab:hover {
+  background: rgb(100 100 100 / 28%);
+  transform: translateY(-2px);
+}
+
+.scroll-top-fab:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top-fab {
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    transform: none;
+  }
+  .scroll-top-fab.visible,
+  .scroll-top-fab:hover,
+  .scroll-top-fab:active {
+    transform: none;
+  }
 }
 
 /* Subpages */
