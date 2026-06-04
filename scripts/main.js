@@ -70,7 +70,7 @@ const MENU_HTML = `
 
     <ul>
       <li><a href="index.html">🏠 Hem</a></li>
-      <li><a href="aktivitetspark.html">🎢 Aktivitetsparken Full Rulle 🏗️</a></li>
+      <li><a href="aktivitetspark.html">🎢 Aktivitetsparken Full Rulle</a></li>
       <li><a href="evenemang.html">🗓️ Evenemang</a></li>
       <li><a href="gula-sidorna.html">🏪 Företag & Service</a></li>
       <li><a href="foreningar.html">🤝 Föreningsliv & Gemenskap</a></li>
