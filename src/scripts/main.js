@@ -38,8 +38,88 @@ function setupBackButton() {
 let isMapSetUp = false
 setupMap()
 
+// Menu markup for sub-pages. index.html keeps its own copy inline (static, for
+// SEO); the two are intentionally not identical — this one adds a "Hem" link.
+const MENU_HTML = `
+  <div id="menu" aria-hidden="false">
+    <button
+      class="hamburger-btn"
+      aria-label="Meny"
+      aria-expanded="false"
+      aria-controls="menu-drawer"
+    >
+      &#x11054;
+    </button>
+  </div>
+
+  <nav id="menu-drawer" class="menu-nav">
+    <div class="menu-header">
+      <button
+        class="close-btn"
+        aria-label="Stäng meny"
+        aria-expanded="false"
+        aria-controls="menu-drawer"
+      >
+        &#x2715;
+      </button>
+      <div class="menu-header-text">
+        <a href="index.html" class="menu-logo">Svängsta</a>
+        <span class="menu-tagline">där historia och framtid möts</span>
+      </div>
+    </div>
+
+    <ul>
+      <li><a href="index.html">🏠 Hem</a></li>
+      <li><a href="aktivitetspark.html">🎢 Aktivitetsparken Full Rulle 🏗️</a></li>
+      <li><a href="evenemang.html">🗓️ Evenemang</a></li>
+      <li><a href="gula-sidorna.html">🏪 Företag & Service</a></li>
+      <li><a href="foreningar.html">🤝 Föreningsliv & Gemenskap</a></li>
+      <li><a href="portratt.html">👋 Möt Svängsta</a></li>
+    </ul>
+  </nav>
+`
+
+// Sub-pages ship no inline menu — inject it here. index.html already has one,
+// so the early return leaves its static markup untouched.
+function injectMenu() {
+  if (document.getElementById('menu')) return
+  document.body.insertAdjacentHTML('beforeend', MENU_HTML)
+}
+injectMenu()
+
 let isHamburgerMenuSetUp = false
 setupHamburgerMenu()
+
+// Floating "back to top" button — injected on every page; it only reveals
+// itself on long pages once the user has scrolled past halfway (see thresholds
+// in setupScrollToTop). Tapping it returns to the top, where the menu and back
+// button live.
+const SCROLL_TOP_HTML = `
+  <button
+    id="scroll-top"
+    class="scroll-top-fab"
+    type="button"
+    aria-label="Till toppen"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="33"
+      height="33"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
+`
+
+let isScrollToTopSetUp = false
+setupScrollToTop()
 
 function setupMap() {
   if (isMapSetUp) return
@@ -130,4 +210,65 @@ function setupHamburgerMenu() {
     menuDiv.classList.remove('hide')
     isOpen = false
   }
+}
+
+function setupScrollToTop() {
+  if (isScrollToTopSetUp) return
+
+  document.body.insertAdjacentHTML('beforeend', SCROLL_TOP_HTML)
+  const fab = document.getElementById('scroll-top')
+  if (!fab) return
+
+  // Show only when the page is "big" (scrolls at least one full screen beyond
+  // the first) AND the user is past halfway down. Tweak these to taste.
+  const MIN_EXTRA_SCREENS = 1
+  const SHOW_AFTER_FRACTION = 0.5
+
+  // Read scroll position/size from whichever element actually scrolls — the
+  // window on most pages, but <body> on svangsta-dagen-2025 (overflow: scroll).
+  function getScrollMetrics() {
+    const doc = document.documentElement
+    const { body } = document
+    const scrollTop = Math.max(
+      window.scrollY || 0,
+      doc.scrollTop || 0,
+      body.scrollTop || 0,
+    )
+    const clientHeight = window.innerHeight || doc.clientHeight
+    const scrollHeight = Math.max(doc.scrollHeight, body.scrollHeight)
+    return { scrollTop, clientHeight, scrollHeight }
+  }
+
+  function update() {
+    const { scrollTop, clientHeight, scrollHeight } = getScrollMetrics()
+    const maxScroll = scrollHeight - clientHeight
+    const isBig = maxScroll >= clientHeight * MIN_EXTRA_SCREENS
+    const pastHalf = maxScroll > 0 && scrollTop / maxScroll > SHOW_AFTER_FRACTION
+    fab.classList.toggle('visible', isBig && pastHalf)
+  }
+
+  let ticking = false
+  function onScroll() {
+    if (ticking) return
+    ticking = true
+    requestAnimationFrame(() => {
+      update()
+      ticking = false
+    })
+  }
+
+  fab.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    // For pages where <body> is the scroll container, not the window
+    document.body.scrollTo?.({ top: 0, behavior: 'smooth' })
+  })
+
+  // capture: true so we also catch scroll events fired on <body> (they don't
+  // bubble, but the capture phase still reaches the window).
+  window.addEventListener('scroll', onScroll, { passive: true, capture: true })
+  window.addEventListener('resize', onScroll, { passive: true })
+
+  update() // set initial state (e.g. if the page loads already scrolled)
+
+  isScrollToTopSetUp = true
 }
