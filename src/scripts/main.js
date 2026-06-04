@@ -219,10 +219,13 @@ function setupScrollToTop() {
   const fab = document.getElementById('scroll-top')
   if (!fab) return
 
-  // Show only when the page is "big" (scrolls at least one full screen beyond
-  // the first) AND the user is past halfway down. Tweak these to taste.
-  const MIN_EXTRA_SCREENS = 1
-  const SHOW_AFTER_FRACTION = 0.5
+  // Show only on long pages (taller than MIN_SCREENS viewports) and only once
+  // the user has scrolled past SHOW_AFTER_SCREENS viewports. These are absolute
+  // screen counts, NOT a fraction of the page — so on a very long page (e.g. the
+  // mobile events list) the button still appears after a couple of screens
+  // rather than only at the halfway mark. Tweak these to taste.
+  const MIN_SCREENS = 3 // page must be taller than ~3 screens
+  const SHOW_AFTER_SCREENS = 2 // ...and you've scrolled past ~2 screens
 
   // Read scroll position/size from whichever element actually scrolls — the
   // window on most pages, but <body> on svangsta-dagen-2025 (overflow: scroll).
@@ -241,10 +244,9 @@ function setupScrollToTop() {
 
   function update() {
     const { scrollTop, clientHeight, scrollHeight } = getScrollMetrics()
-    const maxScroll = scrollHeight - clientHeight
-    const isBig = maxScroll >= clientHeight * MIN_EXTRA_SCREENS
-    const pastHalf = maxScroll > 0 && scrollTop / maxScroll > SHOW_AFTER_FRACTION
-    fab.classList.toggle('visible', isBig && pastHalf)
+    const isBig = scrollHeight > clientHeight * MIN_SCREENS
+    const scrolledEnough = scrollTop > clientHeight * SHOW_AFTER_SCREENS
+    fab.classList.toggle('visible', isBig && scrolledEnough)
   }
 
   let ticking = false
