@@ -2754,6 +2754,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-35a316c790154467ab26f08354e7fce4",
+    "title": "MUSIKGUDSTJÄNST",
+    "startDate": "2026-06-21T18:00",
+    "endDate": "2026-06-21T19:00",
+    "location": "Ringamåla kyrka",
+    "description": "Svenska sommarlåtar med:\nJonathan Nilsson - sång & akustisk gitarr\nRasmus Dahlström - sång & piano \nLiam Appelqvist - sång & elgitarr",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=35a316c790154467ab26f08354e7fce4",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743609",
     "title": "Träning Svängsta lan",
     "startDate": "2026-06-23T18:55",
