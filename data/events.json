@@ -2838,6 +2838,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-439c49f12e93459ca463d25e02817354",
+    "title": "Körkonsert",
+    "startDate": "2026-07-04T18:00",
+    "endDate": "2026-07-04T19:00",
+    "location": "Asarums kyrka",
+    "description": "Körkonsert med Corde Vocali, Sigrid Berggren - Dirigent",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=439c49f12e93459ca463d25e02817354",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-940053b26c6840e4bf4d6bf116d2ff06",
+    "title": "MÄSSA",
+    "startDate": "2026-07-05T11:00",
+    "endDate": "2026-07-05T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=940053b26c6840e4bf4d6bf116d2ff06",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-besok-i-sommarstadens-koloniforening",
     "title": "Besök i Sommarstadens koloniförening",
     "startDate": "2026-07-05T13:00",
