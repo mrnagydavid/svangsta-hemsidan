@@ -352,6 +352,103 @@
         color: white;
       }
 
+      /* ---- Stacked (grouped) event cards ---- */
+      .event-card-stack {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .event-card-stack > .event-card {
+        position: relative;
+        z-index: 3;
+      }
+
+      /* Peeking "cards beneath" the top card */
+      .event-card-stack-layer {
+        position: absolute;
+        inset: 0;
+        background: white;
+        border-radius: 12px;
+        border-top: 4px solid var(--accent-color);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .event-card-stack-layer--1 {
+        transform: translate(6px, 8px);
+        z-index: 2;
+      }
+
+      .event-card-stack-layer--2 {
+        transform: translate(11px, 15px);
+        z-index: 1;
+        opacity: 0.92;
+      }
+
+      /* Nudge the stack apart slightly on hover to signal it's expandable */
+      .event-card-stack:hover .event-card-stack-layer--1 {
+        transform: translate(8px, 11px);
+      }
+
+      .event-card-stack:hover .event-card-stack-layer--2 {
+        transform: translate(15px, 21px);
+      }
+
+      .event-card-stack-count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        z-index: 5;
+        min-width: 26px;
+        height: 26px;
+        padding: 0 7px;
+        border-radius: 13px;
+        background: var(--accent-color);
+        color: white;
+        font-size: var(--font-xs);
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .event-stack-others {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-top: 0.6rem;
+        font-size: var(--font-sm);
+        color: var(--text-color-light);
+      }
+
+      .event-stack-others a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .event-stack-others a:hover {
+        text-decoration: underline;
+      }
+
+      .event-stack-toggle {
+        margin-top: 0.75rem;
+        padding: 0.45rem 0.75rem;
+        text-align: center;
+        border-radius: 8px;
+        background: var(--accent-color);
+        color: white;
+        font-size: var(--font-sm);
+        font-weight: 600;
+        user-select: none;
+        transition: box-shadow 0.2s ease;
+      }
+
+      .event-card-stack:hover .event-stack-toggle {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+      }
+
       .section-header {
         margin-bottom: 1.5rem;
       }
@@ -550,7 +647,7 @@
         playsinline
         autoplay
         preload="auto"
-        poster="images/pro-hero.jpg"
+        poster="images/forening-pro-01.jpg"
       >
         <source src="images/forening-pro-01-anim.mp4" type="video/mp4" />
       </video>
@@ -646,6 +743,12 @@
       let allEvents = []
       let currentFilter = 'upcoming'
       let selectedOrganizers = new Set()
+
+      // Events sharing a title + calendar date are shown as one stacked card.
+      // Clicking a stack adds its key here so it renders expanded (reset on reload).
+      const expandedStacks = new Set()
+      // When a stack is collapsed, this organizer's event is shown as the top card.
+      const PREFERRED_TOP_ORGANIZER = 'Svängsta Samhällsförening'
 
       const STORAGE_KEY = 'eventFilterSettings'
 
@@ -926,6 +1029,28 @@
         }
       }
 
+      // Grouping key: same title (case-insensitive) on the same calendar day
+      function groupKey(event) {
+        return (
+          event.title.trim().toLowerCase() + '|' + event.startDate.split('T')[0]
+        )
+      }
+
+      // Within a group, put the preferred organizer's event(s) first (kept stable otherwise)
+      function orderMembers(members) {
+        const top = members.filter(
+          (e) => e.organizer === PREFERRED_TOP_ORGANIZER,
+        )
+        const rest = members.filter(
+          (e) => e.organizer !== PREFERRED_TOP_ORGANIZER,
+        )
+        return [...top, ...rest]
+      }
+
+      function escapeAttr(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+      }
+
       function displayEvents(events) {
         const container = document.getElementById('events-grid')
 
@@ -935,12 +1060,86 @@
           return
         }
 
-        container.innerHTML = events
-          .map((event) => createEventCard(event))
-          .join('')
+        // Build render units, keeping each group at the position of its
+        // earliest member (events are already sorted by start date/time).
+        const seen = new Set()
+        const html = []
+        for (const event of events) {
+          const key = groupKey(event)
+          if (seen.has(key)) continue
+          seen.add(key)
+
+          const members = events.filter((e) => groupKey(e) === key)
+          if (members.length === 1) {
+            html.push(createEventCard(members[0]))
+          } else if (expandedStacks.has(key)) {
+            for (const member of orderMembers(members)) {
+              html.push(createEventCard(member))
+            }
+          } else {
+            html.push(createStackedCard(key, members))
+          }
+        }
+
+        container.innerHTML = html.join('')
+
+        // Clicking anywhere on a stack (except a link) unpacks it
+        container.querySelectorAll('.event-card-stack').forEach((stack) => {
+          stack.addEventListener('click', function (e) {
+            if (e.target.closest('a')) return
+            expandedStacks.add(stack.getAttribute('data-group-key'))
+            displayFilteredEvents()
+          })
+        })
       }
 
-      function createEventCard(event) {
+      function createStackedCard(key, members) {
+        const ordered = orderMembers(members)
+        const top = ordered[0]
+        const others = ordered.slice(1)
+        const count = members.length
+
+        // Distinct organizers of the other events (excluding the top card's)
+        const seenOrg = new Set([top.organizer])
+        const otherOrgs = []
+        for (const e of others) {
+          if (seenOrg.has(e.organizer)) continue
+          seenOrg.add(e.organizer)
+          otherOrgs.push(e)
+        }
+
+        const othersMarkup = otherOrgs.length
+          ? `<div class="event-stack-others">
+              <span class="event-meta-icon" aria-hidden="true">👥</span>
+              <span>Tillsammans med ${otherOrgs
+                .map((e) =>
+                  e.organizerLink
+                    ? `<a href="${e.organizerLink}">${e.organizer}</a>`
+                    : e.organizer,
+                )
+                .join(', ')}</span>
+            </div>`
+          : ''
+
+        const stackToggleMarkup = `<div class="event-stack-toggle">Visa alla</div>`
+
+        const topCardHtml = createEventCard(top, {
+          othersMarkup,
+          stackToggleMarkup,
+        })
+
+        return `
+          <div class="event-card-stack" data-group-key="${escapeAttr(key)}" title="Klicka för att visa alla ${count} evenemang">
+            <span class="event-card-stack-count" aria-hidden="true">${count}</span>
+            <div class="event-card-stack-layer event-card-stack-layer--2" aria-hidden="true"></div>
+            <div class="event-card-stack-layer event-card-stack-layer--1" aria-hidden="true"></div>
+            ${topCardHtml}
+          </div>
+        `
+      }
+
+      function createEventCard(event, opts = {}) {
+        const { othersMarkup = '', stackToggleMarkup = '' } = opts
         const startDate = parseNaiveDate(event.startDate)
         const endDate = event.endDate ? parseNaiveDate(event.endDate) : null
 
@@ -1004,6 +1203,8 @@
                   ${memberBadge}
                 </div>
               </div>
+              ${othersMarkup}
+              ${stackToggleMarkup}
             </div>
           </div>
         `
