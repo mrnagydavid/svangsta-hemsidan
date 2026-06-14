@@ -3026,18 +3026,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "samhallsforening-svangstadagen-20260913",
-    "title": "Svängstadagen",
-    "startDate": "2026-09-13T11:00",
-    "endDate": "2026-09-13T15:00",
-    "location": "Haldaparken",
-    "description": "Svängstadagen i Haldaparken – en dag fylld med marknad, aktiviteter och underhållning för hela familjen. Varmt välkomna!",
-    "organizer": "Svängsta Samhällsförening",
-    "organizerLink": "forening-svangstasamhalls.html",
-    "link": "https://www.svangsta.se/forening-svangstasamhalls.html",
-    "forMembersOnly": false
-  },
-  {
     "id": "esport-20318718",
     "title": "Svängstadagen",
     "startDate": "2026-09-13T10:00",
@@ -3047,6 +3035,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20318718/svangstadagen",
+    "forMembersOnly": false
+  },
+  {
+    "id": "samhallsforening-svangstadagen-20260913",
+    "title": "Svängstadagen",
+    "startDate": "2026-09-13T11:00",
+    "endDate": "2026-09-13T15:00",
+    "location": "Haldaparken",
+    "description": "Svängstadagen i Haldaparken – en dag fylld med marknad, aktiviteter och underhållning för hela familjen. Varmt välkomna!",
+    "organizer": "Svängsta Samhällsförening",
+    "organizerLink": "forening-svangstasamhalls.html",
+    "link": "https://www.svangsta.se/forening-svangstasamhalls.html",
     "forMembersOnly": false
   },
   {
