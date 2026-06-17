@@ -2909,6 +2909,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-c9dea4cbe4dd4429bbadeab2a9284acf",
+    "title": "Konfirmation med mässa",
+    "startDate": "2026-07-11T11:00",
+    "endDate": "2026-07-11T12:30",
+    "location": "Svängsta kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c9dea4cbe4dd4429bbadeab2a9284acf",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743612",
     "title": "Träning Svängsta lan",
     "startDate": "2026-07-14T18:55",
