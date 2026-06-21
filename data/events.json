@@ -2921,6 +2921,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-cb231699162144e3a4f207f5a2963d3e",
+    "title": "MUSIKGUDSTJÄNST",
+    "startDate": "2026-07-12T18:00",
+    "endDate": "2026-07-12T19:00",
+    "location": "Asarums kyrka",
+    "description": "Sång & Musik med Ann-Kristin & Leif Turesson",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=cb231699162144e3a4f207f5a2963d3e",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743612",
     "title": "Träning Svängsta lan",
     "startDate": "2026-07-14T18:55",
