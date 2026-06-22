@@ -2803,7 +2803,7 @@
   },
   {
     "id": "church-63ff1aace4e344ab89a413f6137aca5a",
-    "title": "Öppen dörr på Hjärtat",
+    "title": "Öppen dörr på Hjärtat - Sommarkalas!",
     "startDate": "2026-06-25T13:00",
     "endDate": "2026-06-25T16:00",
     "location": "Hjärtat i byn - Asarum",
@@ -2839,7 +2839,7 @@
   },
   {
     "id": "church-cf884ef444f0420faade5c7e927e4c99",
-    "title": "Öppen dörr på Hjärtat",
+    "title": "Öppen dörr på Hjärtat - Bingo",
     "startDate": "2026-07-02T13:00",
     "endDate": "2026-07-02T16:00",
     "location": "Hjärtat i byn - Asarum",
@@ -2898,7 +2898,7 @@
   },
   {
     "id": "church-67e6a79f25b649a2a4ae76d586b4cdd4",
-    "title": "Öppen dörr på Hjärtat",
+    "title": "Öppen dörr på Hjärtat - Quizz med Björn",
     "startDate": "2026-07-09T13:00",
     "endDate": "2026-07-09T16:00",
     "location": "Hjärtat i byn - Asarum",
@@ -2942,6 +2942,18 @@
     "organizer": "Svängsta Esportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743612/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-f81864f0b94b4098bb8482df8573ccca",
+    "title": "Öppen dörr på Hjärtat - i Asarumsdalen",
+    "startDate": "2026-07-16T13:00",
+    "endDate": "2026-07-16T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f81864f0b94b4098bb8482df8573ccca",
     "forMembersOnly": false
   },
   {
