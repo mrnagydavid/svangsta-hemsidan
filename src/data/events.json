@@ -2957,6 +2957,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6bc9bae2943a409f90d3d63094d92acc",
+    "title": "MÄSSA",
+    "startDate": "2026-07-19T11:00",
+    "endDate": "2026-07-19T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "Cristina Säfsten - flöjtist\nKatarina Ridderstedt - ackompanjemang",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6bc9bae2943a409f90d3d63094d92acc",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743613",
     "title": "Träning Svängsta lan",
     "startDate": "2026-07-21T18:55",
