@@ -2993,6 +2993,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-7a24bbca0e4a4836a0bdc4a4a109cfa2",
+    "title": "MÄSSA",
+    "startDate": "2026-07-26T11:00",
+    "endDate": "2026-07-26T12:00",
+    "location": "Asarums kyrka",
+    "description": "Musiker:  Christer Liljenberg",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=7a24bbca0e4a4836a0bdc4a4a109cfa2",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743614",
     "title": "Träning Svängsta lan",
     "startDate": "2026-07-28T18:55",
