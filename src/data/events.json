@@ -3227,6 +3227,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-19743624",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-10-06T18:55",
+    "endDate": "2026-10-06T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743624/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-idekvall-2026",
     "title": "Idékväll",
     "startDate": "2026-10-07T18:00",
@@ -3238,6 +3250,18 @@
     "forMembersOnly": true
   },
   {
+    "id": "esport-19743625",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-10-13T18:55",
+    "endDate": "2026-10-13T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743625/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-olika-strategier-for-att-odla-atbart-och-spara-pa-vatten",
     "title": "Olika strategier för att odla ätbart och spara på vatten",
     "startDate": "2026-10-15T18:00",
@@ -3246,6 +3270,30 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743626",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-10-20T18:55",
+    "endDate": "2026-10-20T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743626/traning-svangsta-lan",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-19743627",
+    "title": "Träning Svängsta lan",
+    "startDate": "2026-10-27T18:55",
+    "endDate": "2026-10-27T20:25",
+    "location": "Svängsta lanet Discord",
+    "description": "Mongo Trollen by Svängsta Esport\n\nPlats: Svängsta lanet Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport-mongotrollenbysvangstaesport/aktivitet/19743627/traning-svangsta-lan",
     "forMembersOnly": false
   },
   {
