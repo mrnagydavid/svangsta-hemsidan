@@ -467,5 +467,18 @@
     "locality": "Svängsta",
     "lat": 56.3366889,
     "lng": 14.7798068
+  },
+  {
+    "id": "frisor-luiza",
+    "name": "Luiza",
+    "category": "Frisör",
+    "description": "Frisör i Svängsta med klippning, färg och slingor samt styling. Personlig service och noggrant hantverk i en lugn och trivsam miljö.",
+    "phone": "076-2631554",
+    "email": null,
+    "website": null,
+    "address": null,
+    "locality": "Svängsta",
+    "lat": 56.262,
+    "lng": 14.772
   }
 ]
