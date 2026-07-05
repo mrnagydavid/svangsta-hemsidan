@@ -3029,6 +3029,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-4b2c20ad3d4e4ee1be1740bda9857502",
+    "title": "MUSIKGUDSTJÄNST",
+    "startDate": "2026-08-02T18:00",
+    "endDate": "2026-08-02T19:00",
+    "location": "Ringamåla kyrka",
+    "description": "Noora Karhuluoma - sång och John Elénius - gitarr",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=4b2c20ad3d4e4ee1be1740bda9857502",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743615",
     "title": "Träning Svängsta lan",
     "startDate": "2026-08-04T18:55",
