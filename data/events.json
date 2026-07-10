@@ -3076,6 +3076,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-e885aa77b5af41b08b259b96181bbae0",
+    "title": "MUSIKGUDSTJÄNST",
+    "startDate": "2026-08-09T18:00",
+    "endDate": "2026-08-09T19:00",
+    "location": "Asarums kyrka",
+    "description": "Sommarsånger & tonsatta dikter med ”Brevet” \nJennifer Larsson från Karlshamn - piano, gitarr & sång\nFia Janninge från Bräkne Hoby - fiol, percussion, gitarr & sång\nSofie Larsson från Karlshamn - gitarr & sång",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e885aa77b5af41b08b259b96181bbae0",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-19743616",
     "title": "Träning Svängsta lan",
     "startDate": "2026-08-11T18:55",
