@@ -34,16 +34,40 @@
       /* Show the illustration in full (title banner is baked into the top of
          the image), so we never crop it with a cover background. */
       .dagen-hero {
+        position: relative;
         display: flex;
         justify-content: center;
-        background: var(--accent-color);
+        overflow: hidden;
+        background: var(--testimonial-background-color1);
+      }
+
+      /* Fill the wide-screen gutters with a soft, blurred extension of the
+         illustration instead of a flat colour slab. */
+      .dagen-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(
+            rgba(248, 250, 252, 0.1),
+            rgba(248, 250, 252, 0.1)
+          ),
+          url('images/svangsta-dagen-2026-hero.webp');
+        background-size: cover;
+        background-position: center;
+        filter: blur(30px) brightness(1.02) saturate(0.92);
+        transform: scale(1.15);
+        z-index: 0;
       }
 
       .dagen-hero img {
+        position: relative;
+        z-index: 1;
         display: block;
         width: 100%;
         max-width: 1200px;
         height: auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
       }
 
       .subpage-main h1 {
