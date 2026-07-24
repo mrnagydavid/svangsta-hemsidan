@@ -60,6 +60,11 @@
         z-index: 0;
       }
 
+      /* <picture> is just a wrapper; let the <img> stay the flex item. */
+      .dagen-hero picture {
+        display: contents;
+      }
+
       .dagen-hero img {
         position: relative;
         z-index: 1;
@@ -103,6 +108,61 @@
         color: var(--accent-color);
         font-weight: 700;
       }
+
+      /* Bouncing "scroll for more" arrow — only shown over the full-screen phone
+         hero, where the content sits below the fold. */
+      .dagen-scroll-arrow {
+        display: none;
+      }
+
+      @keyframes dagen-bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        40% {
+          transform: translateX(-50%) translateY(-10px);
+        }
+        60% {
+          transform: translateX(-50%) translateY(-5px);
+        }
+      }
+
+      /* On phones, cap the tall portrait hero to exactly one screen so it never
+         pushes the content far down. The image fills the screen (cover) anchored
+         to the top, so the "Svängstadagen" banner stays visible while the bottom
+         (and sides, if needed) is cropped — no letterbox sidebars. svh keeps it
+         fitting even while the browser chrome is visible. */
+      @media (max-width: 600px) {
+        .dagen-hero {
+          height: 100vh;
+          height: 100svh;
+        }
+
+        .dagen-hero img {
+          height: 100%;
+          object-fit: cover;
+          object-position: top center;
+        }
+
+        .dagen-scroll-arrow {
+          display: block;
+          position: absolute;
+          bottom: 16px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+          color: white;
+          font-size: var(--font-xl);
+          line-height: 1;
+          text-decoration: none;
+          text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+          animation: dagen-bounce 2s infinite;
+        }
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -143,13 +203,27 @@
     </a>
 
     <header class="dagen-hero">
-      <img
-        src="images/svangsta-dagen-2026-hero.webp"
-        alt="Illustration av Svängstadagen — folkfest med korvgrillning, alpackor, kamel- och hästridning, LAN, keramik, blåljusfordon och EPA-bilar framför skolan i Svängsta"
-      />
+      <picture>
+        <!-- Portrait crop for phones, where the wide illustration is too small
+             to read; larger screens keep the horizontal version. -->
+        <source
+          media="(max-width: 600px)"
+          srcset="images/svangsta-dagen-2026-hero-portrait.webp"
+        />
+        <img
+          src="images/svangsta-dagen-2026-hero.webp"
+          alt="Illustration av Svängstadagen — folkfest med korvgrillning, alpackor, kamel- och hästridning, LAN, keramik, blåljusfordon och EPA-bilar framför skolan i Svängsta"
+        />
+      </picture>
+      <a
+        href="#main-content"
+        class="dagen-scroll-arrow"
+        aria-label="Scrolla ner till innehållet"
+        >↓</a
+      >
     </header>
 
-    <main class="subpage-main">
+    <main class="subpage-main" id="main-content">
       <div class="content-wrapper">
         <h1>Svängstadagen 2026 🎉</h1>
 
@@ -168,7 +242,7 @@
 
         <h2>Smak &amp; fika</h2>
         <p>
-          Börja med att stilla hungern. Frendo grillar <strong>korv</strong>,
+          Börja med att stilla hungern. Coop och Frendo grillar <strong>korv</strong>,
           Delikatessgrabbarna rullar in med sin vagn, Svängstakvarnen serverar
           <strong>lunchbuffé</strong> 11&ndash;15 och Millis håller öppet. För
           fikat har Svängsta Samhällsförening sitt café i Smörjgropen, där elever
