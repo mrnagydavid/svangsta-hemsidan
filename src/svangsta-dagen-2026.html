@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // TEMPORARY (remove after Svängstadagen, 13 Sept 2026): mark this landing
+      // page as seen for the session, so index.html won't redirect back here
+      // when the visitor navigates to the main page.
+      try {
+        sessionStorage.setItem('svangstadagen2026Seen', '1')
+      } catch (e) {}
+    </script>
     <meta property="og:title" content="Svängstadagen 2026" />
     <meta
       property="og:description"
@@ -193,15 +201,6 @@
   </head>
 
   <body class="subpage-fullwidth">
-    <a
-      href="index.html"
-      class="back-button"
-      role="link"
-      aria-label="Tillbaka till startsidan"
-    >
-      <div class="go-back-indicator" aria-hidden="true">←</div>
-    </a>
-
     <header class="dagen-hero">
       <picture>
         <!-- Portrait crop for phones, where the wide illustration is too small
@@ -279,8 +278,8 @@
             target="_blank"
             rel="noopener"
             ><em>Rotsaker</em></a
-          >. Anki Hansson, ägare av Lundins
-          Bokhandel, finns också på plats. Biblioteket säljer böcker, och
+          >, som handlar om att <strong>växa upp i Svängsta på 70-talet</strong>. Anki Hansson,
+          ägare av Lundins Bokhandel, finns också på plats. Biblioteket säljer böcker, och
           Karlshamns Teaterförening, Vuxenskolan, ABF, PRO,
           Prostatacancerföreningen och Önskeambulansen finns med. Även
           <a
