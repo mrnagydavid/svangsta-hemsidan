@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // TEMPORARY (remove after Svängstadagen, 13 Sept 2026): on the first page
+      // load of a browser session, send visitors to the Svängstadagen landing
+      // page. Once seen — here or on that page — the flag is set and this page
+      // renders normally, so "Hem"/back never bounce. Runs before the rest of
+      // <head> so a redirect happens before anything renders or loads.
+      try {
+        if (!sessionStorage.getItem('svangstadagen2026Seen')) {
+          sessionStorage.setItem('svangstadagen2026Seen', '1')
+          location.href = 'svangsta-dagen-2026.html'
+        }
+      } catch (e) {}
+    </script>
     <meta property="og:title" content="Välkommen till Svängsta" />
     <meta
       property="og:description"
@@ -137,9 +150,24 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: var(--font-xl);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
         color: white;
+        text-decoration: none;
+        white-space: nowrap;
         animation: bounce 2s infinite;
+      }
+
+      .scroll-indicator-label {
+        font-size: var(--font-md);
+        font-weight: 700;
+      }
+
+      .scroll-indicator-arrow {
+        font-size: var(--font-xl);
+        line-height: 1;
       }
 
       .announcement-banner {
@@ -287,6 +315,71 @@
       }
 
       #aktivitetspark-banner .banner-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      }
+
+      /* Temporary banner for Svängstadagen — remove after 13 September 2026. */
+      #svangstadagen-banner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 420px;
+        background-image: url('images/svangsta-dagen-2026-hero.webp');
+        background-size: cover;
+        background-position: center 70%;
+        text-align: center;
+        color: white;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+        border-top: 4px solid white;
+        overflow: hidden;
+      }
+
+      #svangstadagen-banner::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.35) 50%,
+          rgba(0, 0, 0, 0.15) 100%
+        );
+        pointer-events: none;
+      }
+
+      #svangstadagen-banner .banner-content {
+        position: relative;
+        z-index: 1;
+        max-width: 700px;
+        padding: 3rem 2rem;
+      }
+
+      #svangstadagen-banner h2 {
+        font-size: var(--font-xl);
+        margin-bottom: 0.5rem;
+      }
+
+      #svangstadagen-banner p {
+        font-size: var(--font-md);
+        margin-bottom: 1.5rem;
+      }
+
+      #svangstadagen-banner .banner-cta {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background: #fff;
+        color: var(--accent-color);
+        font-weight: 700;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.05rem;
+        text-shadow: none;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      #svangstadagen-banner .banner-cta:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
       }
@@ -505,9 +598,13 @@
           font-size: var(--font-md);
         }
 
-        .scroll-indicator,
+        .scroll-indicator-arrow,
         .announcement-indicator {
           font-size: var(--font-lg);
+        }
+
+        .scroll-indicator-label {
+          font-size: var(--font-base);
         }
 
         .section {
@@ -624,14 +721,31 @@
         </svg>
         <div class="label scribble-font">Mörrumsån</div>
       </div>
-      <a href="#main-content"
-        ><div class="scroll-indicator" aria-hidden="true" role="presentation">
-          ↓
-        </div></a
+      <a
+        href="#main-content"
+        aria-label="Svängstadagen 13 september – scrolla ner"
       >
+        <div class="scroll-indicator" role="presentation">
+          <span class="scroll-indicator-label">Svängstadagen &ndash; 13/9</span>
+          <span class="scroll-indicator-arrow" aria-hidden="true">↓</span>
+        </div>
+      </a>
     </header>
 
     <main id="main-content" tabindex="-1">
+      <!-- Temporary section for Svängstadagen — remove after 13 September 2026. -->
+      <section id="svangstadagen-banner">
+        <div class="banner-content">
+          <h2>Svängstadagen 2026</h2>
+          <p>
+            Byns stora bygdefest &mdash; söndag 13 september kl.
+            11&ndash;15 i Haldaparken. Mat, musik, djur och
+            aktiviteter för hela familjen!
+          </p>
+          <a href="svangsta-dagen-2026.html" class="banner-cta">Läs mer</a>
+        </div>
+      </section>
+
       <section id="aktivitetspark-banner">
         <div class="banner-content">
           <h2>Aktivitetsparken Full Rulle</h2>
@@ -907,6 +1021,7 @@
       </div>
 
       <ul>
+        <li><a href="svangsta-dagen-2026.html">🎉 Svängstadagen 13/9</a></li>
         <li><a href="aktivitetspark.html">🎢 Aktivitetsparken Full Rulle</a></li>
         <li><a href="evenemang.html">🗓️ Evenemang</a></li>
         <li><a href="gula-sidorna.html">🏪 Företag & Service</a></li>
