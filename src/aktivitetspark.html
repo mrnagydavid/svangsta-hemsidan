@@ -6,7 +6,7 @@
     <meta property="og:title" content="Aktivitetsparken Full Rulle - Svängsta" />
     <meta
       property="og:description"
-      content="Blekinges största aktivitetspark är fullt finansierad och bygget har startat i Svängsta."
+      content="Följ bygget av Blekinges största aktivitetspark i Svängsta - läget just nu, tidsplan och bilder."
     />
     <meta
       property="og:image"
@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Aktivitetsparken Full Rulle - Svängsta" />
     <meta
       name="twitter:description"
-      content="Blekinges största aktivitetspark är fullt finansierad och bygget har startat i Svängsta."
+      content="Följ bygget av Blekinges största aktivitetspark i Svängsta - läget just nu, tidsplan och bilder."
     />
     <meta
       name="twitter:image"
@@ -36,11 +36,236 @@
         background-position: center 30%;
       }
 
+      .park-lead {
+        margin-bottom: 2rem;
+      }
+
+      /* A section heading should sit closer to its own content than to the
+         card or figure above it — the global 2.5rem top margin is too tight
+         once the preceding block is a boxed panel. The status panel keeps its
+         own spacing, hence the :not(). */
+      .content-wrapper > section:not(.park-status) > h2,
+      .content-wrapper > h2 {
+        margin-top: 4rem;
+        margin-bottom: 0.75rem;
+      }
+
+      /* ---- "Läget just nu": the status panel at the top of the page ---- */
+      .park-status {
+        background: linear-gradient(
+          135deg,
+          var(--testimonial-background-color2),
+          var(--testimonial-background-color1)
+        );
+        border: 1px solid rgba(var(--accent-color-rgb), 0.15);
+        border-radius: 12px;
+        padding: 1.75rem;
+      }
+      .park-status .status-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.25rem 1rem;
+      }
+      .park-status h2 {
+        margin: 0;
+        font-size: var(--font-lg);
+      }
+      .park-status .status-updated {
+        font-size: var(--font-xs);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #4b5563;
+      }
+      .park-status .status-phase {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        color: var(--accent-color);
+      }
+      /* Slowly pulsing dot — a small "this is live" signal next to the
+         current phase. Disabled for reduced-motion users below. */
+      .park-status .dot {
+        flex: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent-color);
+        animation: status-pulse 2.6s ease-out infinite;
+      }
+      @keyframes status-pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0.45);
+        }
+        70%,
+        100% {
+          box-shadow: 0 0 0 10px rgba(var(--accent-color-rgb), 0);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .park-status .dot {
+          animation: none;
+        }
+      }
+      .park-status .status-text {
+        margin-top: 0.5rem;
+      }
+
+      .status-progress {
+        margin-top: 1.5rem;
+      }
+      .status-progress .bar {
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(var(--accent-color-rgb), 0.15);
+        overflow: hidden;
+      }
+      .status-progress .bar span {
+        display: block;
+        height: 100%;
+        width: var(--park-progress, 0%);
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          rgba(var(--accent-color-rgb), 0.6),
+          var(--accent-color)
+        );
+      }
+      .status-progress .bar-label {
+        margin-top: 0.5rem;
+        font-size: var(--font-sm);
+        color: #4b5563;
+      }
+
+      .status-facts {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(var(--accent-color-rgb), 0.15);
+      }
+      .status-facts dt {
+        font-size: var(--font-xs);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #4b5563;
+      }
+      .status-facts dd {
+        margin-top: 0.2rem;
+        font-weight: 700;
+        color: var(--accent-color);
+      }
+
+      /* ---- Tidsplan: vertical timeline, one <li> per step ---- */
+      .park-timeline {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0 0;
+      }
+      .park-timeline li {
+        position: relative;
+        padding: 0 0 1.75rem 2rem;
+        border-left: 2px solid rgba(var(--accent-color-rgb), 0.2);
+      }
+      .park-timeline li + li {
+        margin-top: 0;
+      }
+      .park-timeline li:last-child {
+        padding-bottom: 0;
+        border-left-color: transparent;
+      }
+      .park-timeline li::before {
+        content: '';
+        position: absolute;
+        left: -9px;
+        top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: white;
+        border: 3px solid rgba(var(--accent-color-rgb), 0.25);
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+      }
+      .park-timeline .is-done::before {
+        content: '✓';
+        background: var(--accent-color);
+        border-color: var(--accent-color);
+      }
+      .park-timeline .is-current::before {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 5px rgba(var(--accent-color-rgb), 0.12);
+      }
+      .park-timeline .tl-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .park-timeline .tl-date {
+        font-size: var(--font-xs);
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #4b5563;
+      }
+      .park-timeline .tl-badge {
+        padding: 0.15rem 0.6rem;
+        border-radius: 999px;
+        background: #eef1f4;
+        color: #4b5563;
+        font-size: var(--font-xs);
+        font-weight: 700;
+      }
+      .park-timeline .is-done .tl-badge {
+        background: rgba(var(--accent-color-rgb), 0.12);
+        color: var(--accent-color);
+      }
+      .park-timeline .is-current .tl-badge {
+        background: var(--accent-color);
+        color: white;
+      }
+      .park-timeline .tl-title {
+        margin-top: 0.3rem;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+      .park-timeline .is-current .tl-title {
+        color: var(--accent-color);
+      }
+      .park-timeline .tl-text {
+        margin-top: 0.25rem;
+        font-size: var(--font-sm);
+        line-height: 1.6;
+        color: #4b5563;
+      }
+      .tl-note {
+        margin-top: 1.5rem;
+        font-size: var(--font-sm) !important;
+        font-style: italic;
+        color: #666;
+      }
+
+      /* Fixed column counts rather than auto-fit: with four cards, auto-fit
+         leaves the last one orphaned on a row of its own at most widths. */
       .park-highlights {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1.5rem;
         margin: 2rem 0;
+      }
+      @media (max-width: 900px) {
+        .park-highlights {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
       }
       .park-highlights .highlight {
         background: linear-gradient(
@@ -49,12 +274,13 @@
           var(--testimonial-background-color1)
         );
         border-radius: 12px;
-        padding: 1.5rem;
+        padding: 1.25rem 1rem;
         text-align: center;
       }
       .park-highlights .highlight strong {
         display: block;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
+        white-space: nowrap;
         color: var(--accent-color);
         margin-bottom: 0.3rem;
       }
@@ -105,6 +331,21 @@
       .park-thanks li:last-child {
         border-bottom: none;
       }
+
+      @media (max-width: 768px) {
+        .park-status {
+          padding: 1.25rem;
+        }
+        /* Three facts never divide evenly into two columns — stack them. */
+        .status-facts {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+        }
+        .content-wrapper > section:not(.park-status) > h2,
+        .content-wrapper > h2 {
+          margin-top: 3rem;
+        }
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -130,30 +371,221 @@
       <div class="hero-content">
         <h1>Aktivitets&shy;parken Full Rulle</h1>
         <p class="subtitle">
-          Blekinges största aktivitetspark är fullt finansierad &mdash; bygget
-          har startat i Svängsta!
+          Blekinges största aktivitetspark växer fram i Svängsta &mdash; här
+          följer du bygget steg för steg.
         </p>
       </div>
     </header>
 
     <main class="subpage-main">
       <div class="content-wrapper">
-        <p>
+        <p class="park-lead">
           <strong>Full Rulle</strong> blir en aktivitetspark på hela
-          8&nbsp;000&nbsp;m² med 3&nbsp;000&nbsp;m² aktiv yta &mdash; en
-          mötesplats för alla åldrar mitt i Svängsta, med allt från klättertorn
-          och ziplines till utegym och grillplats. När den står klar blir det
-          Blekinges största aktivitetspark.
-        </p>
-        <p>
-          Projektet drivs av Svängsta Samhällsförening och har vuxit fram
-          genom idogt arbete av eldsjälar i byn. När ABU lämnade Svängsta i
-          början av 2025 stod det klart att byn behövde tänka nytt &mdash; och
-          aktivitetsparken blev ett sätt att ge Svängsta en ny framtid bortom
-          den industriella identiteten.
+          8&nbsp;000&nbsp;m² mitt i Svängsta &mdash; med klättertorn, ziplines,
+          multisportarena och utegym. När den står klar blir det Blekinges
+          största aktivitetspark.
         </p>
 
-        <section aria-label="Senaste nytt om parken">
+        <!-- ==========================================================
+             LÄGET JUST NU — uppdatera det här när något händer i bygget:
+               1. datumet i <time> (både datetime="ÅÅÅÅ-MM-DD" och texten)
+               2. rubriken i .status-phase + texten under den
+               3. --park-progress, aria-valuenow och "Steg X av Y"
+               4. flytta is-current/is-done/is-upcoming i tidsplanen nedan
+             ========================================================== -->
+        <section class="park-status" aria-labelledby="lage-rubrik">
+          <div class="status-head">
+            <h2 id="lage-rubrik">Läget just nu</h2>
+            <p class="status-updated">
+              Uppdaterad <time datetime="2026-07-27">27 juli 2026</time>
+            </p>
+          </div>
+
+          <p class="status-phase">
+            <span class="dot" aria-hidden="true"></span>
+            Förberedelser inför markarbetet
+          </p>
+          <p class="status-text">
+            Hela finansieringen på 12,1 miljoner kronor är i hamn och det
+            första spadtaget är taget. Nu förbereds bygget: markarbetet startar
+            hösten 2026 och parken beräknas stå klar under året.
+          </p>
+
+          <div class="status-progress">
+            <div
+              class="bar"
+              style="--park-progress: 58%"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="6"
+              aria-valuenow="4"
+              aria-valuetext="Steg 4 av 6: förberedelser inför markarbetet"
+            >
+              <span></span>
+            </div>
+            <p class="bar-label">Steg 4 av 6 &mdash; se hela tidsplanen nedan</p>
+          </div>
+
+          <dl class="status-facts">
+            <div>
+              <dt>Finansiering</dt>
+              <dd>Klar &mdash; 12,1 mkr</dd>
+            </div>
+            <div>
+              <dt>Markarbete</dt>
+              <dd>Startar hösten 2026</dd>
+            </div>
+            <div>
+              <dt>Parken klar</dt>
+              <dd>Under 2026</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section aria-labelledby="tidsplan">
+          <h2 id="tidsplan">Tidsplan</h2>
+          <p>Så här ser vägen fram till en färdig park ut.</p>
+
+          <ol class="park-timeline">
+            <li class="is-done">
+              <div class="tl-meta">
+                <span class="tl-date">Fram till 2025</span>
+                <span class="tl-badge">Klart</span>
+              </div>
+              <p class="tl-title">Idén tar form</p>
+              <p class="tl-text">
+                Svängsta Samhällsförening driver fram planerna på en
+                aktivitetspark &mdash; och barnens egna teckningar får vara med
+                och påverka utformningen.
+              </p>
+            </li>
+
+            <li class="is-done">
+              <div class="tl-meta">
+                <span class="tl-date">Maj 2026</span>
+                <span class="tl-badge">Klart</span>
+              </div>
+              <p class="tl-title">Finansieringen i mål</p>
+              <p class="tl-text">
+                Sparbanken i Karlshamns Näringslivsstiftelse bidrog med de
+                sista 2,4 miljonerna &mdash; hela budgeten på 12,1 mkr är
+                därmed på plats.
+              </p>
+            </li>
+
+            <li class="is-done">
+              <div class="tl-meta">
+                <span class="tl-date">Maj 2026</span>
+                <span class="tl-badge">Klart</span>
+              </div>
+              <p class="tl-title">Första spadtaget</p>
+              <p class="tl-text">
+                Barnen i Svängsta tog det allra första spadtaget på platsen där
+                parken ska byggas.
+              </p>
+            </li>
+
+            <li class="is-current">
+              <div class="tl-meta">
+                <span class="tl-date">Sommaren 2026</span>
+                <span class="tl-badge">Pågår</span>
+              </div>
+              <p class="tl-title">Förberedelser inför bygget</p>
+              <p class="tl-text">
+                Planering och förberedelser inför markarbetet.
+              </p>
+            </li>
+
+            <li class="is-upcoming">
+              <div class="tl-meta">
+                <span class="tl-date">Hösten 2026</span>
+                <span class="tl-badge">Kommande</span>
+              </div>
+              <p class="tl-title">Markarbetet startar</p>
+              <p class="tl-text">
+                Marken bereds och grunden läggs för klättertorn,
+                multisportarena och utegym.
+              </p>
+            </li>
+
+            <li class="is-upcoming">
+              <div class="tl-meta">
+                <span class="tl-date">Under 2026</span>
+                <span class="tl-badge">Kommande</span>
+              </div>
+              <p class="tl-title">Parken står klar</p>
+              <p class="tl-text">
+                Målet är att Full Rulle ska vara färdigbyggd och kunna tas i
+                bruk redan under 2026.
+              </p>
+            </li>
+          </ol>
+
+          <p class="tl-note">
+            Tidsplanen uppdateras löpande allt eftersom bygget går framåt.
+          </p>
+        </section>
+
+        <section aria-labelledby="vad-ingar">
+          <h2 id="vad-ingar">Vad ingår i parken?</h2>
+          <p>
+            <strong>För barn:</strong> Ett 9,5 meter högt klättertorn med dubbla
+            rutschbanor och klätterväggar, kompis-gunga för 6&ndash;8 barn,
+            dubbla ziplines att tävla på, studsmatta, sandlåda med solsegel
+            &mdash; och en tillgänglighetsanpassad lekdel med ramper.
+          </p>
+          <p>
+            <strong>För vuxna &amp; seniorer:</strong> Ett komplett utegym med
+            vikter upp till 80&nbsp;kg, roddmaskin, battle ropes och
+            konditionsstationer &mdash; öppet dygnet runt, helt gratis. Här finns
+            också en pergola med grillplats och pingisbord utomhus.
+          </p>
+          <p>
+            <strong>Multisportarena:</strong> En arena på ca 36&nbsp;&times;&nbsp;19
+            meter för fotboll, basket och bandy.
+          </p>
+
+          <div class="park-highlights">
+            <div class="highlight">
+              <strong>8 000 m²</strong>
+              Totalyta
+            </div>
+            <div class="highlight">
+              <strong>9,5 m</strong>
+              Klättertorn med rutschbanor
+            </div>
+            <div class="highlight">
+              <strong>11,4 m</strong>
+              Klätternät
+            </div>
+            <div class="highlight">
+              <strong>36 &times; 19 m</strong>
+              Multisportarena
+            </div>
+          </div>
+
+          <p>
+            Parken är designad av Kompan, ett internationellt företag med 50 års
+            erfarenhet, och Karlshamns kommun ansvarar för det löpande
+            underhållet.
+          </p>
+        </section>
+
+        <section aria-labelledby="bakgrund">
+          <h2 id="bakgrund">Bakgrund och bilder</h2>
+
+          <!-- Nya bilder från bygget läggs in här, överst, allt eftersom de
+               tas — kopiera en <figure class="article-image"> nedan som mall. -->
+
+          <p>
+            Projektet drivs av Svängsta Samhällsförening och har vuxit fram
+            genom idogt arbete av eldsjälar i byn. När ABU lämnade Svängsta i
+            början av 2025 stod det klart att byn behövde tänka nytt &mdash; och
+            aktivitetsparken blev ett sätt att ge Svängsta en ny framtid bortom
+            den industriella identiteten. Parken blir en mötesplats för alla
+            åldrar, med allt från klättertorn och ziplines till utegym och
+            grillplats.
+          </p>
           <p>
             I maj 2026 samlades byborna på platsen för den blivande parken för
             att fira att finansieringen är i mål. <strong>Sparbanken i
@@ -276,56 +708,7 @@
           </figure>
         </section>
 
-        <div class="park-highlights">
-          <div class="highlight">
-            <strong>8 000 m²</strong>
-            Totalyta
-          </div>
-          <div class="highlight">
-            <strong>9,5 m</strong>
-            Klättertorn med rutschbanor
-          </div>
-          <div class="highlight">
-            <strong>11,4 m</strong>
-            Klätternät
-          </div>
-          <div class="highlight">
-            <strong>36 &times; 19 m</strong>
-            Multisportarena
-          </div>
-        </div>
-
-        <h2>Vad ingår i parken?</h2>
-        <p>
-          <strong>För barn:</strong> Ett 9,5 meter högt klättertorn med dubbla
-          rutschbanor och klätterväggar, kompis-gunga för 6&ndash;8 barn,
-          dubbla ziplines att tävla på, studsmatta, sandlåda med solsegel
-          &mdash; och en tillgänglighetsanpassad lekdel med ramper.
-        </p>
-        <p>
-          <strong>För vuxna &amp; seniorer:</strong> Ett komplett utegym med
-          vikter upp till 80&nbsp;kg, roddmaskin, battle ropes och
-          konditionsstationer &mdash; öppet dygnet runt, helt gratis. Här finns
-          också en pergola med grillplats och pingisbord utomhus.
-        </p>
-        <p>
-          <strong>Multisportarena:</strong> En arena på ca 36&nbsp;&times;&nbsp;19
-          meter för fotboll, basket och bandy.
-        </p>
-        <p>
-          Parken är designad av Kompan, ett internationellt företag med 50 års
-          erfarenhet, och Karlshamns kommun ansvarar för det löpande
-          underhållet. Barnens egna teckningar har fått vara med och påverka
-          utformningen.
-        </p>
-
-        <h2>Tidplan</h2>
-        <p>
-          Markarbetet är igång våren 2026 och delar av parken beräknas stå
-          klara redan till hösten samma år.
-        </p>
-
-        <div class="park-thanks">
+        <div class="park-thanks" id="tack">
           <h2>Tack till alla som gjort parken möjlig</h2>
           <p>
             Parken kostar totalt <strong>12,1 miljoner kronor</strong> &mdash;
