@@ -181,13 +181,15 @@
       .park-timeline li::before {
         content: '';
         position: absolute;
-        left: -9px;
+        /* dot is 22px wide; -12px centers it on the 2px border-left */
+        left: -12px;
         top: 1px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 16px;
-        height: 16px;
+        box-sizing: border-box;
+        width: 22px;
+        height: 22px;
         border-radius: 50%;
         background: white;
         border: 3px solid rgba(var(--accent-color-rgb), 0.25);
