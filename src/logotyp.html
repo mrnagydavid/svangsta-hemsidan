@@ -230,6 +230,111 @@
         font-size: var(--font-sm);
       }
 
+      /* Two download buttons per size card - one per logo-variant */
+      .download-card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .download-card-actions .download-btn {
+        align-self: auto;
+        flex: 1 1 auto;
+        justify-content: center;
+      }
+
+      /* Variant comparison */
+      .variant-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        margin: 1.5rem 0 2rem;
+      }
+
+      .variant-card {
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+        text-align: center;
+      }
+
+      .variant-card img {
+        max-width: 190px;
+        width: 100%;
+        height: auto;
+      }
+
+      .variant-card h3 {
+        margin: 0;
+        font-size: var(--font-md);
+        color: var(--accent-color);
+      }
+
+      .variant-card p {
+        margin: 0;
+        font-size: var(--font-sm);
+        color: #555;
+        line-height: 1.5;
+      }
+
+      /* JPG downloads - compact chip rows, one per variant */
+      .format-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 0;
+      }
+
+      /* Separator between the variants only - no trailing line before the
+         next heading. */
+      .format-row + .format-row {
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .format-row-label {
+        flex: 1 1 100%;
+        font-weight: 600;
+        font-size: var(--font-sm);
+        color: var(--accent-color);
+      }
+
+      .format-chip {
+        display: inline-block;
+        padding: 0.45rem 0.9rem;
+        background: white;
+        border: 1px solid rgba(var(--accent-color-rgb), 0.35);
+        border-radius: 999px;
+        color: var(--accent-color) !important;
+        text-decoration: none !important;
+        font-size: var(--font-sm);
+        font-weight: 500;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .format-chip:hover {
+        background: var(--accent-color);
+        color: white !important;
+      }
+
+      .callout {
+        background: rgba(4, 85, 163, 0.06);
+        border-left: 4px solid var(--logo-blue);
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0 2rem;
+      }
+
+      .callout p {
+        margin: 0;
+        font-size: var(--font-sm);
+      }
+
       /* Color swatches */
       .color-swatches {
         display: grid;
@@ -339,7 +444,8 @@
           <h2>Hela logotyp-kitet</h2>
           <p>
             Vet du inte vad du behöver? Ladda ner allt på en gång. Du får en
-            ZIP-fil med logotypen i alla storlekar och format.
+            ZIP-fil med båda varianterna av logotypen - med och utan namn - i
+            alla storlekar och format: PNG, JPG och SVG.
           </p>
           <a
             href="images/logo/svangsta-logo-kit.zip"
@@ -350,9 +456,41 @@
           </a>
         </div>
 
+        <h2>Två varianter</h2>
+        <p>
+          Logotypen finns i två varianter. Välj den som passar sammanhanget -
+          filerna är i övrigt identiska.
+        </p>
+
+        <div class="variant-grid">
+          <div class="variant-card">
+            <img
+              src="images/logo/png/svangsta-logo-512.png"
+              alt="Logotypen som enbart märke, utan namn"
+            />
+            <h3>Bara märket</h3>
+            <p>
+              För små ytor och när namnet redan står i närheten - profilbilder,
+              ikoner, sidhuvuden och vattenstämplar. Fungerar på alla underlag.
+            </p>
+          </div>
+          <div class="variant-card">
+            <img
+              src="images/logo/png/svangsta-logo-with-name-512.png"
+              alt="Logotypen med föreningens namn under märket"
+            />
+            <h3>Märket med namn</h3>
+            <p>
+              För när logotypen står för sig själv och ska kunna läsas -
+              affischer, inbjudningar, brevpapper och T-shirts. Kräver ett ljust
+              underlag.
+            </p>
+          </div>
+        </div>
+
         <h2>Så ser logotypen ut</h2>
         <p>
-          Logotypen är en cirkulär märkesplatta - vit inuti den gula ringen och
+          Märket är en cirkulär platta - vit inuti den gula ringen och
           transparent utanför. Det gör att den fungerar lika bra på ljusa och
           mörka underlag samt ovanpå foton, utan en synlig vit fyrkant runt.
         </p>
@@ -372,11 +510,22 @@
           </div>
         </div>
 
+        <div class="callout">
+          <p>
+            <strong>Varianten med namn vill ha ett ljust underlag.</strong>
+            Namnet är skrivet i Svängsta-blått, och på en mörk bakgrund syns det
+            knappt. Ska logotypen ligga på något mörkt eller på ett foto -
+            använd märket utan namn och skriv namnet i vitt vid sidan om.
+          </p>
+        </div>
+
         <h2>Välj storlek</h2>
         <p>
           Osäker på vilken du ska välja? <strong>Större siffra = större och
           skarpare bild</strong>. För webben räcker oftast 512 px, för utskrift
-          väljer du 1024 eller 2048 px.
+          väljer du 1024 eller 2048 px. Varje storlek finns i båda varianterna.
+          Korten här nedanför ger dig PNG - behöver du JPG hittar du dem längre
+          ner på sidan.
         </p>
 
         <div class="download-grid">
@@ -386,9 +535,14 @@
               Liten storlek - e-postsignaturer, profilbilder på sociala medier,
               små ikoner.
             </p>
-            <a href="images/logo/png/svangsta-logo-256.png" class="download-btn" download>
-              ⬇ Ladda ner
-            </a>
+            <div class="download-card-actions">
+              <a href="images/logo/png/svangsta-logo-256.png" class="download-btn" download>
+                ⬇ Bara märket
+              </a>
+              <a href="images/logo/png/svangsta-logo-with-name-256.png" class="download-btn download-btn--secondary" download>
+                ⬇ Med namn
+              </a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -397,9 +551,14 @@
               Mellanstor - för webben, nyhetsbrev, presentationer och de flesta
               dokument.
             </p>
-            <a href="images/logo/png/svangsta-logo-512.png" class="download-btn" download>
-              ⬇ Ladda ner
-            </a>
+            <div class="download-card-actions">
+              <a href="images/logo/png/svangsta-logo-512.png" class="download-btn" download>
+                ⬇ Bara märket
+              </a>
+              <a href="images/logo/png/svangsta-logo-with-name-512.png" class="download-btn download-btn--secondary" download>
+                ⬇ Med namn
+              </a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -407,9 +566,14 @@
             <p class="download-card-use">
               Stor - för affischer i A4/A3, flyers och tryck i mindre format.
             </p>
-            <a href="images/logo/png/svangsta-logo-1024.png" class="download-btn" download>
-              ⬇ Ladda ner
-            </a>
+            <div class="download-card-actions">
+              <a href="images/logo/png/svangsta-logo-1024.png" class="download-btn" download>
+                ⬇ Bara märket
+              </a>
+              <a href="images/logo/png/svangsta-logo-with-name-1024.png" class="download-btn download-btn--secondary" download>
+                ⬇ Med namn
+              </a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -418,9 +582,14 @@
               Extra stor - för banderoller, vepor och tryckeri-jobb i större
               format.
             </p>
-            <a href="images/logo/png/svangsta-logo-2048.png" class="download-btn" download>
-              ⬇ Ladda ner
-            </a>
+            <div class="download-card-actions">
+              <a href="images/logo/png/svangsta-logo-2048.png" class="download-btn" download>
+                ⬇ Bara märket
+              </a>
+              <a href="images/logo/png/svangsta-logo-with-name-2048.png" class="download-btn download-btn--secondary" download>
+                ⬇ Med namn
+              </a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -429,10 +598,38 @@
               För webbdesigners och tryckerier. Skalas oändligt utan att bli
               suddig. Liten filstorlek.
             </p>
-            <a href="images/logo/svangsta-logo.svg" class="download-btn download-btn--secondary" download>
-              ⬇ Ladda ner
-            </a>
+            <div class="download-card-actions">
+              <a href="images/logo/svangsta-logo.svg" class="download-btn" download>
+                ⬇ Bara märket
+              </a>
+              <a href="images/logo/svangsta-logo-with-name.svg" class="download-btn download-btn--secondary" download>
+                ⬇ Med namn
+              </a>
+            </div>
           </div>
+        </div>
+
+        <h2>Behöver du JPG?</h2>
+        <p>
+          En del tryckerier ber om JPG. Då hämtar du filerna här. Tänk på att
+          JPG inte klarar transparens - de här filerna har alltid en vit
+          bakgrund. Ska logotypen ligga på en färg eller ovanpå ett foto är PNG
+          rätt val.
+        </p>
+
+        <div class="format-row">
+          <span class="format-row-label">Bara märket</span>
+          <a href="images/logo/jpg/svangsta-logo-256.jpg" class="format-chip" download>256 px</a>
+          <a href="images/logo/jpg/svangsta-logo-512.jpg" class="format-chip" download>512 px</a>
+          <a href="images/logo/jpg/svangsta-logo-1024.jpg" class="format-chip" download>1024 px</a>
+          <a href="images/logo/jpg/svangsta-logo-2048.jpg" class="format-chip" download>2048 px</a>
+        </div>
+        <div class="format-row">
+          <span class="format-row-label">Märket med namn</span>
+          <a href="images/logo/jpg/svangsta-logo-with-name-256.jpg" class="format-chip" download>256 px</a>
+          <a href="images/logo/jpg/svangsta-logo-with-name-512.jpg" class="format-chip" download>512 px</a>
+          <a href="images/logo/jpg/svangsta-logo-with-name-1024.jpg" class="format-chip" download>1024 px</a>
+          <a href="images/logo/jpg/svangsta-logo-with-name-2048.jpg" class="format-chip" download>2048 px</a>
         </div>
 
         <h2>Färger</h2>
@@ -458,12 +655,28 @@
           </div>
         </div>
 
+        <h2>Typsnitt</h2>
+        <p>
+          Namnet i logotypen är satt i <strong>Livvic Bold</strong> - ett fritt
+          typsnitt som du hämtar hos
+          <a
+            href="https://fonts.google.com/specimen/Livvic"
+            target="_blank"
+            rel="noopener"
+            >Google Fonts</a
+          >. I logotypfilerna är texten omvandlad till kurvor, så du behöver
+          inte ha typsnittet installerat för att använda dem. Vill du sätta
+          rubriker som matchar logotypen är Livvic Bold rätt val.
+        </p>
+
         <h2>Att tänka på</h2>
         <ul class="usage-list">
           <li class="ok">Använd logotypen som den är - de färdiga storlekarna passar de flesta behov.</li>
           <li class="ok">Ge logotypen luft runt sig så att den syns ordentligt.</li>
+          <li class="ok">Håll dig till varianten med namn på ljusa underlag, och märket utan namn på mörka.</li>
           <li class="no">Sträck eller stuka inte logotypen - behåll proportionerna.</li>
           <li class="no">Byt inte färgerna på blå-gul-ringen.</li>
+          <li class="no">Skriv inte föreningens namn själv under märket - använd den färdiga varianten med namn.</li>
         </ul>
 
         <h2>Frågor?</h2>
