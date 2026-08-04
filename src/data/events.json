@@ -3041,6 +3041,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-20720249",
+    "title": "Styrelsemöte",
+    "startDate": "2026-08-04T20:00",
+    "endDate": "2026-08-04T21:30",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta Esportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/20720249/styrelsemote",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-d50f9c73371740e1973f392d8d0895ab",
     "title": "Öppen dörr på Hjärtat - Då & Nu",
     "startDate": "2026-08-06T13:00",
