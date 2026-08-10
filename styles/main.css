@@ -751,11 +751,13 @@ body.subpage-fullwidth {
   content: '';
   position: absolute;
   inset: 0;
+  /* Dark enough at the bottom to carry the white title and text, but light
+     towards the top so the photo still reads. */
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 0.4) 100%
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0.2) 100%
   );
   border-radius: 12px;
   transition: background 0.2s ease;
@@ -769,7 +771,7 @@ body.subpage-fullwidth {
 .association-card:hover::before {
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 0%,
     rgba(0, 0, 0, 0.4) 50%,
     rgba(0, 0, 0, 0.1) 100%
   );
