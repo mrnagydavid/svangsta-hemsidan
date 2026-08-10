@@ -3207,6 +3207,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-7afc4bb359d14f1b88515265c919fbf1",
+    "title": "MÄSSA - Diakonins dag",
+    "startDate": "2026-08-30T11:00",
+    "endDate": "2026-08-30T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=7afc4bb359d14f1b88515265c919fbf1",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-workshop-hostbeskarning-av-frukttrad",
     "title": "Workshop: Höstbeskärning av fruktträd",
     "startDate": "2026-09-05T10:00",
