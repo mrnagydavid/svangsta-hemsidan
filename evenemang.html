@@ -273,15 +273,6 @@
         overflow-wrap: break-word;
       }
 
-      .event-title a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .event-title a:hover {
-        color: var(--accent-color);
-      }
-
       .event-meta {
         display: flex;
         flex-wrap: wrap;
@@ -309,11 +300,12 @@
         line-height: 1.6;
         flex-grow: 1;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid var(--placeholder-color);
-        margin-bottom: 0.5rem;
       }
 
+      /* The separator sits on the footer so "Läs mer" can follow the description above it */
       .event-card-footer {
+        border-top: 1px solid var(--placeholder-color);
+        padding-top: 0.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -338,8 +330,23 @@
 
       .event-badges {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
         flex-wrap: wrap;
+      }
+
+      .event-read-more {
+        align-self: flex-start;
+        font-size: var(--font-sm);
+        font-weight: 600;
+        color: var(--accent-color);
+        text-decoration: none;
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+      }
+
+      .event-read-more:hover {
+        text-decoration: underline;
       }
 
       .event-badge {
@@ -1051,6 +1058,14 @@
         return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
       }
 
+      // Compare URLs loosely so trailing slashes and casing don't count as a difference
+      function normalizeUrl(url) {
+        return String(url || '')
+          .trim()
+          .replace(/\/+$/, '')
+          .toLowerCase()
+      }
+
       function displayEvents(events) {
         const container = document.getElementById('events-grid')
 
@@ -1161,6 +1176,22 @@
           ? '<span class="event-badge">Endast medlemmar</span>'
           : ''
 
+        // "Läs mer" only points at a page dedicated to this event. Skip it when the link
+        // is empty (href="" would reload this page) or when it is just the organizer's
+        // site again, which several sources store as a fallback.
+        const eventLink = (event.link || '').trim()
+        const hasOwnPage =
+          eventLink && normalizeUrl(eventLink) !== normalizeUrl(event.organizerLink)
+
+        const readMoreLink = hasOwnPage
+          ? `<a
+              class="event-read-more"
+              href="${escapeAttr(eventLink)}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Läs mer<span aria-hidden="true"> ↗</span></a>`
+          : ''
+
         // Only show time meta item if event has a time
         const timeMeta = hasTime
           ? `<div class="event-meta-item">
@@ -1176,11 +1207,7 @@
                 <div class="event-date-day">${day}</div>
                 <div class="event-date-month">${month}</div>
               </div>
-              <h3 class="event-title">
-                <a href="${event.link}" target="_blank" rel="noopener noreferrer">
-                  ${event.title}
-                </a>
-              </h3>
+              <h3 class="event-title">${event.title}</h3>
             </div>
             <div class="event-card-body">
               <div class="event-meta">
@@ -1195,6 +1222,7 @@
                 </div>
               </div>
               <div class="event-description">${event.description}</div>
+              ${readMoreLink}
               <div class="event-card-footer">
                 <div class="event-organizer">
                   ${organizerLink}
