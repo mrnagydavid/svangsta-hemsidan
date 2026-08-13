@@ -404,7 +404,7 @@ function transformGardenEvents(events) {
 }
 
 /** ============================================================================
- * ESPORT FUNCTIONS (Svängsta Esportförening)
+ * ESPORT FUNCTIONS (Svängsta E-sportförening)
  * ============================================================================ */
 
 /**
@@ -602,9 +602,9 @@ function transformEsportEvents(events) {
         title: event.title,
         startDate,
         endDate,
-        location: event.location || 'Svängsta Esportförening',
+        location: event.location || 'Svängsta E-sportförening',
         description,
-        organizer: 'Svängsta Esportförening',
+        organizer: 'Svängsta E-sportförening',
         organizerLink: 'forening-esport.html',
         link: event.link,
         forMembersOnly: false,
