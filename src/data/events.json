@@ -3105,7 +3105,7 @@
     "startDate": "2026-08-16T11:00",
     "endDate": "2026-08-16T12:00",
     "location": "Svängsta kyrka",
-    "description": "Nissagården: Slänsmålavägen 308, 376 92 Svängsta\nTa med gärna med fikakorg & något att sitta på",
+    "description": "Nissagården: Slänsmålavägen 308, 376 92 Svängsta\nTa med gärna med fikakorg & något att sitta på\nSolist: Ylva Wijkström - Klarinett",
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=75983463502c471cac7b8a5fe2591b25",
@@ -3228,6 +3228,18 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=7afc4bb359d14f1b88515265c919fbf1",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-4cd490d40d784454b6ae8fffc79fce4a",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-08-31T09:00",
+    "endDate": "2026-08-31T11:00",
+    "location": "Ringamåla skola",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=4cd490d40d784454b6ae8fffc79fce4a",
     "forMembersOnly": false
   },
   {
