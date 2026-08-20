@@ -76,6 +76,7 @@ const MENU_HTML = `
       <li><a href="gula-sidorna.html">🏪 Företag & Service</a></li>
       <li><a href="foreningar.html">🤝 Föreningsliv & Gemenskap</a></li>
       <li><a href="portratt.html">👋 Möt Svängsta</a></li>
+      <li><a href="logotyp.html">🎨 Vår logotyp</a></li>
     </ul>
   </nav>
 `

@@ -36,6 +36,10 @@
         --logo-yellow: #fcca09;
       }
 
+      [hidden] {
+        display: none !important;
+      }
+
       .logo-hero {
         background:
           radial-gradient(
@@ -62,35 +66,25 @@
         color: rgba(255, 255, 255, 0.92);
       }
 
-      /* Primary download card */
-      .kit-cta {
-        background: linear-gradient(
-          135deg,
-          var(--testimonial-background-color2),
-          var(--testimonial-background-color1)
-        );
-        border-radius: 12px;
-        padding: 2rem;
-        margin: 2rem 0 3rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        text-align: center;
-        border: 2px solid rgba(var(--accent-color-rgb), 0.15);
+      /* The mark is transparent outside the yellow ring, and the blue S sticks
+         out past it. On the blue hero those parts would vanish, so the badge
+         gives the logo a white plate to sit on. */
+      .logo-hero-badge {
+        width: 220px;
+        margin: 0 auto 1.5rem;
+        padding: 1.25rem;
+        background: white;
+        border-radius: 28px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       }
 
-      .kit-cta h2 {
-        margin: 0 !important;
-        color: var(--accent-color);
-        font-size: var(--font-xl);
+      .logo-hero-badge img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
-      .kit-cta p {
-        margin: 0;
-        max-width: 540px;
-      }
-
+      /* Shared download button */
       .download-btn {
         display: inline-flex;
         align-items: center;
@@ -99,11 +93,13 @@
         background: var(--accent-color);
         color: white !important;
         text-decoration: none !important;
+        border: none;
         border-radius: 8px;
+        font-family: inherit;
         font-size: var(--font-md);
         font-weight: 600;
+        cursor: pointer;
         transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        white-space: nowrap;
       }
 
       .download-btn:hover {
@@ -112,45 +108,40 @@
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
       }
 
+      .download-btn:focus-visible {
+        outline: 3px solid var(--logo-blue);
+        outline-offset: 3px;
+      }
+
       .download-btn--large {
         padding: 1.1rem 2rem;
-        font-size: var(--font-md);
       }
 
-      .download-btn--secondary {
-        background: white;
-        color: var(--accent-color) !important;
-        border: 2px solid var(--accent-color);
-      }
-
-      .download-btn--secondary:hover {
-        background: var(--accent-color);
-        color: white !important;
-      }
-
-      .download-btn .size-hint {
-        font-weight: 400;
-        opacity: 0.85;
-        font-size: var(--font-sm);
+      .download-btn.is-disabled,
+      .download-btn.is-disabled:hover {
+        background: #d1d5db;
+        color: #4b5563 !important;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
       }
 
       /* Preview tiles */
       .logo-previews {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        margin: 1.5rem 0 2.5rem;
+        margin: 1.5rem 0 2rem;
       }
 
+      /* No captions - the tiles carry no text of our own, so nothing competes
+         with the text the logo itself has. The alt attributes describe them. */
       .logo-preview {
-        border-radius: 12px;
+        display: grid;
+        place-items: center;
         padding: 2.5rem 1.5rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
         border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
       }
 
       .logo-preview img {
@@ -167,159 +158,179 @@
         background: #1f2937;
       }
 
+      /* Darker than a plain photo overlay would need to be - the logo's own
+         white name has to stay readable over the bright sky and water. */
       .logo-preview--photo {
         background:
-          linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+          linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.68)),
           url('images/svangsta-fran-an.jpg') center / cover;
       }
 
-      .logo-preview-label {
-        font-size: var(--font-sm);
-        color: rgba(255, 255, 255, 0.9);
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-        font-weight: 500;
+      @media (max-width: 640px) {
+        .logo-previews {
+          grid-template-columns: 1fr;
+        }
       }
 
-      .logo-preview--light .logo-preview-label {
-        color: #4b5563;
-        text-shadow: none;
+      /* Download picker */
+      #logo-picker {
+        margin-top: 2rem;
       }
 
-      /* Download grid (size variants) */
-      .download-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1rem;
-        margin: 1.5rem 0 2rem;
+      .picker-group {
+        border: 0;
+        padding: 0;
+        margin: 0 0 2rem;
       }
 
-      .download-card {
-        background: white;
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 1.5rem;
+      /* Step 4 has no inputs, so it is a plain div - but its heading has to
+         match the legends above it exactly. */
+      .picker-group legend,
+      .subpage-main .picker-heading {
         display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
-      }
-
-      .download-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      }
-
-      .download-card-title {
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0;
+        margin-bottom: 0.9rem;
         font-size: var(--font-md);
         font-weight: 600;
         color: var(--accent-color);
-        margin: 0;
       }
 
-      .download-card-use {
-        font-size: var(--font-sm);
-        color: #555;
-        margin: 0;
-        flex-grow: 1;
-        line-height: 1.5;
-      }
-
-      .download-card .download-btn {
-        align-self: flex-start;
-        padding: 0.6rem 1.1rem;
-        font-size: var(--font-sm);
-      }
-
-      /* Two download buttons per size card - one per logo-variant */
-      .download-card-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-
-      .download-card-actions .download-btn {
-        align-self: auto;
-        flex: 1 1 auto;
-        justify-content: center;
-      }
-
-      /* Variant comparison */
-      .variant-grid {
+      .picker-step {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.5rem;
-        margin: 1.5rem 0 2rem;
-      }
-
-      .variant-card {
-        background: white;
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        align-items: center;
-        text-align: center;
-      }
-
-      .variant-card img {
-        max-width: 190px;
-        width: 100%;
-        height: auto;
-      }
-
-      .variant-card h3 {
-        margin: 0;
-        font-size: var(--font-md);
-        color: var(--accent-color);
-      }
-
-      .variant-card p {
-        margin: 0;
-        font-size: var(--font-sm);
-        color: #555;
-        line-height: 1.5;
-      }
-
-      /* JPG downloads - compact chip rows, one per variant */
-      .format-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 1rem 0;
-      }
-
-      /* Separator between the variants only - no trailing line before the
-         next heading. */
-      .format-row + .format-row {
-        border-top: 1px solid rgba(0, 0, 0, 0.08);
-      }
-
-      .format-row-label {
-        flex: 1 1 100%;
-        font-weight: 600;
-        font-size: var(--font-sm);
-        color: var(--accent-color);
-      }
-
-      .format-chip {
-        display: inline-block;
-        padding: 0.45rem 0.9rem;
-        background: white;
-        border: 1px solid rgba(var(--accent-color-rgb), 0.35);
-        border-radius: 999px;
-        color: var(--accent-color) !important;
-        text-decoration: none !important;
-        font-size: var(--font-sm);
-        font-weight: 500;
-        transition: background 0.15s ease, color 0.15s ease;
-      }
-
-      .format-chip:hover {
+        place-items: center;
+        width: 1.9rem;
+        height: 1.9rem;
+        flex-shrink: 0;
+        border-radius: 50%;
         background: var(--accent-color);
-        color: white !important;
+        color: white;
+        font-size: var(--font-sm);
+      }
+
+      .picker-group:disabled legend {
+        opacity: 0.55;
+      }
+
+      .picker-options {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 0.75rem;
+      }
+
+      .picker-option {
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+
+      /* Kept in the layout (not display:none) so it stays focusable and
+         reachable for screen readers - the card next to it is the visuals. */
+      .picker-option input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: 0;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .picker-option-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        height: 100%;
+        padding: 0.9rem 1.1rem;
+        background: white;
+        border: 2px solid rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        transition: border-color 0.15s ease, background 0.15s ease;
+      }
+
+      .picker-option:hover .picker-option-card {
+        border-color: rgba(var(--accent-color-rgb), 0.45);
+      }
+
+      .picker-option input:checked + .picker-option-card {
+        border-color: var(--accent-color);
+        background: var(--testimonial-background-color2);
+      }
+
+      .picker-option input:focus-visible + .picker-option-card {
+        outline: 3px solid var(--logo-blue);
+        outline-offset: 2px;
+      }
+
+      .picker-option input:disabled + .picker-option-card {
+        opacity: 0.45;
+      }
+
+      .picker-option:has(input:disabled),
+      .picker-group:disabled .picker-option {
+        cursor: not-allowed;
+      }
+
+      .picker-group:disabled .picker-option-card {
+        opacity: 0.45;
+      }
+
+      .picker-option-name {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        color: var(--text-color-dark);
+      }
+
+      /* Radio dot - the selected state must not rest on colour alone. */
+      .picker-option-name::before {
+        content: '';
+        width: 1.05rem;
+        height: 1.05rem;
+        flex-shrink: 0;
+        border: 2px solid rgba(0, 0, 0, 0.35);
+        border-radius: 50%;
+        background: white;
+      }
+
+      .picker-option input:checked + .picker-option-card .picker-option-name::before {
+        border-color: var(--accent-color);
+        background: radial-gradient(
+          circle,
+          var(--accent-color) 0 45%,
+          white 50%
+        );
+      }
+
+      .picker-option-hint {
+        font-size: var(--font-sm);
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .picker-note {
+        margin-top: 0.9rem;
+        padding: 0.6rem 0.9rem;
+        border-left: 3px solid var(--logo-blue);
+        border-radius: 6px;
+        background: rgba(4, 85, 163, 0.06);
+        font-size: var(--font-sm);
+        line-height: 1.6;
+        color: #444;
+      }
+
+      .picker-summary {
+        margin: 0 0 1rem;
+        font-size: var(--font-sm) !important;
+        line-height: 1.6 !important;
+        color: #444;
+      }
+
+      .picker-filename {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-weight: 600;
+        overflow-wrap: anywhere;
       }
 
       .callout {
@@ -332,7 +343,7 @@
 
       .callout p {
         margin: 0;
-        font-size: var(--font-sm);
+        font-size: var(--font-sm) !important;
       }
 
       /* Color swatches */
@@ -420,13 +431,14 @@
 
     <header class="subpage-hero logo-hero">
       <div class="hero-content">
-        <img
-          src="images/logo/png/svangsta-logo-512.png"
-          alt="Svängstas logotyp"
-          width="180"
-          height="180"
-          style="margin: 0 auto 1.5rem; display: block; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.25);"
-        />
+        <div class="logo-hero-badge">
+          <img
+            src="images/logo/png/svangsta-logo-512.png"
+            alt=""
+            width="180"
+            height="180"
+          />
+        </div>
         <h1>Svängstas logotyp</h1>
         <p class="subtitle">Ladda ner och använd vår logotyp - i precis den storlek du behöver</p>
       </div>
@@ -440,13 +452,59 @@
           affischer, inbjudningar, nyhetsbrev, T-shirts, you name it.
         </p>
 
-        <div class="kit-cta">
-          <h2>Hela logotyp-kitet</h2>
+        <h2>Så ser logotypen ut</h2>
+        <p>
+          Logotypen finns i tre varianter. Två av dem har föreningens namn under
+          märket - en med svart text för ljusa underlag och en med vit text för
+          mörka. Den tredje är bara märket, utan text. Märket är likadant i alla
+          tre, och ytan utanför den gula ringen är genomskinlig.
+        </p>
+
+        <div class="logo-previews">
+          <div class="logo-preview logo-preview--light">
+            <img
+              src="images/logo/png/svangsta-logo-with-name-512.png"
+              alt="Logotypen med föreningens namn i svart text, på ljus bakgrund"
+            />
+          </div>
+          <div class="logo-preview logo-preview--dark">
+            <img
+              src="images/logo/png/svangsta-logo-with-name-white-512.png"
+              alt="Logotypen med föreningens namn i vit text, på mörk bakgrund"
+            />
+          </div>
+          <div class="logo-preview logo-preview--photo">
+            <img
+              src="images/logo/png/svangsta-logo-with-name-white-512.png"
+              alt="Logotypen med föreningens namn i vit text, ovanpå ett foto"
+            />
+          </div>
+          <div class="logo-preview logo-preview--light">
+            <img
+              src="images/logo/png/svangsta-logo-512.png"
+              alt="Logotypen som enbart märke, utan namn"
+            />
+          </div>
+        </div>
+
+        <div class="callout">
           <p>
-            Vet du inte vad du behöver? Ladda ner allt på en gång. Du får en
-            ZIP-fil med båda varianterna av logotypen - med och utan namn - i
-            alla storlekar och format: PNG, JPG och SVG.
+            <strong>Välj variant efter underlaget.</strong> Svart text på ljusa
+            underlag, vit text på mörka och ovanpå foton. Tänk också på själva
+            märket: det blå S:et sticker ut utanför den gula ringen, så mot en
+            mörkblå bakgrund tappar de utstickande delarna kontrast och
+            försvinner. Ska logotypen ligga på blått - lägg den på en vit platta
+            först, precis som i sidhuvudet här ovanför.
           </p>
+        </div>
+
+        <h2>Hela logotyp-kitet</h2>
+        <p>
+          Vet du inte vad du behöver? Ladda ner allt på en gång. Du får en
+          ZIP-fil med alla tre varianterna, i alla storlekar och format - PNG,
+          JPG och SVG.
+        </p>
+        <p>
           <a
             href="images/logo/svangsta-logo-kit.zip"
             class="download-btn download-btn--large"
@@ -454,183 +512,155 @@
           >
             ⬇ Ladda ner hela kitet (ZIP)
           </a>
-        </div>
-
-        <h2>Två varianter</h2>
-        <p>
-          Logotypen finns i två varianter. Välj den som passar sammanhanget -
-          filerna är i övrigt identiska.
         </p>
 
-        <div class="variant-grid">
-          <div class="variant-card">
-            <img
-              src="images/logo/png/svangsta-logo-512.png"
-              alt="Logotypen som enbart märke, utan namn"
-            />
-            <h3>Bara märket</h3>
-            <p>
-              För små ytor och när namnet redan står i närheten - profilbilder,
-              ikoner, sidhuvuden och vattenstämplar. Fungerar på alla underlag.
-            </p>
-          </div>
-          <div class="variant-card">
-            <img
-              src="images/logo/png/svangsta-logo-with-name-512.png"
-              alt="Logotypen med föreningens namn under märket"
-            />
-            <h3>Märket med namn</h3>
-            <p>
-              För när logotypen står för sig själv och ska kunna läsas -
-              affischer, inbjudningar, brevpapper och T-shirts. Kräver ett ljust
-              underlag.
-            </p>
-          </div>
-        </div>
-
-        <h2>Så ser logotypen ut</h2>
+        <h2>Hämta en enskild fil</h2>
         <p>
-          Märket är en cirkulär platta - vit inuti den gula ringen och
-          transparent utanför. Det gör att den fungerar lika bra på ljusa och
-          mörka underlag samt ovanpå foton, utan en synlig vit fyrkant runt.
+          Svara på de tre frågorna så aktiveras nedladdningsknappen med rätt
+          fil.
         </p>
 
-        <div class="logo-previews">
-          <div class="logo-preview logo-preview--light">
-            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på vit bakgrund" />
-            <span class="logo-preview-label">På ljus bakgrund</span>
-          </div>
-          <div class="logo-preview logo-preview--dark">
-            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på mörk bakgrund" />
-            <span class="logo-preview-label">På mörk bakgrund</span>
-          </div>
-          <div class="logo-preview logo-preview--photo">
-            <img src="images/logo/png/svangsta-logo-512.png" alt="Logotypen på foto" />
-            <span class="logo-preview-label">På foto</span>
-          </div>
-        </div>
-
-        <div class="callout">
-          <p>
-            <strong>Varianten med namn vill ha ett ljust underlag.</strong>
-            Namnet är skrivet i Svängsta-blått, och på en mörk bakgrund syns det
-            knappt. Ska logotypen ligga på något mörkt eller på ett foto -
-            använd märket utan namn och skriv namnet i vitt vid sidan om.
-          </p>
-        </div>
-
-        <h2>Välj storlek</h2>
-        <p>
-          Osäker på vilken du ska välja? <strong>Större siffra = större och
-          skarpare bild</strong>. För webben räcker oftast 512 px, för utskrift
-          väljer du 1024 eller 2048 px. Varje storlek finns i båda varianterna.
-          Korten här nedanför ger dig PNG - behöver du JPG hittar du dem längre
-          ner på sidan.
-        </p>
-
-        <div class="download-grid">
-          <div class="download-card">
-            <h3 class="download-card-title">PNG 256 px</h3>
-            <p class="download-card-use">
-              Liten storlek - e-postsignaturer, profilbilder på sociala medier,
-              små ikoner.
-            </p>
-            <div class="download-card-actions">
-              <a href="images/logo/png/svangsta-logo-256.png" class="download-btn" download>
-                ⬇ Bara märket
-              </a>
-              <a href="images/logo/png/svangsta-logo-with-name-256.png" class="download-btn download-btn--secondary" download>
-                ⬇ Med namn
-              </a>
+        <form id="logo-picker">
+          <fieldset class="picker-group">
+            <legend><span class="picker-step" aria-hidden="true">1</span> Filformat</legend>
+            <div class="picker-options">
+              <label class="picker-option">
+                <input type="radio" name="format" value="png" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">PNG</span>
+                  <span class="picker-option-hint">
+                    Genomskinlig bakgrund. Standardvalet för webb, dokument,
+                    presentationer och de flesta tryck.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="format" value="jpg" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">JPG</span>
+                  <span class="picker-option-hint">
+                    Ingen transparens - alltid vit botten. Välj bara när
+                    mottagaren uttryckligen ber om JPG.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="format" value="svg" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">SVG</span>
+                  <span class="picker-option-hint">
+                    Vektor. Skalar fritt utan kvalitetsförlust. Rätt val för
+                    tryckeri och webbdesign. Texten ligger som kurvor.
+                  </span>
+                </span>
+              </label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="download-card">
-            <h3 class="download-card-title">PNG 512 px</h3>
-            <p class="download-card-use">
-              Mellanstor - för webben, nyhetsbrev, presentationer och de flesta
-              dokument.
-            </p>
-            <div class="download-card-actions">
-              <a href="images/logo/png/svangsta-logo-512.png" class="download-btn" download>
-                ⬇ Bara märket
-              </a>
-              <a href="images/logo/png/svangsta-logo-with-name-512.png" class="download-btn download-btn--secondary" download>
-                ⬇ Med namn
-              </a>
+          <fieldset class="picker-group" id="picker-sizes">
+            <legend><span class="picker-step" aria-hidden="true">2</span> Storlek</legend>
+            <div class="picker-options">
+              <label class="picker-option">
+                <input type="radio" name="size" value="256" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">256 px</span>
+                  <span class="picker-option-hint">
+                    E-postsignatur, profilbild, små ikoner.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="size" value="512" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">512 px</span>
+                  <span class="picker-option-hint">
+                    Webb, nyhetsbrev, presentationer.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="size" value="1024" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">1024 px</span>
+                  <span class="picker-option-hint">
+                    Affisch i A4 eller A3, flyers.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="size" value="2048" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">2048 px</span>
+                  <span class="picker-option-hint">
+                    Banderoll, vepa, stora tryck.
+                  </span>
+                </span>
+              </label>
             </div>
-          </div>
-
-          <div class="download-card">
-            <h3 class="download-card-title">PNG 1024 px</h3>
-            <p class="download-card-use">
-              Stor - för affischer i A4/A3, flyers och tryck i mindre format.
+            <p class="picker-note" id="picker-size-note" hidden>
+              SVG är en vektorfil utan fast upplösning - storleken bestämmer du
+              i ditt eget program. Hoppa vidare till fråga 3.
             </p>
-            <div class="download-card-actions">
-              <a href="images/logo/png/svangsta-logo-1024.png" class="download-btn" download>
-                ⬇ Bara märket
-              </a>
-              <a href="images/logo/png/svangsta-logo-with-name-1024.png" class="download-btn download-btn--secondary" download>
-                ⬇ Med namn
-              </a>
-            </div>
-          </div>
+          </fieldset>
 
-          <div class="download-card">
-            <h3 class="download-card-title">PNG 2048 px</h3>
-            <p class="download-card-use">
-              Extra stor - för banderoller, vepor och tryckeri-jobb i större
-              format.
+          <fieldset class="picker-group">
+            <legend><span class="picker-step" aria-hidden="true">3</span> Variant</legend>
+            <div class="picker-options">
+              <label class="picker-option">
+                <input type="radio" name="variant" value="black" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">Svart text</span>
+                  <span class="picker-option-hint">
+                    Namnet under märket i svart. För ljusa underlag.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option" id="picker-variant-white">
+                <input type="radio" name="variant" value="white" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">Vit text</span>
+                  <span class="picker-option-hint">
+                    Namnet under märket i vitt. För mörka underlag och foton.
+                  </span>
+                </span>
+              </label>
+              <label class="picker-option">
+                <input type="radio" name="variant" value="mark" />
+                <span class="picker-option-card">
+                  <span class="picker-option-name">Utan text</span>
+                  <span class="picker-option-hint">
+                    Bara märket. När namnet redan står i närheten, eller på små
+                    ytor.
+                  </span>
+                </span>
+              </label>
+            </div>
+            <p class="picker-note" id="picker-variant-note" hidden>
+              Vit text finns inte som JPG. JPG saknar transparens och läggs
+              alltid på vit botten, så det vita namnet skulle försvinna. Välj
+              PNG eller SVG i stället.
             </p>
-            <div class="download-card-actions">
-              <a href="images/logo/png/svangsta-logo-2048.png" class="download-btn" download>
-                ⬇ Bara märket
-              </a>
-              <a href="images/logo/png/svangsta-logo-with-name-2048.png" class="download-btn download-btn--secondary" download>
-                ⬇ Med namn
-              </a>
-            </div>
-          </div>
+          </fieldset>
 
-          <div class="download-card">
-            <h3 class="download-card-title">SVG (vektor)</h3>
-            <p class="download-card-use">
-              För webbdesigners och tryckerier. Skalas oändligt utan att bli
-              suddig. Liten filstorlek.
+          <div class="picker-group">
+            <p class="picker-heading">
+              <span class="picker-step" aria-hidden="true">4</span> Ladda ner
             </p>
-            <div class="download-card-actions">
-              <a href="images/logo/svangsta-logo.svg" class="download-btn" download>
-                ⬇ Bara märket
-              </a>
-              <a href="images/logo/svangsta-logo-with-name.svg" class="download-btn download-btn--secondary" download>
-                ⬇ Med namn
-              </a>
-            </div>
+            <p class="picker-summary" id="picker-summary" role="status">
+              Välj filformat, storlek och variant så aktiveras knappen.
+            </p>
+            <a
+              id="picker-download"
+              class="download-btn download-btn--large is-disabled"
+              role="link"
+              aria-disabled="true"
+              tabindex="0"
+              download
+            >
+              ⬇ Ladda ner filen
+            </a>
           </div>
-        </div>
-
-        <h2>Behöver du JPG?</h2>
-        <p>
-          En del tryckerier ber om JPG. Då hämtar du filerna här. Tänk på att
-          JPG inte klarar transparens - de här filerna har alltid en vit
-          bakgrund. Ska logotypen ligga på en färg eller ovanpå ett foto är PNG
-          rätt val.
-        </p>
-
-        <div class="format-row">
-          <span class="format-row-label">Bara märket</span>
-          <a href="images/logo/jpg/svangsta-logo-256.jpg" class="format-chip" download>256 px</a>
-          <a href="images/logo/jpg/svangsta-logo-512.jpg" class="format-chip" download>512 px</a>
-          <a href="images/logo/jpg/svangsta-logo-1024.jpg" class="format-chip" download>1024 px</a>
-          <a href="images/logo/jpg/svangsta-logo-2048.jpg" class="format-chip" download>2048 px</a>
-        </div>
-        <div class="format-row">
-          <span class="format-row-label">Märket med namn</span>
-          <a href="images/logo/jpg/svangsta-logo-with-name-256.jpg" class="format-chip" download>256 px</a>
-          <a href="images/logo/jpg/svangsta-logo-with-name-512.jpg" class="format-chip" download>512 px</a>
-          <a href="images/logo/jpg/svangsta-logo-with-name-1024.jpg" class="format-chip" download>1024 px</a>
-          <a href="images/logo/jpg/svangsta-logo-with-name-2048.jpg" class="format-chip" download>2048 px</a>
-        </div>
+        </form>
 
         <h2>Färger</h2>
         <p>
@@ -671,12 +701,13 @@
 
         <h2>Att tänka på</h2>
         <ul class="usage-list">
-          <li class="ok">Använd logotypen som den är - de färdiga storlekarna passar de flesta behov.</li>
+          <li class="ok">Använd logotypen som den är - de färdiga filerna täcker de flesta behov.</li>
           <li class="ok">Ge logotypen luft runt sig så att den syns ordentligt.</li>
-          <li class="ok">Håll dig till varianten med namn på ljusa underlag, och märket utan namn på mörka.</li>
+          <li class="ok">Välj svart text på ljusa underlag och vit text på mörka.</li>
           <li class="no">Sträck eller stuka inte logotypen - behåll proportionerna.</li>
-          <li class="no">Byt inte färgerna på blå-gul-ringen.</li>
-          <li class="no">Skriv inte föreningens namn själv under märket - använd den färdiga varianten med namn.</li>
+          <li class="no">Byt inte färgerna på den blå-gula ringen, och färga inte om märket.</li>
+          <li class="no">Lägg inte märket direkt mot en mörkblå bakgrund - då tappar det blå S:et kontrast. Ge det en vit platta.</li>
+          <li class="no">Skriv inte föreningens namn själv under märket - använd den färdiga varianten med text.</li>
         </ul>
 
         <h2>Frågor?</h2>
@@ -695,5 +726,113 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script>
+      // Download picker: three questions resolve to exactly one file in
+      // images/logo/. Question 1 constrains the two below it - never the other
+      // way around - so the form only ever disables things further down the
+      // page than where the user just clicked.
+      ;(function () {
+        const form = document.getElementById('logo-picker')
+        if (!form) return
+
+        const VARIANTS = {
+          black: { base: 'svangsta-logo-with-name', label: 'med svart text' },
+          white: { base: 'svangsta-logo-with-name-white', label: 'med vit text' },
+          mark: { base: 'svangsta-logo', label: 'utan text' },
+        }
+
+        const sizeGroup = document.getElementById('picker-sizes')
+        const sizeNote = document.getElementById('picker-size-note')
+        const variantNote = document.getElementById('picker-variant-note')
+        const whiteOption = document.getElementById('picker-variant-white')
+        const whiteInput = whiteOption.querySelector('input')
+        const summary = document.getElementById('picker-summary')
+        const button = document.getElementById('picker-download')
+
+        // :enabled also accounts for an ancestor fieldset being disabled, which
+        // the .disabled property on the input alone would not.
+        function checkedValue(name) {
+          const input = form.querySelector(
+            'input[name="' + name + '"]:checked:enabled'
+          )
+          return input ? input.value : null
+        }
+
+        // "a", "a och b", "a, b och c"
+        function joinSwedish(parts) {
+          if (parts.length < 2) return parts.join('')
+          return parts.slice(0, -1).join(', ') + ' och ' + parts[parts.length - 1]
+        }
+
+        function update() {
+          const format = checkedValue('format')
+
+          // A vector has no pixel size, so the whole size question steps aside.
+          const sizeIrrelevant = format === 'svg'
+          sizeGroup.disabled = sizeIrrelevant
+          sizeNote.hidden = !sizeIrrelevant
+
+          // JPG is flattened onto white, which would swallow a white name.
+          const whiteImpossible = format === 'jpg'
+          if (whiteImpossible && whiteInput.checked) whiteInput.checked = false
+          whiteInput.disabled = whiteImpossible
+          variantNote.hidden = !whiteImpossible
+
+          const size = checkedValue('size')
+          const variant = checkedValue('variant')
+
+          const missing = []
+          if (!format) missing.push('filformat')
+          if (!sizeIrrelevant && !size) missing.push('storlek')
+          if (!variant) missing.push('variant')
+
+          if (missing.length) {
+            button.removeAttribute('href')
+            button.download = ''
+            button.setAttribute('aria-disabled', 'true')
+            button.classList.add('is-disabled')
+            summary.textContent =
+              'Välj ' + joinSwedish(missing) + ' så aktiveras knappen.'
+            return
+          }
+
+          const base = VARIANTS[variant].base
+          const name =
+            format === 'svg' ? base + '.svg' : base + '-' + size + '.' + format
+          const path =
+            format === 'svg'
+              ? 'images/logo/' + name
+              : 'images/logo/' + format + '/' + name
+
+          button.href = path
+          button.download = name
+          button.setAttribute('aria-disabled', 'false')
+          button.classList.remove('is-disabled')
+          summary.innerHTML =
+            'Din fil: <span class="picker-filename"></span> - ' +
+            format.toUpperCase() +
+            (sizeIrrelevant ? '' : ', ' + size + ' px') +
+            ', ' +
+            VARIANTS[variant].label +
+            '.'
+          summary.querySelector('.picker-filename').textContent = name
+        }
+
+        button.addEventListener('click', function (event) {
+          if (button.getAttribute('aria-disabled') === 'true') {
+            event.preventDefault()
+          }
+        })
+
+        // Nothing here posts anywhere - the download link is the only exit.
+        form.addEventListener('submit', function (event) {
+          event.preventDefault()
+        })
+
+        form.addEventListener('change', update)
+        // Browsers restore radio state on back/reload - re-sync before paint.
+        update()
+      })()
+    </script>
   </body>
 </html>
