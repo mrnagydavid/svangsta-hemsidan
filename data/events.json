@@ -3314,6 +3314,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-77ec1d53046541629247ed81fa77096b",
+    "title": "MÄSSA",
+    "startDate": "2026-09-06T11:00",
+    "endDate": "2026-09-06T12:00",
+    "location": "Asarums kyrka",
+    "description": "Elisabeth Türck välkomnas som ny organist i församlingen.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=77ec1d53046541629247ed81fa77096b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week1",
     "title": "Vuxengympa (Vecka 1/14)",
     "startDate": "2026-09-07T18:30",
