@@ -3255,6 +3255,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-21068918",
+    "title": "Styrelsemöte",
+    "startDate": "2026-09-01T20:00",
+    "endDate": "2026-09-01T21:30",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21068918/styrelsemote",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-399bbeeee6904bd29293f5088eba0f03",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-09-03T13:00",
@@ -3323,6 +3335,30 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=77ec1d53046541629247ed81fa77096b",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-e83e901025dd48b7b76c3ce43b977f48",
+    "title": "Musikandakt på Ringamåladagen",
+    "startDate": "2026-09-06T16:00",
+    "endDate": "2026-09-06T17:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e83e901025dd48b7b76c3ce43b977f48",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1d2d40a78c6c422a97e6ddb834cf3f1b",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-09-07T09:00",
+    "endDate": "2026-09-07T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1d2d40a78c6c422a97e6ddb834cf3f1b",
     "forMembersOnly": false
   },
   {
