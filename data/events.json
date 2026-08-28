@@ -3374,6 +3374,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-e83e901025dd48b7b76c3ce43b977f48",
+    "title": "Musikandakt på Ringamåladagen",
+    "startDate": "2026-09-06T16:00",
+    "endDate": "2026-09-06T17:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e83e901025dd48b7b76c3ce43b977f48",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week1",
     "title": "Vuxengympa (Vecka 1/14)",
     "startDate": "2026-09-07T18:30",
