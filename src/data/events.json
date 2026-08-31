@@ -3386,6 +3386,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-1d2d40a78c6c422a97e6ddb834cf3f1b",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-09-07T09:00",
+    "endDate": "2026-09-07T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1d2d40a78c6c422a97e6ddb834cf3f1b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week1",
     "title": "Vuxengympa (Vecka 1/14)",
     "startDate": "2026-09-07T18:30",
