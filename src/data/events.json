@@ -3279,18 +3279,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "esport-21068918",
-    "title": "Styrelsemöte",
-    "startDate": "2026-09-01T20:00",
-    "endDate": "2026-09-01T21:30",
-    "location": "Discord",
-    "description": "Plats: Discord",
-    "organizer": "Svängsta E-sportförening",
-    "organizerLink": "forening-esport.html",
-    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21068918/styrelsemote",
-    "forMembersOnly": false
-  },
-  {
     "id": "church-30518c3b2b374a928c7dc42d8ca94491",
     "title": "Expeditionen stängd",
     "startDate": "2026-09-02T10:00",
@@ -3407,6 +3395,30 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-2602876b73b84e3c92ae323ea3efd5ce",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-09-08T13:00",
+    "endDate": "2026-09-08T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2602876b73b84e3c92ae323ea3efd5ce",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-b12e69aa46cb40d2932e784f18af5cad",
+    "title": "Mat & prat 17.30-19.30",
+    "startDate": "2026-09-09T17:30",
+    "endDate": "2026-09-09T19:30",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Mat & prat\nHjärtat i Asarum (rakt över Coop) kl 17:30-19:30\n(öppet från 17:00)\nI sin enklaste form träffas vi i\nsoffhörnan på Hjärtat och pratar om det som berör\noss i våra liv. Pizzabuffé till självkostnadspris finns!\nVälkommen som du är!\n\nFöljande datum: \n• 25 mars • 22 april\nIngen anmälan!\n\nFör frågor kontakta gärna\nMia Dahl, församlingspedagog\nmia.dahl@svenskakyrkan.se\n0454 – 32 86 32",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b12e69aa46cb40d2932e784f18af5cad",
     "forMembersOnly": false
   },
   {
@@ -3587,6 +3599,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-21155279",
+    "title": "Volontärmöte + Styrelsemöte",
+    "startDate": "2026-10-01T18:00",
+    "endDate": "2026-10-01T21:30",
+    "location": "Medborgarhuset",
+    "description": "Plats: Medborgarhuset",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21155279/volontarmote-styrelsemote",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week5",
     "title": "Barngympa 4-6 år (Vecka 5/12)",
     "startDate": "2026-10-03T10:00",
@@ -3729,6 +3753,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-21158592",
+    "title": "SvängstaLanet Höst 2026",
+    "startDate": "2026-10-23T15:00",
+    "endDate": "2026-10-23T23:59",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21158592/svangstalanet-host-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21158593",
+    "title": "SvängstaLanet Höst 2026",
+    "startDate": "2026-10-24T00:00",
+    "endDate": "2026-10-24T23:59",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21158593/svangstalanet-host-2026",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week8",
     "title": "Barngympa 4-6 år (Vecka 8/12)",
     "startDate": "2026-10-24T10:00",
@@ -3750,6 +3798,30 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21158594",
+    "title": "SvängstaLanet Höst 2026",
+    "startDate": "2026-10-25T00:00",
+    "endDate": "2026-10-25T23:59",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21158594/svangstalanet-host-2026",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21158595",
+    "title": "SvängstaLanet Höst 2026",
+    "startDate": "2026-10-26T00:00",
+    "endDate": "2026-10-26T12:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21158595/svangstalanet-host-2026",
     "forMembersOnly": false
   },
   {
