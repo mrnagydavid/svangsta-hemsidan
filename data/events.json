@@ -3279,6 +3279,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "garden-tradgardsvandring-2",
+    "title": "Trädgårdsvandring",
+    "startDate": "2026-09-02",
+    "endDate": "2026-09-02",
+    "location": "Svängsta",
+    "description": "Onsdag den 16 augusti klockan 18 besöker vi Roland Gustafsson i Ronneby. I ett helt vanligt villaområde i Ronneby har Roland skapt en liten pärla. En trädgård som med sin unika formgivning ledar en genom många olika rum, stigar och former. Roland har mängder av intressanta växter och träd samlat und",
+    "organizer": "Svängsta Trädgårdsförening",
+    "organizerLink": "https://svangstatradgard.se",
+    "link": "https://svangstatradgard.se/index.php/2026/09/02/tradgardsvandring-2/",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-30518c3b2b374a928c7dc42d8ca94491",
     "title": "Expeditionen stängd",
     "startDate": "2026-09-02T10:00",
@@ -3419,6 +3431,30 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=b12e69aa46cb40d2932e784f18af5cad",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-46de3ebf9e1e424894b3633abb4c6039",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-09-10T13:00",
+    "endDate": "2026-09-10T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=46de3ebf9e1e424894b3633abb4c6039",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-d0d8d0b3454a4502b9799667e3accfdf",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-09-10T18:00",
+    "endDate": "2026-09-10T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d0d8d0b3454a4502b9799667e3accfdf",
     "forMembersOnly": false
   },
   {
