@@ -3506,6 +3506,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-9a46f49e570c41a6804ffa3058694371",
+    "title": "MÄSSA",
+    "startDate": "2026-09-13T11:00",
+    "endDate": "2026-09-13T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9a46f49e570c41a6804ffa3058694371",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week2",
     "title": "Vuxengympa (Vecka 2/14)",
     "startDate": "2026-09-14T18:30",
