@@ -3518,6 +3518,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-bbbf884887eb462c82876e6d458af7c6",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-09-14T09:00",
+    "endDate": "2026-09-14T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=bbbf884887eb462c82876e6d458af7c6",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-85ddb2472a3a41888891fd2c4a805dfd",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-09-14T09:00",
+    "endDate": "2026-09-14T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=85ddb2472a3a41888891fd2c4a805dfd",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week2",
     "title": "Vuxengympa (Vecka 2/14)",
     "startDate": "2026-09-14T18:30",
