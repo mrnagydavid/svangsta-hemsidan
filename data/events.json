@@ -3542,6 +3542,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-38ccf3cd5e1f460381667ecc8f605e9e",
+    "title": "CAFÈKVÄLL i PINGSTKYRKAN ASARUM",
+    "startDate": "2026-09-14T18:00",
+    "endDate": "2026-09-14T20:30",
+    "location": "Pingstkyrkan i Asarum",
+    "description": "Samvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=38ccf3cd5e1f460381667ecc8f605e9e",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week2",
     "title": "Vuxengympa (Vecka 2/14)",
     "startDate": "2026-09-14T18:30",
@@ -3551,6 +3563,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-38baee1987ad416d93d9f620b49f3389",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-09-15T13:00",
+    "endDate": "2026-09-15T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=38baee1987ad416d93d9f620b49f3389",
     "forMembersOnly": false
   },
   {
