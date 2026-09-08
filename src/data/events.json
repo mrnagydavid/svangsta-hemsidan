@@ -3578,6 +3578,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-913c9700bc2a4b44b58b49a772d6bf9b",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-09-16T09:00",
+    "endDate": "2026-09-16T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=913c9700bc2a4b44b58b49a772d6bf9b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-tradgardsvandring-hos-roland-gustafsson",
     "title": "Trädgårdsvandring hos Roland Gustafsson",
     "startDate": "2026-09-16T18:00",
