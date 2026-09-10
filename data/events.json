@@ -3613,6 +3613,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-37f805e9202844c1af72e5fde3458777",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-09-17T18:00",
+    "endDate": "2026-09-17T19:00",
+    "location": "Asarums kyrka",
+    "description": "Tony - Musiker och kyrkvaktmästare\nMitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=37f805e9202844c1af72e5fde3458777",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-20314040",
     "title": "Bellevuedagen",
     "startDate": "2026-09-19T09:00",
