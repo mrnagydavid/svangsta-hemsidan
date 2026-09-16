@@ -3745,6 +3745,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-452ce8a1942646bb9537b9b0bc02d619",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-09-24T18:00",
+    "endDate": "2026-09-24T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=452ce8a1942646bb9537b9b0bc02d619",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-workshop-ta-vara-pa-skorden-2026",
     "title": "Workshop: Ta vara på skörden",
     "startDate": "2026-09-26T10:00",
