@@ -3757,6 +3757,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-1c071ca901d2412c818b75c1015043fa",
+    "title": "FREDAGSMYS",
+    "startDate": "2026-09-25T16:00",
+    "endDate": "2026-09-25T18:00",
+    "location": "Asarums kyrka",
+    "description": "FREDAGSMYS 25 september mellan kl 16-18.00 i Asarums kyrka\nVälkomna att inleda helgen med ett par timmar av öppen och avslappnad gemenskap,\ndär barnen är i centrum men alla är välkomna!\nVi pysslar, umgås, firar mysig andakt och äter kvällsmat till självkostnadspris.\nHoppas vi ses!\n”Barnen i centrum men alla är välkomna”",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1c071ca901d2412c818b75c1015043fa",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-workshop-ta-vara-pa-skorden-2026",
     "title": "Workshop: Ta vara på skörden",
     "startDate": "2026-09-26T10:00",
