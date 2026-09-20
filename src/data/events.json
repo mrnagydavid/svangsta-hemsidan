@@ -3088,6 +3088,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "pro-ukulelegruppen-20260810",
+    "title": "Ukulelegruppen",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "location": "Svängsta",
+    "description": "Ukulelegruppen startar den 10 augusti och spelar tillsammans under hela hösten. Inga förkunskaper krävs och nya deltagare är välkomna. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Aktiviteten arrangeras i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
+    "id": "pro-bangolf-20260812",
+    "title": "Bangolf",
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-12",
+    "location": "Svängsta",
+    "description": "Bangolfen startar den 12 augusti och fortsätter under höstsäsongen. Nya deltagare är välkomna. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Arrangeras i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
     "id": "church-c9f9daf271e143268b3e44f0a7984200",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-08-13T13:00",
@@ -3303,6 +3327,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "pro-orter-och-ortkunskap-20260903",
+    "title": "Örter och örtkunskap",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-03",
+    "location": "Svängsta",
+    "description": "Höstens grupp i örter och örtkunskap startar den 3 september. Vi lär oss mer om örter och hur de kan användas. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Genomförs i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
+    "id": "pro-hundtraffar-fortsattning-20260903",
+    "title": "Hundträffar, fortsättning",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-03",
+    "location": "Svängsta",
+    "description": "Hundträffar för dig som varit med tidigare, start den 3 september. Vi träffas med hundarna och umgås tillsammans. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. En aktivitet i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
     "id": "church-399bbeeee6904bd29293f5088eba0f03",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-09-03T13:00",
@@ -3325,6 +3373,18 @@
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=215636300ece49369e0aec153070e26f",
     "forMembersOnly": false
+  },
+  {
+    "id": "pro-hundtraffar-nyborjare-20260904",
+    "title": "Hundträffar, nybörjare",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-04",
+    "location": "Svängsta",
+    "description": "Hundträffar för nybörjare startar den 4 september. Här är du och din hund välkomna även om ni inte varit med förut. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. En aktivitet i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
   },
   {
     "id": "gardenmanual-workshop-hostbeskarning-av-frukttrad",
@@ -3576,6 +3636,18 @@
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=38baee1987ad416d93d9f620b49f3389",
     "forMembersOnly": false
+  },
+  {
+    "id": "pro-mattcurling-20260916",
+    "title": "Mattcurling",
+    "startDate": "2026-09-16",
+    "endDate": "2026-09-16",
+    "location": "Svängsta",
+    "description": "Höstens mattcurling startar den 16 september. Ett lättsamt spel där alla kan vara med, oavsett tidigare erfarenhet. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Arrangeras i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
   },
   {
     "id": "church-913c9700bc2a4b44b58b49a772d6bf9b",
@@ -3851,6 +3923,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "pro-qigong-och-gympa-20261001",
+    "title": "Qigong och gympa",
+    "startDate": "2026-10-01",
+    "endDate": "2026-10-01",
+    "location": "Svängsta",
+    "description": "Qigong och gympa drar igång den 1 oktober - mjuk rörelseträning i lugnt tempo, i din egen takt. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Genomförs i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
     "id": "esport-21155279",
     "title": "Volontärmöte + Styrelsemöte",
     "startDate": "2026-10-01T18:00",
@@ -3860,6 +3944,18 @@
     "organizer": "Svängsta E-sportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21155279/volontarmote-styrelsemote",
+    "forMembersOnly": false
+  },
+  {
+    "id": "pro-frigorande-dans-20261002",
+    "title": "Frigörande dans - prova på pass",
+    "startDate": "2026-10-02T16:00:00",
+    "endDate": "2026-10-02T17:30:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Rörelse, glädje, energi - tillsammans! Frigörande dans är en kravlös form av dans där du får röra dig fritt till musik, känna närvaro i kroppen och släppa tankar och stress. Du dansar på ditt eget sätt - ingen koreografi, bara lust och rörelse. Inga prestationskrav, bara rörelseglädje! Det kan ge dig mer energi och livsglädje, minskad stress, bättre kroppskännedom, ökad flexibilitet och balans, stärkt självkänsla samt gemenskap och välmående. Ledare: Elin Copcutt. Gratis prova på - kom och testa! Vid intresse planeras 8 tillfällen då till en kostnad av 30 kr/tillfälle inkl. fika. Alla är välkomna! Anmälan till SMS 0701423139 senast 28/9.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
     "forMembersOnly": false
   },
   {
@@ -3887,6 +3983,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "pro-linedance-fortsattning-20261005",
+    "title": "Linedance, fortsättning",
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-05",
+    "location": "Svängsta",
+    "description": "Linedance för dig som dansat tidigare startar den 5 oktober. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. Arrangeras i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
+    "id": "pro-textilt-hantverk-20261005",
+    "title": "Textilt hantverk",
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-05",
+    "location": "Svängsta",
+    "description": "Textilt hantverk startar den 5 oktober. Ta med ditt eget handarbete eller prova något nytt tillsammans med andra. Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. En aktivitet i samverkan med ABF.",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
+    "link": "",
+    "forMembersOnly": true
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week5",
     "title": "Vuxengympa (Vecka 5/14)",
     "startDate": "2026-10-05T18:30",
@@ -3895,6 +4015,18 @@
     "description": "Gympa med Svängstagymnasterna. Måndagar kl 18.30-19.30 i Möllegårdens skola. Fler ledare med varierande pass. Höstterminen 7/9-7/12 2026. Terminsavgift 250 kr, studerande under 20 år 150 kr. Engångsavgift 25 kr. Betalning kontant eller Swish 123 240 00 42. Kom loss - gympa med oss!",
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
+    "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "pro-linedance-nyborjare-20261007",
+    "title": "Linedance för nybörjare - prova på",
+    "startDate": "2026-10-07T14:00:00",
+    "endDate": "2026-10-07T15:30:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Ta chansen och prova på linedance! PRO Svängsta/Asarum och instruktör Susanne Pedersen välkomnar dig till Medborgarhuset i Svängsta onsdagen den 7 oktober kl. 14.00-15.30. Ingen erfarenhet behövs - vi dansar tillsammans, fikar och umgås en stund. Den här gången är det helt kostnadsfritt. Om du gillar det är du välkommen att fortsätta dansa terminens tio gånger (då tillkommer en avgift). Och om det visar sig att det inte var din grej är du i alla fall en rolig erfarenhet rikare! Frågor och anmälan: Karin Nordstedt, k.nordstedt@gmail.com eller 070-849 86 09. I samverkan med ABF. Varmt välkommen!",
+    "organizer": "PRO Svängsta-Asarum",
+    "organizerLink": "forening-pro.html",
     "link": "",
     "forMembersOnly": false
   },
