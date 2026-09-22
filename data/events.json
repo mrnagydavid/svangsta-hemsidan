@@ -3924,6 +3924,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-134bd6ceffbb4b6f9e67dd025ef38305",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-09-29T13:00",
+    "endDate": "2026-09-29T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=134bd6ceffbb4b6f9e67dd025ef38305",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-applen-forelasning-appelutstallning-och-sortbestamning",
     "title": "Äpplen! Föreläsning, äppelutställning och sortbestämning",
     "startDate": "2026-09-29T18:00",
@@ -3932,6 +3944,18 @@
     "organizer": "Svängsta Trädgårdsförening",
     "organizerLink": "https://svangstatradgard.se",
     "link": "https://svangstatradgard.se",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-8d49678d39634d7a802acb0e5b0a95f5",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-09-30T09:00",
+    "endDate": "2026-09-30T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=8d49678d39634d7a802acb0e5b0a95f5",
     "forMembersOnly": false
   },
   {
