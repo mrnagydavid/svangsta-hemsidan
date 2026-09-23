@@ -3971,6 +3971,30 @@
     "forMembersOnly": true
   },
   {
+    "id": "church-1866af6a3cf34718a834ec7dcaa65802",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-10-01T13:00",
+    "endDate": "2026-10-01T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1866af6a3cf34718a834ec7dcaa65802",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3932db6fd39f4bc1a0002549959514ff",
+    "title": "Kanelbullar & Hjärtats Kör - Vi övar inför mässan 4 okt",
+    "startDate": "2026-10-01T13:30",
+    "endDate": "2026-10-01T15:00",
+    "location": "Svängsta kyrka",
+    "description": "Kanelbullar & Sång på Hjärtat - alla välkomna!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3932db6fd39f4bc1a0002549959514ff",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21155279",
     "title": "Volontärmöte + Styrelsemöte",
     "startDate": "2026-10-01T18:00",
