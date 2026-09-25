@@ -3995,6 +3995,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-69498792f46f463d850a66b19a671853",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-10-01T18:00",
+    "endDate": "2026-10-01T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=69498792f46f463d850a66b19a671853",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21155279",
     "title": "Volontärmöte + Styrelsemöte",
     "startDate": "2026-10-01T18:00",
@@ -4040,6 +4052,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-62ed845f43234f4bb4e5706552fff115",
+    "title": "MÄSSA med avtackning",
+    "startDate": "2026-10-04T11:00",
+    "endDate": "2026-10-04T12:00",
+    "location": "Asarums kyrka",
+    "description": "Anna-Maria Berg avtackas som kantor i församlingen.\nHjärtats Kör under ledning av Anna-Maria Berg\nSång & gitarr: Peter Dahlström och Annica & Tony Ganestedt\nTrombon Oscar Molin \nKanelbullar till kaffet i samband med Kanelbullens dag",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=62ed845f43234f4bb4e5706552fff115",
     "forMembersOnly": false
   },
   {
