@@ -4210,6 +4210,42 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-54c2b80255e04a63a2ebc572e95440ef",
+    "title": "Stilla Mässa i Taizéton",
+    "startDate": "2026-10-08T18:00",
+    "endDate": "2026-10-08T19:00",
+    "location": "Asarums kyrka",
+    "description": "• 3 sep • 8 okt • 5 nov\nVid tre torsdagskvällar firar vi Stilla mässa i Taizéton. Vi ses en halvtimme innan och \nsjunger igenom stämmorna.\nBåde före & efter finns enkel fika.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=54c2b80255e04a63a2ebc572e95440ef",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3cf4c34f5cc84876a6012725f2ea89c4",
+    "title": "Föreläsningskväll med Jonas Ahlner - \"En himla massa hopp\"",
+    "startDate": "2026-10-08T18:30",
+    "endDate": "2026-10-08T21:00",
+    "location": "Asarums kyrka",
+    "description": "Välkommen till föreläsningskväll\nTemavecka: “En himla massa hopp – tillsammans”\nDet här trodde du inte!\n- eller visste inte att du trodde.\n8 oktober kl 18.00\nAsarums kyrka\nKvällen börjar med Stilla mässa kl 18.00\nDärefter startar föreläsningen ca kl 18.30\nKort paus med fika under kvällens gång.\nTa med dig en vän så ökar vi hoppet tillsammans.\nFölj med på en inspirerande resa genom bibliska\nberättelser med kyrkoherde Jonas Ahlner.\nGenom att rita och berätta föreläser Jonas på\nett humoristiskt och lättsamt sätt och när vi tagit oss fram\ntill berättelsernas slut är whiteboarden full av bilder,\ndär hoppet får bli det sista som överger oss.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3cf4c34f5cc84876a6012725f2ea89c4",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1d5d674478aa493c82e7587c60d815e1",
+    "title": "Kreativ lördag - En dag där vi tillsammans gör världen lite ljusare",
+    "startDate": "2026-10-10T09:00",
+    "endDate": "2026-10-10T16:00",
+    "location": "Svängsta kyrka",
+    "description": "Kreativ Lördag - En dag där vi tillsammans gör världen lite ljusare\nVälkommen till en kreativ lördag i Svängsta kyrka med skapande utifrån temat “HOPP”.\nVi använder både lera, färg, form, penslar, penna, samtal i syfte att hitta mod och \ninspiration att sprida hopp och ljus för oss själva och andra. \nBildkonstnär San Lundberg Vikström leder oss genom delar av dagen. Inga förkunskaper behövs.\n\nDagen är kostnadsfri. Frukostfralla, lunch, fika & material ingår.\nBegränsat antal platser. För frågor – hör gärna av dig!\nAnmälan till Mia Dahl senast 30 september\nTfn 0454-32 86 32\nE-post mia.dahl@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1d5d674478aa493c82e7587c60d815e1",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week6",
     "title": "Barngympa 4-6 år (Vecka 6/12)",
     "startDate": "2026-10-10T10:00",
