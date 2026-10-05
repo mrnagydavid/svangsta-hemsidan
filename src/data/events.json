@@ -4282,6 +4282,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-07bbf813b2a344fbac1b8bf3f4e58e8d",
+    "title": "MÄSSA med musik",
+    "startDate": "2026-10-11T11:00",
+    "endDate": "2026-10-11T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "Kyrkan fylls med körsång av CHORUS-kören under ledning av Elisabeth Türck.\nEn del av Temaveckan: \"En himla massa hopp-tillsammans\"",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=07bbf813b2a344fbac1b8bf3f4e58e8d",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week6",
     "title": "Vuxengympa (Vecka 6/14)",
     "startDate": "2026-10-12T18:30",
