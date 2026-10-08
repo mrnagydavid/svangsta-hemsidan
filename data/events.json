@@ -4342,6 +4342,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-465b1e4f2c9942a5a27ed9462902db94",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-10-14T09:00",
+    "endDate": "2026-10-14T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=465b1e4f2c9942a5a27ed9462902db94",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-c699a62669d34ce18477bda4514bcb47",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-10-15T13:00",
+    "endDate": "2026-10-15T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c699a62669d34ce18477bda4514bcb47",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-olika-strategier-for-att-odla-atbart-och-spara-pa-vatten",
     "title": "Olika strategier för att odla ätbart och spara på vatten",
     "startDate": "2026-10-15T18:00",
