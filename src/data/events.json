@@ -4377,6 +4377,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-d542294613544438a907a701c65b0ca9",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-10-15T18:00",
+    "endDate": "2026-10-15T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d542294613544438a907a701c65b0ca9",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week7",
     "title": "Barngympa 4-6 år (Vecka 7/12)",
     "startDate": "2026-10-17T10:00",
@@ -4398,6 +4410,30 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-9c5073ee22b34d9687c1f26647739855",
+    "title": "MÄSSA",
+    "startDate": "2026-10-18T11:00",
+    "endDate": "2026-10-18T12:00",
+    "location": "Asarums kyrka",
+    "description": "Äventyrskonfirmanderna medverkar",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9c5073ee22b34d9687c1f26647739855",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-b56409c312044fc1b5ba3699a65861eb",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-10-19T09:00",
+    "endDate": "2026-10-19T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b56409c312044fc1b5ba3699a65861eb",
     "forMembersOnly": false
   },
   {
