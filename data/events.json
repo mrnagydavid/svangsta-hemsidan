@@ -4473,6 +4473,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-d3a65632c2db4d2e8d9cd8a2ad04b319",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-10-22T13:00",
+    "endDate": "2026-10-22T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d3a65632c2db4d2e8d9cd8a2ad04b319",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-a4b4ce64136140eb9a52014ac9231d87",
+    "title": "Oktobernatta - en insamlingskväll",
+    "startDate": "2026-10-22T17:00",
+    "endDate": "2026-10-22T20:00",
+    "location": "Svängsta kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=a4b4ce64136140eb9a52014ac9231d87",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21158592",
     "title": "SvängstaLanet Höst 2026",
     "startDate": "2026-10-23T15:00",
