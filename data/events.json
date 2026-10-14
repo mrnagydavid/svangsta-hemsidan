@@ -4497,6 +4497,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-c16b0188204b41fabc50760cb59e6478",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-10-22T18:00",
+    "endDate": "2026-10-22T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c16b0188204b41fabc50760cb59e6478",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21158592",
     "title": "SvängstaLanet Höst 2026",
     "startDate": "2026-10-23T15:00",
