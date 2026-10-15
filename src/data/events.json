@@ -4569,6 +4569,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-419ff5f12ba9495c9d87b53b3af86634",
+    "title": "MÄSSA",
+    "startDate": "2026-10-25T11:00",
+    "endDate": "2026-10-25T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=419ff5f12ba9495c9d87b53b3af86634",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21158595",
     "title": "SvängstaLanet Höst 2026",
     "startDate": "2026-10-26T00:00",
