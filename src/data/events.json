@@ -4593,6 +4593,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-54167bf53b4345d0a7befd90cb292350",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-10-26T09:00",
+    "endDate": "2026-10-26T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=54167bf53b4345d0a7befd90cb292350",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1551b2f79b674e82b2a0f872e426495e",
+    "title": "Hjärtats rytm + Familjedag med korvgrillning",
+    "startDate": "2026-10-26T09:00",
+    "endDate": "2026-10-26T13:00",
+    "location": "Svängsta kyrka",
+    "description": "FAMILJEDAG med korvgrillning den 26 okt mellan kl 9-13.00 i Svängsta kyrka\nDagen börjar med DROP-IN kl.9.00 sedan 9.30 HJÄRTATS RYTM - sång och rörelsepass för barn och vuxna tillsammans.\nDärefter finns det fika, pyssel, lek både ute och inne och gemenskap för alla åldrar.\nRunt 11.30 KORVGRILLNING till självkostnadspris\n\nHar ni frågor hör gärna av er:\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1551b2f79b674e82b2a0f872e426495e",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week8",
     "title": "Vuxengympa (Vecka 8/14)",
     "startDate": "2026-10-26T18:30",
