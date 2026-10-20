@@ -4641,6 +4641,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-b1158898d6184041aefcb7fac280a636",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-10-28T09:00",
+    "endDate": "2026-10-28T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b1158898d6184041aefcb7fac280a636",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1eb5136f98f74223bcc3b86b26582776",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-10-29T13:00",
+    "endDate": "2026-10-29T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1eb5136f98f74223bcc3b86b26582776",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week9",
     "title": "Vuxengympa (Vecka 9/14)",
     "startDate": "2026-11-02T18:30",
