@@ -4725,6 +4725,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6957fb9edac44d3cbf37fb8ca31fc8b5",
+    "title": "MINNESGUDSTJÄNST i Asarum",
+    "startDate": "2026-10-31T17:00",
+    "endDate": "2026-10-31T18:00",
+    "location": "Asarums kyrka",
+    "description": "En gudstjänst där vi minns och hedrar de avlidna med namnuppläsning och stilla musik. \nCHORUS-kören under ledning av Elisabeth Türck; Ruth Edman, solist",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6957fb9edac44d3cbf37fb8ca31fc8b5",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-0fa981f6b5924897b884b7aa033d2dbb",
+    "title": "MINNESGUDSTJÄNST i Ringamåla",
+    "startDate": "2026-11-01T17:00",
+    "endDate": "2026-11-01T18:00",
+    "location": "Ringamåla kyrka",
+    "description": "En gudstjänst där vi minns och hedrar de avlidna med namnuppläsning och stilla musik. \nRuth Edman, solist",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=0fa981f6b5924897b884b7aa033d2dbb",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week9",
     "title": "Vuxengympa (Vecka 9/14)",
     "startDate": "2026-11-02T18:30",
