@@ -4749,6 +4749,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-c18eb39945c449ac90b29113473e7ad2",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-11-02T09:00",
+    "endDate": "2026-11-02T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=c18eb39945c449ac90b29113473e7ad2",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week9",
     "title": "Vuxengympa (Vecka 9/14)",
     "startDate": "2026-11-02T18:30",
@@ -4758,6 +4770,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21545141",
+    "title": "Styrelsemöte",
+    "startDate": "2026-11-05T20:00",
+    "endDate": "2026-11-05T21:00",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21545141/styrelsemote",
     "forMembersOnly": false
   },
   {
