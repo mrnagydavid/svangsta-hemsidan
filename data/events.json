@@ -4761,6 +4761,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6e4c94ed57fa45caa2f8e9a42cf6f020",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-11-02T09:00",
+    "endDate": "2026-11-02T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6e4c94ed57fa45caa2f8e9a42cf6f020",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week9",
     "title": "Vuxengympa (Vecka 9/14)",
     "startDate": "2026-11-02T18:30",
@@ -4854,6 +4866,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21546079",
+    "title": "Volontärsmöte.",
+    "startDate": "2026-11-17T18:00",
+    "endDate": "2026-11-17T20:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21546079/volontarsmote",
     "forMembersOnly": false
   },
   {
