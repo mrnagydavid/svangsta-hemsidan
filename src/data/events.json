@@ -4809,6 +4809,42 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-5d9c0e664ba3447cb850dcd42ebfc54e",
+    "title": "Kyrkofullmäktige",
+    "startDate": "2026-11-04T18:00",
+    "endDate": "2026-11-04T20:00",
+    "location": "Svängsta kyrka",
+    "description": "Kyrkofullmäktige i Asarum-Ringamåla församling kallas till sammanträde.\nÄrenden enligt utsänd kallelse. \nSe kallelsen på hemsidan under fliken: Förtroendevalda\nLängst ned på sidan hittar du Protokoll.\n\nKyrkofullmäktiges ordförande - Britt-Marie Eriksson\nKyrkofullmäktiges vice ordförande - Jan Bremberg",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=5d9c0e664ba3447cb850dcd42ebfc54e",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3bb4a41becf944ca95a7d2e52ff19491",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-05T13:00",
+    "endDate": "2026-11-05T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3bb4a41becf944ca95a7d2e52ff19491",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-362efe281403414c82dbdf8d61fcab32",
+    "title": "Stilla Mässa i Taizéton",
+    "startDate": "2026-11-05T18:00",
+    "endDate": "2026-11-05T19:00",
+    "location": "Asarums kyrka",
+    "description": "• 3 sep • 8 okt • 5 nov\nVid tre torsdagskvällar firar vi Stilla mässa i Taizéton. Vi ses en halvtimme innan och \nsjunger igenom stämmorna.\nBåde före & efter finns enkel fika.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=362efe281403414c82dbdf8d61fcab32",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21545141",
     "title": "Styrelsemöte",
     "startDate": "2026-11-05T20:00",
