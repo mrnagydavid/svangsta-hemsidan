@@ -4845,18 +4845,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "esport-21545141",
-    "title": "Styrelsemöte",
-    "startDate": "2026-11-05T20:00",
-    "endDate": "2026-11-05T21:00",
-    "location": "Discord",
-    "description": "Plats: Discord",
-    "organizer": "Svängsta E-sportförening",
-    "organizerLink": "forening-esport.html",
-    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21545141/styrelsemote",
-    "forMembersOnly": false
-  },
-  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week9",
     "title": "Barngympa 4-6 år (Vecka 9/12)",
     "startDate": "2026-11-07T10:00",
@@ -4869,6 +4857,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-802d116d94cb48b1ac60b9ecf526c678",
+    "title": "DROP-IN DOP",
+    "startDate": "2026-11-07T11:00",
+    "endDate": "2026-11-07T14:00",
+    "location": "Asarums kyrka",
+    "description": "DROP-IN DOP från kl 11-14.00 i Asarums kyrka\n- Det är aldrig för sent att döpas !\nKom som du är och låt döpa dig själv eller ditt barn.\nVi ordnar präst, musiker, dopklänning och tårtfest. \nDet enda du behöver göra är att komma!\nVill du veta mer:\nGunilla Aquilon Elmqvist 0454-32 86 10\ngunilla.aquilonelmqvist@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=802d116d94cb48b1ac60b9ecf526c678",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-7-12-ht2026-week9",
     "title": "Barngympa 7-12+ år (Vecka 9/12)",
     "startDate": "2026-11-07T11:15",
@@ -4878,6 +4878,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-3cfa260f195b4cc28e7407568e3f0b64",
+    "title": "MÄSSA",
+    "startDate": "2026-11-08T11:00",
+    "endDate": "2026-11-08T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3cfa260f195b4cc28e7407568e3f0b64",
     "forMembersOnly": false
   },
   {
@@ -4926,18 +4938,6 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
-    "forMembersOnly": false
-  },
-  {
-    "id": "esport-21546079",
-    "title": "Volontärsmöte.",
-    "startDate": "2026-11-17T18:00",
-    "endDate": "2026-11-17T20:00",
-    "location": "Medborgarhuset Svängsta",
-    "description": "Plats: Medborgarhuset Svängsta",
-    "organizer": "Svängsta E-sportförening",
-    "organizerLink": "forening-esport.html",
-    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21546079/volontarsmote",
     "forMembersOnly": false
   },
   {
