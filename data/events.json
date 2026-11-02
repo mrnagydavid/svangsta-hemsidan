@@ -4845,6 +4845,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "esport-21545141",
+    "title": "Styrelsemöte",
+    "startDate": "2026-11-05T20:00",
+    "endDate": "2026-11-05T21:00",
+    "location": "Discord",
+    "description": "Plats: Discord",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21545141/styrelsemote",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week9",
     "title": "Barngympa 4-6 år (Vecka 9/12)",
     "startDate": "2026-11-07T10:00",
@@ -4893,6 +4905,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-3cc15d009a9b42d4a0cd043051cb1f9c",
+    "title": "Hjärtats rytm",
+    "startDate": "2026-11-09T09:00",
+    "endDate": "2026-11-09T11:00",
+    "location": "Svängsta kyrka",
+    "description": "MÅNDAGAR i Svängsta kyrka kl 9.00-11.00\nHjärtats rytm - Sång och rörelse för barn och vuxna tillsammans!\nVi bjuder på frukt och kaffe\nIngen anmälan, varmt välkommen!\nDrop in från kl 9.00\nSång & rörelsepasset börjar kl 9.30\ndärefter fikar vi och leker tillsammans\nHar ni frågor hör gärna av er\nMia Dahl, församlingspedagog: 0454 – 32 86 32\nmia.dahl@svenskakyrkan.se\nJennie Bentzer Sigurdsson, musikpedagog:\nTfn 0454 – 32 86 16\njennie.bentzer-sigurdsson@svenskakyrkan.se",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=3cc15d009a9b42d4a0cd043051cb1f9c",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week10",
     "title": "Vuxengympa (Vecka 10/14)",
     "startDate": "2026-11-09T18:30",
@@ -4938,6 +4962,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21546079",
+    "title": "Volontärsmöte.",
+    "startDate": "2026-11-17T18:00",
+    "endDate": "2026-11-17T20:00",
+    "location": "Medborgarhuset Svängsta",
+    "description": "Plats: Medborgarhuset Svängsta",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21546079/volontarsmote",
     "forMembersOnly": false
   },
   {
