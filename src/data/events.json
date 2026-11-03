@@ -4917,6 +4917,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-5abb870c16d34415a06905bdf217798b",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-11-09T09:00",
+    "endDate": "2026-11-09T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=5abb870c16d34415a06905bdf217798b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week10",
     "title": "Vuxengympa (Vecka 10/14)",
     "startDate": "2026-11-09T18:30",
@@ -4926,6 +4938,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-b3cc58dc2f8d48c7abf71b6c2cc03a48",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-10T13:00",
+    "endDate": "2026-11-10T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b3cc58dc2f8d48c7abf71b6c2cc03a48",
     "forMembersOnly": false
   },
   {
