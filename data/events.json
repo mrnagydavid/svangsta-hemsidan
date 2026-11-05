@@ -4965,6 +4965,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-e05e6bb7d5214c268a2ccd15c1981fca",
+    "title": "Föräldrakväll tillsammans med Ninnis flora",
+    "startDate": "2026-11-11T17:30",
+    "endDate": "2026-11-11T20:00",
+    "location": "Svängsta kyrka",
+    "description": "Kom i adventsstämning med kransbindning, fika och härlig gemenskap. Under kvällen gör du\ndin egen adventskrans. Varmt välkommen till en föräldrakväll tillsammans med andra föräldrar\nvars barn finns i församlingens olika verksamheter.\n\nBegränsat antal platser så först till kvarn!\nAnmälan senast 4 november via sms:\nMia Dahl 0725 – 22 49 32\nVarmt välkommen!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=e05e6bb7d5214c268a2ccd15c1981fca",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-6b437ead05474a4a901842bcea14c64b",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-11-12T09:00",
+    "endDate": "2026-11-12T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6b437ead05474a4a901842bcea14c64b",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week10",
     "title": "Barngympa 4-6 år (Vecka 10/12)",
     "startDate": "2026-11-14T10:00",
