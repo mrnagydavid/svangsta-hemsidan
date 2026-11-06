@@ -4989,6 +4989,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-a73b4e97618849b092f5d1ec1b823a85",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-12T13:00",
+    "endDate": "2026-11-12T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=a73b4e97618849b092f5d1ec1b823a85",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-bd2a16d903cd42be9ff4bc6ea09f33c4",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-11-12T18:00",
+    "endDate": "2026-11-12T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=bd2a16d903cd42be9ff4bc6ea09f33c4",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week10",
     "title": "Barngympa 4-6 år (Vecka 10/12)",
     "startDate": "2026-11-14T10:00",
