@@ -5061,6 +5061,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-fa8efd3b0ee1401e81d51d4d3444135a",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-11-16T09:00",
+    "endDate": "2026-11-16T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=fa8efd3b0ee1401e81d51d4d3444135a",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-4b5d880391824c4986459a2a05591380",
+    "title": "CAFÈKVÄLL i PINGSTKYRKAN ASARUM",
+    "startDate": "2026-11-16T18:00",
+    "endDate": "2026-11-16T20:30",
+    "location": "Pingstkyrkan i Asarum",
+    "description": "Samvaro - Servering - Lotterier - Välkomna\nArr: Asarums Församlingskår",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=4b5d880391824c4986459a2a05591380",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week11",
     "title": "Vuxengympa (Vecka 11/14)",
     "startDate": "2026-11-16T18:30",
