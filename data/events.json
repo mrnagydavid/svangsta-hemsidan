@@ -4953,6 +4953,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "garden-workshop-julpyssel-med-naturmaterial",
+    "title": "Workshop: Julpyssel med naturmaterial",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-11",
+    "location": "Svängsta",
+    "description": "Torsdagen den 26 november bjuder vi in till trevlig kväll med julpyssel i Högaböke. Naturmaterial finns att tillgå med möjlighet til att göra kransar, tomtar, stjärnor, julbockar mm. Stommar och småpynt som kulor, band, tomteluvor och dylikt får man ta med själv. Tillsammans inspirerar vi, hittar på",
+    "organizer": "Svängsta Trädgårdsförening",
+    "organizerLink": "https://svangstatradgard.se",
+    "link": "https://svangstatradgard.se/index.php/2026/11/11/workshop-julpyssel-med-naturmaterial/",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-47ca5792d84a40e7bb32141a1e268a5b",
     "title": "Trivsel & promenad Asarum",
     "startDate": "2026-11-11T09:00",
@@ -5097,6 +5109,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-6141106de38243aa93b2b4944316ed0b",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-17T13:00",
+    "endDate": "2026-11-17T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=6141106de38243aa93b2b4944316ed0b",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21546079",
     "title": "Volontärsmöte.",
     "startDate": "2026-11-17T18:00",
@@ -5142,6 +5166,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "esport-21616605",
+    "title": "Budget 2027 / Volontärmöte genomgång",
+    "startDate": "2026-11-24T20:00",
+    "endDate": "2026-11-24T22:00",
+    "location": "Discord/Svängsta Esport",
+    "description": "Plats: Discord/Svängsta Esport",
+    "organizer": "Svängsta E-sportförening",
+    "organizerLink": "forening-esport.html",
+    "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21616605/budget-2027-volontarmote-genomgang",
     "forMembersOnly": false
   },
   {
