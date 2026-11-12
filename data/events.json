@@ -4989,18 +4989,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "church-6b437ead05474a4a901842bcea14c64b",
-    "title": "Trivsel & promenad Asarum",
-    "startDate": "2026-11-12T09:00",
-    "endDate": "2026-11-12T11:00",
-    "location": "Hjärtat i byn - Asarum",
-    "description": "",
-    "organizer": "Svängsta kyrka",
-    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=6b437ead05474a4a901842bcea14c64b",
-    "forMembersOnly": false
-  },
-  {
     "id": "church-a73b4e97618849b092f5d1ec1b823a85",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-11-12T13:00",
@@ -5130,6 +5118,42 @@
     "organizer": "Svängsta E-sportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21546079/volontarsmote",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-63c062c9ac0b4a389968ea5968ce03dc",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-19T13:00",
+    "endDate": "2026-11-19T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=63c062c9ac0b4a389968ea5968ce03dc",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-27586c66bd4642dcb601494cbe64f9af",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-11-19T18:00",
+    "endDate": "2026-11-19T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=27586c66bd4642dcb601494cbe64f9af",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-9aa9d4fb6f7a41688d33d78a76c3e682",
+    "title": "Fredagsmys Svängsta",
+    "startDate": "2026-11-20T16:00",
+    "endDate": "2026-11-20T18:00",
+    "location": "Svängsta kyrka",
+    "description": "FREDAGSMYS 20 november mellan kl 16-18.00 i Svängsta kyrka\nVälkomna att inleda helgen med ett par timmar av öppen och\navslappnad gemenskap där barnen är i centrum men alla är välkomna!\nVi pysslar, umgås, firar mysig andakt och äter kvällsmat till självkostnadspris.\nHoppas vi ses!\n”Barnen i centrum men alla är välkomna”",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=9aa9d4fb6f7a41688d33d78a76c3e682",
     "forMembersOnly": false
   },
   {
