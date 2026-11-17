@@ -5193,18 +5193,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "church-f49ed9e87e534dda9810cb2f36ac5879",
-    "title": "Lär känna din kyrka",
-    "startDate": "2026-11-22T15:00",
-    "endDate": "2026-11-22T17:00",
-    "location": "Asarums kyrka",
-    "description": "Välkommen till LÄR KÄNNA DIN KYRKA\nAsarums kyrka 15 mars kl 16-18.00 - OBS anmälan krävs!\n\nEn inbjudan just för dig I år är första gången som församlingen bjuder in 67-68 åringar med respektive på en minglig träff i kyrkan,\ndär ni får möjlighet att lära känna varandra och din kyrka.\n\nDet blir e ett par timmar med bubbel och enklare tilltugg, livemusik, trevligt häng där du får träffa några ur personalen och\nlära känna församlingens olika delar på ett lättsamt sätt.\nDet är mycket som händer i församlingen under en vecka och Svenska kyrkan finns i samhället varje dag i glädje och sorg.\nKom och lär känna din kyrka. Ett tillfälle att få veta mer om hur Asarum-Ringamåla församling kan vara relevant för dig.\nDu får gärna ta med dig din respektive eller en vän. \n\nVi behöver vet om ni kan komma, så anmäl er senast 6 mars till:\nAnneli via mail, sms eller samtal.\nAnge också allergi/matintoleranser.\nanneli.vapnare@svenskakyrkan.se 0725-22 49 31\nVi ser fram emot att få träffa dig/er så känn er\nVarmt välkomna hälsningar\nAnneli, Mia, Mattias, Tony, Annica",
-    "organizer": "Svängsta kyrka",
-    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=f49ed9e87e534dda9810cb2f36ac5879",
-    "forMembersOnly": false
-  },
-  {
     "id": "church-82dfceb1eb9d4c20ac9a90b8ed1798f8",
     "title": "Hjärtats rytm - Säsongsavslutning",
     "startDate": "2026-11-23T09:00",
@@ -5214,6 +5202,18 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=82dfceb1eb9d4c20ac9a90b8ed1798f8",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-0b7060944e9d4858b9b1a857173ccf46",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-11-23T09:00",
+    "endDate": "2026-11-23T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=0b7060944e9d4858b9b1a857173ccf46",
     "forMembersOnly": false
   },
   {
@@ -5229,6 +5229,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-29dc78bd604f45a6a5a5ca5900e7fab6",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-11-24T13:00",
+    "endDate": "2026-11-24T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=29dc78bd604f45a6a5a5ca5900e7fab6",
+    "forMembersOnly": false
+  },
+  {
     "id": "esport-21616605",
     "title": "Budget 2027 / Volontärmöte genomgång",
     "startDate": "2026-11-24T20:00",
@@ -5238,6 +5250,30 @@
     "organizer": "Svängsta E-sportförening",
     "organizerLink": "forening-esport.html",
     "link": "https://www.svangstaesport.se/svangstaesport/aktivitet/21616605/budget-2027-volontarmote-genomgang",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-7f216e1e1cb24ed18fde581a12223fe1",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-11-25T09:00",
+    "endDate": "2026-11-25T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=7f216e1e1cb24ed18fde581a12223fe1",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-b2eb65cb96634e7f80381e580d372df7",
+    "title": "Julkonsert med Carlshamn Punch Big Band",
+    "startDate": "2026-11-25T18:30",
+    "endDate": "2026-11-25T20:00",
+    "location": "Asarums kyrka",
+    "description": "Julkonsert med Carlshamn Punch Big Band",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b2eb65cb96634e7f80381e580d372df7",
     "forMembersOnly": false
   },
   {
