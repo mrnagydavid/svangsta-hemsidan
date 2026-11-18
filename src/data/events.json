@@ -5277,6 +5277,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-72dabfb401ae4d4bbcf74810c364e96a",
+    "title": "Trivsel & promenad Asarum",
+    "startDate": "2026-11-26T09:00",
+    "endDate": "2026-11-26T11:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=72dabfb401ae4d4bbcf74810c364e96a",
+    "forMembersOnly": false
+  },
+  {
     "id": "gardenmanual-workshop-julpyssel-med-naturmaterial-hogaboke-tradgard",
     "title": "Workshop: Julpyssel med naturmaterial",
     "startDate": "2026-11-26T18:00",
