@@ -5145,6 +5145,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-b4d0447c8f81463db7bf0da836c6efdd",
+    "title": "Expeditionen stängd",
+    "startDate": "2026-11-20T10:00",
+    "endDate": "2026-11-20T12:00",
+    "location": "Församlingsexpeditionen",
+    "description": "Expeditionen är stängd idag.\nExpeditionen är åter öppen måndag 23 november 2026 mellan kl.10-12.00. \nDet går alltid bra att maila till expeditionen utanför våra expeditionstider: \nasarum-ringamala.forsamling@svenskakyrkan.se\nTfn 0454-32 86 00",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=b4d0447c8f81463db7bf0da836c6efdd",
+    "forMembersOnly": false
+  },
+  {
     "id": "church-9aa9d4fb6f7a41688d33d78a76c3e682",
     "title": "Fredagsmys Svängsta",
     "startDate": "2026-11-20T16:00",
@@ -5274,18 +5286,6 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=b2eb65cb96634e7f80381e580d372df7",
-    "forMembersOnly": false
-  },
-  {
-    "id": "church-72dabfb401ae4d4bbcf74810c364e96a",
-    "title": "Trivsel & promenad Asarum",
-    "startDate": "2026-11-26T09:00",
-    "endDate": "2026-11-26T11:00",
-    "location": "Hjärtat i byn - Asarum",
-    "description": "",
-    "organizer": "Svängsta kyrka",
-    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=72dabfb401ae4d4bbcf74810c364e96a",
     "forMembersOnly": false
   },
   {
