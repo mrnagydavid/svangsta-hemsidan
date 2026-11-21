@@ -5324,6 +5324,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-27ec9ed7b78345c0bc7577095fece844",
+    "title": "STILLA MÄSSA",
+    "startDate": "2026-11-26T18:00",
+    "endDate": "2026-11-26T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=27ec9ed7b78345c0bc7577095fece844",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-barngympa-4-6-ht2026-week12",
     "title": "Barngympa 4-6 år (Vecka 12/12 - Sista)",
     "startDate": "2026-11-28T10:00",
@@ -5345,6 +5357,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-84dba1d374f54ef5bd4257808213283d",
+    "title": "MÄSSA",
+    "startDate": "2026-11-29T11:00",
+    "endDate": "2026-11-29T12:00",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=84dba1d374f54ef5bd4257808213283d",
     "forMembersOnly": false
   },
   {
