@@ -5384,6 +5384,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-52f01f1cf6f1408e82acdca3a9098f96",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-11-30T09:00",
+    "endDate": "2026-11-30T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=52f01f1cf6f1408e82acdca3a9098f96",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week13",
     "title": "Vuxengympa (Vecka 13/14)",
     "startDate": "2026-11-30T18:30",
@@ -5393,6 +5405,18 @@
     "organizer": "Svängstagymnasterna",
     "organizerLink": "forening-svangstagymnasterna.html",
     "link": "",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-1b0361e4452448ba9ed93c0ed4d70b04",
+    "title": "Ringamåla granar Forden",
+    "startDate": "2026-12-01T08:00",
+    "endDate": "2026-12-01T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=1b0361e4452448ba9ed93c0ed4d70b04",
     "forMembersOnly": false
   },
   {
