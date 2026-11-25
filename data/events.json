@@ -5396,6 +5396,18 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-fc2361546dfc4d1790c862a4a5ca9435",
+    "title": "Expeditionen stängd",
+    "startDate": "2026-11-30T10:00",
+    "endDate": "2026-11-30T12:00",
+    "location": "Församlingsexpeditionen",
+    "description": "Expeditionen är stängd idag.\nExpeditionen är åter öppen tisdag 1 december 2026 mellan kl.10-12.00. \nDet går alltid bra att maila till expeditionen utanför våra expeditionstider: \nasarum-ringamala.forsamling@svenskakyrkan.se\nTfn 0454-32 86 00",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=fc2361546dfc4d1790c862a4a5ca9435",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week13",
     "title": "Vuxengympa (Vecka 13/14)",
     "startDate": "2026-11-30T18:30",
