@@ -42,6 +42,19 @@
         aspect-ratio: 16 / 9;
         background: #000;
       }
+
+      .member-count {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -76,11 +89,16 @@
     <main class="subpage-main">
       <div class="content-wrapper">
         <p>
-          PRO Svängsta-Asarum är en förening med cirka 320 medlemmar som skapar
-          en mötesplats för gemenskap, personlig utveckling, glädje och hälsa.
-          Föreningen strävar efter att vara ett naturligt val för en stimulerande
-          vardag efter pensionen. Här kan du träffa nya vänner, delta i roliga
-          aktiviteter och engagera dig i viktiga frågor.
+          PRO Svängsta-Asarum är en mötesplats för gemenskap, personlig
+          utveckling, glädje och hälsa. Och föreningen växer så det knakar: i
+          dag är vi
+          <strong
+            ><span class="member-count" data-from="333" aria-hidden="true"
+              >433</span
+            ><span class="visually-hidden">433</span> medlemmar</strong
+          >, och 100 av oss gick med under 2026! Målet är att vara ett naturligt
+          val för en stimulerande vardag efter pensionen. Här kan du träffa nya
+          vänner, delta i roliga aktiviteter och engagera dig i viktiga frågor.
         </p>
 
         <h2>Aktiviteter</h2>
@@ -226,6 +244,36 @@
         } else {
           video.addEventListener('canplay', tryPlay, { once: true })
         }
+      })()
+
+      // Count the member number up from last year's level when it scrolls
+      // into view. Without JS, or with reduced motion, the final number shows.
+      ;(function () {
+        const el = document.querySelector('.member-count')
+        if (!el || !('IntersectionObserver' in window)) return
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+        const from = Number(el.dataset.from)
+        const to = Number(el.textContent)
+        const duration = 1500
+        el.textContent = from
+
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (!entries[0].isIntersecting) return
+            observer.disconnect()
+            const start = performance.now()
+            function step(now) {
+              const t = Math.min((now - start) / duration, 1)
+              const eased = 1 - Math.pow(1 - t, 3)
+              el.textContent = Math.round(from + (to - from) * eased)
+              if (t < 1) requestAnimationFrame(step)
+            }
+            requestAnimationFrame(step)
+          },
+          { threshold: 1 }
+        )
+        observer.observe(el)
       })()
     </script>
   </body>
