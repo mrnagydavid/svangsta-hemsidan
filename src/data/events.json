@@ -5432,6 +5432,30 @@
     "forMembersOnly": false
   },
   {
+    "id": "church-2776a35fc0a04b6f9cd2b4b5367cbef6",
+    "title": "Asarum granar",
+    "startDate": "2026-12-01T13:00",
+    "endDate": "2026-12-01T15:30",
+    "location": "Asarums kyrka",
+    "description": "",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=2776a35fc0a04b6f9cd2b4b5367cbef6",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-09990e1038cf4022aced06b994ccc87d",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-12-01T13:00",
+    "endDate": "2026-12-01T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=09990e1038cf4022aced06b994ccc87d",
+    "forMembersOnly": false
+  },
+  {
     "id": "gymnasterna-vuxengympa-ht2026-week14",
     "title": "Vuxengympa (Vecka 14/14 - Sista)",
     "startDate": "2026-12-07T18:30",
