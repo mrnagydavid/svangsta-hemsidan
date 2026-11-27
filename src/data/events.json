@@ -5420,30 +5420,6 @@
     "forMembersOnly": false
   },
   {
-    "id": "church-1b0361e4452448ba9ed93c0ed4d70b04",
-    "title": "Ringamåla granar Forden",
-    "startDate": "2026-12-01T08:00",
-    "endDate": "2026-12-01T12:00",
-    "location": "Ringamåla kyrka",
-    "description": "",
-    "organizer": "Svängsta kyrka",
-    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=1b0361e4452448ba9ed93c0ed4d70b04",
-    "forMembersOnly": false
-  },
-  {
-    "id": "church-2776a35fc0a04b6f9cd2b4b5367cbef6",
-    "title": "Asarum granar",
-    "startDate": "2026-12-01T13:00",
-    "endDate": "2026-12-01T15:30",
-    "location": "Asarums kyrka",
-    "description": "",
-    "organizer": "Svängsta kyrka",
-    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
-    "link": "https://www.svenskakyrkan.se/kalender?eventId=2776a35fc0a04b6f9cd2b4b5367cbef6",
-    "forMembersOnly": false
-  },
-  {
     "id": "church-09990e1038cf4022aced06b994ccc87d",
     "title": "Öppen dörr på Hjärtat",
     "startDate": "2026-12-01T13:00",
@@ -5453,6 +5429,66 @@
     "organizer": "Svängsta kyrka",
     "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
     "link": "https://www.svenskakyrkan.se/kalender?eventId=09990e1038cf4022aced06b994ccc87d",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-d489c91fb18f439486822549a8197c94",
+    "title": "Mat & prat 17.30-19.30",
+    "startDate": "2026-12-02T17:30",
+    "endDate": "2026-12-02T19:30",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Mat & prat\nHjärtat i Asarum (rakt över Coop) kl 17:30-19:30\n(öppet från 17:00)\nI sin enklaste form träffas vi i\nsoffhörnan på Hjärtat och pratar om det som berör\noss i våra liv. Pizzabuffé till självkostnadspris finns!\nVälkommen som du är!\n\nFöljande datum: \n• 25 mars • 22 april\nIngen anmälan!\n\nFör frågor kontakta gärna\nMia Dahl, församlingspedagog\nmia.dahl@svenskakyrkan.se\n0454 – 32 86 32",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=d489c91fb18f439486822549a8197c94",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-52deee0e8d4c4cc8bbc6a8759c6233ed",
+    "title": "Öppen dörr på Hjärtat",
+    "startDate": "2026-12-03T13:00",
+    "endDate": "2026-12-03T16:00",
+    "location": "Hjärtat i byn - Asarum",
+    "description": "Öppen dörr på HJÄRTAT i Asarum\nVår lilla lokal mitt i byn, på Storgatan 28.\n\nTisdagar & Torsdagar kl 13.00-16.00\nEn mötesplats för alla åldrar.\nKom in en stund för prat och fika. Här finns gemenskap!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=52deee0e8d4c4cc8bbc6a8759c6233ed",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-f88c00d375f640a4abe41d12be0696fa",
+    "title": "STILLA MÄSSA - Sista för terminen",
+    "startDate": "2026-12-03T18:00",
+    "endDate": "2026-12-03T19:00",
+    "location": "Asarums kyrka",
+    "description": "Mitt i vardagen och precis där vi är i våra liv, samlas vi till en enkel nattvardsgudstjänst i skenet av levande ljus.\nAlla är välkomna och mässan varar i cirka en halvtimma.\nKyrkan är öppen från kl. 17:30, och både före och efter mässan finns en kopp te/enkelt fika för den som vill.",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f88c00d375f640a4abe41d12be0696fa",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-ff0bae9355c54d23b0e0b909c4090db1",
+    "title": "MÄSSA med avtackning",
+    "startDate": "2026-12-06T11:00",
+    "endDate": "2026-12-06T12:00",
+    "location": "Ringamåla kyrka",
+    "description": "Linda Ekström avtackas som kyrkvaktmästare i församlingen",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=ff0bae9355c54d23b0e0b909c4090db1",
+    "forMembersOnly": false
+  },
+  {
+    "id": "church-f1a32114cd9448a180f09e980b97e5d2",
+    "title": "Trivsel & Promenad",
+    "startDate": "2026-12-07T09:00",
+    "endDate": "2026-12-07T11:00",
+    "location": "Ringamåla skola",
+    "description": "Promenad & Trivsel Måndagar kl 9.00 i Ringamåla skola.\nDu som vill och kan är välkommen att promenera,\neller bara komma in i värmen & trivas tillsammans,\nmed en enkel fika!",
+    "organizer": "Svängsta kyrka",
+    "organizerLink": "https://www.svenskakyrkan.se/asarum-ringamala",
+    "link": "https://www.svenskakyrkan.se/kalender?eventId=f1a32114cd9448a180f09e980b97e5d2",
     "forMembersOnly": false
   },
   {
